@@ -1,21 +1,45 @@
 {
-  "name": "my-app",
+  "name": "mendestech",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "afrodite-components": "git+ssh://git@github.com:Jorge-Bill/afrodite-components-react.git",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "eslintConfig": {
     "extends": [
