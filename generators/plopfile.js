@@ -17,8 +17,8 @@ module.exports = plop => {
     actions: [
       {
         type: 'add',
-        path: '../src/{{lowerCase type}}/{{pascalCase name}}/index.jsx',
-        templateFile: 'templates/component.jsx.hbs'
+        path: '../src/{{lowerCase type}}/{{pascalCase name}}/index.js',
+        templateFile: 'templates/component.js.hbs'
       },
       {
         type: 'add',
