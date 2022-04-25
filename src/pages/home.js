@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from 'components/Navbar'
 
 function Home() {
   return (
-    <p>Hello World!</p>
+    <>
+      <Navbar title="Mendes Tech" />
+      <p>Hello World! MendesTech!</p>
+    </>
   )
 }
 
