@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-conventional": "^9.1.1",
+    "@commitlint/config-conventional": "^16.2.1",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
-    "husky": "^4.3.0",
     "dotenv": "^16.0.0",
+    "husky": "^4.3.0",
     "plop": "^3.0.6",
     "prop-types": "^15.7.2"
   },
