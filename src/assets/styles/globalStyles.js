@@ -23,6 +23,7 @@ export default createGlobalStyle`
   body {
     font-family: ${({ theme }) => theme.font.family.normal};
     font-size: ${({ theme }) => theme.font.sizes.medium};
+    background-color: ${({ theme }) => theme.colors.softblue};
     height: 100%;
   }
 
