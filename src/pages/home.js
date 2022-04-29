@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <Navbar title="Mendes Tech" />
-      <Header />
+      <Header title="Mendes Tecnologia" />
       <p>Hello World! MendesTech!</p>
     </>
   )

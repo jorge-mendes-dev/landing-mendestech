@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const NavWrapper = styled.div`
   padding: ${({ theme }) => theme.spacings.small};
+  background: ${({ theme }) => theme.colors.primary};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,11 +19,11 @@ export const NavList = styled.div`
 export const NavItem = styled.a`
 front-weight: ${({ theme }) => theme.font.weight.bold};
   padding: ${({ theme }) => theme.spacings.xsmall};
-  color: ${({ theme }) => theme.colors.texts};
-  text-transform: Captalize;
+  color: ${({ theme }) => theme.colors.offwhite};
+  text-transform: uppercase;
   text-decoration: none;
 
   &: hover {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.softblue};
   }
 `

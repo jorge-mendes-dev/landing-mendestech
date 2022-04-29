@@ -6,9 +6,9 @@ import * as S from './styled'
 
 const Header = ({ title, ...props }) => {
   return (
-    <S.Wrapper {...props}>
-      <h1>{title}</h1>
-    </S.Wrapper>
+    <S.HeadeWrrapper {...props}>
+      <S.HeaderTitle>{title}</S.HeaderTitle>
+    </S.HeadeWrrapper>
 )}
 
 Header.propTypes = {

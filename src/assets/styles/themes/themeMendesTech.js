@@ -71,6 +71,6 @@ export default {
   shadow: {
     card: '0px 1px 6px 1px #393e46',
     cardElevated: '0px 2px 6px 2px #393e46',
-    header: '0px 4px 4px #393e46'
+    header: '6px 6px 0px #393e46'
   }
 }
