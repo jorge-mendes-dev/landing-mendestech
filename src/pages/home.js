@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from 'components/Navbar'
-import Header from 'components/Header'
-import Footer from 'components/Footer'
-import Content from 'components/Content'
+
+import { Navbar, Header, Footer, Content } from 'components'
+import { random } from 'utils/random'
+import { aboutMe } from 'info/aboutMe'
 
 function Home() {
   return (
@@ -10,7 +10,9 @@ function Home() {
       <Navbar title="Mendes Tech" />
       <Header title="Mendes Technology" />
       <Content>
-        <p>Hello World! MendesTech!</p>
+        {aboutMe.map(item => (
+          <p key={random()}>{item}</p>
+        ))}
       </Content>
       <Footer />
     </>

@@ -5,9 +5,9 @@ import PropTypes from 'prop-types'
 import * as S from './styled'
 
 const Content = ({ children, ...props }) => (
-  <S.Wrapper {...props}>
+  <S.ContentWrapper {...props}>
     {children}
-  </S.Wrapper>
+  </S.ContentWrapper>
 )
 
 Content.propTypes = {

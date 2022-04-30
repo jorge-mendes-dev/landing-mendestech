@@ -42,7 +42,8 @@ export default {
     },
     height: {
       medium: 1.4, // base
-      heading: 1.2
+      heading: 1.2,
+      large: 1.7
     }
   },
   spacings: {

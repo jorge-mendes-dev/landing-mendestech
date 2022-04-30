@@ -6,7 +6,7 @@ export const FooterWrapper = styled.footer`
   background-image: linear-gradient(to right, ${({ theme }) => theme.colors.black} 0%, ${({ theme }) => theme.colors.darker} 100%);
   box-shadow: 0 4px 8px 0 ${({ theme }) => theme.colors.black};
   transition: 0.15s;
-  min-height: 25vh;
+  min-height: 20vh;
 
   display: flex;
   justify-content: center;
