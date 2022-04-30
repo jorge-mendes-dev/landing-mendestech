@@ -1,8 +1,8 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import Links from './Links'
-import logo from '../../assets/images/logo.png'
+import navLinks from 'info/navLinks'
+import logo from 'assets/images/logo.png'
 
 import * as S from './styled'
 
@@ -10,7 +10,7 @@ const Navbar = ({ title, ...props }) => (
   <S.NavWrapper {...props}>
     <S.Logo src={logo} alt={title} />
     <S.NavList>
-    {Links.map(link => (
+    {navLinks.map(link => (
       <S.NavItem href={link.url} key={link.url + link.label}>{link.label}</S.NavItem>
     ))}
     </S.NavList>

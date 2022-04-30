@@ -7,7 +7,7 @@ const Footer = () => (
   <S.FooterWrapper>
     <S.Container>
       <SocialLinks />
-      <S.Text>Contruido com JS e ❤️</S.Text>
+      <S.Text>Build with JS e ❤️</S.Text>
     </S.Container>
   </S.FooterWrapper>
 )

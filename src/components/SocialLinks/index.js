@@ -2,19 +2,17 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 import Icons from './Icons'
-import links from './content'
+import social from 'info/social'
+import { random } from 'utils/random'
 
 import * as S from './styled'
 
 const SocialLinks = ({ className, size, ...props }) => {
-  const random = () => Math.random().toString(36).slice(2)
-
   return (
     <S.SocialLinksWrapper className={className} size={size} {...props}>
       <S.SocialLinksList>
-        {links.map(link => {
+        {social.map(link => {
           const Icon = Icons[link.label]
-
           return (
             <S.SocialLinksItem key={random()}>
               <S.SocialLinksLink href={link.url} title={link.label} target="_blank" rel="noopener noreferrer">

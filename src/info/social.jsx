@@ -4,7 +4,7 @@ const instagram = ''
 const facebook = ''
 const gmail = 'jorge.mendesx@gmail.com'
 
-const links = [
+const social = [
   {
     label: 'Gmail',
     url: `mailto:${gmail}`
@@ -27,4 +27,4 @@ const links = [
   }
 ]
 
-export default links
+export default social

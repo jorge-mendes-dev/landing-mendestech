@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const NavWrapper = styled.div`
+export const NavWrapper = styled.nav`
   padding: ${({ theme }) => theme.spacings.small};
   background: ${({ theme }) => theme.colors.primary};
   display: flex;
