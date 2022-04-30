@@ -1,11 +1,11 @@
 import { ThemeProvider } from 'styled-components'
-import themeDefault from 'assets/styles/themes/themeDefault'
+import themeMendesTech from 'assets/styles/themes/themeMendesTech'
 import GlobalStyle from 'assets/styles/globalStyles'
-import PageRoutes from 'routes/routes' 
+import PageRoutes from 'routes/routes'
 
 function App() {
   return (
-    <ThemeProvider theme={themeDefault}>
+    <ThemeProvider theme={themeMendesTech}>
       <GlobalStyle />
       <PageRoutes />
     </ThemeProvider>

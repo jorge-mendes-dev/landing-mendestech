@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
-export const NavWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.mediumBackground};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.primary};
-  front-weight: ${({ theme }) => theme.font.weight.bold};
-  text-transform: uppercase;
-
+export const NavWrapper = styled.nav`
   padding: ${({ theme }) => theme.spacings.small};
+  background: ${({ theme }) => theme.colors.primary};
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
+`
+
+export const Logo = styled.img`
+  width: ${({ theme }) => theme.font.sizes.xxlarge};
 `
 
 export const NavList = styled.div`
@@ -18,12 +18,13 @@ export const NavList = styled.div`
 `
 
 export const NavItem = styled.a`
+front-weight: ${({ theme }) => theme.font.weight.bold};
   padding: ${({ theme }) => theme.spacings.xsmall};
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.offwhite};
+  text-transform: uppercase;
   text-decoration: none;
-  front-weight: ${({ theme }) => theme.font.weight.normal};
 
   &: hover {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.softblue};
   }
 `

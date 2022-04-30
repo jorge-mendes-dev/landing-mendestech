@@ -1,4 +1,4 @@
-const Links = [
+const navLinks = [
   {
     label: 'Home',
     url: '#top'
@@ -13,4 +13,4 @@ const Links = [
   }
 ]
 
-export default Links
+export default navLinks
