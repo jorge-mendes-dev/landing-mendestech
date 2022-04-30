@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-
-import { StarFill } from '@styled-icons/bootstrap/StarFill'
+import Icons from 'info/Icons'
 
 export const SkillsWrapper = styled.div`
   display: flex;
@@ -13,10 +12,9 @@ export const SkillsWrapper = styled.div`
 export const SkillTitle = styled.h6`
   text-transform: capitalize;
   color: ${({ theme }) => theme.colors.primary};
-  font-weight: ${({ theme }) => theme.font.weight.normal};
+  font-weight: ${({ theme }) => theme.font.weight.bold};
   letter-spacing: ${({ theme }) => theme.spacings.xxsmall};
-  text-shadow: 2px 2px 0px ${({ theme }) => theme.colors.darker};
-  font-size: ${({ theme }) => theme.font.sizes.medium};
+  font-size: ${({ theme }) => theme.font.sizes.large};
   margin-bottom: 1rem;
 
   ${media.lessThan('large')`
@@ -52,7 +50,7 @@ export const SkillLevel = styled.p`
   }
 `
 
-export const SkillStar = styled(StarFill)`
+export const SkillStar = styled(Icons.StarFill)`
   width: 1rem;
   margin-right: .3rem;
   cursor: pointer;

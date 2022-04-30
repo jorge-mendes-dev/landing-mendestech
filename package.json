@@ -23,7 +23,8 @@
     "dotenv": "^16.0.0",
     "husky": "^4.3.0",
     "plop": "^3.0.6",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react-vertical-timeline-component": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import Icons from './Icons'
+import Icons from 'info/Icons'
 import social from 'info/social'
 import { random } from 'utils/random'
 

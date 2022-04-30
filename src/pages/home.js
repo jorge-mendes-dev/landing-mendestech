@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Navbar, Header, Footer, Content, Skills } from 'components'
+import { Navbar, Header, Footer, Content, Skills, Timeline } from 'components'
 import { random } from 'utils/random'
 import { aboutMe } from 'info/aboutMe'
+import { journeyEng } from 'info/journey'
 import { hardSkills, softSkills } from 'info/skills'
 
 function Home() {
@@ -12,10 +13,13 @@ function Home() {
       <Header title="Mendes Technology" />
       <Content>
         {aboutMe.map(item => (
-          <p key={random()}>{item}</p>
+          <p key={random()} id="#about">{item}</p>
         ))}
-        <Skills title="hard skills" data={hardSkills} />
-        <Skills title="soft skills" data={softSkills} />
+        <div id="#skills">
+          <Skills title="hard skills" data={hardSkills} />
+          <Skills title="soft skills" data={softSkills} />
+        </div>
+        <Timeline data={journeyEng} />
       </Content>
       <Footer />
     </>

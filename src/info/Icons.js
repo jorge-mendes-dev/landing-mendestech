@@ -5,6 +5,7 @@ import { Instagram } from '@styled-icons/boxicons-logos/Instagram'
 import { Gmail } from '@styled-icons/simple-icons/Gmail'
 import { Work } from '@styled-icons/material/Work'
 import { Education } from '@styled-icons/zondicons/Education'
+import { StarFill } from '@styled-icons/bootstrap/StarFill'
 
 const Icons = {
   Github,
@@ -13,7 +14,8 @@ const Icons = {
   Instagram,
   Gmail,
   Work,
-  Education
+  Education,
+  StarFill
 }
 
 export default Icons
