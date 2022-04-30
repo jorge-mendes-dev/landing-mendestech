@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-export const HeadeWrrapper = styled.div`
+export const HeadeWrrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +24,20 @@ export const HeaderTitle = styled.h1`
   font-weight: ${({ theme }) => theme.font.weight.bold};
   letter-spacing: ${({ theme }) => theme.font.sizes.xsmall};
   text-shadow: ${({ theme }) => theme.shadow.header};
+
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+`
+
+export const ImageHeader = styled.img`
+  background-image: linear-gradient(to right, ${({ theme }) => theme.colors.primary} 0%, ${({ theme }) => theme.colors.softblue} 100%);
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  opacity: 0.8;
 `
