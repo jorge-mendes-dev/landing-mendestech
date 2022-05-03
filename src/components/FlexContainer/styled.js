@@ -8,6 +8,6 @@ export const FlexContainerWrapper = styled.div`
   margin: ${({ theme }) => theme.spacings.large} auto;
 
   ${media.lessThan('large')`
-  flex-direction: column;
-`}
+    flex-direction: column;
+  `}
 `

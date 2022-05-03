@@ -134,11 +134,29 @@ export const journeyEng = [
     icon: 'Work'
   },
   {
-    period: `2019 – ${new Date().getFullYear()}`,
+    period: `2019 – 2021`,
     institution: 'FDTE - Foundation for the Technological Development of Engineering',
     position: 'Web Developer Full Stack',
     description:
       'I work as a consultant, on projects, being a full-stack developer, thus being part of the workforce of these clients, as well as on projects, building resources, bug fixes, refactoring and rebuilding when necessary.',
+    location: 'São Paulo, Brazil',
+    icon: 'Work'
+  },
+  {
+    period: `2021 – 2022`,
+    institution: 'Hotmart',
+    position: 'Front-End Web Developer',
+    description:
+      'Working as reference in front-end development, building feature for a company that exists on 5 contries.',
+    location: 'São Paulo, Brazil',
+    icon: 'Work'
+  },
+  {
+    period: `2022 – ${new Date().getFullYear()}`,
+    institution: 'Escala APP',
+    position: 'Senior Web Developer Full Stack',
+    description:
+      'Working as developer on a growing product.',
     location: 'São Paulo, Brazil',
     icon: 'Work'
   }
