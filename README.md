@@ -36,3 +36,9 @@ Stack and resources used on this structure creation.
  - yarn test - execute the Jest test suite.
  - yarn eject - This is a one-way operation. Once you eject, you can’t go back - remove the single build dependency from your project.
  - yarn commit - commit changes with Husky and commitizen | type `git commit` works too.
+
+## 🛠 How to use the structure
+
+For using the structure as a second origin use the follow lines:
+  - git remote add structure git@github.com:Jorge-Bill/blog-cra.git
+  - git pull structure HEAD:master
