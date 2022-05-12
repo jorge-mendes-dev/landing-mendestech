@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <Navbar title="Mendes Tech" />
-      <Header title="Mendes Technology" />
+      <Header title="Mendes Technology" tags="space"/>
       <Content>
         <About id="about" />
         <FlexContainer id="skills">
