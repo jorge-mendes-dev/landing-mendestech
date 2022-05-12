@@ -3,7 +3,7 @@ import { BrowserRouter,  Route, Routes } from 'react-router-dom'
 import history from 'utils/history'
 
 import Page404 from 'pages/Page404'
-import Home from 'pages/Home'
+import Home from 'pages/home'
 
 const PageRoutes = () => (
   <BrowserRouter history={history}>
