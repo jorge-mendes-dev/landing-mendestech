@@ -6,6 +6,7 @@ export const AboutWrapper = styled.div`
   align-items: center;
   padding: ${({ theme }) => theme.spacings.large};
 
+
   ${media.lessThan('large')`
     flex-direction: column;
     padding: 0;
@@ -30,9 +31,11 @@ export const AboutTextContainer = styled.div`
   padding: ${({ theme }) => theme.spacings.medium};
   line-height: ${({ theme }) => theme.font.height.large};
   font-weight: ${({ theme }) => theme.font.weight.normal};
+  width: 80%;
 
   ${media.lessThan('large')`
     padding: 0;
+    width: 100%;
   `}
 
 `

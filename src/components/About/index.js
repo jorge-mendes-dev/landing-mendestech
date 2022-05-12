@@ -12,8 +12,8 @@ const About = ({ ...props }) => (
       <S.AboutLogo src={logo} alt="Mendes Technology" />
     </S.AboutLogoContainer>
     <S.AboutTextContainer>
-      {aboutMe.map(item => (
-        <p key={random()}>{item}</p>
+      {aboutMe.map(about => (
+        <p key={random()}>{about}</p>
       ))}
     </S.AboutTextContainer>
   </S.AboutWrapper>
