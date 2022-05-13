@@ -66,3 +66,15 @@ Stack and resources used on this structure creation.
 For using the structure as a second origin use the follow lines:
   - git remote add structure git@github.com:Jorge-Bill/blog-cra.git
   - git pull structure HEAD:master
+
+
+## 🛠 ENV VARIABLES
+
+.env variables used for seo component.
+
+`TITLE=''
+DESCRIPTION=''
+LANG=''
+IMAGE=''
+AUTHOR=''
+SITE_URL=''`

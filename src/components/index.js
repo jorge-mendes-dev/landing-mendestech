@@ -7,5 +7,4 @@ export { default as Skills } from './Skills'
 export { default as Timeline } from './Timeline'
 export { default as FlexContainer } from './FlexContainer'
 export { default as About } from './About'
-
-
+export { default as Seo } from './Seo'
