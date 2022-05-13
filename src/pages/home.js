@@ -7,12 +7,12 @@ import { hardSkills, softSkills } from 'info/skills'
 
 function Home() {
   const meta = {
-    title: process.env.TITLE || '',
-    description: process.env.DESCRIPTION || '',
-    lang: process.env.LANG || '',
-    image: process.env.IMAGE || '',
-    author: process.env.AUTHOR || '',
-    siteUrl: process.env.SITE_URL || ''
+    title: process.env.REACT_APP_TITLE || '',
+    description: process.env.REACT_APP_DESCRIPTION || '',
+    lang: process.env.REACT_APP_LANG || '',
+    image: process.env.REACT_APP_IMAGE || '',
+    author: process.env.REACT_APP_AUTHOR || '',
+    siteUrl: process.env.REACT_APP_SITE_URL || ''
   }
 
   return (

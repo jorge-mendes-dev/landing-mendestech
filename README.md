@@ -72,9 +72,9 @@ For using the structure as a second origin use the follow lines:
 
 .env variables used for seo component.
 
-`TITLE=''
-DESCRIPTION=''
-LANG=''
-IMAGE=''
-AUTHOR=''
-SITE_URL=''`
+`REACT_APP_TITLE=''
+REACT_APP_DESCRIPTION=''
+REACT_APP_LANG=''
+REACT_APP_IMAGE=''
+REACT_APP_AUTHOR=''
+REACT_APP_SITE_URL=''`
