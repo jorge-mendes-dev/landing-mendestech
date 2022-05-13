@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 function Seo({ site }) {
   const { description, lang, title, image, author, siteUrl } = site
-  const ogImage = `${siteUrl}/images/${image}`
+  const ogImage = `${siteUrl}/public/${image}`
 
   return (
     <Helmet
