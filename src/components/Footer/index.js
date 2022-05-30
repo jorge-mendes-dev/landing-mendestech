@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import * as S from './styled'
-import SocialLinks from 'components/SocialLinks'
+import * as S from "./styled";
+import SocialLinks from "components/SocialLinks";
 
 const Footer = () => (
   <S.FooterWrapper>
@@ -10,7 +10,6 @@ const Footer = () => (
       <S.Text>Build with JS e ❤️</S.Text>
     </S.Container>
   </S.FooterWrapper>
-)
+);
 
-
-export default Footer
+export default Footer;

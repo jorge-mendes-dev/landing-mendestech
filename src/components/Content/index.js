@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import * as S from './styled'
+import * as S from "./styled";
 
 const Content = ({ children, ...props }) => (
-  <S.ContentWrapper {...props}>
-    {children}
-  </S.ContentWrapper>
-)
+  <S.ContentWrapper {...props}>{children}</S.ContentWrapper>
+);
 
 Content.propTypes = {
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};
 
-export default Content
+export default Content;
