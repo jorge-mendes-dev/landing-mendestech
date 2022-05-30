@@ -1,7 +1,7 @@
-import { ThemeProvider } from 'styled-components'
-import themeMendesTech from 'assets/styles/themes/themeMendesTech'
-import GlobalStyle from 'assets/styles/globalStyles'
-import PageRoutes from 'routes/routes'
+import { ThemeProvider } from 'styled-components';
+import themeMendesTech from 'assets/styles/themes/themeMendesTech';
+import GlobalStyle from 'assets/styles/globalStyles';
+import PageRoutes from 'routes/routes';
 
 function App() {
   return (
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

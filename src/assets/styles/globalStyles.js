@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -34,4 +34,4 @@ export default createGlobalStyle`
     flex-direction: column;
     height: 100%;
   }
-`
+`;

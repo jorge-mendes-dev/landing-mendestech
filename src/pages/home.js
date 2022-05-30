@@ -1,5 +1,5 @@
-import React from 'react'
-import { Seo } from 'components'
+import React from "react";
+import { Seo } from "components";
 
 import { Navbar, Header, Footer, Content, Skills, Timeline, FlexContainer, About } from 'components'
 import { journeyEng } from 'info/journey'
@@ -7,13 +7,13 @@ import { hardSkills, softSkills } from 'info/skills'
 
 function Home() {
   const meta = {
-    title: process.env.REACT_APP_TITLE || '',
-    description: process.env.REACT_APP_DESCRIPTION || '',
-    lang: process.env.REACT_APP_LANG || '',
-    image: process.env.REACT_APP_IMAGE || '',
-    author: process.env.REACT_APP_AUTHOR || '',
-    siteUrl: process.env.REACT_APP_SITE_URL || ''
-  }
+    title: process.env.REACT_APP_TITLE || "",
+    description: process.env.REACT_APP_DESCRIPTION || "",
+    lang: process.env.REACT_APP_LANG || "",
+    image: process.env.REACT_APP_IMAGE || "",
+    author: process.env.REACT_APP_AUTHOR || "",
+    siteUrl: process.env.REACT_APP_SITE_URL || "",
+  };
 
   return (
     <>
@@ -30,7 +30,7 @@ function Home() {
       </Content>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

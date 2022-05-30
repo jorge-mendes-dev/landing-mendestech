@@ -28,9 +28,10 @@ This project structure a web app with great organizition, made to be the base te
   </a>
 </p>
 
- ## 👾 Structure base Custom CRA
+## 👾 Structure base Custom CRA
 
 ---
+
 ## 🚀 Project Structure
 
 This project structure a web app with great organizition, made to be the base template for other apps.
@@ -51,30 +52,24 @@ Stack and resources used on this structure creation.
     ├── Husky
     ├── Commitizen
 
-
 ## 🛠 Scripts
 
- - yarn start - start the app. open in [local](http://localhost:3000).
- - yarn generate - execute the script to generate new components.
- - yarn build - execute the script to build the application.
- - yarn test - execute the Jest test suite.
- - yarn eject - This is a one-way operation. Once you eject, you can’t go back - remove the single build dependency from your project.
- - yarn commit - commit changes with Husky and commitizen | type `git commit` works too.
+- yarn start - start the app. open in [local](http://localhost:3000).
+- yarn generate - execute the script to generate new components.
+- yarn build - execute the script to build the application.
+- yarn test - execute the Jest test suite.
+- yarn eject - This is a one-way operation. Once you eject, you can’t go back - remove the single build dependency from your project.
+- yarn commit - commit changes with Husky and commitizen | type `git commit` works too.
 
 ## 🛠 How to use the structure
 
 For using the structure as a second origin use the follow lines:
-  - git remote add structure git@github.com:Jorge-Bill/blog-cra.git
-  - git pull structure HEAD:master
 
+- git remote add structure git@github.com:Jorge-Bill/blog-cra.git
+- git pull structure HEAD:master
 
 ## 🛠 ENV VARIABLES
 
 .env variables used for seo component.
 
-`REACT_APP_TITLE=''
-REACT_APP_DESCRIPTION=''
-REACT_APP_LANG=''
-REACT_APP_IMAGE=''
-REACT_APP_AUTHOR=''
-REACT_APP_SITE_URL=''`
+`REACT_APP_TITLE='' REACT_APP_DESCRIPTION='' REACT_APP_LANG='' REACT_APP_IMAGE='' REACT_APP_AUTHOR='' REACT_APP_SITE_URL=''`
