@@ -60,6 +60,9 @@ Stack and resources used on this structure creation.
 - yarn test - execute the Jest test suite.
 - yarn eject - This is a one-way operation. Once you eject, you can’t go back - remove the single build dependency from your project.
 - yarn commit - commit changes with Husky and commitizen | type `git commit` works too.
+- yarn lint - use prettier to verify files on your app.
+- yarn format - use prettier to format files on your app.
+
 
 ## 🛠 How to use the structure
 
@@ -67,6 +70,9 @@ For using the structure as a second origin use the follow lines:
 
 - git remote add structure git@github.com:Jorge-Bill/blog-cra.git
 - git pull structure HEAD:master
+
+## SET Husky hoooks
+- yarn husky install
 
 ## 🛠 ENV VARIABLES
 
