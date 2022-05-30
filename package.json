@@ -14,7 +14,8 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
     "styled-icons": "^10.45.0",
-    "styled-media-query": "^2.1.2"
+    "styled-media-query": "^2.1.2",
+    "react-vertical-timeline-component": "^3.5.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.1",
