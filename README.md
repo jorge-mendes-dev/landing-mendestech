@@ -39,7 +39,6 @@ Stack and resources used on this structure creation.
 - yarn lint - use prettier to verify files on your app.
 - yarn format - use prettier to format files on your app.
 
-
 ## 🛠 How to use the structure
 
 For using the structure as a second origin use the follow lines:
@@ -48,6 +47,7 @@ For using the structure as a second origin use the follow lines:
 - git pull structure HEAD:master
 
 ## SET Husky hoooks
+
 - yarn husky install
 
 ## 🛠 ENV VARIABLES
