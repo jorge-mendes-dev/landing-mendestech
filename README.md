@@ -44,7 +44,7 @@ Stack and resources used on this structure creation.
 For using the structure as a second origin use the follow lines:
 
 - git remote add structure git@github.com:Jorge-Bill/blog-cra.git
-- git pull structure HEAD:master
+- git pull structure HEAD:master --allow-unrelated-histories
 
 ## SET Husky hoooks
 
