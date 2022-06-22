@@ -1,14 +1,15 @@
-import React from 'react' import PropTypes from 'prop-types' import * as S from
-'./styled' const
-{{pascalCase name}}
-= ({ title, ...props }) => (
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import * as S from './styled'
+
+const {{pascalCase name}} = ({ title, ...props }) => (
 <S.Wrapper {...props}>
   <h1>{title}</h1>
 </S.Wrapper>
 )
 
 {{pascalCase name}}.propTypes = { title: PropTypes.string }
+{{pascalCase name}}.defaultProps = { title: '{{pascalCase name}}' }
 
-{{pascalCase name}}.defaultProps = { title: '{{pascalCase name}}' } export
-default
-{{pascalCase name}}
+export default {{pascalCase name}}
