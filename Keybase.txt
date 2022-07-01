@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jorgemsilva
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jorgemendes.com.br
+  * I am jorgemsilva (https://keybase.io/jorgemsilva) on keybase.
+  * I have a public key ASDtLjHpK_BEdqBoUyKnBLC1ggk8F34bZIBYQN2_OlDQsgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ed2e31e92bf04476a0685322a704b0b582093c177e1b64805840ddbf3a50d0b20a",
+      "host": "keybase.io",
+      "kid": "0120ed2e31e92bf04476a0685322a704b0b582093c177e1b64805840ddbf3a50d0b20a",
+      "uid": "8d46f523e2f053f1ffdec0c5e46ab119",
+      "username": "jorgemsilva"
+    },
+    "merkle_root": {
+      "ctime": 1656687641,
+      "hash": "59d28b39c119e86854be6625a8455e1b82816619659f74e70b063beef886fe8f93062fdd50d3f7b5a1b91579a154d8192bb71eec0750f0f5e2b9110b00664042",
+      "hash_meta": "1bdad3cb4dff58e8f0148e04acbb08675559db72bd02cb79c88ba03837b82976",
+      "seqno": 22774512
+    },
+    "service": {
+      "entropy": "z+iliVUzIZXO52yHkXA+6hIK",
+      "hostname": "jorgemendes.com.br",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.1"
+  },
+  "ctime": 1656687709,
+  "expire_in": 504576000,
+  "prev": "b8faa1eb38c5c690bb24d58d00bcc3256f4cc0f00f266b12451f500a1cc9cacd",
+  "seqno": 17,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg7S4x6SvwRHagaFMipwSwtYIJPBd+G2SAWEDdvzpQ0LIKp3BheWxvYWTESpcCEcQguPqh6zjFxpC7JNWNALzDJW9MwPAPJmsSRR9QChzJys3EICrHlOnzpLw6cbsmlTeKzNpiWYIdzEbYSatJIp5SqQaqAgHCo3NpZ8RAvSkaHBD6KUCYoVwnShIbf/tAeOMHZ3tYGe+BHH8xsVfZJg3Ias3zbEPVdPVhP2INiTiA9CVyf6leTgKKHuNxBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB0lwOmDIVE6rDydDlgx+olNODFYlyvvwoDZs16V330Co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jorgemsilva
+
+==================================================================
