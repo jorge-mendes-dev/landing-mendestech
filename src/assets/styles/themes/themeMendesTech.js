@@ -10,6 +10,7 @@ export default {
     title: "#0f162a",
     bggray: "#d5e1e3",
     texts: "#848486",
+    gray: "#ddd",
     mediumBackground: "#222831",
     background: "#393e46",
     timelineColor: "#a70000",
@@ -49,6 +50,7 @@ export default {
   spacings: {
     xxsmall: "0.4rem", // xxs
     xsmall: "0.8rem", // xs
+    base: "1rem",
     small: "1.6rem", // sm
     medium: "2.4rem", // base
     large: "3.2rem", // md
@@ -63,7 +65,7 @@ export default {
     alwaysOnTop: 50,
   },
   border: {
-    radius: "0.4rem",
+    radius: "0.25em",
   },
   transition: {
     default: "0.3s ease-in-out",

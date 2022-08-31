@@ -10,6 +10,11 @@ export const AboutWrapper = styled.div`
     flex-direction: column;
     padding: 0;
   `}
+
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: ${({ theme }) => theme.border.radius};
+  box-shadow: 0 3px 0 ${({ theme }) => theme.colors.gray};
+  padding: ${({ theme }) => theme.spacings.base};
 `;
 
 export const AboutLogoContainer = styled.div`
