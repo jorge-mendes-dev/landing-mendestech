@@ -10,7 +10,7 @@ export const FooterWrapper = styled.footer`
   );
   box-shadow: 0 4px 8px 0 ${({ theme }) => theme.colors.black};
   transition: 0.15s;
-  min-height: 50vh;
+  min-height: 20vh;
 
   display: flex;
   justify-content: center;
