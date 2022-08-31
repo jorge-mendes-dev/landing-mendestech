@@ -6,12 +6,10 @@ import PropTypes from "prop-types";
 import * as S from "./styled";
 
 const Header = ({ title }) => (
-  <LazyLoad>
-    <S.HeadeWrrapper>
-      <S.HeaderTitle>{title}</S.HeaderTitle>
-      <S.PlayerHeader src={rocket} loop autoplay />
-    </S.HeadeWrrapper>
-  </LazyLoad>
+  <S.HeadeWrrapper>
+    <S.HeaderTitle>{title}</S.HeaderTitle>
+    <S.PlayerHeader src={rocket} loop autoplay />
+  </S.HeadeWrrapper>
 );
 
 Header.propTypes = {
