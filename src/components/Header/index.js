@@ -1,6 +1,5 @@
 import React from "react";
 
-import LazyLoad from "react-lazyload";
 import rocket from "utils/rocket.json";
 import PropTypes from "prop-types";
 
@@ -14,7 +13,6 @@ const Header = ({ title }) => (
     </S.HeadeWrrapper>
   </LazyLoad>
 );
-
 
 Header.propTypes = {
   title: PropTypes.string,
