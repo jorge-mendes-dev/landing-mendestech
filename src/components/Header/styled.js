@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import media from "styled-media-query";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 export const HeadeWrrapper = styled.header`
   display: flex;
@@ -19,36 +20,33 @@ export const HeadeWrrapper = styled.header`
   transition: 0.15s;
 
   ${media.lessThan("large")`
-    display: none;
+    min-height: 100vh;
   `}
 `;
 
 export const HeaderTitle = styled.h1`
   font-size: ${({ theme }) => theme.spacings.xxlarge};
   color: ${({ theme }) => theme.colors.offwhite};
-  text-transform: uppercase;
-  text-align: center;
   font-weight: ${({ theme }) => theme.font.weight.bold};
   letter-spacing: ${({ theme }) => theme.font.sizes.xsmall};
   text-shadow: ${({ theme }) => theme.shadow.header};
+  text-transform: uppercase;
+  text-align: center;
 
   position: absolute;
   z-index: 999;
   left: 0;
   right: 0;
+  top: 40%;
+
+  ${media.lessThan("large")`
+    font-size: ${({ theme }) => theme.spacings.medium};
+    color: ${({ theme }) => theme.colors.softblue};
+    top: 50%;
+  `}
 `;
 
-export const ImageHeader = styled.img`
-  background-image: linear-gradient(
-    to right,
-    ${({ theme }) => theme.colors.primary} 0%,
-    ${({ theme }) => theme.colors.softblue} 100%
-  );
-  position: absolute;
-  top: 64px;
-  left: 0;
-  width: 100%;
+export const PlayerHeader = styled(Player)`
+  width: 80vw;
   height: 80vh;
-  object-fit: cover;
-  opacity: 0.8;
 `;

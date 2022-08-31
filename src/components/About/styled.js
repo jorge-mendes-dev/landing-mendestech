@@ -38,7 +38,6 @@ export const AboutTextContainer = styled.div`
   width: 80%;
 
   ${media.lessThan("large")`
-    padding: 0;
     width: 100%;
   `}
 `;
