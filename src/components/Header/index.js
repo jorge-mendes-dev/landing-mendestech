@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 import LazyLoad from "react-lazyload";
-import PropTypes from "prop-types";
-
 import rocket from "utils/rocket.json";
+import PropTypes from "prop-types";
 
 import * as S from "./styled";
 

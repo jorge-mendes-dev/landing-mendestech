@@ -1,21 +1,30 @@
 import React from "react";
 
 import { random } from "utils/random";
-import { aboutMe } from "info/aboutMe";
+import { aboutFirst, aboutSecond } from "info/aboutMe";
 import logo from "assets/images/logo.png";
+import developer from "utils/developer.json";
 
 import * as S from "./styled";
 
 const About = ({ ...props }) => (
   <S.AboutWrapper {...props}>
-    <S.AboutLogoContainer>
+    <S.AboutContainer>
       <S.AboutLogo src={logo} alt="Mendes Technology" />
-    </S.AboutLogoContainer>
-    <S.AboutTextContainer>
-      {aboutMe.map((about) => (
-        <p key={random()}>{about}</p>
-      ))}
-    </S.AboutTextContainer>
+      <S.AboutTextContainer>
+        {aboutFirst.map((about) => (
+          <p key={random()}>{about}</p>
+        ))}
+      </S.AboutTextContainer>
+    </S.AboutContainer>
+    <S.AboutContainer>
+      <S.AboutTextContainer>
+        {aboutSecond.map((about) => (
+          <p key={random()}>{about}</p>
+        ))}
+      </S.AboutTextContainer>
+      <S.PlayerAbout src={developer} loop autoplay />
+    </S.AboutContainer>
   </S.AboutWrapper>
 );
 
