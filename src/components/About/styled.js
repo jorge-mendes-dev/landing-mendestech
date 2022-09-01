@@ -3,9 +3,6 @@ import media from "styled-media-query";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 export const AboutWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
-  border-radius: ${({ theme }) => theme.border.radius};
-  box-shadow: 0 3px 0 ${({ theme }) => theme.colors.gray};
   padding: ${({ theme }) => theme.spacings.base};
 `;
 

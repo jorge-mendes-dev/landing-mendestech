@@ -15,18 +15,15 @@ export const HeadeWrrapper = styled.header`
     #324f99,
     #253f82
   );
+  background: linear-gradient(90deg, #5981e3 0%, #253f82 100%);
   box-shadow: 0 4px 8px 0 ${({ theme }) => theme.colors.black};
-  min-height: 80vh;
+  min-height: 100vh;
   transition: 0.15s;
-
-  ${media.lessThan("large")`
-    min-height: 100vh;
-  `}
 `;
 
 export const HeaderTitle = styled.h1`
   font-size: ${({ theme }) => theme.spacings.xxlarge};
-  color: ${({ theme }) => theme.colors.offwhite};
+  color: transparent;
   font-weight: ${({ theme }) => theme.font.weight.bold};
   letter-spacing: ${({ theme }) => theme.font.sizes.xsmall};
   text-shadow: ${({ theme }) => theme.shadow.header};
@@ -41,8 +38,7 @@ export const HeaderTitle = styled.h1`
 
   ${media.lessThan("large")`
     font-size: ${({ theme }) => theme.spacings.medium};
-    color: ${({ theme }) => theme.colors.softblue};
-    top: 50%;
+    top: 45%;
   `}
 `;
 
