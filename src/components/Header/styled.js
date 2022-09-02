@@ -6,19 +6,11 @@ export const HeadeWrrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.primary};
-  background-image: linear-gradient(
-    to right top,
-    #5981e3,
-    #4c70ca,
-    #3f5fb1,
-    #324f99,
-    #253f82
-  );
+  border-bottom: 1px solid ${({ theme }) => theme.colors.highlight};
+  transition: ${({ theme }) => theme.transition.default};
   background: linear-gradient(90deg, #5981e3 0%, #253f82 100%);
-  box-shadow: 0 4px 8px 0 ${({ theme }) => theme.colors.black};
   min-height: 100vh;
-  transition: 0.15s;
+  filter: contrast(200%);
 `;
 
 export const HeaderTitle = styled.h1`
