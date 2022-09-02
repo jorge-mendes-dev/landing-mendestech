@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 export const FooterWrapper = styled.footer`
@@ -20,6 +21,10 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   min-height: 50vh;
   position: relative;
+
+  ${media.lessThan("large")`
+  min-height: 25vh;
+  `}
 `;
 
 export const PlayerFooter = styled(Player)`
@@ -31,6 +36,10 @@ export const PlayerFooter = styled(Player)`
   bottom: 0;
   left: 0;
   right: 0;
+
+  ${media.lessThan("large")`
+    min-height: 100%;
+  `}
 `;
 
 export const Container = styled.div`
