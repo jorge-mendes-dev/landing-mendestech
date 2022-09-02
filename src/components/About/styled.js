@@ -15,14 +15,10 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     padding: 0;
   `}
-`;
 
-export const AboutLogo = styled.img`
-  width: 40vw;
-
-  ${media.lessThan("large")`
-    width: 90%;
-  `}
+  &:first-child {
+    margin-bottom: ${({ theme }) => theme.spacings.small};
+  }
 `;
 
 export const AboutTextContainer = styled.div`
@@ -61,8 +57,15 @@ export const AboutTextContainer = styled.div`
 `;
 
 export const PlayerAbout = styled(Player)`
-  width: 40vw;
-  height: 40vh;
+  width: 25vw;
+
+  ${media.lessThan("large")`
+    width: 90%;
+  `}
+`;
+
+export const AboutLogo = styled.img`
+  width: 25vw;
 
   ${media.lessThan("large")`
     width: 90%;

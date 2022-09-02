@@ -2,7 +2,7 @@ import React from "react";
 
 import { random } from "utils/random";
 import { aboutFirst, aboutSecond } from "info/aboutMe";
-import logo from "assets/images/logo.png";
+import logo from "assets/images/logo.svg";
 import developer from "utils/developer.json";
 
 import * as S from "./styled";
