@@ -7,10 +7,7 @@ export const HeadeWrrapper = styled.header`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid ${({ theme }) => theme.colors.highlight};
-  transition: ${({ theme }) => theme.transition.default};
-  background: linear-gradient(90deg, #5981e3 0%, #253f82 100%);
   min-height: 100vh;
-  filter: contrast(200%);
 `;
 
 export const HeaderTitle = styled.h1`

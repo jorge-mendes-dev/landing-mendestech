@@ -9,6 +9,7 @@ import {
   Skills,
   Timeline,
   FlexContainer,
+  HeaderWrapper,
   About,
 } from "components";
 import { journeyEng } from "info/journey";
@@ -27,8 +28,10 @@ function Home() {
   return (
     <>
       <Seo site={meta} />
-      <Navbar title="Mendes Tech" />
-      <Header title="Mendes Technology" tags="space" />
+      <HeaderWrapper>
+        <Navbar title="Mendes Tech" />
+        <Header title="Mendes Technology" />
+      </HeaderWrapper>
       <Content>
         <About id="about" />
         <FlexContainer id="skills">

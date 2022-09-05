@@ -1,9 +1,8 @@
 import styled from "styled-components";
+import { DegradeAnimation } from "assets/styles/globalStyles";
 
 export const NavWrapper = styled.nav`
   padding: ${({ theme }) => theme.spacings.small};
-  background: linear-gradient(90deg, #5981e3 0%, #253f82 100%);
-  filter: contrast(200%);
   display: flex;
   align-items: center;
   justify-content: space-between;
