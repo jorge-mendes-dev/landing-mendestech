@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { DegradeAnimation } from "assets/styles/globalStyles";
 
 export const NavWrapper = styled.nav`
   padding: ${({ theme }) => theme.spacings.small};
