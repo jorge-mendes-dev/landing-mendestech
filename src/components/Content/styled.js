@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ContentWrapper = styled.main`
   background-color: ${({ theme }) => theme.colors.offwhite};
@@ -9,4 +9,4 @@ export const ContentWrapper = styled.main`
   line-height: ${({ theme }) => theme.font.height.large};
   letter-spacing: 0.069rem;
   margin: auto;
-`
+`;

@@ -1,17 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-import * as S from './styled'
+import * as S from "./styled";
 
 const FlexContainer = ({ children, ...props }) => (
-  <S.FlexContainerWrapper {...props}>
-    {children}
-  </S.FlexContainerWrapper>
-)
+  <S.FlexContainerWrapper {...props}>{children}</S.FlexContainerWrapper>
+);
 
 FlexContainer.propTypes = {
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};
 
-export default FlexContainer
+export default FlexContainer;

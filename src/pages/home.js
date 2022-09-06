@@ -1,14 +1,37 @@
-import React from 'react'
+import React from "react";
+import { Seo } from "components";
 
-import { Navbar, Header, Footer, Content, Skills, Timeline, FlexContainer, About } from 'components'
-import { journeyEng } from 'info/journey'
-import { hardSkills, softSkills } from 'info/skills'
+import {
+  Navbar,
+  Header,
+  Footer,
+  Content,
+  Skills,
+  Timeline,
+  FlexContainer,
+  HeaderWrapper,
+  About,
+} from "components";
+import { journeyEng } from "info/journey";
+import { hardSkills, softSkills } from "info/skills";
 
 function Home() {
+  const meta = {
+    title: process.env.REACT_APP_TITLE || "",
+    description: process.env.REACT_APP_DESCRIPTION || "",
+    lang: process.env.REACT_APP_LANG || "",
+    image: process.env.REACT_APP_IMAGE || "",
+    author: process.env.REACT_APP_AUTHOR || "",
+    siteUrl: process.env.REACT_APP_SITE_URL || "",
+  };
+
   return (
     <>
-      <Navbar title="Mendes Tech" />
-      <Header title="Mendes Technology" />
+      <Seo site={meta} />
+      <HeaderWrapper>
+        <Navbar title="Mendes Tech" />
+        <Header title="Mendes Technology" />
+      </HeaderWrapper>
       <Content>
         <About id="about" />
         <FlexContainer id="skills">
@@ -19,7 +42,7 @@ function Home() {
       </Content>
       <Footer />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
