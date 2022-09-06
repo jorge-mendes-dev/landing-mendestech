@@ -14,7 +14,7 @@ const navLinks = [
   {
     label: "Timeline",
     url: "timeline",
-  }
+  },
 ];
 
 export default navLinks;

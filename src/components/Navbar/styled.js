@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 export const NavWrapper = styled.nav`
   padding: ${({ theme }) => theme.spacings.small};

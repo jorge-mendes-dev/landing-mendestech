@@ -11,14 +11,15 @@ const Navbar = ({ title, ...props }) => (
     <S.NavList>
       {navLinks.map((link) => (
         <S.NavItem
-        spy={true}
-        active="active"
-        smooth={true}
-        duration={1000}
-        to={link.url}
-        key={link.url + link.label}>
-        {link.label}
-      </S.NavItem>
+          spy={true}
+          active="active"
+          smooth={true}
+          duration={1000}
+          to={link.url}
+          key={link.url + link.label}
+        >
+          {link.label}
+        </S.NavItem>
       ))}
     </S.NavList>
   </S.NavWrapper>
