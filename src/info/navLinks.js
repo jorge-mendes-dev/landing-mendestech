@@ -1,16 +1,20 @@
 const navLinks = [
   {
     label: "Home",
-    url: "#top",
+    url: "top",
   },
   {
     label: "About Me",
-    url: "#about",
+    url: "about",
   },
   {
     label: "Skills",
-    url: "#skills",
+    url: "skills",
   },
+  {
+    label: "Timeline",
+    url: "timeline",
+  }
 ];
 
 export default navLinks;

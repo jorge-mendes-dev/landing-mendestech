@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-scroll';
 
 export const NavWrapper = styled.nav`
   padding: ${({ theme }) => theme.spacings.small};
@@ -14,14 +15,16 @@ export const Logo = styled.img`
 
 export const NavList = styled.div``;
 
-export const NavItem = styled.a`
+export const NavItem = styled(Link)`
   front-weight: ${({ theme }) => theme.font.weight.bold};
   padding: ${({ theme }) => theme.spacings.xsmall};
   color: ${({ theme }) => theme.colors.offwhite};
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 
   &: hover {
-    color: ${({ theme }) => theme.colors.softblue};
+    color: ${({ theme }) => theme.colors.bluehighlight};
+    front-weight: ${({ theme }) => theme.font.weight.light};
   }
 `;

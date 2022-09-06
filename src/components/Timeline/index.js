@@ -17,6 +17,7 @@ const Timeline = ({ data }) => {
         const Icon = Icons[item.icon];
         return (
           <S.TimelineElement
+            id="timeline"
             key={random()}
             className={`vertical-timeline-element--${item.icon.toLowerCase()}`}
             contentStyle={{
