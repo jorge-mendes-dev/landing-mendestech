@@ -12,7 +12,7 @@ export const HeadeWrrapper = styled.header`
 
 export const HeaderTitle = styled.h1`
   font-size: ${({ theme }) => theme.spacings.xxlarge};
-  color: transparent;
+  color: ${({ theme }) => theme.colors.white};
   font-weight: ${({ theme }) => theme.font.weight.bold};
   letter-spacing: ${({ theme }) => theme.font.sizes.xsmall};
   text-shadow: ${({ theme }) => theme.shadow.header};
