@@ -8,7 +8,10 @@ export const Wrapper = styled.div`
     #4c70ca,
     #3f5fb1,
     #324f99,
-    #253f82
+    #253f82,
+    #001c43,
+    #222831,
+    #222222
   );
   background-size: 400% 400%;
   animation: ${DegradeAnimation} 15s ease infinite;
