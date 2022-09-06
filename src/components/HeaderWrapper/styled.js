@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     #3f5fb1,
     #324f99,
     #253f82,
-    #001C43,
+    #001c43,
     #222831,
     #222222
   );
