@@ -3,7 +3,7 @@ import React from "react";
 import { random } from "utils/random";
 import { aboutFirst, aboutSecond } from "info/aboutMe";
 import logo from "assets/images/logo.svg";
-import developer from "utils/developer.json";
+import developer from "utils/JSON/astronalt_no_bg.json";
 
 import * as S from "./styled";
 
