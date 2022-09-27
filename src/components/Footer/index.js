@@ -2,7 +2,7 @@ import React from "react";
 
 import * as S from "./styled";
 import SocialLinks from "components/SocialLinks";
-import space from "utils/space.json";
+import space from "utils/JSON/space.json";
 
 const Footer = () => (
   <S.FooterWrapper>

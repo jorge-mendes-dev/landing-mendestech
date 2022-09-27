@@ -1,6 +1,6 @@
 import React from "react";
 
-import rocket from "utils/rocket.json";
+import rocket from "utils/JSON/rocket.json";
 import PropTypes from "prop-types";
 
 import * as S from "./styled";
