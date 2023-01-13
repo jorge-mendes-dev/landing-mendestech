@@ -2,18 +2,14 @@ import React from "react";
 import { Seo } from "components";
 
 import {
-  Navbar,
   Header,
   Footer,
-  Content,
-  Skills,
-  Timeline,
-  FlexContainer,
-  HeaderWrapper,
   About,
+  Navbar,
+  LazyShow,
+  MainHeroImage,
+  Timeline,
 } from "components";
-import { journeyEng } from "info/journey";
-import { hardSkills, softSkills } from "info/skills";
 
 function Home() {
   const meta = {
@@ -26,22 +22,37 @@ function Home() {
   };
 
   return (
-    <>
+    <div className={`bg-background grid gap-y-16 overflow-hidden`}>
       <Seo site={meta} />
-      <HeaderWrapper>
-        <Navbar title="Mendes Tech" />
-        <Header title="Mendes Technology" />
-      </HeaderWrapper>
-      <Content>
-        <About id="about" />
-        <FlexContainer id="skills">
-          <Skills title="hard skills" data={hardSkills} />
-          <Skills title="soft skills" data={softSkills} />
-        </FlexContainer>
-        <Timeline data={journeyEng} />
-      </Content>
-      <Footer />
-    </>
+      <div className={`relative bg-background`}>
+        <div className="max-w-7xl mx-auto">
+          <div
+            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+          >
+            <Navbar />
+            <Header />
+          </div>
+        </div>
+        <MainHeroImage />
+      </div>
+      <LazyShow>
+        <>
+          <About />
+        </>
+      </LazyShow>
+      <LazyShow>
+        <>
+          <div className="hidden md:block">
+            <Timeline />
+          </div>
+        </>
+      </LazyShow>
+      <LazyShow>
+        <>
+          <Footer />
+        </>
+      </LazyShow>
+    </div>
   );
 }
 

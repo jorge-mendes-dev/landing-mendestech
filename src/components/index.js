@@ -9,3 +9,6 @@ export { default as FlexContainer } from "./FlexContainer";
 export { default as HeaderWrapper } from "./HeaderWrapper";
 export { default as About } from "./About";
 export { default as Seo } from "./Seo";
+export { default as LazyShow } from "./LazyShow";
+export { default as MainHeroImage } from "./MainHeroImage";
+export { default as Divider } from "./Divider";

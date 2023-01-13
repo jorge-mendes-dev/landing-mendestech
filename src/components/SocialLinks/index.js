@@ -2,16 +2,19 @@ import React from "react";
 
 import PropTypes from "prop-types";
 import Icons from "info/Icons";
-import social from "info/social";
 import { random } from "utils/random";
+
+import info from "info";
 
 import * as S from "./styled";
 
 const SocialLinks = ({ className, size, ...props }) => {
+  const { socialMedia } = info;
+
   return (
     <S.SocialLinksWrapper className={className} size={size} {...props}>
       <S.SocialLinksList>
-        {social.map((link) => {
+        {socialMedia.map((link) => {
           const Icon = Icons[link.label];
           return (
             <S.SocialLinksItem key={random()}>

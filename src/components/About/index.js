@@ -1,33 +1,81 @@
 import React from "react";
 
 import { random } from "utils/random";
-import { aboutFirst, aboutSecond } from "info/aboutMe";
-import logo from "assets/images/logo.svg";
-import developer from "utils/JSON/astronalt_no_bg.json";
+import { Divider, Skills } from "components";
 
-import * as S from "./styled";
+import info from "info";
 
-const About = ({ ...props }) => (
-  <S.AboutWrapper {...props}>
-    <S.AboutContainer>
-      <S.AboutLogo src={logo} alt="Mendes Technology" />
-      <S.AboutTextContainer>
-        <h3>My story</h3>
-        {aboutFirst.map((about) => (
-          <p key={random()}>{about}</p>
-        ))}
-      </S.AboutTextContainer>
-    </S.AboutContainer>
-    <S.AboutContainer>
-      <S.AboutTextContainer>
-        <h3>My experience</h3>
-        {aboutSecond.map((about) => (
-          <p key={random()}>{about}</p>
-        ))}
-      </S.AboutTextContainer>
-      <S.PlayerAbout src={developer} loop autoplay />
-    </S.AboutContainer>
-  </S.AboutWrapper>
-);
+const About = () => {
+  const { about, skillTitle, hardSkills, softSkills } = info;
+  const { title, sections } = about;
+
+  return (
+    <section className={`bg-background py-8`} id="about">
+      <div className={`container max-w-5xl mx-auto m-8`}>
+        <h2
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
+        >
+          {title.split(" ").map((word, index) => (
+            <span
+              key={index}
+              className={index % 2 ? "text-primary" : "text-border"}
+            >
+              {word}{" "}
+            </span>
+          ))}
+        </h2>
+
+        <Divider />
+        <div className={`flex flex-wrap p-8`}>
+          {sections.map(({ title, description }) => (
+            <div key={random()}>
+              <h3
+                className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-primary`}
+              >
+                {title}
+              </h3>
+              <p
+                className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
+              >
+                {description}
+              </p>
+            </div>
+          ))}
+          <div className={`container max-w-5xl mx-auto m-8`}>
+            <p
+              className={`text-3xl text-gray-800 font-bold leading-none text-center`}
+            >
+              {skillTitle.split(" ").map((word, index) => (
+                <span
+                  key={index}
+                  className={index % 2 ? "text-primary" : "text-border"}
+                >
+                  {word}{" "}
+                </span>
+              ))}
+            </p>
+
+            <div className={`flex flex-wrap flex-col sm:flex-row`}>
+              <div className={`w-full sm:w-1/2 p-6`}>
+                <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+                  <div className="h-6/6">
+                    <Skills data={hardSkills} />
+                  </div>
+                </div>
+              </div>
+              <div className={`w-full sm:w-1/2 p-6`}>
+                <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+                  <div className="h-6/6">
+                    <Skills data={softSkills} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default About;
