@@ -19,7 +19,7 @@
     "styled-media-query": "^2.1.2",
     "framer-motion": "^5.0.0",
     "@headlessui/react": "^1.4.1",
-    "@heroicons/react": "^1.0.5"
+    "@heroicons/react": "^2.0.13"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
