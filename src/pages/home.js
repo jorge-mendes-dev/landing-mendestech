@@ -4,7 +4,7 @@ import {
   Seo,
   Header,
   Footer,
-  // About,
+  About,
   Navbar,
   LazyShow,
   MainHeroImage,
@@ -35,11 +35,11 @@ function Home() {
         </div>
         <MainHeroImage />
       </div>
-      {/* <LazyShow>
+      <LazyShow>
         <>
           <About />
         </>
-      </LazyShow> */}
+      </LazyShow>
       <LazyShow>
         <>
           <div className="hidden md:block">

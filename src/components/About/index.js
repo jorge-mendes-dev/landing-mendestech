@@ -41,9 +41,9 @@ const About = () => {
               </p>
             </div>
           ))}
-          <div className={`container max-w-5xl mx-auto m-8`}>
+          {/* <div className={`container text-center max-w-5xl mx-auto m-8`}>
             <p
-              className={`text-3xl text-gray-800 font-bold leading-none text-center`}
+              className={`text-3xl text-gray-800 font-bold leading-none sm:text-4xl`}
             >
               {skillTitle.split(" ").map((word, index) => (
                 <span
@@ -71,7 +71,8 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+
+          </div> */}
         </div>
       </div>
     </section>
