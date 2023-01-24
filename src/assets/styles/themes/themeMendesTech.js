@@ -13,28 +13,18 @@ export default {
     gray: "#ddd",
     mediumBackground: "#222831",
     background: "#393e46",
-    timelineColor: "#a70000",
-    timelineLine: "#ff0000",
-    timelineDate: "#f9f8eb",
     white: "#ffffff",
     black: "#222222",
     darker: " rgba(0, 0, 0, 0.75)",
   },
   font: {
-    family: {
-      normal:
-        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-      heading:
-        "Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    },
+    family: {},
     sizes: {
-      xxsmall: "1rem", // xs
-      xsmall: "1.2rem", // sm
-      small: "1.4rem", // base
-      medium: "1.6rem", // md
-      large: "1.8rem", // lg
-      xlarge: "2.4rem", // xl
-      xxlarge: "3.2rem", // xxl
+      xs: "0.75rem",
+      sm: "0.875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
     },
     weight: {
       light: 300,
