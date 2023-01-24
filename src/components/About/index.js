@@ -1,12 +1,12 @@
 import React from "react";
 
 import { random } from "utils/random";
-import { Divider, Skills } from "components";
+import { Divider } from "components";
 
 import info from "info";
 
 const About = () => {
-  const { about, skillTitle, hardSkills, softSkills } = info;
+  const { about } = info;
   const { title, sections } = about;
 
   return (
