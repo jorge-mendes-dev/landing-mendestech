@@ -28,7 +28,7 @@
       "href": "about"
     },
     "secondaryAction": {
-      "text": "Contact",
+      "text": "Contact Me",
       "href": "mailto:jorge.mendesx@gmail.com"
     }
   },
@@ -71,7 +71,7 @@
       "url": "https://github.com/Jorge-Bill"
     },
     {
-      "label": "Gmail",
+      "label": "E-mail",
       "url": "mailto:jorge.mendesx@gmail.com"
     }
   ],
