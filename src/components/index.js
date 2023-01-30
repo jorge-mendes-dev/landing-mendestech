@@ -15,3 +15,4 @@ export { default as Divider } from "./Divider";
 export { default as Utilities } from "./Utilities";
 export { default as TalkLink } from "./TalkLink";
 export { default as OpenLink } from "./OpenLink";
+export { default as CreateQRCode } from "./CreateQRCode";

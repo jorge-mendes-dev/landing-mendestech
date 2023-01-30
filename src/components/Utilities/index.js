@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Divider, TalkLink, OpenLink } from "components";
+import { Divider, TalkLink, OpenLink, CreateQRCode } from "components";
 // import { Whatsapp } from "@styled-icons/bootstrap/Whatsapp";
 
 import info from "info";
@@ -29,6 +29,7 @@ const Utilities = () => {
         <Divider />
         <TalkLink />
         <OpenLink />
+        <CreateQRCode />
       </div>
     </section>
   );
