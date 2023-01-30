@@ -38,7 +38,9 @@ const TalkLink = () => {
           <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             {link ? (
               <div className="bg-green-200 rounded p-8 mt-4 flex flex-wrap flex-col sm:flex-row md:items-center md:justify-between">
-                <p className="text-gray-400 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">{link}</p>
+                <p className="text-gray-400 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">
+                  {link}
+                </p>
                 <div className="mt-4 flex items-center justify-between">
                   <button
                     onClick={() => copyData(link)}
@@ -92,7 +94,6 @@ const TalkLink = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

@@ -1,11 +1,6 @@
 import React from "react";
 
-import {
-  Footer,
-  Utilities,
-  Navbar,
-  LazyShow
-} from "components";
+import { Footer, Utilities, Navbar, LazyShow } from "components";
 
 function Utils() {
   return (
