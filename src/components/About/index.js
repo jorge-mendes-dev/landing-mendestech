@@ -41,6 +41,7 @@ const About = () => {
               </p>
             </div>
           ))}
+
           {/* <div className={`container text-center max-w-5xl mx-auto m-8`}>
             <p
               className={`text-3xl text-gray-800 font-bold leading-none sm:text-4xl`}
