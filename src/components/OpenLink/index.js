@@ -1,55 +1,53 @@
 import React, { useState } from "react";
 
-const TalkLink = () => {
+const OpenLink = () => {
   const [phone, setPhone] = useState("");
   const [link, setLink] = useState("");
 
   const handlePhone = (event) => setPhone(event.target.value);
   const generateLink = () => setLink(`https://wa.me/55${phone}`);
-  const copyData = (data) => navigator.clipboard.writeText(data);
+  const openUrl = () => window.open(`https://wa.me/55${phone}`, "_blank");
 
   const handleSubmit = (event) => {
     event.preventDefault();
     generateLink();
+    openUrl();
   };
 
   const setDefault = () => {
     setPhone("");
     setLink("");
-    copyData("");
   };
 
   return (
-    <div className={`py-12`}>
+    <div className={`py-2`}>
       <div className="p-2">
         <h3
           className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-primary`}
         >
-          Link de conversa em um clique
+          Chame um número altomaticamente
         </h3>
         <p
           className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
         >
-          Utilize links rápidos que abrem uma conversa no WhatsApp de maneira
-          automática.
+          Chame qualquer número no WhatsApp sem precisar cadastra-lo na agenda.
         </p>
 
         <div className="w-full">
           <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             {link ? (
-              <div className="bg-green-200 rounded p-8 mt-4 flex flex-wrap flex-col sm:flex-row md:items-center md:justify-between">
+              <div className="bg-green-200 rounded p-8 mt-4 flex flex-wrap flex-col flex-row">
                 <p className="text-gray-400 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">
-                  {link}
+                  caso a conversa não abra automaticamente click abaixo:
                 </p>
-                <div className="mt-4 flex items-center justify-between">
-                  <button
-                    onClick={() => copyData(link)}
-                    className="bg-green-100 hover:bg-green-700 hover:text-white text-green-500 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="button"
-                  >
-                    Copiar
-                  </button>
-                </div>
+                <a
+                  href={link}
+                  className={`block py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50`}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Conversar com {phone}
+                </a>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="">
@@ -75,7 +73,7 @@ const TalkLink = () => {
                     className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="submit"
                   >
-                    Criar Link
+                    Conversar
                   </button>
                 </div>
               </form>
@@ -88,7 +86,7 @@ const TalkLink = () => {
                   type="button"
                   onClick={() => setDefault()}
                 >
-                  Limpar link
+                  Voltar
                 </button>
               )}
             </div>
@@ -99,4 +97,4 @@ const TalkLink = () => {
   );
 };
 
-export default TalkLink;
+export default OpenLink;

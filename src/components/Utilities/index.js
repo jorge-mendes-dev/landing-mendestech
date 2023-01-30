@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Divider, TalkLink } from "components";
+import { Divider, TalkLink, OpenLink } from "components";
+// import { Whatsapp } from "@styled-icons/bootstrap/Whatsapp";
 
 import info from "info";
 
@@ -22,9 +23,12 @@ const Utilities = () => {
               {word}{" "}
             </span>
           ))}
+          {/* <Whatsapp /> */}
         </h2>
+
         <Divider />
         <TalkLink />
+        <OpenLink />
       </div>
     </section>
   );
