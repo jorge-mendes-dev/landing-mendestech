@@ -12,3 +12,5 @@ export { default as Seo } from "./Seo";
 export { default as LazyShow } from "./LazyShow";
 export { default as MainHeroImage } from "./MainHeroImage";
 export { default as Divider } from "./Divider";
+export { default as Utilities } from "./Utilities";
+export { default as TalkLink } from "./TalkLink";

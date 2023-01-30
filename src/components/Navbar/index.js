@@ -5,6 +5,7 @@ import logo from "assets/images/logo.png";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-scroll";
+import { random } from "utils/random";
 
 import info from "info";
 
@@ -47,22 +48,35 @@ const Navbar = () => {
               </div>
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-              {navigation.map(({ name, href }) => (
-                <Link
-                  spy={true}
-                  active="active"
-                  smooth={true}
-                  duration={1000}
-                  key={name}
-                  to={href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
-                >
-                  {name}
-                </Link>
+              {navigation.map(({ name, type, href }) => (
+                <>
+                  {type === "internal" ? (
+                    <Link
+                      spy={true}
+                      active="active"
+                      smooth={true}
+                      duration={1000}
+                      key={random()}
+                      to={href}
+                      className="font-medium text-gray-500 hover:text-gray-900"
+                    >
+                      {name}
+                    </Link>
+                  ) : (
+                    <a
+                      key={random()}
+                      href={href}
+                      className={`font-medium text-gray-500 hover:text-gray-900`}
+                      rel="noreferrer"
+                    >
+                      {name}
+                    </a>
+                  )}
+                </>
               ))}
               {socialMedia.map(({ label, url }) => (
                 <a
-                  key={label}
+                  key={random()}
                   href={url}
                   className={`font-medium text-primary hover:text-secondary`}
                   target="_blank"
@@ -105,18 +119,31 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1" id="top">
-                {navigation.map(({ name, href }) => (
-                  <Link
-                    spy={true}
-                    active="active"
-                    smooth={true}
-                    duration={1000}
-                    key={name}
-                    to={href}
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                  >
-                    {name}
-                  </Link>
+                {navigation.map(({ name, type, href }) => (
+                  <div key={random()}>
+                    {type === "internal" ? (
+                      <Link
+                        spy={true}
+                        active="active"
+                        smooth={true}
+                        duration={1000}
+                        key={random()}
+                        to={href}
+                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                      >
+                        {name}
+                      </Link>
+                    ) : (
+                      <a
+                        key={random()}
+                        href={href}
+                        className={`block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50`}
+                        rel="noreferrer"
+                      >
+                        {name}
+                      </a>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
