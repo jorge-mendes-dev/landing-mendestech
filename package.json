@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.4.1",
-    "@heroicons/react": "^2.0.15",
     "@lottiefiles/react-lottie-player": "^3.4.7",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
