@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Analytics = () => {
   const GA_ID = process.env.REACT_APP_GTAG;
