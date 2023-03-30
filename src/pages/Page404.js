@@ -1,11 +1,25 @@
 import React from "react";
-import { HeaderWrapper, Header } from "components";
+import { LazyShow, Navbar, NotFound, Footer } from "components";
 
 function Page404() {
   return (
-    <HeaderWrapper>
-      <Header title="404 - PAGE NOT FOUND" />
-    </HeaderWrapper>
+    <div className={`relative bg-background`}>
+      <div className={`relative bg-background`}>
+        <div className="max-w-7xl mx-auto">
+          <div
+            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+          >
+            <Navbar />
+          </div>
+        </div>
+      </div>
+      <LazyShow>
+        <>
+          <NotFound title={"PAGE NOT FOUND"} />
+          <Footer />
+        </>
+      </LazyShow>
+    </div>
   );
 }
 
