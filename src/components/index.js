@@ -17,3 +17,4 @@ export { default as TalkLink } from "./TalkLink";
 export { default as OpenLink } from "./OpenLink";
 export { default as CreateQRCode } from "./CreateQRCode";
 export { default as Analytics } from "./Analytics";
+export { default as NotFound } from "./NotFound";
