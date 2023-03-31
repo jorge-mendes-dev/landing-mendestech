@@ -1,7 +1,6 @@
 import React from "react";
 
 import {
-  // Seo,
   Header,
   Footer,
   About,
@@ -12,18 +11,8 @@ import {
 } from "components";
 
 function Home() {
-  // const meta = {
-  //   title: process.env.REACT_APP_TITLE || "",
-  //   description: process.env.REACT_APP_DESCRIPTION || "",
-  //   lang: process.env.REACT_APP_LANG || "",
-  //   image: process.env.REACT_APP_IMAGE || "",
-  //   author: process.env.REACT_APP_AUTHOR || "",
-  //   siteUrl: process.env.REACT_APP_SITE_URL || "",
-  // };
-
   return (
     <div className={`bg-background grid gap-y-16 overflow-hidden`}>
-      {/* <Seo site={meta} /> */}
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
           <div
@@ -36,19 +25,11 @@ function Home() {
         <MainHeroImage />
       </div>
       <LazyShow>
-        <>
-          <About />
-        </>
+        <About />
       </LazyShow>
       <LazyShow>
         <>
-          <div className="hidden md:block">
-            <Timeline />
-          </div>
-        </>
-      </LazyShow>
-      <LazyShow>
-        <>
+          <Timeline />
           <Footer />
         </>
       </LazyShow>
