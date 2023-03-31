@@ -7,7 +7,7 @@ import info from "info";
 
 const About = () => {
   const { about } = info;
-  const { title, sections } = about;
+  const { title, paragraphs } = about;
 
   return (
     <section className={`bg-background py-8`} id="about">
@@ -27,19 +27,13 @@ const About = () => {
 
         <Divider />
         <div className={`flex flex-wrap p-8`}>
-          {sections.map(({ title, description }) => (
-            <div key={random()}>
-              <h3
-                className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-primary`}
-              >
-                {title}
-              </h3>
-              <p
-                className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
-              >
-                {description}
-              </p>
-            </div>
+          {paragraphs.map((description) => (
+            <p
+              key={random()}
+              className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
+            >
+              {description}
+            </p>
           ))}
 
           {/* <div className={`container text-center max-w-5xl mx-auto m-8`}>
