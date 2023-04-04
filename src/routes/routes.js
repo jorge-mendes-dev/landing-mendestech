@@ -10,7 +10,7 @@ const PageRoutes = () => (
     <Suspense fallback={""}>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/utils" element={<Utils />} />
+        <Route exact path="utils" element={<Utils />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </Suspense>
