@@ -17,13 +17,13 @@ module.exports = (plop) => {
     actions: [
       {
         type: "add",
-        path: "../src/{{lowerCase type}}/{{pascalCase name}}/index.js",
-        templateFile: "templates/component.js.hbs",
+        path: "../src/{{lowerCase type}}/{{pascalCase name}}/index.jsx",
+        templateFile: "templates/component.jsx.hbs",
       },
       {
         type: "add",
-        path: "../src/{{lowerCase type}}/{{pascalCase name}}/styled.js",
-        templateFile: "templates/styled.js.hbs",
+        path: "../src/{{lowerCase type}}/{{pascalCase name}}/styled.jsx",
+        templateFile: "templates/styled.jsx.hbs",
       },
     ],
   });
