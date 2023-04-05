@@ -41,7 +41,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "commit": "git-cz",
-    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "generate": "yarn plop --plopfile generators/plopfile.cjs",
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
