@@ -2,8 +2,11 @@ import React from 'react'
 
 import { random } from 'utils/random'
 import { Divider } from 'components'
+import astronalt_no_bg from 'utils/JSON/astronalt_no_bg.json'
 
 import info from 'info'
+
+import * as S from './styled'
 
 const About = () => {
   const { about } = info
@@ -68,6 +71,9 @@ const About = () => {
             </div>
 
           </div> */}
+        </div>
+        <div className={`flex flex-col items-center justify-center`}>
+          <S.PlayerAbout src={astronalt_no_bg} loop autoplay />
         </div>
       </div>
     </section>

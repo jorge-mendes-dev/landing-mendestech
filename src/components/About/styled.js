@@ -57,7 +57,7 @@ export const AboutTextContainer = styled.div`
 `
 
 export const PlayerAbout = styled(Player)`
-  width: 25vw;
+  width: 20vw;
 
   ${media.lessThan('large')`
     width: 90%;
