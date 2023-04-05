@@ -1,5 +1,5 @@
-import React from "react";
-import { LazyShow, Navbar, NotFound, Footer } from "components";
+import React from 'react'
+import { LazyShow, Navbar, NotFound, Footer } from 'components'
 
 function Page404() {
   return (
@@ -15,12 +15,12 @@ function Page404() {
       </div>
       <LazyShow>
         <>
-          <NotFound title={"PAGE NOT FOUND"} />
+          <NotFound title={'PAGE NOT FOUND'} />
           <Footer />
         </>
       </LazyShow>
     </div>
-  );
+  )
 }
 
-export default Page404;
+export default Page404

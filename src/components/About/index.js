@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import { random } from "utils/random";
-import { Divider } from "components";
+import { random } from 'utils/random'
+import { Divider } from 'components'
 
-import info from "info";
+import info from 'info'
 
 const About = () => {
-  const { about } = info;
-  const { title, paragraphs } = about;
+  const { about } = info
+  const { title, paragraphs } = about
 
   return (
     <section className={`bg-background py-8`} id="about">
@@ -15,12 +15,12 @@ const About = () => {
         <h2
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
         >
-          {title.split(" ").map((word, index) => (
+          {title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? "text-primary" : "text-border"}
+              className={index % 2 ? 'text-primary' : 'text-border'}
             >
-              {word}{" "}
+              {word}{' '}
             </span>
           ))}
         </h2>
@@ -71,7 +71,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

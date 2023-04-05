@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 import {
   Header,
@@ -7,8 +7,8 @@ import {
   Navbar,
   LazyShow,
   MainHeroImage,
-  Timeline,
-} from "components";
+  Timeline
+} from 'components'
 
 function Home() {
   return (
@@ -34,7 +34,7 @@ function Home() {
         </>
       </LazyShow>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

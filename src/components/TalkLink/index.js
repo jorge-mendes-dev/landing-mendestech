@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const TalkLink = () => {
-  const [phone, setPhone] = useState("");
-  const [link, setLink] = useState("");
+  const [phone, setPhone] = useState('')
+  const [link, setLink] = useState('')
 
-  const handlePhone = (event) => setPhone(event.target.value);
-  const generateLink = () => setLink(`https://wa.me/55${phone}`);
-  const copyData = (data) => navigator.clipboard.writeText(data);
+  const handlePhone = (event) => setPhone(event.target.value)
+  const generateLink = () => setLink(`https://wa.me/55${phone}`)
+  const copyData = (data) => navigator.clipboard.writeText(data)
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    generateLink();
-  };
+    event.preventDefault()
+    generateLink()
+  }
 
   const setDefault = () => {
-    setPhone("");
-    setLink("");
-    copyData("");
-  };
+    setPhone('')
+    setLink('')
+    copyData('')
+  }
 
   return (
     <div className={`py-12`}>
@@ -96,7 +96,7 @@ const TalkLink = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TalkLink;
+export default TalkLink

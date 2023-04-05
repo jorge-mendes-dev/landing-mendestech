@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react'
 
-import { random } from "utils/random";
-import Icons from "info/Icons";
-import { Divider } from "components";
+import { random } from 'utils/random'
+import Icons from 'info/Icons'
+import { Divider } from 'components'
 
-import info from "info";
+import info from 'info'
 
-import * as S from "./styled";
+import * as S from './styled'
 
 const Timeline = () => {
-  const { journeyInfo, journey } = info;
+  const { journeyInfo, journey } = info
 
   const iconTheme = {
-    background: "#b4ebfc",
-    color: "#00bcd4",
-  };
+    background: '#b4ebfc',
+    color: '#00bcd4'
+  }
 
   return (
     <section className={`bg-background py-8`} id="timeline">
@@ -22,12 +22,12 @@ const Timeline = () => {
         <h4
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
         >
-          {journeyInfo.title.split(" ").map((word, index) => (
+          {journeyInfo.title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? "text-primary" : "text-border"}
+              className={index % 2 ? 'text-primary' : 'text-border'}
             >
-              {word}{" "}
+              {word}{' '}
             </span>
           ))}
         </h4>
@@ -37,7 +37,7 @@ const Timeline = () => {
         </p>
         <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-blue-100 rounded-xl shadow-md p-8">
           {journey.map((item) => {
-            const Icon = Icons[item.icon];
+            const Icon = Icons[item.icon]
             return (
               <S.TimelineElement
                 id="timeline"
@@ -45,16 +45,16 @@ const Timeline = () => {
                 className={`vertical-timeline-element--${item.icon.toLowerCase()}`}
                 contentStyle={{
                   color: `${iconTheme.color}`,
-                  boxShadow: "none",
-                  background: "transparent",
+                  boxShadow: 'none',
+                  background: 'transparent'
                 }}
                 contentArrowStyle={{
-                  borderRight: `8px solid ${iconTheme.color}`,
+                  borderRight: `8px solid ${iconTheme.color}`
                 }}
                 date={item.period}
                 iconStyle={{
                   background: `${iconTheme.background}`,
-                  color: `${iconTheme.color}`,
+                  color: `${iconTheme.color}`
                 }}
                 icon={<Icon />}
               >
@@ -75,19 +75,19 @@ const Timeline = () => {
                   </p>
                 </div>
               </S.TimelineElement>
-            );
+            )
           })}
           <S.TimelineElement
             iconStyle={{
               background: iconTheme.background,
-              color: iconTheme.color,
+              color: iconTheme.color
             }}
             icon={<Icons.Github />}
           />
         </S.TimelineWrapper>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Timeline;
+export default Timeline
