@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Analytics = () => {
-  const GA_ID = process.env.REACT_APP_GTAG
+  const GA_ID = import.meta.env.VITE_APP_GTAG
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
