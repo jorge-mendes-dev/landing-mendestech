@@ -1,13 +1,13 @@
-import React, { Suspense } from 'react'
+import React, { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-// const Page404 = lazy(() => import("pages/page404"));
-// const Home = lazy(() => import("pages/home"));
-// const Utils = lazy(() => import("pages/utils"));
+const Page404 = lazy(() => import('pages/Page404'))
+const Home = lazy(() => import('pages/home'))
+const Utils = lazy(() => import('pages/utils'))
 
-import Page404 from 'pages/Page404'
-import Home from 'pages/home'
-import Utils from 'pages/utils'
+// import Page404 from 'pages/Page404'
+// import Home from 'pages/home'
+// import Utils from 'pages/utils'
 
 const PageRoutes = () => (
   <BrowserRouter>
