@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-const Page404 = lazy(() => import('pages/page404'))
+const Page404 = lazy(() => import('pages/404'))
 const Home = lazy(() => import('pages/home'))
 const Utils = lazy(() => import('pages/utils'))
 
