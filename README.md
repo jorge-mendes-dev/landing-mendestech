@@ -12,12 +12,6 @@ This project was made thinking on fast and better productivity. So any change on
 
 ---
 
-## 🚀 Project Structure
-
-This project structure a web app with great organizition, made to be the base template for other apps. Link of [base structure](https://github.com/Jorge-Bill/blog-cra).
-
----
-
 ## <a href="https://jorgemendes.com.br/"> 🌐 &nbsp; Acess the main blog </a>
 
 ---
