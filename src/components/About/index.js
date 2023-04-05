@@ -1,13 +1,16 @@
-import React from "react";
+import React from 'react'
 
-import { random } from "utils/random";
-import { Divider } from "components";
+import { random } from 'utils/random'
+import { Divider } from 'components'
+import astronalt_no_bg from 'utils/JSON/astronalt_no_bg.json'
 
-import info from "info";
+import info from 'info'
+
+import * as S from './styled'
 
 const About = () => {
-  const { about } = info;
-  const { title, sections } = about;
+  const { about } = info
+  const { title, paragraphs } = about
 
   return (
     <section className={`bg-background py-8`} id="about">
@@ -15,31 +18,25 @@ const About = () => {
         <h2
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
         >
-          {title.split(" ").map((word, index) => (
+          {title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? "text-primary" : "text-border"}
+              className={index % 2 ? 'text-primary' : 'text-border'}
             >
-              {word}{" "}
+              {word}{' '}
             </span>
           ))}
         </h2>
 
         <Divider />
         <div className={`flex flex-wrap p-8`}>
-          {sections.map(({ title, description }) => (
-            <div key={random()}>
-              <h3
-                className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-primary`}
-              >
-                {title}
-              </h3>
-              <p
-                className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
-              >
-                {description}
-              </p>
-            </div>
+          {paragraphs.map((description) => (
+            <p
+              key={random()}
+              className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
+            >
+              {description}
+            </p>
           ))}
 
           {/* <div className={`container text-center max-w-5xl mx-auto m-8`}>
@@ -75,9 +72,12 @@ const About = () => {
 
           </div> */}
         </div>
+        <div className={`flex flex-col items-center justify-center`}>
+          <S.PlayerAbout src={astronalt_no_bg} loop autoplay />
+        </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

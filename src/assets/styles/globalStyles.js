@@ -1,4 +1,4 @@
-import { createGlobalStyle, keyframes } from "styled-components";
+import { createGlobalStyle, keyframes } from 'styled-components'
 
 export const DegradeAnimation = keyframes`
   0% {
@@ -10,7 +10,7 @@ export const DegradeAnimation = keyframes`
   100% {
     background-position: 0% 50%;
   }
-`;
+`
 export default createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
   v2.0 | 20110126
@@ -45,4 +45,4 @@ export default createGlobalStyle`
     flex-direction: column;
     height: 100%;
   }
-`;
+`

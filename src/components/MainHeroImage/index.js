@@ -1,10 +1,10 @@
-import React from "react";
-import jorge from "assets/images/jorge.png";
+import React from 'react'
+import jorge from 'assets/images/jorge.png'
 
-import info from "info";
+import info from 'info'
 
 const MainHeroImage = () => {
-  const { mainHero } = info;
+  const { mainHero } = info
 
   return (
     <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
@@ -14,7 +14,7 @@ const MainHeroImage = () => {
         alt={mainHero.title}
       />
     </div>
-  );
-};
+  )
+}
 
-export default MainHeroImage;
+export default MainHeroImage

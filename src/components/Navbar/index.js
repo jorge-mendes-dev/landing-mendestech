@@ -1,18 +1,18 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react'
 
-import logo from "assets/images/logo.png";
+import logo from 'assets/images/logo.png'
 
-import { Popover, Transition } from "@headlessui/react";
-import { Menu } from "@styled-icons/entypo/Menu";
-import { CloseOutline } from "@styled-icons/evaicons-outline/CloseOutline";
-import { Link } from "react-scroll";
-import { random } from "utils/random";
+import { Popover, Transition } from '@headlessui/react'
+import { Menu } from '@styled-icons/entypo/Menu'
+import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
+import { Link } from 'react-scroll'
+import { random } from 'utils/random'
 
-import info from "info";
+import info from 'info'
 
 const Navbar = () => {
-  const { navigation, company, socialMedia } = info;
-  const { name, url } = company;
+  const { navigation, company, socialMedia } = info
+  const { name, url } = company
 
   return (
     <>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map(({ name, type, href }) => (
                 <>
-                  {type === "internal" ? (
+                  {type === 'internal' ? (
                     <Link
                       spy={true}
                       active="active"
@@ -122,7 +122,7 @@ const Navbar = () => {
               <div className="px-2 pt-2 pb-3 space-y-1" id="top">
                 {navigation.map(({ name, type, href }) => (
                   <div key={random()}>
-                    {type === "internal" ? (
+                    {type === 'internal' ? (
                       <Link
                         spy={true}
                         active="active"
@@ -152,7 +152,7 @@ const Navbar = () => {
         </Transition>
       </Popover>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

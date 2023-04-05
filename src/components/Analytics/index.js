@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 const Analytics = () => {
-  const GA_ID = process.env.REACT_APP_GTAG;
+  const GA_ID = process.env.REACT_APP_GTAG
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}
@@ -20,12 +20,12 @@ const Analytics = () => {
             gtag('config', '${GA_ID}', {
               page_path: window.location.pathname,
             });
-          `,
+          `
         }}
       />
       <script async src={GA_ID} crossOrigin="anonymous" />
     </>
-  );
-};
+  )
+}
 
-export default Analytics;
+export default Analytics

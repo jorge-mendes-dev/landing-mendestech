@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import * as S from "./styled";
-import SocialLinks from "components/SocialLinks";
-import space from "utils/JSON/space.json";
+import * as S from './styled'
+import SocialLinks from 'components/SocialLinks'
+import space from 'utils/JSON/space.json'
 
-import info from "info";
+import info from 'info'
 
 const Footer = () => {
-  const { footer } = info;
+  const { footer } = info
   return (
     <S.FooterWrapper>
       <S.PlayerFooter src={space} loop autoplay />
@@ -19,7 +19,7 @@ const Footer = () => {
         </S.Text>
       </S.Container>
     </S.FooterWrapper>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

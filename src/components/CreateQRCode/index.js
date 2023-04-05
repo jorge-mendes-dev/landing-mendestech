@@ -1,41 +1,41 @@
-import React, { useState } from "react";
-import QRCode from "react-qr-code";
+import React, { useState } from 'react'
+import QRCode from 'react-qr-code'
 
 const CreateQRCode = () => {
-  const [url, setUrl] = useState("");
-  const [link, setLink] = useState("");
+  const [url, setUrl] = useState('')
+  const [link, setLink] = useState('')
 
-  const handleUrl = (event) => setUrl(event.target.value);
-  const generateLink = () => setLink(`https://${url}`);
+  const handleUrl = (event) => setUrl(event.target.value)
+  const generateLink = () => setLink(`https://${url}`)
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    generateLink();
-  };
+    event.preventDefault()
+    generateLink()
+  }
 
   const setDefault = () => {
-    setUrl("");
-    setLink("");
-  };
+    setUrl('')
+    setLink('')
+  }
 
   const download = () => {
-    const svg = document.getElementById("QRCode");
-    const svgData = new XMLSerializer().serializeToString(svg);
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    const img = new Image();
+    const svg = document.getElementById('QRCode')
+    const svgData = new XMLSerializer().serializeToString(svg)
+    const canvas = document.createElement('canvas')
+    const ctx = canvas.getContext('2d')
+    const img = new Image()
     img.onload = () => {
-      canvas.width = img.width;
-      canvas.height = img.height;
-      ctx.drawImage(img, 0, 0);
-      const pngFile = canvas.toDataURL("image/png");
-      const downloadLink = document.createElement("a");
-      downloadLink.download = "QRCode";
-      downloadLink.href = `${pngFile}`;
-      downloadLink.click();
-    };
-    img.src = `data:image/svg+xml;base64,${btoa(svgData)}`;
-  };
+      canvas.width = img.width
+      canvas.height = img.height
+      ctx.drawImage(img, 0, 0)
+      const pngFile = canvas.toDataURL('image/png')
+      const downloadLink = document.createElement('a')
+      downloadLink.download = 'QRCode'
+      downloadLink.href = `${pngFile}`
+      downloadLink.click()
+    }
+    img.src = `data:image/svg+xml;base64,${btoa(svgData)}`
+  }
 
   return (
     <div className={`py-2`}>
@@ -56,7 +56,7 @@ const CreateQRCode = () => {
             {link ? (
               <div className="p-8 mt-4 flex flex-wrap flex-col sm:flex-col items-center justify-between">
                 <div
-                  style={{ height: "250px", width: "250px" }}
+                  style={{ height: '250px', width: '250px' }}
                   className="rounded border p-4 mb-4 bg-white rounded"
                 >
                   <QRCode
@@ -65,7 +65,7 @@ const CreateQRCode = () => {
                     size={256}
                     // fgColor={''}
                     title={link}
-                    style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                    style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
                     viewBox={`0 0 256 256`}
                   />
                 </div>
@@ -124,7 +124,7 @@ const CreateQRCode = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CreateQRCode;
+export default CreateQRCode

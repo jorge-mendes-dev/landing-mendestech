@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import media from "styled-media-query";
-import { Player } from "@lottiefiles/react-lottie-player";
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 export const HeadeWrrapper = styled.header`
   display: flex;
@@ -8,7 +8,7 @@ export const HeadeWrrapper = styled.header`
   align-items: center;
   border-bottom: 1px solid ${({ theme }) => theme.colors.highlight};
   min-height: 100vh;
-`;
+`
 
 export const HeaderTitle = styled.h1`
   font-size: ${({ theme }) => theme.spacings.xxlarge};
@@ -25,13 +25,13 @@ export const HeaderTitle = styled.h1`
   right: 0;
   top: 40%;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     font-size: ${({ theme }) => theme.spacings.medium};
     top: 45%;
   `}
-`;
+`
 
 export const PlayerHeader = styled(Player)`
   width: 80vw;
   height: 80vh;
-`;
+`

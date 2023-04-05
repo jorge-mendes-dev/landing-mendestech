@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react'
 
-import PropTypes from "prop-types";
-import Icons from "info/Icons";
-import { random } from "utils/random";
+import PropTypes from 'prop-types'
+import Icons from 'info/Icons'
+import { random } from 'utils/random'
 
-import info from "info";
+import info from 'info'
 
-import * as S from "./styled";
+import * as S from './styled'
 
 const SocialLinks = ({ className, size, ...props }) => {
-  const { socialMedia } = info;
+  const { socialMedia } = info
 
   return (
     <S.SocialLinksWrapper className={className} size={size} {...props}>
       <S.SocialLinksList>
         {socialMedia.map((link) => {
-          const Icon = Icons[link.label];
+          const Icon = Icons[link.label]
           return (
             <S.SocialLinksItem key={random()}>
               <S.SocialLinksLink
@@ -29,21 +29,21 @@ const SocialLinks = ({ className, size, ...props }) => {
                 </S.IconWrapper>
               </S.SocialLinksLink>
             </S.SocialLinksItem>
-          );
+          )
         })}
       </S.SocialLinksList>
     </S.SocialLinksWrapper>
-  );
-};
+  )
+}
 
 SocialLinks.propTypes = {
   className: PropTypes.string,
-  size: PropTypes.oneOf(["small", "auto"]),
-};
+  size: PropTypes.oneOf(['small', 'auto'])
+}
 
 SocialLinks.defaultProps = {
-  className: "",
-  size: "auto",
-};
+  className: '',
+  size: 'auto'
+}
 
-export default SocialLinks;
+export default SocialLinks

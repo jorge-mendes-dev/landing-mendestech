@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { DegradeAnimation } from "assets/styles/globalStyles";
+import styled from 'styled-components'
+import { DegradeAnimation } from 'assets/styles/globalStyles'
 
 export const Wrapper = styled.div`
   background: linear-gradient(
@@ -16,4 +16,4 @@ export const Wrapper = styled.div`
   background-size: 400% 400%;
   animation: ${DegradeAnimation} 15s ease infinite;
   filter: contrast(200%);
-`;
+`

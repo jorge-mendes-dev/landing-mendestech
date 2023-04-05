@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import media from "styled-media-query";
-import Icons from "info/Icons";
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import Icons from 'info/Icons'
 
 export const SkillsWrapper = styled.div`
   // display: flex;
   // justify-content: center;
   // align-items: center;
   // flex-direction: column;
-`;
+`
 
 export const SkillTitle = styled.h6`
   text-transform: capitalize;
@@ -17,20 +17,20 @@ export const SkillTitle = styled.h6`
   // font-size: ${({ theme }) => theme.font.sizes.large};
   // margin-bottom: 1rem;
 
-  // ${media.lessThan("large")`
+  // ${media.lessThan('large')`
   //   margin-top: 2rem;
   // `};
-`;
+`
 
 export const SkillsContainer = styled.div`
   // display: flex;
   // align-items: center;
 
-  // ${media.lessThan("large")`
+  // ${media.lessThan('large')`
   //   width: 100%;
   //   justify-content: space-around;
   // `};
-`;
+`
 
 export const SkillName = styled.p`
   min-width: 150px;
@@ -39,7 +39,7 @@ export const SkillName = styled.p`
   text-transform: uppercase;
   // font-size: ${({ theme }) => theme.font.sizes.xsmall};
   // margin-right: 1rem;
-`;
+`
 
 export const SkillLevel = styled.p`
   min-width: 100px;
@@ -48,7 +48,7 @@ export const SkillLevel = styled.p`
   &:hover {
     color: ${({ theme }) => theme.colors.gold};
   }
-`;
+`
 
 export const SkillStar = styled(Icons.StarFill)`
   width: 1rem;
@@ -58,4 +58,4 @@ export const SkillStar = styled(Icons.StarFill)`
   &:last-child {
     margin-right: 0;
   }
-`;
+`

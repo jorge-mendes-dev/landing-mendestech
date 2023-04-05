@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
-import { Divider, TalkLink, OpenLink, CreateQRCode } from "components";
+import { Divider, TalkLink, OpenLink, CreateQRCode } from 'components'
 // import { Whatsapp } from "@styled-icons/bootstrap/Whatsapp";
 
-import info from "info";
+import info from 'info'
 
 const Utilities = () => {
-  const { utilities } = info;
-  const { title } = utilities;
+  const { utilities } = info
+  const { title } = utilities
 
   return (
     <section className={`bg-background py-8`} id="utilities">
@@ -15,12 +15,12 @@ const Utilities = () => {
         <h2
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
         >
-          {title.split(" ").map((word, index) => (
+          {title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? "text-primary" : "text-border"}
+              className={index % 2 ? 'text-primary' : 'text-border'}
             >
-              {word}{" "}
+              {word}{' '}
             </span>
           ))}
           {/* <Whatsapp /> */}
@@ -32,7 +32,7 @@ const Utilities = () => {
         <CreateQRCode />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Utilities;
+export default Utilities

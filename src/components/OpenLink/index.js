@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const OpenLink = () => {
-  const [phone, setPhone] = useState("");
-  const [link, setLink] = useState("");
+  const [phone, setPhone] = useState('')
+  const [link, setLink] = useState('')
 
-  const handlePhone = (event) => setPhone(event.target.value);
-  const generateLink = () => setLink(`https://wa.me/55${phone}`);
-  const openUrl = () => window.open(`https://wa.me/55${phone}`, "_blank");
+  const handlePhone = (event) => setPhone(event.target.value)
+  const generateLink = () => setLink(`https://wa.me/55${phone}`)
+  const openUrl = () => window.open(`https://wa.me/55${phone}`, '_blank')
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    generateLink();
-    openUrl();
-  };
+    event.preventDefault()
+    generateLink()
+    openUrl()
+  }
 
   const setDefault = () => {
-    setPhone("");
-    setLink("");
-  };
+    setPhone('')
+    setLink('')
+  }
 
   return (
     <div className={`py-2`}>
@@ -94,7 +94,7 @@ const OpenLink = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OpenLink;
+export default OpenLink
