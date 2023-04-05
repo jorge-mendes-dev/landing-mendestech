@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { random } from 'utils/random'
+import { random } from 'utils/generic'
 import { Divider } from 'components'
 import astronalt_no_bg from 'utils/JSON/astronalt_no_bg.json'
 

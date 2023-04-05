@@ -1,18 +1,16 @@
 import React, { Fragment } from 'react'
 
-import logo from 'assets/images/logo.png'
-
 import { Popover, Transition } from '@headlessui/react'
 import { Menu } from '@styled-icons/entypo/Menu'
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import { Link } from 'react-scroll'
-import { random } from 'utils/random'
+import { random, getImagePath } from 'utils/generic'
 
 import info from 'info'
 
 const Navbar = () => {
   const { navigation, company, socialMedia } = info
-  const { name, url } = company
+  const { name, url, logo } = company
 
   return (
     <>
@@ -36,7 +34,11 @@ const Navbar = () => {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href={url}>
                   <span className="sr-only">{name}</span>
-                  <img alt={name} className="h-16 w-auto sm:h-16" src={logo} />
+                  <img
+                    alt={name}
+                    className="h-16 w-auto sm:h-16"
+                    src={getImagePath(logo)}
+                  />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button

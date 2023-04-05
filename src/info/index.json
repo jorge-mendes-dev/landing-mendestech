@@ -1,7 +1,7 @@
 {
   "company": {
     "name": "Jorge Mendes",
-    "logo": "assets/images/logo.png",
+    "logo": "logo.png",
     "url": "https://jorgemendes.com.br/"
   },
   "navigation": [
@@ -24,7 +24,7 @@
     "title": "Jorge Mendes",
     "subtitle": "Mendes Tecnologia",
     "description": "Full Stack Sênior Developer, building responsive applications with great layouts and excellent experience.",
-    "img": "assets/images/jorge.png",
+    "img": "jorge.png",
     "primaryAction": {
       "text": "About Me",
       "href": "about"
@@ -213,10 +213,47 @@
     }
   ],
   "footer": {
-    "title": "Build with JS and love.",
+    "title": "Build with Vite + React and love.",
     "description": "Jorge Mendes"
   },
   "utilities": {
     "title": "Utilidades WhatsApp"
+  },
+  "clients": {
+    "title": "Some of the brands that trust me",
+    "data": [
+      {
+        "title": "FATEC SÃO ROQUE",
+        "img": "/brands/fatec.png"
+      },
+      {
+        "title": "SÃO PAULO STATE DEPARTMENT OF EDUCATION",
+        "img": "/brands/gov.png"
+      },
+      {
+        "title": "SRTI",
+        "img": "jorge.png"
+      },
+      {
+        "title": "NOVACIA",
+        "img": "/brands/novacia.jpeg"
+      },
+      {
+        "title": "ATITUDE DIGITAL MEDIA",
+        "img": "/brands/atitude.jpeg"
+      },
+      {
+        "title": "FDTE - FOUNDATION FOR THE TECHNOLOGICAL DEVELOPMENT OF ENGINEERING",
+        "img": "/brands/fdte.png"
+      },
+      {
+        "title": "HOTMART",
+        "img": "/brands/hotmart.png"
+      },
+      {
+        "title": "ESCALA APP",
+        "img": "/brands/escala.jpeg"
+      }
+    ]
   }
 }
