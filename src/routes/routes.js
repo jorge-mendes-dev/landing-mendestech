@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // const Home = lazy(() => import("pages/home"));
 // const Utils = lazy(() => import("pages/utils"));
 
-import Page404 from 'pages/page404'
+import Page404 from 'pages/Page404'
 import Home from 'pages/home'
 import Utils from 'pages/utils'
 
