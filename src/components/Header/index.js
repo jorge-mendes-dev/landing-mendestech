@@ -1,11 +1,11 @@
-import React from "react";
-import info from "info";
-import { Link } from "react-scroll";
+import React from 'react'
+import info from 'info'
+import { Link } from 'react-scroll'
 
 const Header = () => {
-  const { mainHero } = info;
+  const { mainHero } = info
   const { title, subtitle, description, primaryAction, secondaryAction } =
-    mainHero;
+    mainHero
 
   return (
     <main
@@ -14,7 +14,7 @@ const Header = () => {
     >
       <div className="sm:text-center lg:text-left">
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-          <span className="block xl:inline">{title}</span>{" "}
+          <span className="block xl:inline">{title}</span>{' '}
           <span className={`block text-primary xl:inline`}>{subtitle}</span>
         </h1>
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
@@ -46,7 +46,7 @@ const Header = () => {
         </div>
       </div>
     </main>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

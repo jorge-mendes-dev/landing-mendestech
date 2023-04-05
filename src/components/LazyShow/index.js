@@ -1,36 +1,36 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react'
 
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from 'framer-motion'
 
-function useOnScreen(ref = null, rootMargin = "0px") {
-  const [isIntersecting, setIntersecting] = useState(false);
+function useOnScreen(ref = null, rootMargin = '0px') {
+  const [isIntersecting, setIntersecting] = useState(false)
 
   useEffect(() => {
-    let currentRef = null;
+    let currentRef = null
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry?.isIntersecting) setIntersecting(entry?.isIntersecting);
+        if (entry?.isIntersecting) setIntersecting(entry?.isIntersecting)
       },
       {
-        rootMargin,
+        rootMargin
       }
-    );
+    )
     if (ref && ref?.current) {
-      currentRef = ref.current;
-      observer.observe(currentRef);
+      currentRef = ref.current
+      observer.observe(currentRef)
     }
     return () => {
-      observer.unobserve(currentRef);
-    };
-  }, [ref, rootMargin]); // Empty array ensures that effect is only run on mount and unmount
+      observer.unobserve(currentRef)
+    }
+  }, [ref, rootMargin]) // Empty array ensures that effect is only run on mount and unmount
 
-  return isIntersecting;
+  return isIntersecting
 }
 
 const LazyShow = ({ children }) => {
-  const controls = useAnimation();
-  const rootRef = useRef(null);
-  const onScreen = useOnScreen(rootRef);
+  const controls = useAnimation()
+  const rootRef = useRef(null)
+  const onScreen = useOnScreen(rootRef)
   useEffect(() => {
     if (onScreen) {
       controls.start({
@@ -38,11 +38,11 @@ const LazyShow = ({ children }) => {
         opacity: 1,
         transition: {
           duration: 0.5,
-          ease: "easeOut",
-        },
-      });
+          ease: 'easeOut'
+        }
+      })
     }
-  }, [onScreen, controls]);
+  }, [onScreen, controls])
   return (
     <motion.div
       className="lazy-div"
@@ -52,7 +52,7 @@ const LazyShow = ({ children }) => {
     >
       {children}
     </motion.div>
-  );
-};
+  )
+}
 
-export default LazyShow;
+export default LazyShow

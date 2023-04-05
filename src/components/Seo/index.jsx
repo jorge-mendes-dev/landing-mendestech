@@ -1,62 +1,62 @@
-import React from "react";
-import { Helmet } from "react-helmet-async";
-import PropTypes from "prop-types";
+import React from 'react'
+import { Helmet } from 'react-helmet-async'
+import PropTypes from 'prop-types'
 
 function Seo({ site }) {
-  const { description, lang, title, image, author, siteUrl } = site;
-  const ogImage = `${siteUrl}/public/${image}`;
+  const { description, lang, title, image, author, siteUrl } = site
+  const ogImage = `${siteUrl}/public/${image}`
 
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={title}
       titleTemplate={`%s | ${title}`}
       meta={[
         {
           name: `description`,
-          content: description,
+          content: description
         },
         {
           property: `og:title`,
-          content: title,
+          content: title
         },
         {
           property: `og:image`,
-          content: ogImage,
+          content: ogImage
         },
         {
           property: `og:description`,
-          content: description,
+          content: description
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `website`
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary_large_image`
         },
         {
           name: `twitter:image:src`,
-          content: ogImage,
+          content: ogImage
         },
         {
           name: `twitter:creator`,
-          content: author,
+          content: author
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title
         },
         {
           name: `twitter:description`,
-          content: description,
-        },
+          content: description
+        }
       ]}
     />
-  );
+  )
 }
 
 Seo.propTypes = {
@@ -66,8 +66,8 @@ Seo.propTypes = {
     title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    siteUrl: PropTypes.string.isRequired,
-  }).isRequired,
-};
+    siteUrl: PropTypes.string.isRequired
+  }).isRequired
+}
 
-export default Seo;
+export default Seo

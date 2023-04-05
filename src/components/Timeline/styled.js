@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import {
   VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+  VerticalTimelineElement
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
 export const TimelineWrapper = styled(VerticalTimeline)`
   ::before {
@@ -27,8 +27,8 @@ export const TimelineWrapper = styled(VerticalTimeline)`
     color: ${({ theme }) => theme.colors.title};
     font-size: ${({ theme }) => theme.font.sizes.small};
   }
-`;
+`
 export const TimelineElement = styled(VerticalTimelineElement)`
   h3,
   h4
-`;
+`

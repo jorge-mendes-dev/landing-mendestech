@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import media from "styled-media-query";
-import { Player } from "@lottiefiles/react-lottie-player";
+import styled from 'styled-components'
+import media from 'styled-media-query'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 export const FooterWrapper = styled.footer`
   background-color: ${({ theme }) => theme.colors.black};
@@ -22,10 +22,10 @@ export const FooterWrapper = styled.footer`
   min-height: 50vh;
   position: relative;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
   min-height: 25vh;
   `}
-`;
+`
 
 export const PlayerFooter = styled(Player)`
   max-width: 100vw;
@@ -37,10 +37,10 @@ export const PlayerFooter = styled(Player)`
   left: 0;
   right: 0;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     min-height: 100%;
   `}
-`;
+`
 
 export const Container = styled.div`
   display: flex;
@@ -48,7 +48,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   z-index: 999;
-`;
+`
 
 export const Text = styled.p`
   text-transform: uppercase;
@@ -59,4 +59,4 @@ export const Text = styled.p`
   &:last-child {
     color: ${({ theme }) => theme.colors.bluehighlight};
   }
-`;
+`

@@ -1,10 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { Divider } from "components";
-import figure404 from "utils/JSON/figure404.json";
+import { Divider } from 'components'
+import figure404 from 'utils/JSON/figure404.json'
 
-import * as S from "./styled";
+import * as S from './styled'
 
 const NotFound = ({ title, ...props }) => (
   <section className={`bg-background py-8`} id="notFound" {...props}>
@@ -12,12 +12,12 @@ const NotFound = ({ title, ...props }) => (
       <h2
         className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
       >
-        {title.split(" ").map((word, index) => (
+        {title.split(' ').map((word, index) => (
           <span
             key={index}
-            className={index % 2 ? "text-primary" : "text-border"}
+            className={index % 2 ? 'text-primary' : 'text-border'}
           >
-            {word}{" "}
+            {word}{' '}
           </span>
         ))}
       </h2>
@@ -28,9 +28,9 @@ const NotFound = ({ title, ...props }) => (
       </div>
     </div>
   </section>
-);
+)
 
-NotFound.propTypes = { title: PropTypes.string };
-NotFound.defaultProps = { title: "NotFound" };
+NotFound.propTypes = { title: PropTypes.string }
+NotFound.defaultProps = { title: 'NotFound' }
 
-export default NotFound;
+export default NotFound

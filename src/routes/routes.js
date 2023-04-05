@@ -1,17 +1,13 @@
-import React, { Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { lazy, Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-// const Page404 = lazy(() => import("pages/page404.js"));
-// const Home = lazy(() => import("pages/home.js"));
-// const Utils = lazy(() => import("pages/utils.js"));
-
-import Page404 from "pages/Page404";
-import Home from "pages/Home";
-import Utils from "pages/Utils";
+const Page404 = lazy(() => import('pages/Page404'))
+const Home = lazy(() => import('pages/home'))
+const Utils = lazy(() => import('pages/utils'))
 
 const PageRoutes = () => (
   <BrowserRouter>
-    <Suspense fallback={""}>
+    <Suspense fallback={''}>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="utils" element={<Utils />} />
@@ -19,6 +15,6 @@ const PageRoutes = () => (
       </Routes>
     </Suspense>
   </BrowserRouter>
-);
+)
 
-export default PageRoutes;
+export default PageRoutes
