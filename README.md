@@ -39,7 +39,7 @@ This project structure a web app with great organization, made to be the base te
 Stack and resources used on this structure creation.
 
     .
-    ├── React CRA
+    ├── Vite + React
     ├── prop-types
     ├── Eslint + eslint-config-airbnb + prettier
     ├── Plop component generator
@@ -48,17 +48,15 @@ Stack and resources used on this structure creation.
     ├── Styled-media-query
     ├── React-router-dom
     ├── Jest
-    ├── Dotenv
     ├── Husky
     ├── Commitizen
 
 ## 🛠 Scripts
 
-- `yarn start` - start the app. open in [local](http://localhost:3000).
+- `yarn dev` - start the app. open in [local](http://localhost:3000).
 - `yarn generate` - execute the script to generate new components.
 - `yarn build` - execute the script to build the application.
 - `yarn test` - execute the Jest test suite.
-- `yarn eject` - This is a one-way operation. Once you eject, you can’t go back - remove the single build dependency from your project.
 - `yarn commit` - commit changes with Husky and commitizen | type `git commit` works too.
 - `yarn lint` - use prettier to verify files on your app.
 - `yarn format` - use prettier to format files on your app.
@@ -89,11 +87,11 @@ If any of yours hook is not working, you can make them execute with:
 
 .env variables used for Seo component.
 
-- `REACT_APP_TITLE=''`
-- `REACT_APP_DESCRIPTION=''`
-- `REACT_APP_LANG=''`
-- `REACT_APP_IMAGE=''`
-- `REACT_APP_AUTHOR=''`
-- `REACT_APP_SITE_URL=''`
+- `VITE_APP_TITLE=''`
+- `VITE_APP_DESCRIPTION=''`
+- `VITE_APP_LANG=''`
+- `VITE_APP_IMAGE=''`
+- `VITE_APP_AUTHOR=''`
+- `VITE_PUBLIC_URL=''`
 
 ---
