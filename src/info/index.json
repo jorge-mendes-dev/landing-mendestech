@@ -212,15 +212,11 @@
       "level": 5
     }
   ],
-  "footer": {
-    "title": "Build with Vite + React and love.",
-    "description": "Jorge Mendes"
-  },
   "utilities": {
     "title": "Utilidades WhatsApp"
   },
   "clients": {
-    "title": "Some of the brands that trust me",
+    "title": "Companies that trust my work",
     "data": [
       {
         "title": "FATEC SÃO ROQUE",
@@ -232,15 +228,15 @@
       },
       {
         "title": "SRTI",
-        "img": "jorge.png"
+        "img": "/brands/default.png"
       },
       {
         "title": "NOVACIA",
-        "img": "/brands/novacia.jpeg"
+        "img": "/brands/novacia.png"
       },
       {
         "title": "ATITUDE DIGITAL MEDIA",
-        "img": "/brands/atitude.jpeg"
+        "img": "/brands/atitude.png"
       },
       {
         "title": "FDTE - FOUNDATION FOR THE TECHNOLOGICAL DEVELOPMENT OF ENGINEERING",
@@ -252,8 +248,12 @@
       },
       {
         "title": "ESCALA APP",
-        "img": "/brands/escala.jpeg"
+        "img": "/brands/escala.png"
       }
     ]
+  },
+  "footer": {
+    "title": "Build with Vite + React and love.",
+    "description": "Jorge Mendes"
   }
 }

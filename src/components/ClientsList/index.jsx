@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { random } from 'utils/generic'
-import ClientCard from './ClientCard'
+import { ImageCard } from 'components'
+
 import info from 'info'
 
 import * as S from './styled'
@@ -13,16 +14,21 @@ const ClientsList = ({ ...props }) => {
   return (
     <S.Wrapper {...props} className="container mx-auto">
       <div className="mt-10 sm:mt-20">
-        <p className="font-general-medium text-2xl sm:text-3xl text-center text-primary dark:text-primary-light">
-          {title}
-        </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
+        <h6
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
+        >
+          {title.split(' ').map((word, index) => (
+            <span
+              key={index}
+              className={index % 2 ? 'text-primary' : 'text-border'}
+            >
+              {word}{' '}
+            </span>
+          ))}
+        </h6>
+        <div className="grid grid-cols-2 sm:grid-cols-4 mt-10 p-8 sm:mt-14 gap-2">
           {data.map((client) => (
-            <ClientCard
-              title={client.title}
-              image={client.img}
-              key={random()}
-            />
+            <ImageCard title={client.title} image={client.img} key={random()} />
           ))}
         </div>
       </div>
