@@ -252,6 +252,32 @@
       }
     ]
   },
+  "metrics": [
+    {
+      "reference": "experience",
+      "title": "Years of experience",
+      "level": 10,
+      "measure": ""
+    },
+    {
+      "reference": "feedback",
+      "title": "Positive feedbacks",
+      "level": 90,
+      "measure": "%"
+    },
+    {
+      "reference": "projects",
+      "title": "Completed Projects",
+      "level": 100,
+      "measure": "%"
+    },
+    {
+      "reference": "repositories",
+      "title": "Repositories on GitHub",
+      "level": 48,
+      "measure": ""
+    }
+  ],
   "footer": {
     "title": "Build with Vite + React and love.",
     "description": "Jorge Mendes"

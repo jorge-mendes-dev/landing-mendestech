@@ -1,6 +1,13 @@
 import React from 'react'
 
-import { Footer, About, Navbar, LazyShow, ClientsList } from 'components'
+import {
+  Footer,
+  About,
+  Navbar,
+  LazyShow,
+  ClientsList,
+  Counter
+} from 'components'
 
 function AboutMe() {
   return (
@@ -15,15 +22,16 @@ function AboutMe() {
         </div>
       </div>
       <LazyShow>
-        <>
-          <About />
-          <ClientsList />
-        </>
+        <About />
       </LazyShow>
       <LazyShow>
-        <>
-          <Footer />
-        </>
+        <Counter />
+      </LazyShow>
+      <LazyShow>
+        <ClientsList />
+      </LazyShow>
+      <LazyShow>
+        <Footer />
       </LazyShow>
     </div>
   )
