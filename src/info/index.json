@@ -43,7 +43,11 @@
       "I am also highly efficient in working as part of a team. I understand the importance of collaboration in achieving common goals and work well with other developers and team members. I am able to contribute positively to team dynamics, bringing creative ideas and solutions to the challenges the team faces.",
       "In addition to my technical skills, I am known for my exceptional work ethic. I am always willing to take on challenges and work hard to deliver projects on time and within budget. I am known for my reliability and commitment to excellence in everything I do.",
       "In summary, I am a highly experienced, competent, and committed web developer. My vast experience, technical skills, effective communication, and work ethic are attributes that make me a valuable resource for any web development team."
-    ]
+    ],
+    "primaryAction": {
+      "text": "See More...",
+      "href": "about"
+    }
   },
   "product": {
     "title": "",

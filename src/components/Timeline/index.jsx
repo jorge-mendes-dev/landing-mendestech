@@ -35,7 +35,7 @@ const Timeline = () => {
         <p className="mb-4 max-w-2xl text-center text-xl text-gray-500 lg:mx-auto">
           {journeyInfo.description}
         </p>
-        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-blue-100 rounded-xl shadow-md p-8">
+        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-primary rounded-xl shadow-md p-8">
           {journey.map((item) => {
             const Icon = Icons[item.icon]
             return (

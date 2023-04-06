@@ -22,7 +22,7 @@ function AboutMe() {
         </div>
       </div>
       <LazyShow>
-        <About />
+        <About layout={'About'} />
       </LazyShow>
       <LazyShow>
         <Counter />

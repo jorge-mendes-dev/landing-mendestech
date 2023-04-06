@@ -25,7 +25,7 @@ function Home() {
         <MainHeroImage />
       </div>
       <LazyShow>
-        <About />
+        <About layout={'Home'} />
       </LazyShow>
       <LazyShow>
         <>
