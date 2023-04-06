@@ -1,7 +1,7 @@
 {
   "company": {
     "name": "Jorge Mendes",
-    "logo": "assets/images/logo.png",
+    "logo": "logo.png",
     "url": "https://jorgemendes.com.br/"
   },
   "navigation": [
@@ -9,6 +9,11 @@
       "name": "Home",
       "type": "external",
       "href": "/"
+    },
+    {
+      "name": "About Me",
+      "type": "external",
+      "href": "/about"
     },
     {
       "name": "Utils",
@@ -24,7 +29,7 @@
     "title": "Jorge Mendes",
     "subtitle": "Mendes Tecnologia",
     "description": "Full Stack Sênior Developer, building responsive applications with great layouts and excellent experience.",
-    "img": "assets/images/jorge.png",
+    "img": "jorge.png",
     "primaryAction": {
       "text": "About Me",
       "href": "about"
@@ -43,7 +48,11 @@
       "I am also highly efficient in working as part of a team. I understand the importance of collaboration in achieving common goals and work well with other developers and team members. I am able to contribute positively to team dynamics, bringing creative ideas and solutions to the challenges the team faces.",
       "In addition to my technical skills, I am known for my exceptional work ethic. I am always willing to take on challenges and work hard to deliver projects on time and within budget. I am known for my reliability and commitment to excellence in everything I do.",
       "In summary, I am a highly experienced, competent, and committed web developer. My vast experience, technical skills, effective communication, and work ethic are attributes that make me a valuable resource for any web development team."
-    ]
+    ],
+    "primaryAction": {
+      "text": "See More...",
+      "href": "about"
+    }
   },
   "product": {
     "title": "",
@@ -212,11 +221,74 @@
       "level": 5
     }
   ],
-  "footer": {
-    "title": "Build with JS and love.",
-    "description": "Jorge Mendes"
-  },
   "utilities": {
     "title": "Utilidades WhatsApp"
+  },
+  "clients": {
+    "title": "Companies that trust me",
+    "data": [
+      {
+        "title": "FATEC SÃO ROQUE",
+        "img": "/brands/fatec.png"
+      },
+      {
+        "title": "SÃO PAULO STATE DEPARTMENT OF EDUCATION",
+        "img": "/brands/gov.png"
+      },
+      {
+        "title": "SRTI",
+        "img": "/brands/default.png"
+      },
+      {
+        "title": "NOVACIA",
+        "img": "/brands/novacia.png"
+      },
+      {
+        "title": "ATITUDE DIGITAL MEDIA",
+        "img": "/brands/atitude.png"
+      },
+      {
+        "title": "FDTE - FOUNDATION FOR THE TECHNOLOGICAL DEVELOPMENT OF ENGINEERING",
+        "img": "/brands/fdte.png"
+      },
+      {
+        "title": "HOTMART",
+        "img": "/brands/hotmart.png"
+      },
+      {
+        "title": "ESCALA APP",
+        "img": "/brands/escala.png"
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "reference": "experience",
+      "title": "Years of experience",
+      "level": 10,
+      "measure": ""
+    },
+    {
+      "reference": "feedback",
+      "title": "Positive feedbacks",
+      "level": 90,
+      "measure": "%"
+    },
+    {
+      "reference": "projects",
+      "title": "Completed Projects",
+      "level": 100,
+      "measure": "%"
+    },
+    {
+      "reference": "repositories",
+      "title": "Repositories on GitHub",
+      "level": 48,
+      "measure": ""
+    }
+  ],
+  "footer": {
+    "title": "Build with Vite + React and love.",
+    "description": "Jorge Mendes"
   }
 }

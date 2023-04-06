@@ -63,9 +63,8 @@ export const PlayerAbout = styled(Player)`
     width: 90%;
   `}
 `
-
-export const AboutLogo = styled.img`
-  width: 25vw;
+export const PlayerAboutPage = styled(Player)`
+  width: 15vw;
 
   ${media.lessThan('large')`
     width: 90%;

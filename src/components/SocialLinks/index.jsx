@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 import Icons from 'info/Icons'
-import { random } from 'utils/random'
+import { random } from 'utils/generic'
 
 import info from 'info'
 
