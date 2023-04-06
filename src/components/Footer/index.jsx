@@ -4,10 +4,10 @@ import * as S from './styled'
 import SocialLinks from 'components/SocialLinks'
 import space from 'utils/JSON/space.json'
 
-import info from 'info'
+import config from 'config'
 
 const Footer = () => {
-  const { footer } = info
+  const { footer } = config
   return (
     <S.FooterWrapper>
       <S.PlayerFooter src={space} loop autoplay />

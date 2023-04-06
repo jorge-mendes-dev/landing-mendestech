@@ -3,12 +3,12 @@ import React from 'react'
 import { random } from 'utils/generic'
 import { ImageCard } from 'components'
 
-import info from 'info'
+import config from 'config'
 
 import * as S from './styled'
 
 const ClientsList = ({ ...props }) => {
-  const { clients } = info
+  const { clients } = config
   const { title, data } = clients
 
   return (

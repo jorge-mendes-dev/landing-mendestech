@@ -1,15 +1,15 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import Icons from 'info/Icons'
+import Icons from 'config/Icons'
 import { random } from 'utils/generic'
 
-import info from 'info'
+import config from 'config'
 
 import * as S from './styled'
 
 const SocialLinks = ({ className, size, ...props }) => {
-  const { socialMedia } = info
+  const { socialMedia } = config
 
   return (
     <S.SocialLinksWrapper className={className} size={size} {...props}>

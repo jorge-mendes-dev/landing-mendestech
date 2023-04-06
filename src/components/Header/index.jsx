@@ -1,8 +1,8 @@
 import React from 'react'
-import info from 'info'
+import config from 'config'
 
 const Header = () => {
-  const { mainHero } = info
+  const { mainHero } = config
   const { title, subtitle, description, primaryAction, secondaryAction } =
     mainHero
 

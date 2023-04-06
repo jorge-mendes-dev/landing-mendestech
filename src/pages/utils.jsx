@@ -1,6 +1,14 @@
 import React from 'react'
 
-import { Footer, Utilities, Navbar, LazyShow } from 'components'
+import {
+  Footer,
+  Utilities,
+  Navbar,
+  LazyShow,
+  TalkLink,
+  OpenLink,
+  CreateQRCode
+} from 'components'
 
 function Utils() {
   return (
@@ -15,14 +23,19 @@ function Utils() {
         </div>
       </div>
       <LazyShow>
-        <>
-          <Utilities />
-        </>
+        <Utilities />
       </LazyShow>
       <LazyShow>
-        <>
-          <Footer />
-        </>
+        <TalkLink />
+      </LazyShow>
+      <LazyShow>
+        <OpenLink />
+      </LazyShow>
+      <LazyShow>
+        <CreateQRCode />
+      </LazyShow>
+      <LazyShow>
+        <Footer />
       </LazyShow>
     </div>
   )

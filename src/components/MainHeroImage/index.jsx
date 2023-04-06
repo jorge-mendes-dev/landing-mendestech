@@ -1,10 +1,10 @@
 import React from 'react'
 import { getImagePath } from 'utils/generic'
 
-import info from 'info'
+import config from 'config'
 
 const MainHeroImage = () => {
-  const { mainHero } = info
+  const { mainHero } = config
   const { title, img } = mainHero
 
   return (

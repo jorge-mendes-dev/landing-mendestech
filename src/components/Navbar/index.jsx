@@ -6,10 +6,10 @@ import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import { Link } from 'react-scroll'
 import { random, getImagePath } from 'utils/generic'
 
-import info from 'info'
+import config from 'config'
 
 const Navbar = () => {
-  const { navigation, company, socialMedia } = info
+  const { navigation, company, socialMedia } = config
   const { name, url, logo } = company
 
   return (
