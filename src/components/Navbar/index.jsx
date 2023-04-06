@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map(({ name, type, href }) => (
-                <>
+                <Fragment key={random()}>
                   {type === 'internal' ? (
                     <Link
                       spy={true}
@@ -75,7 +75,7 @@ const Navbar = () => {
                       {name}
                     </a>
                   )}
-                </>
+                </Fragment>
               ))}
               {socialMedia.map(({ label, url }) => (
                 <a
@@ -110,7 +110,11 @@ const Navbar = () => {
             >
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <img className="h-8 w-auto" src={logo} alt={name} />
+                  <img
+                    className="h-8 w-auto"
+                    src={getImagePath(logo)}
+                    alt={name}
+                  />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button

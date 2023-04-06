@@ -11,6 +11,11 @@
       "href": "/"
     },
     {
+      "name": "About Me",
+      "type": "external",
+      "href": "/about"
+    },
+    {
       "name": "Utils",
       "type": "external",
       "href": "/utils"

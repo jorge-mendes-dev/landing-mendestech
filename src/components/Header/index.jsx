@@ -1,6 +1,5 @@
 import React from 'react'
 import info from 'info'
-import { Link } from 'react-scroll'
 
 const Header = () => {
   const { mainHero } = info
@@ -22,16 +21,13 @@ const Header = () => {
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <Link
-              spy={true}
-              active="active"
-              smooth={true}
-              duration={1000}
-              to={primaryAction.href}
+            <a
+              rel="noreferrer"
+              href={primaryAction.href}
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10"
             >
               {primaryAction.text}
-            </Link>
+            </a>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
             <a
