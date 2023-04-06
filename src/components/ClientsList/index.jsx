@@ -15,7 +15,7 @@ const ClientsList = ({ ...props }) => {
     <S.Wrapper {...props} className="container mx-auto">
       <div className="mt-10 sm:mt-20">
         <h6
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
+          className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
         >
           {title.split(' ').map((word, index) => (
             <span
