@@ -1,7 +1,8 @@
 import React from 'react'
 
+import { GA_ID } from 'config/constants'
+
 const Analytics = () => {
-  const GA_ID = import.meta.env.VITE_APP_GTAG
   return (
     <>
       {/* Global Site Tag (gtag.js) - Google Analytics */}

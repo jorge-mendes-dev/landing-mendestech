@@ -2,6 +2,7 @@ import React from 'react'
 
 import { random } from 'utils/generic'
 import { ImageCard } from 'components'
+import Brands from 'config/Brands'
 
 import config from 'config'
 
@@ -27,9 +28,12 @@ const ClientsList = ({ ...props }) => {
           ))}
         </h6>
         <div className="grid grid-cols-2 sm:grid-cols-4 mt-10 p-8 sm:mt-14 gap-2">
-          {data.map((client) => (
-            <ImageCard title={client.title} image={client.img} key={random()} />
-          ))}
+          {data.map((client) => {
+            const Brand = Brands[client.img]
+            return (
+              <ImageCard title={client.title} image={Brand} key={random()} />
+            )
+          })}
         </div>
       </div>
     </S.Wrapper>
