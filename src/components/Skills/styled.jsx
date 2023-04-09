@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import Icons from 'info/Icons'
+import Icons from 'config/Icons'
 
 export const SkillsWrapper = styled.div`
   // display: flex;

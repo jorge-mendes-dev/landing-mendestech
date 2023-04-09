@@ -1,12 +1,10 @@
 import React from 'react'
+import { Whatsapp } from '@styled-icons/bootstrap/Whatsapp'
 
-import { Divider, TalkLink, OpenLink, CreateQRCode } from 'components'
-// import { Whatsapp } from "@styled-icons/bootstrap/Whatsapp";
-
-import info from 'info'
+import config from 'config'
 
 const Utilities = () => {
-  const { utilities } = info
+  const { utilities } = config
   const { title } = utilities
 
   return (
@@ -18,18 +16,13 @@ const Utilities = () => {
           {title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={index % 2 ? 'text-green-500' : 'text-border'}
             >
               {word}{' '}
             </span>
           ))}
-          {/* <Whatsapp /> */}
+          <Whatsapp className={`w-12 text-green-500`} />
         </h2>
-
-        <Divider />
-        <TalkLink />
-        <OpenLink />
-        <CreateQRCode />
       </div>
     </section>
   )

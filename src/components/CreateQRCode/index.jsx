@@ -38,10 +38,10 @@ const CreateQRCode = () => {
   }
 
   return (
-    <div className={`py-2`}>
+    <div className={`container max-w-5xl mx-auto`}>
       <div className="p-2">
         <h3
-          className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-primary`}
+          className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-green-500`}
         >
           Gere QR Codes com links
         </h3>

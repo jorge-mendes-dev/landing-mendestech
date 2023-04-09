@@ -64,7 +64,7 @@ export const PlayerAbout = styled(Player)`
   `}
 `
 export const PlayerAboutPage = styled(Player)`
-  width: 15vw;
+  width: 25vw;
 
   ${media.lessThan('large')`
     width: 90%;

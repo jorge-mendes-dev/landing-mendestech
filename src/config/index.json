@@ -11,7 +11,7 @@
       "href": "/"
     },
     {
-      "name": "About Me",
+      "name": "About",
       "type": "external",
       "href": "/about"
     },
@@ -229,35 +229,35 @@
     "data": [
       {
         "title": "FATEC SÃO ROQUE",
-        "img": "/brands/fatec.png"
+        "img": "fatec"
       },
       {
         "title": "SÃO PAULO STATE DEPARTMENT OF EDUCATION",
-        "img": "/brands/gov.png"
+        "img": "gov"
       },
       {
         "title": "SRTI",
-        "img": "/brands/default.png"
+        "img": "defaultImg"
       },
       {
         "title": "NOVACIA",
-        "img": "/brands/novacia.png"
+        "img": "novacia"
       },
       {
         "title": "ATITUDE DIGITAL MEDIA",
-        "img": "/brands/atitude.png"
+        "img": "atitude"
       },
       {
         "title": "FDTE - FOUNDATION FOR THE TECHNOLOGICAL DEVELOPMENT OF ENGINEERING",
-        "img": "/brands/fdte.png"
+        "img": "fdte"
       },
       {
         "title": "HOTMART",
-        "img": "/brands/hotmart.png"
+        "img": "hotmart"
       },
       {
         "title": "ESCALA APP",
-        "img": "/brands/escala.png"
+        "img": "escala"
       }
     ]
   },
@@ -288,7 +288,7 @@
     }
   ],
   "footer": {
-    "title": "Build with Vite + React and love.",
+    "title": "Vite + React and love.",
     "description": "Jorge Mendes"
   }
 }

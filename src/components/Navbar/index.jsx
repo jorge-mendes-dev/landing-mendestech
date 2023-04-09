@@ -4,13 +4,15 @@ import { Popover, Transition } from '@headlessui/react'
 import { Menu } from '@styled-icons/entypo/Menu'
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import { Link } from 'react-scroll'
-import { random, getImagePath } from 'utils/generic'
+import { random } from 'utils/generic'
 
-import info from 'info'
+import logo from 'assets/images/logo.png'
+
+import config from 'config'
 
 const Navbar = () => {
-  const { navigation, company, socialMedia } = info
-  const { name, url, logo } = company
+  const { navigation, company, socialMedia } = config
+  const { name, url } = company
 
   return (
     <>
@@ -34,11 +36,7 @@ const Navbar = () => {
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href={url}>
                   <span className="sr-only">{name}</span>
-                  <img
-                    alt={name}
-                    className="h-16 w-auto sm:h-16"
-                    src={getImagePath(logo)}
-                  />
+                  <img alt={name} className="h-16 w-auto sm:h-16" src={logo} />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
@@ -110,11 +108,7 @@ const Navbar = () => {
             >
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src={getImagePath(logo)}
-                    alt={name}
-                  />
+                  <img className="h-8 w-auto" src={logo} alt={name} />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button

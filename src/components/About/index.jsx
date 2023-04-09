@@ -7,12 +7,12 @@ import { Divider } from 'components'
 import astronalt_no_bg from 'utils/JSON/astronalt_no_bg.json'
 import astronalt from 'utils/JSON/astronalt.json'
 
-import info from 'info'
+import config from 'config'
 
 import * as S from './styled'
 
 const About = ({ layout, ...props }) => {
-  const { about } = info
+  const { about } = config
   const { title, paragraphs, primaryAction } = about
 
   return (

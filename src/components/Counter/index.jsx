@@ -3,10 +3,10 @@ import React from 'react'
 import CounterItem from './CounterItem'
 import { random } from 'utils/generic'
 
-import info from 'info'
+import config from 'config'
 
 const Counter = () => {
-  const { metrics } = info
+  const { metrics } = config
 
   return (
     <div className="mt-10 sm:mt-20 bg-primary dark:bg-ternary-dark shadow-sm">

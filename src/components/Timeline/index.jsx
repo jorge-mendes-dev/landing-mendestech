@@ -1,15 +1,15 @@
 import React from 'react'
 
 import { random } from 'utils/generic'
-import Icons from 'info/Icons'
+import Icons from 'config/Icons'
 import { Divider } from 'components'
 
-import info from 'info'
+import config from 'config'
 
 import * as S from './styled'
 
 const Timeline = () => {
-  const { journeyInfo, journey } = info
+  const { journeyInfo, journey } = config
 
   const iconTheme = {
     background: '#b4ebfc',
