@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { Link } from 'react-router-dom'
 import { random } from 'utils/generic'
 import { Divider } from 'components'
 
@@ -47,14 +48,17 @@ const About = ({ layout, ...props }) => {
                 {description}
               </p>
             ))}
-            <div className="rounded-md shadow">
-              <a
+          </div>
+          <div className={`flex flex-col items-center justify-center`}>
+            <div className="rounded-md shadow mb-2">
+              <Link
                 rel="noreferrer"
-                href={primaryAction.href}
+                aria-label={primaryAction.text}
+                to={primaryAction.href}
                 className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
-              </a>
+              </Link>
             </div>
           </div>
           <div className={`flex flex-col items-center justify-center`}>
