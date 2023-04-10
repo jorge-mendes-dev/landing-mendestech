@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const ImageCard = ({ title, image }) => {
-  console.log(title, image)
   return (
     <>
       <img
