@@ -48,7 +48,9 @@ const About = ({ layout, ...props }) => {
                 {description}
               </p>
             ))}
-            <div className="rounded-md shadow">
+          </div>
+          <div className={`flex flex-col items-center justify-center`}>
+            <div className="rounded-md shadow mb-2">
               <Link
                 rel="noreferrer"
                 aria-label={primaryAction.text}
