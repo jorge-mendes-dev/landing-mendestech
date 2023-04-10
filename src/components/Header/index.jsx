@@ -1,4 +1,6 @@
 import React from 'react'
+
+import { Link } from 'react-router-dom'
 import config from 'config'
 
 const Header = () => {
@@ -21,23 +23,25 @@ const Header = () => {
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div className="rounded-md shadow">
-            <a
+            <Link
               rel="noreferrer"
-              href={primaryAction.href}
+              aria-label={primaryAction.text}
+              to={primaryAction.href}
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10"
             >
               {primaryAction.text}
-            </a>
+            </Link>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
-            <a
+            <Link
               target="_blank"
               rel="noreferrer"
-              href={secondaryAction.href}
+              aria-label={secondaryAction.text}
+              to={secondaryAction.href}
               className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-primary text-secondary bg-background hover:text-primary md:py-4 md:text-lg md:px-10`}
             >
               {secondaryAction.text}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
