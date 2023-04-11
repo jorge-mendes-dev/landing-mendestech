@@ -9,7 +9,7 @@ const ProjectItem = ({ title, href, category, image, type }) => {
       <div className={`flex flex-col items-center justify-center`}>
         <img src={image} className="rounded-t-xl border-none" alt={title} />
       </div>
-      <div className="text-center px-4 py-6">
+      <div className="text-center px-4 py-8">
         <p className="font-general-medium font-bold text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
           {title}
         </p>
