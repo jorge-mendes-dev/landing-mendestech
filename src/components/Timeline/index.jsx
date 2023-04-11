@@ -9,7 +9,8 @@ import config from 'config'
 import * as S from './styled'
 
 const Timeline = () => {
-  const { journeyInfo, journey } = config
+  const { journeyInfo } = config
+  const { journey } = journeyInfo
 
   const iconTheme = {
     background: '#b4ebfc',
