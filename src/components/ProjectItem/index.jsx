@@ -13,7 +13,7 @@ const ProjectItem = ({ title, href, category, image, type }) => {
         <p className="font-general-medium font-bold text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
           {title}
         </p>
-        <span className="text-md text-ternary-dark dark:text-ternary-light">
+        <span className="text-sm font-light text-ternary-dark dark:text-ternary-light">
           {category}
         </span>
       </div>
