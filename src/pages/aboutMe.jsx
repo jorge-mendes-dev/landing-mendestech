@@ -6,7 +6,8 @@ import {
   Navbar,
   LazyShow,
   ClientsList,
-  Counter
+  Counter,
+  Timeline
 } from 'components'
 
 function AboutMe() {
@@ -29,6 +30,9 @@ function AboutMe() {
       </LazyShow>
       <LazyShow>
         <ClientsList />
+      </LazyShow>
+      <LazyShow>
+        <Timeline />
       </LazyShow>
       <LazyShow>
         <Footer />

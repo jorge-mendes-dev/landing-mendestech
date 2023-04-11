@@ -2,7 +2,7 @@
   "company": {
     "name": "Jorge Mendes",
     "logo": "logo.png",
-    "url": "https://jorgemendes.com.br/"
+    "url": "/"
   },
   "navigation": [
     {
@@ -14,6 +14,11 @@
       "name": "About",
       "type": "external",
       "href": "/about"
+    },
+    {
+      "name": "Projects",
+      "type": "external",
+      "href": "/projects"
     },
     {
       "name": "Utils",
@@ -56,13 +61,25 @@
   },
   "projects": {
     "title": "Projects portfolio",
+    "primaryAction": {
+      "text": "See all projects",
+      "href": "projects"
+    },
     "project": [
       {
         "title": "Escala Plantões",
-        "category": "AngularJS, ReactJS, PHP, Laravel",
+        "category": "AngularJS, ReactJS, PHP, Laravel, Mysql, AWS",
         "description": "Trabalho na manutenção e criação de novas funcionalidade no produto Escala PLantões.",
         "img": "plantoes",
         "link": "https://escala.app/produtos/escala-plantoes/",
+        "type": "external"
+      },
+      {
+        "title": "Hotmart",
+        "category": "ReactJS, styled-components, Vue",
+        "description": "Trabalhei em produtos ligados em segurança e privacidade.",
+        "img": "hotmart",
+        "link": "https://hotmart.com/pt-br",
         "type": "external"
       },
       {
@@ -79,6 +96,22 @@
         "description": "Trabalhei na refatoração da aplicação principal com ReactJS.",
         "img": "provu",
         "link": "https://provu.com.br/",
+        "type": "external"
+      },
+      {
+        "title": "Speedlancer",
+        "category": "AngularJS, Ruby, Sass",
+        "description": "Freelancing, done right.",
+        "img": "speedlancer",
+        "link": "https://speedlancer.com/",
+        "type": "external"
+      },
+      {
+        "title": "WebMeeeting",
+        "category": "ReactJS, PHP, Mysql, mongoDb",
+        "description": "Trabalhei na refatoração da aplicação principal com ReactJS.",
+        "img": "webmeeting",
+        "link": "https://www.webmeeting.com.br/",
         "type": "external"
       }
     ]
