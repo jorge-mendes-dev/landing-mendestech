@@ -7,7 +7,8 @@ import {
   Navbar,
   LazyShow,
   MainHeroImage,
-  Timeline
+  Timeline,
+  ProjectsList
 } from 'components'
 
 function Home() {
@@ -26,6 +27,9 @@ function Home() {
       </div>
       <LazyShow>
         <About layout={'Home'} />
+      </LazyShow>
+      <LazyShow>
+        <ProjectsList />
       </LazyShow>
       <LazyShow>
         <>
