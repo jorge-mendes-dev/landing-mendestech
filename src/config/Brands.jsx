@@ -1,11 +1,11 @@
-import atitude from 'assets/images/brands/atitude.png'
-import defaultImg from 'assets/images/brands/defaultImg.png'
-import fatec from 'assets/images/brands/fatec.png'
-import fdte from 'assets/images/brands/fdte.png'
-import gov from 'assets/images/brands/gov.png'
-import escala from 'assets/images/brands/escala.png'
-import hotmart from 'assets/images/brands/hotmart.png'
-import novacia from 'assets/images/brands/novacia.png'
+import atitude from 'assets/images/brands/atitude.svg'
+import fatec from 'assets/images/brands/fatec.svg'
+import fdte from 'assets/images/brands/fdte.svg'
+import gov from 'assets/images/brands/gov.svg'
+import escala from 'assets/images/brands/escala.svg'
+import hotmart from 'assets/images/brands/hotmart.svg'
+import novacia from 'assets/images/brands/novacia.svg'
+import defaultImg from 'assets/images/defaultImg.svg'
 
 const Brands = {
   atitude,
