@@ -2,7 +2,7 @@
   "company": {
     "name": "Jorge Mendes",
     "logo": "logo.png",
-    "url": "https://jorgemendes.com.br/"
+    "url": "/"
   },
   "navigation": [
     {
@@ -16,6 +16,11 @@
       "href": "/about"
     },
     {
+      "name": "Projects",
+      "type": "external",
+      "href": "/projects"
+    },
+    {
       "name": "Utils",
       "type": "external",
       "href": "/utils"
@@ -27,8 +32,8 @@
   },
   "mainHero": {
     "title": "Jorge Mendes",
-    "subtitle": "Mendes Tecnologia",
-    "description": "Full Stack Sênior Developer, building responsive applications with great layouts and excellent experience.",
+    "subtitle": "Senior Developer",
+    "description": "Experienced web developer with a talent for efficient solutions, building responsive applications with beautiful layouts",
     "img": "jorge.png",
     "primaryAction": {
       "text": "About Me",
@@ -56,17 +61,29 @@
   },
   "projects": {
     "title": "Projects portfolio",
+    "primaryAction": {
+      "text": "See all projects",
+      "href": "projects"
+    },
     "project": [
       {
         "title": "Escala Plantões",
-        "category": "AngularJS, ReactJS, PHP, Laravel",
+        "category": "AngularJS, ReactJS, PHP, Laravel, Mysql, AWS",
         "description": "Trabalho na manutenção e criação de novas funcionalidade no produto Escala PLantões.",
         "img": "plantoes",
         "link": "https://escala.app/produtos/escala-plantoes/",
         "type": "external"
       },
       {
-        "title": "Aprova Fácil",
+        "title": "Hotmart internal applications",
+        "category": "ReactJS, styled-components, Vue",
+        "description": "Trabalhei em produtos ligados em segurança e privacidade.",
+        "img": "hotmart",
+        "link": "https://hotmart.com/pt-br",
+        "type": "external"
+      },
+      {
+        "title": "Aprova Fácil - mobile",
         "category": "Mobile, React Native, nodeJS",
         "description": "Trabalhei em um chatbot em nodejs e uma aplicação em react-native que para usar o Bot.",
         "img": "aprova",
@@ -79,6 +96,22 @@
         "description": "Trabalhei na refatoração da aplicação principal com ReactJS.",
         "img": "provu",
         "link": "https://provu.com.br/",
+        "type": "external"
+      },
+      {
+        "title": "Speedlancer",
+        "category": "AngularJS, Ruby, Sass",
+        "description": "Freelancing, done right.",
+        "img": "speedlancer",
+        "link": "https://speedlancer.com/",
+        "type": "external"
+      },
+      {
+        "title": "WebMeeeting",
+        "category": "ReactJS, PHP, Mysql, mongoDb",
+        "description": "Trabalhei na refatoração da aplicação principal com ReactJS.",
+        "img": "webmeeting",
+        "link": "https://www.webmeeting.com.br/",
         "type": "external"
       }
     ]
