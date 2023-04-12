@@ -4,7 +4,7 @@ import plantoes from 'assets/images/projects/plantoes.svg'
 import speedlancer from 'assets/images/projects/speedlancer.svg'
 import hotmart from 'assets/images/projects/hotmart.svg'
 import webmeeting from 'assets/images/projects/webmeeting2.svg'
-import defaultImg from 'assets/images/brands/defaultImg.png'
+import defaultImg from 'assets/images/defaultImg.svg'
 
 const Projects = {
   provu,

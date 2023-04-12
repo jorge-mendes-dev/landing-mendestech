@@ -32,8 +32,8 @@
   },
   "mainHero": {
     "title": "Jorge Mendes",
-    "subtitle": "Mendes Tecnologia",
-    "description": "Full Stack Sênior Developer, building responsive applications with great layouts and excellent experience.",
+    "subtitle": "Senior Developer",
+    "description": "Experienced web developer with a talent for efficient solutions, building responsive applications with beautiful layouts",
     "img": "jorge.png",
     "primaryAction": {
       "text": "About Me",
@@ -75,7 +75,7 @@
         "type": "external"
       },
       {
-        "title": "Hotmart",
+        "title": "Hotmart internal applications",
         "category": "ReactJS, styled-components, Vue",
         "description": "Trabalhei em produtos ligados em segurança e privacidade.",
         "img": "hotmart",
@@ -83,7 +83,7 @@
         "type": "external"
       },
       {
-        "title": "Aprova Fácil",
+        "title": "Aprova Fácil - mobile",
         "category": "Mobile, React Native, nodeJS",
         "description": "Trabalhei em um chatbot em nodejs e uma aplicação em react-native que para usar o Bot.",
         "img": "aprova",
