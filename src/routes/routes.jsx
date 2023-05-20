@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Skeleton } from 'components'
 
 const Page404 = lazy(() => import('pages/404'))
 const Home = lazy(() => import('pages/home'))
@@ -9,7 +10,7 @@ const Utils = lazy(() => import('pages/utils'))
 
 const PageRoutes = () => (
   <BrowserRouter>
-    <Suspense fallback={''}>
+    <Suspense fallback={<Skeleton />}>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="about" element={<AboutMe />} />
