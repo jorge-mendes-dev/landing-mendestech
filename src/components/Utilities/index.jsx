@@ -8,7 +8,7 @@ const Utilities = () => {
   const { title } = utilities
 
   return (
-    <section className={`bg-background py-8`} id="utilities">
+    <section className={`bg-background dark:bg-black py-8`} id="utilities">
       <div className={`container max-w-5xl mx-auto m-8`}>
         <h2
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}

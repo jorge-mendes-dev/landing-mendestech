@@ -18,7 +18,7 @@ const About = ({ layout, ...props }) => {
 
   return (
     <section
-      className={`bg-background container mx-auto`}
+      className={`bg-background dark:bg-black container mx-auto`}
       id="about"
       {...props}
     >
