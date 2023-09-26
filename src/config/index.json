@@ -19,11 +19,6 @@
       "name": "Projects",
       "type": "external",
       "href": "/projects"
-    },
-    {
-      "name": "Utils",
-      "type": "external",
-      "href": "/utils"
     }
   ],
   "callToAction": {

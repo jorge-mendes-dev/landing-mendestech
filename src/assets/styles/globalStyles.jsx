@@ -24,25 +24,4 @@ export default createGlobalStyle`
     outline: 0;
     padding: 0;
   }
-
-  html {
-    font-size: 62.5%;
-    height: 100%;
-    -ms-overflow-style: scrollbar;
-  }
-
-  body {
-    font-family: ${({ theme }) => theme.font.family.normal};
-    font-size: ${({ theme }) => theme.font.sizes.medium};
-    background-color: ${({ theme }) => theme.colors.offwhite};
-    height: 100%;
-  }
-
-
-
-  #app, #root { /* stylelint-disable-line */
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
 `
