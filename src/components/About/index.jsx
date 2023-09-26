@@ -43,7 +43,7 @@ const About = ({ layout, ...props }) => {
             {paragraphs.slice(0, 3).map((description) => (
               <p
                 key={random()}
-                className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-10 align-baseline leading-relaxed`}
+                className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
               >
                 {description}
               </p>
@@ -75,7 +75,7 @@ const About = ({ layout, ...props }) => {
             {paragraphs.map((description) => (
               <p
                 key={random()}
-                className={`text-gray-600 mb-6 subpixel-antialiased font-light tracking-light leading-10 align-baseline leading-relaxed`}
+                className={`text-gray-600 mb-6 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
               >
                 {description}
               </p>
