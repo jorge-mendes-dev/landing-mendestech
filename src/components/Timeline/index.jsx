@@ -18,7 +18,7 @@ const Timeline = () => {
   }
 
   return (
-    <section className={`bg-background py-8`} id="timeline">
+    <section className={`bg-background dark:bg-black py-8`} id="timeline">
       <div className={`container mx-auto px-2 pt-4 pb-12`}>
         <h4
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
@@ -33,7 +33,7 @@ const Timeline = () => {
           ))}
         </h4>
         <Divider />
-        <p className="mb-4 max-w-2xl text-center text-xl text-gray-500 lg:mx-auto">
+        <p className="mb-4 max-w-2xl text-center text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
           {journeyInfo.description}
         </p>
         <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-primary rounded-xl shadow-md p-8">

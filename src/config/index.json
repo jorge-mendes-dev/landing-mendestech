@@ -29,7 +29,7 @@
     "title": "Jorge Mendes",
     "subtitle": "Senior Developer",
     "description": "Experienced web developer with a talent for efficient solutions, building responsive applications with beautiful layouts",
-    "img": "jorge.png",
+    "img": "profile.svg",
     "primaryAction": {
       "text": "About Me",
       "href": "about"

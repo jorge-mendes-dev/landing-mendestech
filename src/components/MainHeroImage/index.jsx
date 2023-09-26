@@ -1,9 +1,8 @@
 import React from 'react'
-import { getImagePath } from 'utils/generic'
 
 import config from 'config'
 
-import jorge from 'assets/images/jorge.png'
+import jorge from 'assets/images/profile.svg'
 
 const MainHeroImage = () => {
   const { mainHero } = config
