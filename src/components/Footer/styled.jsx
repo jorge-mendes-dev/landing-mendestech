@@ -10,7 +10,7 @@ export const FooterWrapper = styled.footer`
     ${({ theme }) => theme.colors.black} 0%,
     ${({ theme }) => theme.colors.darker} 100%
   );
-  box-shadow: 0 4px 4px 0 ${({ theme }) => theme.colors.black};
+  // box-shadow: 0 4px 4px 0 ${({ theme }) => theme.colors.black};
   transition: ${({ theme }) => theme.transition.default};
   filter: contrast(200%);
 

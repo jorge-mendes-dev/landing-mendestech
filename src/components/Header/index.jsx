@@ -18,16 +18,16 @@ const Header = () => {
           <span className="block xl:inline dark:text-white">{title}</span>{' '}
           <span className={`block text-primary xl:inline`}>{subtitle}</span>
         </h1>
-        <p className="mt-3 text-base text-gray-500 dark:text-gray-300 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        <p className="mt-3 text-base text-gray-500 dark:text-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
           {description}
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div className="rounded-md shadow">
+          <div className="rounded shadow">
             <Link
               rel="noreferrer"
               aria-label={primaryAction.text}
               to={primaryAction.href}
-              className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10"
+              className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10"
             >
               {primaryAction.text}
             </Link>
@@ -38,7 +38,7 @@ const Header = () => {
               rel="noreferrer"
               aria-label={secondaryAction.text}
               to={secondaryAction.href}
-              className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-primary text-secondary bg-background dark:bg-black hover:text-primary md:py-4 md:text-lg md:px-10`}
+              className={`w-full flex items-center justify-center px-8 py-3 border-md border-transparent text-base font-medium rounded border-primary text-secondary dark:text-blue-800 bg-background dark:bg-zinc-800 hover:text-primary md:py-4 md:text-lg md:px-10`}
             >
               {secondaryAction.text}
             </Link>

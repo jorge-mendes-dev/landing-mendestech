@@ -4,6 +4,7 @@ import { Gmail } from '@styled-icons/simple-icons/Gmail'
 import { Work } from '@styled-icons/material/Work'
 import { Education } from '@styled-icons/zondicons/Education'
 import { StarFill } from '@styled-icons/bootstrap/StarFill'
+import { Computer } from '@styled-icons/material-twotone/Computer'
 
 const Icons = {
   Github,
@@ -11,7 +12,8 @@ const Icons = {
   Gmail,
   Work,
   Education,
-  StarFill
+  StarFill,
+  Computer
 }
 
 export default Icons

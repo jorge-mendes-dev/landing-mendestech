@@ -43,19 +43,19 @@ const About = ({ layout, ...props }) => {
             {paragraphs.slice(0, 3).map((description) => (
               <p
                 key={random()}
-                className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
+                className={`mb-6 text-gray-600 dark:text-gray subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
               >
                 {description}
               </p>
             ))}
           </div>
           <div className={`flex flex-col items-center justify-center`}>
-            <div className="rounded-md shadow mb-2">
+            <div className="rounded shadow mb-2">
               <Link
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
               </Link>
@@ -71,11 +71,11 @@ const About = ({ layout, ...props }) => {
             <S.PlayerAboutPage src={astronalt} loop autoplay />
           </div>
 
-          <div className="font-general-regular w-full sm:w-3/4 text-left p-6 shadow-md rounded-lg">
+          <div className="font-general-regular w-full sm:w-3/4 text-left p-6 shadow rounded">
             {paragraphs.map((description) => (
               <p
                 key={random()}
-                className={`text-gray-600 mb-6 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
+                className={`text-gray-600 font-light dark:text-gray mb-6 subpixel-antialiased tracking-light align-baseline leading-relaxed`}
               >
                 {description}
               </p>
