@@ -13,7 +13,7 @@ const Timeline = () => {
   const { journey } = journeyInfo
 
   const iconTheme = {
-    background: '#b4ebfc',
+    background: '#001C43',
     color: '#00bcd4'
   }
 
@@ -36,7 +36,7 @@ const Timeline = () => {
         <p className="mb-4 max-w-2xl text-center text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
           {journeyInfo.description}
         </p>
-        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-primary rounded-xl shadow-md p-8">
+        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-primary rounded shadow p-8">
           {journey.map((item) => {
             const Icon = Icons[item.icon]
             return (
@@ -59,19 +59,19 @@ const Timeline = () => {
                 }}
                 icon={<Icon />}
               >
-                <div className="bg-white rounded-xl shadow-md p-4">
+                <div className="bg-white rounded shadow p-6">
                   <h3
-                    className={`w-full my-2 text-2xl font-bold leading-tight text-primary vertical-timeline-element-title`}
+                    className={`w-full my-2 text-1xl font-bold leading-tight text-primary vertical-timeline-element-title`}
                   >
                     {item.institution}
                   </h3>
-                  <h4 className="vertical-timeline-element-subtitle">
+                  <h4 className="vertical-timeline-element-subtitle mt-1">
                     {item.position}
                   </h4>
-                  <p className="max-w-2xl text-base text-gray-100 lg:mx-auto">
+                  <p className="max-w-2xl text-light text-gray-100 lg:mx-auto">
                     {item.description}
                   </p>
-                  <p className="mt-1 max-w-2xl text-base text-gray-100 lg:mx-auto">
+                  <p className="mt-1 max-w-xl text-light text-gray-100 lg:mx-auto">
                     {item.location}
                   </p>
                 </div>
@@ -83,7 +83,7 @@ const Timeline = () => {
               background: iconTheme.background,
               color: iconTheme.color
             }}
-            icon={<Icons.Github />}
+            icon={<Icons.Computer />}
           />
         </S.TimelineWrapper>
       </div>

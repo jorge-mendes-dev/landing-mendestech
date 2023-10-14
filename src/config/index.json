@@ -144,8 +144,8 @@
       {
         "period": "01/2009 – 12/2010",
         "institution": "Centro Paula Souza - Etec São Roque",
-        "position": "Information Technology",
-        "description": "Computer Technician",
+        "position": "Computer Technician",
+        "description": "The IT technician develops and operates systems, applications and graphical interfaces. Assembles database structures and codes programs. Designs, implements and maintains systems and applications. Selects work resources, programming languages, tools and methodologies for systems development.",
         "location": "São Roque-SP, Brazil",
         "icon": "Education"
       },
@@ -160,8 +160,8 @@
       {
         "period": "01/2014 – 12/2016",
         "institution": "Fatec São Roque",
-        "position": "Information Technology",
-        "description": "Internet System",
+        "position": "internet System",
+        "description": "To learn subjects related to specific programming for the internet, the student will study Mathematics, especially logical reasoning. Statistics, English and marketing are also part of the course, in addition to design.",
         "location": "São Roque-SP, Brazil",
         "icon": "Education"
       },
@@ -209,7 +209,7 @@
         "period": "2021 – 2022",
         "institution": "Hotmart",
         "position": "Front-End Web Developer",
-        "description": "Working as reference in front-end development, building feature for a company that exists on 5 contries.",
+        "description": "I worked participating in projects, on the front-end in order to meet my clients' needs, always seeking maximum quality in the code and with a lot of love. Focusing on developing solutions for the company's privacy and international policies.",
         "location": "São Paulo, Brazil",
         "icon": "Work"
       },
@@ -217,7 +217,7 @@
         "period": "2022 – NOW",
         "institution": "Escala APP",
         "position": "Senior Web Developer Full Stack",
-        "description": "Working as developer on a growing product.",
+        "description": "In my current position at Escala, I act as a senior FullStack developer, a company that makes schedules in an easy way. The project that I work on is used for managing the Hospital Israelita Albert Einstein (ICU) intensive care unit. The project was so good that it became a Saas platform that other clients of many industries.",
         "location": "São Paulo, Brazil",
         "icon": "Work"
       }

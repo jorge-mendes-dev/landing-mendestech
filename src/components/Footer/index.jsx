@@ -9,7 +9,7 @@ import config from 'config'
 const Footer = () => {
   const { footer } = config
   return (
-    <S.FooterWrapper>
+    <S.FooterWrapper className="shadow">
       <S.PlayerFooter src={space} loop autoplay />
       <S.Container>
         <SocialLinks />

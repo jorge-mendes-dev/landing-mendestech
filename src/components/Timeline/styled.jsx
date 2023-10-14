@@ -11,7 +11,8 @@ export const TimelineWrapper = styled(VerticalTimeline)`
   }
 
   .vertical-timeline-element-date {
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: bold;
   }
 
   .vertical-timeline-element-title {
@@ -25,7 +26,8 @@ export const TimelineWrapper = styled(VerticalTimeline)`
 
   p {
     color: ${({ theme }) => theme.colors.title};
-    font-size: ${({ theme }) => theme.font.sizes.small};
+    font-size: ${({ theme }) => theme.font.sizes.sm};
+    line-height: ${({ theme }) => theme.font.height.large};
   }
 `
 export const TimelineElement = styled(VerticalTimelineElement)`

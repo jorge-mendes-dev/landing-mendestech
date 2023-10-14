@@ -62,12 +62,12 @@ const ProjectsList = ({ layout, ...props }) => {
         )}
         {layout === 'Home' && (
           <div className={`flex flex-col items-center justify-center`}>
-            <div className="rounded-md shadow mt-2">
+            <div className="rounded shadow mt-2">
               <Link
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
               </Link>

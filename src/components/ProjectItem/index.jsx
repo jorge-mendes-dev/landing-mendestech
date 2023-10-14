@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 
 const ProjectItem = ({ title, href, category, image, type }) => {
   const Component = (
-    <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+    <div className="hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-zinc-800 rounded p-8 shadow">
       <div className={`flex flex-col items-center justify-center`}>
         <img src={image} className="rounded-t-xl border-none" alt={title} />
       </div>
       <div className="text-center px-4 py-8">
-        <p className="font-general-medium font-bold text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
+        <p className="font-general-medium font-bold text-lg md:text-xl text-ternary-dark dark:text-blue-800 mb-2">
           {title}
         </p>
-        <span className="text-sm font-light text-ternary-dark dark:text-ternary-light">
+        <span className="text-sm font-light text-ternary-dark dark:text-gray">
           {category}
         </span>
       </div>

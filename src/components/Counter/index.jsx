@@ -9,7 +9,7 @@ const Counter = () => {
   const { metrics } = config
 
   return (
-    <div className="mt-10 sm:mt-20 bg-primary dark:bg-ternary-dark shadow-sm">
+    <div className="mt-10 sm:mt-20 bg-primary dark:bg-ternary-dark shadow">
       <div className="font-general-medium container mx-auto py-20 block sm:flex sm:justify-between items-center">
         {metrics.map(({ title, reference, measure, level }) => (
           <CounterItem
