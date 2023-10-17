@@ -6,7 +6,7 @@ const Page404 = lazy(() => import('pages/404'))
 const Home = lazy(() => import('pages/home'))
 const AboutMe = lazy(() => import('pages/aboutMe'))
 const Projects = lazy(() => import('pages/projects'))
-const Project = lazy(() => import('pages/Project'))
+const Project = lazy(() => import('pages/project'))
 
 const PageRoutes = () => (
   <BrowserRouter>
