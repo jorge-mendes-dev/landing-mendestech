@@ -75,7 +75,7 @@ const About = ({ layout, ...props }) => {
             {paragraphs.map((description) => (
               <p
                 key={random()}
-                className={`text-gray-600 font-light dark:text-gray mb-6 subpixel-antialiased tracking-light align-baseline leading-relaxed`}
+                className={`text-gray-600 dark:text-gray mb-6 font-light subpixel-antialiased tracking-light align-baseline leading-relaxed`}
               >
                 {description}
               </p>

@@ -3,9 +3,14 @@ import PropTypes from 'prop-types'
 
 import { Link } from 'react-router-dom'
 
+import { backToTop } from 'utils/generic'
+
 const ProjectItem = ({ title, href, category, image, type }) => {
   const Component = (
-    <div className="hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-zinc-800 rounded p-8 shadow">
+    <div
+      onClick={() => backToTop()}
+      className="hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-zinc-800 rounded p-8 shadow"
+    >
       <div className={`flex flex-col items-center justify-center`}>
         <img src={image} className="rounded-t-xl border-none" alt={title} />
       </div>

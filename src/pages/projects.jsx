@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Footer, ProjectsList, Navbar, LazyShow } from 'components'
 
+import { backToTop } from 'utils/generic'
+
 function Projects() {
+  useEffect(() => {
+    backToTop()
+  }, [])
+
   return (
     <div
       className={`bg-background dark:bg-black grid gap-y-16 overflow-hidden`}
