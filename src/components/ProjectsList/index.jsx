@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { ProjectItem, Divider } from 'components'
 import config from 'config'
 
-const ProjectsList = ({ layout, ...props }) => {
+const ProjectsList = ({ layout, customTitle, minus, ...props }) => {
   const { projects } = config
   const { title, project, primaryAction } = projects
 
@@ -17,14 +17,23 @@ const ProjectsList = ({ layout, ...props }) => {
         <h2
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
         >
-          {title.split(' ').map((word, index) => (
-            <span
-              key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
-            >
-              {word}{' '}
-            </span>
-          ))}
+          {customTitle === ''
+            ? title.split(' ').map((word, index) => (
+                <span
+                  key={index}
+                  className={index % 2 ? 'text-primary' : 'text-border'}
+                >
+                  {word}{' '}
+                </span>
+              ))
+            : customTitle.split(' ').map((word, index) => (
+                <span
+                  key={index}
+                  className={index % 2 ? 'text-primary' : 'text-border'}
+                >
+                  {word}{' '}
+                </span>
+              ))}
         </h2>
         <Divider />
         {layout === 'Home' ? (
@@ -80,7 +89,14 @@ const ProjectsList = ({ layout, ...props }) => {
 }
 
 ProjectsList.propTypes = {
-  layout: PropTypes.string.isRequired
+  layout: PropTypes.string.isRequired,
+  customTitle: PropTypes.string,
+  minus: PropTypes.string
+}
+
+ProjectsList.defaultProps = {
+  customTitle: '',
+  minus: ''
 }
 
 export default ProjectsList
