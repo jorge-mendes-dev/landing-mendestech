@@ -1,0 +1,66 @@
+{
+  "ProjectHeader": {
+    "title": "Aprova Fácil",
+    "publishDate": "Sep 01, 2020",
+    "tags": "Mobile"
+  },
+  "ProjectImages": [
+    {
+      "title": "aprova",
+      "img": "aprova"
+    },
+    {
+      "title": "aprova",
+      "img": "appClient"
+    },
+    {
+      "title": "aprova",
+      "img": "appManager"
+    }
+  ],
+  "disclaimer": "images used are from the product website - © All rights reserved",
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Aprova Fácil",
+        "details": "2 Mobile Apps"
+      },
+      {
+        "title": "Services",
+        "details": "Mobile Development (React Native)"
+      },
+      {
+        "title": "Website",
+        "details": "approvafacil.com.br/"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "I've had been contracted as a front-end developer and worked in internal solutions",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "React.js",
+          "React Native",
+          "Redux Toolkit",
+          "axios",
+          "Android",
+          "Ios",
+          "whatsApp Integration",
+          "i18n"
+        ]
+      }
+    ],
+    "Heading": "Challenge",
+    "Details": [
+      "As a Mobile Developer using React Native, my primary responsibility is to enhance and maintain two applications by leveraging modern technologies and integrations. These applications serve as vital tools for our users and depend on React Native, Redux Toolkit, back-end APIs, and WhatsApp integration for their functionality.",
+      "I play a pivotal role in improving and expanding the features and functionalities of the two mobile applications. This involves understanding user requirements, collaborating with stakeholders, and translating these needs into practical solutions.",
+      "My work heavily relies on React Native, a popular framework for building cross-platform mobile applications. I leverage this technology to create user interfaces that are both visually appealing and performant across Android and iOS platforms.",
+      "To manage application state efficiently, I employ Redux Toolkit. This state management library helps in centralizing and synchronizing application data, ensuring a seamless user experience and making it easier to maintain complex application states.",
+      "The applications I work on rely on data from a back-end API. I am responsible for seamlessly integrating with this API to retrieve and display relevant information, ensuring data consistency and real-time updates.",
+      "One of the key features I implement is integrating WhatsApp into the applications. This allows users to interact with the applications and share content through WhatsApp, enhancing user engagement and communication.",
+      "I maintain clear and comprehensive documentation for the codebase, making it easier for other team members to understand, extend, and maintain the applications over time."
+    ]
+  }
+}

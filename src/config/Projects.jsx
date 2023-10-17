@@ -5,8 +5,18 @@ import speedlancer from 'assets/images/projects/speedlancer.svg'
 import hotmart from 'assets/images/projects/hotmart.svg'
 import webmeeting from 'assets/images/projects/webmeeting2.svg'
 import defaultImg from 'assets/images/defaultImg.svg'
+
+// plantoes
 import schedules from 'assets/images/projects/plantoes/schedule.png'
 import admin from 'assets/images/projects/plantoes/admin.png'
+
+// hotmart
+import pagesCreator from 'assets/images/projects/hotmart/pages-creator.png'
+import payments from 'assets/images/projects/hotmart/payments.png'
+
+// aprova
+import appClient from 'assets/images/projects/aprova/app-client.png'
+import appManager from 'assets/images/projects/aprova/app-corretor.png'
 
 const Projects = {
   provu,
@@ -17,7 +27,11 @@ const Projects = {
   webmeeting,
   defaultImg,
   schedules,
-  admin
+  admin,
+  pagesCreator,
+  payments,
+  appClient,
+  appManager
 }
 
 export default Projects

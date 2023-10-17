@@ -1,0 +1,70 @@
+{
+  "ProjectHeader": {
+    "title": "Hotmart",
+    "publishDate": "Sep 01, 2021",
+    "tags": "Front-end"
+  },
+  "ProjectImages": [
+    {
+      "title": "Hotmart",
+      "img": "hotmart"
+    },
+    {
+      "title": "Hotmart",
+      "img": "pagesCreator"
+    },
+    {
+      "title": "Hotmart",
+      "img": "payments"
+    }
+  ],
+  "disclaimer": "images used are from the product website - © All rights reserved",
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Hotmart",
+        "details": "Hotmart Company"
+      },
+      {
+        "title": "Services",
+        "details": "Frontend Development"
+      },
+      {
+        "title": "Website",
+        "details": "hotmart.com/pt-br"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "I've had been contracted as a front-end developer and worked in internal solutions",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "React.js",
+          "Typescript",
+          "Context API",
+          "Web Components",
+          "Design System",
+          "Jest",
+          "React testing library",
+          "styled-components",
+          "i18n"
+        ]
+      }
+    ],
+    "Heading": "Challenge",
+    "Details": [
+      "As a Front-End Developer, I am responsible for developing and maintaining internal privacy applications that are critical for safeguarding sensitive data and ensuring compliance with privacy regulations. My role involves creating new features, resolving bugs, and working with a specific technology stack, including ReactJS, TypeScript, and Styled-Components.",
+      "I am actively involved in the design and implementation of new features within our internal privacy applications. These features are essential for enhancing the functionality and security of the applications, and I collaborate with cross-functional teams to gather requirements and ensure that the solutions meet business needs.",
+      "My role includes identifying and addressing issues and bugs within the applications. This involves debugging code, tracing issues to their source, and providing timely fixes to maintain the integrity and performance of the applications.",
+      "I leverage the power of ReactJS, a popular front-end library, to build responsive and dynamic user interfaces for our internal privacy applications. This includes creating reusable components, managing state, and ensuring a smooth user experience.",
+      "I use TypeScript to enhance the robustness of our codebase. By adding static typing and advanced features, I improve code quality, catch errors early in the development process, and make the codebase more maintainable",
+      "Styled-Components are a part of my toolkit for creating visually appealing and maintainable user interfaces. I use this CSS-in-JS library to manage styling in a component-based approach, ensuring consistency and modularity in our applications.",
+      "I focus on ensuring that our applications work seamlessly across various web browsers, including handling any browser-specific quirks and providing responsive design for different screen sizes and devices.",
+      "I collaborate with UX/UI designers to implement designs and interactions that enhance the user experience. This includes optimizing performance and accessibility to ensure that the applications are user-friendly and compliant with accessibility standards.",
+      "I maintain high coding standards and adhere to best practices in front-end development, including code reviews and ensuring that the codebase is well-documented and easy to understand for other team members.",
+      "Given the nature of our applications, I am vigilant about security and privacy concerns. I work to implement the necessary security measures and ensure that our applications comply with internal and external privacy regulations."
+    ]
+  }
+}

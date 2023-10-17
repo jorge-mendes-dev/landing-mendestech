@@ -13,6 +13,8 @@ import {
 import { backToTop } from 'utils/generic'
 
 import plantoes from 'config/project/plantoes'
+import hotmart from 'config/project/hotmart'
+import aprova from 'config/project/aprova'
 
 const ProjectInfo = () => {
   const { name } = useParams()
@@ -25,6 +27,10 @@ const ProjectInfo = () => {
     switch (key) {
       case 'plantoes':
         return plantoes
+      case 'hotmart':
+        return hotmart
+      case 'aprova':
+        return aprova
       default:
         return plantoes
     }
