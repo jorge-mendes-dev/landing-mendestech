@@ -9,7 +9,7 @@ import { LazyShow } from 'components'
 import * as S from './styled'
 
 const ProjectDetails = ({ data, ...props }) => {
-  const { ProjectHeader, ProjectImages, ProjectInfo } = data
+  const { ProjectHeader, disclaimer, ProjectImages, ProjectInfo } = data
 
   return (
     <S.Wrapper {...props} className="container mx-auto">
@@ -20,13 +20,13 @@ const ProjectDetails = ({ data, ...props }) => {
           </h1>
           <div className="flex">
             <div className="flex items-center mr-10">
-              <S.CustomTag className="text-primary text-xs text-ternary-dark dark:text-ternary-light" />
+              <S.CustomClock className="text-primary text-xs text-ternary-dark dark:text-ternary-light" />
               <span className="font-general-regular ml-2 leading-none text-secondary-dark dark:text-secondary-light">
                 {ProjectHeader.publishDate}
               </span>
             </div>
             <div className="flex items-center">
-              <S.CustomClock className="text-primary text-xs text-ternary-dark dark:text-ternary-light" />
+              <S.CustomTag className="text-primary text-xs text-ternary-dark dark:text-ternary-light" />
               <span className="font-general-regular ml-2 leading-none text-secondary-dark dark:text-secondary-light">
                 {ProjectHeader.tags}
               </span>
@@ -49,6 +49,7 @@ const ProjectDetails = ({ data, ...props }) => {
             </div>
           )
         })}
+        <small>{disclaimer}</small>
       </div>
       <div className="block sm:flex gap-0 sm:gap-10 mt-14">
         <div className="w-full sm:w-1/3 text-left">

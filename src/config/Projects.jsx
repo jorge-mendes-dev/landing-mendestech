@@ -5,6 +5,8 @@ import speedlancer from 'assets/images/projects/speedlancer.svg'
 import hotmart from 'assets/images/projects/hotmart.svg'
 import webmeeting from 'assets/images/projects/webmeeting2.svg'
 import defaultImg from 'assets/images/defaultImg.svg'
+import schedules from 'assets/images/projects/plantoes/schedule.png'
+import admin from 'assets/images/projects/plantoes/admin.png'
 
 const Projects = {
   provu,
@@ -13,7 +15,9 @@ const Projects = {
   speedlancer,
   hotmart,
   webmeeting,
-  defaultImg
+  defaultImg,
+  schedules,
+  admin
 }
 
 export default Projects
