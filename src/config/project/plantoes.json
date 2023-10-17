@@ -1,0 +1,58 @@
+{
+  "ProjectHeader": {
+    "title": "Escala Plantões",
+    "publishDate": "May 01, 2022",
+    "tags": "Backend / Frontend"
+  },
+  "ProjectImages": [
+    {
+      "title": "Escala Plantões",
+      "img": "plantoes"
+    }
+  ],
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Escala",
+        "details": "Powered by Hospital Israelita Albert Einstein"
+      },
+      {
+        "title": "Services",
+        "details": "Backend & Frontend Development"
+      },
+      {
+        "title": "Website",
+        "details": "escala.app/produtos/escala-plantoes"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "HTML 5",
+          "CSS 3",
+          "JavaScript",
+          "React.js",
+          "Materialize",
+          "Micro-Frontend",
+          "PHP",
+          "Laravel",
+          "Mysql",
+          "AWS"
+        ]
+      }
+    ],
+    "Heading": "Challenge",
+    "Details": [
+      "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
+      "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
+      "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea."
+    ]
+  }
+}

@@ -10,7 +10,7 @@ import * as S from './styled'
 
 const Timeline = () => {
   const { journeyInfo } = config
-  const { journey } = journeyInfo
+  const { journey, title, description } = journeyInfo
 
   const iconTheme = {
     background: '#001C43',
@@ -23,7 +23,7 @@ const Timeline = () => {
         <h4
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
         >
-          {journeyInfo.title.split(' ').map((word, index) => (
+          {title.split(' ').map((word, index) => (
             <span
               key={index}
               className={index % 2 ? 'text-primary' : 'text-border'}
@@ -34,9 +34,10 @@ const Timeline = () => {
         </h4>
         <Divider />
         <p className="mb-4 max-w-2xl text-center text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
-          {journeyInfo.description}
+          {description}
         </p>
-        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-primary rounded shadow p-8">
+
+        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-gradient-to-r from-primary to-blue-800 rounded shadow p-8">
           {journey.map((item) => {
             const Icon = Icons[item.icon]
             return (

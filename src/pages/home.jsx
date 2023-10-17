@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import {
   Header,
@@ -10,7 +10,13 @@ import {
   ProjectsList
 } from 'components'
 
+import { backToTop } from 'utils/generic'
+
 function Home() {
+  useEffect(() => {
+    backToTop()
+  }, [])
+
   return (
     <div
       className={`bg-background dark:bg-black grid gap-y-16 overflow-hidden`}

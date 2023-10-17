@@ -1,21 +1,40 @@
 import React, { useEffect } from 'react'
 
+import { useParams } from 'react-router-dom'
+
 import {
+  ProjectDetails,
   Footer,
-  About,
   Navbar,
   LazyShow,
-  ClientsList,
-  Counter,
-  Timeline
+  ProjectsList
 } from 'components'
 
 import { backToTop } from 'utils/generic'
 
-function AboutMe() {
+import plantoes from 'config/project/plantoes'
+import hotmart from 'config/project/hotmart'
+import aprova from 'config/project/aprova'
+
+const ProjectInfo = () => {
+  const { name } = useParams()
+
   useEffect(() => {
     backToTop()
   }, [])
+
+  const getProjectDataByName = (key) => {
+    switch (key) {
+      case 'plantoes':
+        return plantoes
+      case 'hotmart':
+        return hotmart
+      case 'aprova':
+        return aprova
+      default:
+        return plantoes
+    }
+  }
 
   return (
     <div
@@ -31,16 +50,14 @@ function AboutMe() {
         </div>
       </div>
       <LazyShow>
-        <About layout={'About'} />
+        <ProjectDetails data={getProjectDataByName(name)} />
       </LazyShow>
       <LazyShow>
-        <Counter />
-      </LazyShow>
-      <LazyShow>
-        <ClientsList />
-      </LazyShow>
-      <LazyShow>
-        <Timeline />
+        <ProjectsList
+          layout={'Home'}
+          customTitle={'Other Projects'}
+          minus={name}
+        />
       </LazyShow>
       <LazyShow>
         <Footer />
@@ -49,4 +66,4 @@ function AboutMe() {
   )
 }
 
-export default AboutMe
+export default ProjectInfo

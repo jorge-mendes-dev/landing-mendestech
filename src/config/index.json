@@ -35,8 +35,8 @@
       "href": "about"
     },
     "secondaryAction": {
-      "text": "Contact Me",
-      "href": "mailto:jorge.mendesx@gmail.com"
+      "text": "Download CV",
+      "href": "/Jorge_mendes_curriculum_vitae.pdf"
     }
   },
   "about": {
@@ -58,7 +58,7 @@
     "title": "Projects portfolio",
     "primaryAction": {
       "text": "See all projects",
-      "href": "projects"
+      "href": "/projects"
     },
     "project": [
       {
@@ -67,7 +67,8 @@
         "description": "Trabalho na manutenção e criação de novas funcionalidade no produto Escala PLantões.",
         "img": "plantoes",
         "link": "https://escala.app/produtos/escala-plantoes/",
-        "type": "external"
+        "type": "external",
+        "slug": "plantoes"
       },
       {
         "title": "Hotmart internal applications",
@@ -75,7 +76,8 @@
         "description": "Trabalhei em produtos ligados em segurança e privacidade.",
         "img": "hotmart",
         "link": "https://hotmart.com/pt-br",
-        "type": "external"
+        "type": "external",
+        "slug": "hotmart"
       },
       {
         "title": "Aprova Fácil - mobile",
@@ -83,7 +85,8 @@
         "description": "Trabalhei em um chatbot em nodejs e uma aplicação em react-native que para usar o Bot.",
         "img": "aprova",
         "link": "https://www.approvafacil.com.br/",
-        "type": "external"
+        "type": "external",
+        "slug": "aprova"
       },
       {
         "title": "Provu",
@@ -91,7 +94,8 @@
         "description": "Trabalhei na refatoração da aplicação principal com ReactJS.",
         "img": "provu",
         "link": "https://provu.com.br/",
-        "type": "external"
+        "type": "external",
+        "slug": "provu"
       },
       {
         "title": "Speedlancer",
@@ -99,7 +103,8 @@
         "description": "Freelancing, done right.",
         "img": "speedlancer",
         "link": "https://speedlancer.com/",
-        "type": "external"
+        "type": "external",
+        "slug": "speedlancer"
       },
       {
         "title": "WebMeeeting",
@@ -107,7 +112,8 @@
         "description": "Trabalhei na refatoração da aplicação principal com ReactJS.",
         "img": "webmeeting",
         "link": "https://www.webmeeting.com.br/",
-        "type": "external"
+        "type": "external",
+        "slug": "webmeeting"
       }
     ]
   },

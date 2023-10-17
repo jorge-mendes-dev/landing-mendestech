@@ -8,3 +8,5 @@ export const getImagePath = (image) => {
   }
   return `/assets/${image}`
 }
+
+export const backToTop = () => window.scrollTo(0, 0)

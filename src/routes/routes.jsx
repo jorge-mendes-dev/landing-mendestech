@@ -6,6 +6,7 @@ const Page404 = lazy(() => import('pages/404'))
 const Home = lazy(() => import('pages/home'))
 const AboutMe = lazy(() => import('pages/aboutMe'))
 const Projects = lazy(() => import('pages/projects'))
+const Project = lazy(() => import('pages/Project'))
 
 const PageRoutes = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const PageRoutes = () => (
         <Route exact path="/" element={<Home />} />
         <Route exact path="about" element={<AboutMe />} />
         <Route exact path="projects" element={<Projects />} />
+        <Route exact path="project/:name" element={<Project />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </Suspense>
