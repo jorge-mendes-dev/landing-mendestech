@@ -2,14 +2,23 @@
   "ProjectHeader": {
     "title": "Escala Plantões",
     "publishDate": "May 01, 2022",
-    "tags": "Backend / Frontend"
+    "tags": "Back-end / Front-end"
   },
   "ProjectImages": [
     {
       "title": "Escala Plantões",
       "img": "plantoes"
+    },
+    {
+      "title": "Escala Plantões",
+      "img": "schedules"
+    },
+    {
+      "title": "Escala Plantões",
+      "img": "admin"
     }
   ],
+  "disclaimer": "images used are from the product website.",
   "ProjectInfo": {
     "ClientHeading": "About",
     "CompanyInfo": [
@@ -27,7 +36,7 @@
       }
     ],
     "ObjectivesHeading": "Objective",
-    "ObjectivesDetails": "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
+    "ObjectivesDetails": "I've had been contracted as a senior developer to work on the product",
     "Technologies": [
       {
         "title": "Tools & Technologies",
@@ -36,6 +45,8 @@
           "CSS 3",
           "JavaScript",
           "React.js",
+          "AngularJS",
+          "Bootstrap",
           "Materialize",
           "Micro-Frontend",
           "PHP",
@@ -47,12 +58,16 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.",
-      "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?",
-      "Set up schedules quickly and gain data to always have the ideal team Clicked, organized!",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea."
+      "As a Full Stack Developer, I play a pivotal role in maintaining and enhancing an 8-year-old software system. My responsibilities encompass a wide range of technical and managerial tasks, ensuring the system's continued functionality and adaptability to evolving business needs.",
+      "I am responsible for maintaining and improving an aging software system to ensure it remains current and relevant. This involves analyzing the existing codebase, identifying areas that need improvement, and planning for necessary upgrades",
+      "One of my key responsibilities is to design, develop, and implement new features for the system. This involves understanding business requirements, creating technical specifications, and writing code to meet those requirements.",
+      "I regularly troubleshoot and fix bugs in the system, whether they are related to functionality, performance, or security. I work closely with the team to identify and resolve these issues efficiently.",
+      "I make technical decisions related to architecture, tools, and frameworks. This includes choosing the most suitable technologies for feature development and guiding the team in their implementation.",
+      "I am responsible for task assignment, code reviews, and ensuring that the team's work aligns with the project's goals. I provide guidance and mentorship to junior developers, fostering their growth and development.",
+      "I make technical decisions related to architecture, tools, and frameworks. This includes choosing the most suitable technologies for feature development and guiding the team in their implementation.",
+      "Effective communication is a critical aspect of my role. I collaborate with various stakeholders, such as product managers, designers, and other departments, to understand their needs and provide technical insights. I also ensure that the team is well-informed and aligned with project objectives.",
+      "I maintain clear and comprehensive documentation for the system and its components, making it easier for team members to understand and work with the codebase.",
+      "As technology is continually evolving, I am committed to staying up-to-date with the latest industry trends, tools, and best practices. I encourage my team members to do the same."
     ]
   }
 }
