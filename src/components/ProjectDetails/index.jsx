@@ -13,7 +13,7 @@ const ProjectDetails = ({ data, ...props }) => {
 
   return (
     <S.Wrapper {...props} className="container mx-auto">
-      <div>
+      <div className="p-4">
         <LazyShow>
           <h1 className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-secondary-dark dark:text-secondary-light mt-14 sm:mt-20 mb-7">
             {ProjectHeader.title}
@@ -34,7 +34,7 @@ const ProjectDetails = ({ data, ...props }) => {
           </div>
         </LazyShow>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12 p-4">
         {ProjectImages.map((project) => {
           return (
             <div className="mb-10 sm:mb-0" key={random()}>
