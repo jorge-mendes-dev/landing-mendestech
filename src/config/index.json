@@ -65,48 +65,40 @@
         "title": "Escala Plantões",
         "category": "AngularJS, ReactJS, PHP, Laravel, Mysql, AWS",
         "img": "plantoes",
-        "link": "https://escala.app/produtos/escala-plantoes/",
-        "type": "external",
+        "link": "/project/plantoes",
+        "type": "",
         "slug": "plantoes"
       },
       {
         "title": "Hotmart internal applications",
         "category": "ReactJS, styled-components, Vue",
         "img": "hotmart",
-        "link": "https://hotmart.com/pt-br",
-        "type": "external",
+        "link": "/project/hotmart",
+        "type": "",
         "slug": "hotmart"
       },
       {
         "title": "Aprova Fácil - mobile",
         "category": "Mobile, React Native, nodeJS",
         "img": "aprova",
-        "link": "https://www.approvafacil.com.br/",
-        "type": "external",
+        "link": "/project/aprova",
+        "type": "",
         "slug": "aprova"
       },
       {
         "title": "Provu",
         "category": "Front-end, ReactJS, Redux",
         "img": "provu",
-        "link": "https://provu.com.br/",
-        "type": "external",
+        "link": "/project/provu",
+        "type": "",
         "slug": "provu"
-      },
-      {
-        "title": "Speedlancer",
-        "category": "AngularJS, Ruby, Sass",
-        "img": "speedlancer",
-        "link": "https://speedlancer.com/",
-        "type": "external",
-        "slug": "speedlancer"
       },
       {
         "title": "WebMeeeting",
         "category": "ReactJS, PHP, Mysql, mongoDb",
         "img": "webmeeting",
-        "link": "https://www.webmeeting.com.br/",
-        "type": "external",
+        "link": "/project/webmeeting",
+        "type": "",
         "slug": "webmeeting"
       }
     ]

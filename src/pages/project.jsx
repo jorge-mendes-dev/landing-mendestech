@@ -15,6 +15,8 @@ import { backToTop } from 'utils/generic'
 import plantoes from 'config/project/plantoes'
 import hotmart from 'config/project/hotmart'
 import aprova from 'config/project/aprova'
+import provu from 'config/project/provu'
+import webmeeting from 'config/project/webmeeting'
 
 const ProjectInfo = () => {
   const { name } = useParams()
@@ -31,6 +33,10 @@ const ProjectInfo = () => {
         return hotmart
       case 'aprova':
         return aprova
+      case 'provu':
+        return provu
+      case 'webmeeting':
+        return webmeeting
       default:
         return plantoes
     }

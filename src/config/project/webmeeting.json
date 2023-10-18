@@ -1,0 +1,73 @@
+{
+  "ProjectHeader": {
+    "title": "WebMeeeting",
+    "publishDate": "Sep 01, 2017",
+    "tags": "Back-end / Front-end"
+  },
+  "ProjectImages": [
+    {
+      "title": "webmeeting",
+      "img": "webmeeting"
+    },
+    {
+      "title": "webmeeting",
+      "img": "webmeetingDirect"
+    },
+    {
+      "title": "webmeeting",
+      "img": "webmeetingRealtime"
+    }
+  ],
+  "disclaimer": "images used are from the product website - © All rights reserved",
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Atitude",
+        "details": "WebMeeeting"
+      },
+      {
+        "title": "Services",
+        "details": "Front-end and Back-end Development"
+      },
+      {
+        "title": "Website",
+        "details": "https://wmdirect.com.br/"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "I've had been contracted as a full stack developer to create new products and improving the others.",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "React.js",
+          "Redux Saga",
+          "axios",
+          "PHP",
+          "Laravel",
+          "jest",
+          "i18n",
+          "Materialize",
+          "styled-components",
+          "webRTC",
+          "Realtime",
+          "Socket",
+          "Mysql",
+          "MongoDB"
+        ]
+      }
+    ],
+    "Heading": "Challenge",
+    "Details": [
+      "As a Front-End Developer, I am responsible for creating a new web application that involves a variety of modern technologies and features. This project is a multi-faceted endeavor, encompassing the development of real-time web player functionality using WebSockets, and an admin dashboard.",
+      "My primary task is to develop, and maintain a new web application from scratch. I use ReactJS as the primary front-end library to create a modern and responsive user interface.",
+      "To manage complex application state and asynchronous operations, I employ Redux Saga. This middleware helps in orchestrating data flow and handling real-time events.",
+      "I utilize Materialize as a component library to expedite the development process. Materialize offers pre-built, responsive UI components and styling, ensuring a consistent and visually appealing user experience.",
+      "One of the core features of the application is a real-time web player that provides live or dynamic content using WebSockets. I implement WebSocket communication to ensure real-time updates and data synchronization between the server and clients.",
+      "In addition to the real-time player, I develop an admin dashboard using Laravel for the back end and React for the front end. This dashboard provides administrative control and reporting capabilities.",
+      "I focus on creating a responsive design to ensure that the application is accessible and functional on various devices and screen sizes.",
+      "I implement security measures and user authentication to protect sensitive data and ensure that only authorized users can access the admin dashboard."
+    ]
+  }
+}
