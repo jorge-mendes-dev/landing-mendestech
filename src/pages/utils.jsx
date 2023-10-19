@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import {
   Footer,
@@ -10,7 +10,20 @@ import {
   CreateQRCode
 } from 'components'
 
+import { backToTop } from 'utils/generic'
+import { useNotifications } from 'hooks/useNotifications'
+
+import jorge from 'assets/images/profile.svg'
+
 function Utils() {
+  const { verifyAndRegister, sendNotification } = useNotifications()
+
+  useEffect(() => {
+    backToTop()
+    verifyAndRegister()
+    sendNotification('Jorge Mendes', 'Welcome to my website', jorge)
+  }, [])
+
   return (
     <div
       className={`bg-background dark:bg-black grid gap-y-16 overflow-hidden`}
