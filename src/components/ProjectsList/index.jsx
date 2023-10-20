@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import Projects from 'config/Projects'
@@ -7,69 +7,63 @@ import { Link } from 'react-router-dom'
 import { ProjectItem, Divider } from 'components'
 import config from 'config'
 
-const ProjectsList = ({ layout, customTitle, minus, ...props }) => {
+const ProjectsList = ({ layout, customTitle, except, ...props }) => {
   const { projects } = config
   const { title, project, primaryAction } = projects
 
+  const [item, setItem] = useState(project)
+  const [pagesTitle, setPagesTitle] = useState(title)
+
+  useEffect(() => {
+    bootstrap()
+  }, [layout, except])
+
+  const bootstrap = () => {
+    if (layout === 'compact') {
+      setItem(project.slice(0, 3))
+    }
+
+    if (except !== 'none') {
+      setItem(project.filter((proj) => proj.slug !== except))
+    }
+
+    if (customTitle !== '') {
+      setPagesTitle(customTitle)
+    }
+  }
+
   return (
     <div className="container mx-auto" {...props}>
-      <section className="py-5 sm:py-10 mt-5 sm:mt-10">
+      <section className="py-5 sm:py-10 sm:mt-10">
         <h2
           className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
         >
-          {customTitle === ''
-            ? title.split(' ').map((word, index) => (
-                <span
-                  key={index}
-                  className={index % 2 ? 'text-primary' : 'text-border'}
-                >
-                  {word}{' '}
-                </span>
-              ))
-            : customTitle.split(' ').map((word, index) => (
-                <span
-                  key={index}
-                  className={index % 2 ? 'text-primary' : 'text-border'}
-                >
-                  {word}{' '}
-                </span>
-              ))}
+          {pagesTitle.split(' ').map((word, index) => (
+            <span
+              key={index}
+              className={index % 2 ? 'text-primary' : 'text-border'}
+            >
+              {word}{' '}
+            </span>
+          ))}
         </h2>
         <Divider />
-        {layout === 'Home' ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 lg:grid-cols-3 sm:gap-10 p-8">
-            {project.slice(0, 3).map((project) => {
-              const Image = Projects[project.img]
-              return (
-                <ProjectItem
-                  title={project.title}
-                  category={project.category}
-                  image={Image}
-                  href={project.link}
-                  key={random()}
-                  type={project.type}
-                />
-              )
-            })}
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 lg:grid-cols-3 sm:gap-10 p-8">
-            {project.map((project) => {
-              const Image = Projects[project.img]
-              return (
-                <ProjectItem
-                  title={project.title}
-                  category={project.category}
-                  image={Image}
-                  href={project.link}
-                  key={random()}
-                  type={project.type}
-                />
-              )
-            })}
-          </div>
-        )}
-        {layout === 'Home' && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 lg:grid-cols-3 sm:gap-10 p-8">
+          {item.map((project) => {
+            const Image = Projects[project.img]
+            return (
+              <ProjectItem
+                title={project.title}
+                category={project.category}
+                image={Image}
+                href={project.link}
+                key={random()}
+                type={project.type}
+              />
+            )
+          })}
+        </div>
+        {layout === 'compact' && (
           <div className={`flex flex-col items-center justify-center`}>
             <div className="rounded shadow mt-2">
               <Link
@@ -89,14 +83,15 @@ const ProjectsList = ({ layout, customTitle, minus, ...props }) => {
 }
 
 ProjectsList.propTypes = {
-  layout: PropTypes.string.isRequired,
+  layout: PropTypes.string,
   customTitle: PropTypes.string,
-  minus: PropTypes.string
+  except: PropTypes.string
 }
 
 ProjectsList.defaultProps = {
+  layout: '',
   customTitle: '',
-  minus: ''
+  except: 'none'
 }
 
 export default ProjectsList

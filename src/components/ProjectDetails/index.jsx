@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 import { random } from 'utils/generic'
 import Projects from 'config/Projects'
 
-import { LazyShow } from 'components'
+import { LazyShow, PlayerAnimation } from 'components'
+
+import alien from 'utils/JSON/alien.json'
 
 import * as S from './styled'
 
@@ -12,10 +14,13 @@ const ProjectDetails = ({ data, ...props }) => {
   const { ProjectHeader, disclaimer, ProjectImages, ProjectInfo } = data
 
   return (
-    <S.Wrapper {...props} className="container mx-auto">
-      <div className="p-4">
+    <S.Wrapper
+      {...props}
+      className="container mx-auto bg-white rounded sm:no-border shadow"
+    >
+      <div className="p-6">
         <LazyShow>
-          <h1 className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-secondary-dark dark:text-secondary-light mt-14 sm:mt-20 mb-7">
+          <h1 className="font-general-medium text-left text-5xl font-extrabold sm:text-4xl font-bold text-secondary-dark dark:text-secondary-light mt-14 sm:mt-20 mb-7">
             {ProjectHeader.title}
           </h1>
           <div className="flex">
@@ -34,7 +39,7 @@ const ProjectDetails = ({ data, ...props }) => {
           </div>
         </LazyShow>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12 p-6">
         {ProjectImages.map((project) => {
           return (
             <div className="mb-10 sm:mb-0" key={random()}>
@@ -55,7 +60,7 @@ const ProjectDetails = ({ data, ...props }) => {
         <div className="w-full sm:w-1/3 text-left">
           {/* client details */}
           <LazyShow>
-            <div className="mb-7 p-4">
+            <div className="mb-7 p-6">
               <p className="font-general-regular text-secondary text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
                 {ProjectInfo.ClientHeading}
               </p>
@@ -92,7 +97,7 @@ const ProjectDetails = ({ data, ...props }) => {
 
           {/*  objectives */}
           <LazyShow>
-            <div className="mb-7 p-4">
+            <div className="mb-7 p-6">
               <p className="font-general-regular text-secondary text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
                 {ProjectInfo.ObjectivesHeading}
               </p>
@@ -104,7 +109,7 @@ const ProjectDetails = ({ data, ...props }) => {
 
           {/*  technologies */}
           <LazyShow>
-            <div className="mb-7 p-4">
+            <div className="mb-7 p-6">
               <p className="font-general-regular text-secondary text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
                 {ProjectInfo.Technologies[0].title}
               </p>
@@ -113,10 +118,13 @@ const ProjectDetails = ({ data, ...props }) => {
               </p>
             </div>
           </LazyShow>
+          <LazyShow>
+            <PlayerAnimation animation={alien} size={'15vw'} />
+          </LazyShow>
         </div>
 
         {/* right section */}
-        <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0 p-4">
+        <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0 p-6">
           <LazyShow>
             <p className="font-general-regular text-secondary text-secondary-dark dark:text-secondary-light text-2xl font-bold mb-7">
               {ProjectInfo.Heading}

@@ -35,6 +35,6 @@ const NotFound = ({ title, ...props }) => (
 )
 
 NotFound.propTypes = { title: PropTypes.string }
-NotFound.defaultProps = { title: 'NotFound' }
+NotFound.defaultProps = { title: 'Not Found' }
 
 export default NotFound

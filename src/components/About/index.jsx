@@ -3,14 +3,12 @@ import PropTypes from 'prop-types'
 
 import { Link } from 'react-router-dom'
 import { random } from 'utils/generic'
-import { Divider } from 'components'
+import { Divider, PlayerAnimation } from 'components'
 
 import astronalt_no_bg from 'utils/JSON/astronalt_no_bg.json'
 import astronalt from 'utils/JSON/astronalt.json'
 
 import config from 'config'
-
-import * as S from './styled'
 
 const About = ({ layout, ...props }) => {
   const { about } = config
@@ -62,13 +60,13 @@ const About = ({ layout, ...props }) => {
             </div>
           </div>
           <div className={`flex flex-col items-center justify-center`}>
-            <S.PlayerAbout src={astronalt_no_bg} loop autoplay />
+            <PlayerAnimation animation={astronalt_no_bg} />
           </div>
         </div>
       ) : (
         <div className="block sm:flex sm:gap-10 justify-center`">
           <div className="w-full sm:w-1/4 mb-7 sm:mb-0">
-            <S.PlayerAboutPage src={astronalt} loop autoplay />
+            <PlayerAnimation animation={astronalt} size={'16vw'} />
           </div>
 
           <div className="font-general-regular w-full sm:w-3/4 text-left p-6 shadow rounded">

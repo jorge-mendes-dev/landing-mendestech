@@ -3,6 +3,7 @@ import media from 'styled-media-query'
 import { Player } from '@lottiefiles/react-lottie-player'
 
 export const FooterWrapper = styled.footer`
+  opacity: 0.8;
   background-color: ${({ theme }) => theme.colors.black};
   border-top: 1px solid ${({ theme }) => theme.colors.primary};
   background-image: linear-gradient(
@@ -19,17 +20,13 @@ export const FooterWrapper = styled.footer`
   align-items: center;
 
   width: 100%;
-  min-height: 50vh;
-  position: relative;
-
-  ${media.lessThan('large')`
   min-height: 25vh;
-  `}
+  position: relative;
 `
 
 export const PlayerFooter = styled(Player)`
   max-width: 100vw;
-  max-height: 50vh;
+  max-height: 25vh;
   z-index: 1;
   pointer-events: none;
   position: absolute;
@@ -43,6 +40,7 @@ export const PlayerFooter = styled(Player)`
 `
 
 export const Container = styled.div`
+  opcity: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;

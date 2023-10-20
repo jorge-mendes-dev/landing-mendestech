@@ -1,8 +1,16 @@
 import React, { useEffect } from 'react'
 
-import { Footer, ProjectsList, Navbar, LazyShow } from 'components'
+import {
+  Footer,
+  ProjectsList,
+  Navbar,
+  LazyShow,
+  PlayerAnimation
+} from 'components'
 
 import { backToTop } from 'utils/generic'
+
+import alien from 'utils/JSON/alienInRocket.json'
 
 function Projects() {
   useEffect(() => {
@@ -23,7 +31,10 @@ function Projects() {
         </div>
       </div>
       <LazyShow>
-        <ProjectsList layout={'Page'} />
+        <ProjectsList except={'none'} />
+      </LazyShow>
+      <LazyShow>
+        <PlayerAnimation animation={alien} />
       </LazyShow>
       <LazyShow>
         <Footer />
