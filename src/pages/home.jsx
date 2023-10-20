@@ -36,7 +36,7 @@ function Home() {
         <About layout={'Home'} />
       </LazyShow>
       <LazyShow>
-        <ProjectsList layout={'Home'} />
+        <ProjectsList layout={'compact'} except={'none'} />
       </LazyShow>
       <LazyShow>
         <Footer />

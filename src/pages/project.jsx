@@ -58,12 +58,9 @@ const ProjectInfo = () => {
       <LazyShow>
         <ProjectDetails data={getProjectDataByName(name)} />
       </LazyShow>
+
       <LazyShow>
-        <ProjectsList
-          layout={'Home'}
-          customTitle={'Other Projects'}
-          minus={name}
-        />
+        <ProjectsList customTitle={'Other Projects'} except={`${name}`} />
       </LazyShow>
       <LazyShow>
         <Footer />
