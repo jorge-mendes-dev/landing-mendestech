@@ -1,6 +1,6 @@
 ## JORGE MENDES WEBSITE
 
-Project of mendes tecnology landing page using a react CRA custom structure.
+Project of mendes tecnology landing page using a react Vite and Tailwind css.
 
 This project was made thinking on fast and better productivity. So any change on the main structure repository can be pulled and apply to this child project.
 
@@ -45,19 +45,6 @@ Stack and resources used on this structure creation.
 - `yarn lint` - use prettier to verify files on your app.
 - `yarn format` - use prettier to format files on your app.
 
-## ⚙️ How to use the structure
-
-For using the structure as a second origin use the follow lines:
-
-- `git remote add structure git@github.com:Jorge-Bill/blog-cra.git`
-
-On first time pull request
-
-- `git pull structure HEAD:master --allow-unrelated-histories`
-
-After the first pull request
-
-- `git pull structure HEAD:master`
 
 ## 💾 SET Husky hoooks
 
