@@ -8,11 +8,11 @@ This project was made thinking on fast and better productivity. So any change on
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4649d379-760f-4e2e-a11d-df09216e019b/deploy-status)](https://app.netlify.com/sites/landing-mendestech/deploys)
 
-## <a href="https://jorgemendes.com.br/"> 🌐 &nbsp; Acess the main website </a>
+## <a href="https://jorgemendes.com.br/"> 🌐 &nbsp; Acess the website </a>
 
 <p align="center">
   <a href="https://jorgemendes.com.br/">
-    <img src="https://raw.githubusercontent.com/Jorge-Bill/Jorge-Bill/master/assets/jorge.png">
+    <img src="https://raw.githubusercontent.com/Jorge-Bill/Jorge-Bill/master/assets/jorgeMendesWeb.png" />
   </a>
 </p>
 
