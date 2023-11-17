@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { LazyShow, Navbar, NotFound, Footer } from 'components'
+import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
 function Page404() {
+  const { sendPageView } = useGoogleAnalytics()
+
+  useEffect(() => {
+    sendPageView()
+  }, [])
+
   return (
     <div className={`relative bg-background dark:bg-black`}>
       <div className={`relative bg-background dark:bg-black`}>

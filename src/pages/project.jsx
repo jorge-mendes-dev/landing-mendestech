@@ -11,6 +11,7 @@ import {
 } from 'components'
 
 import { backToTop } from 'utils/generic'
+import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
 import plantoes from 'config/project/plantoes'
 import hotmart from 'config/project/hotmart'
@@ -20,9 +21,11 @@ import webmeeting from 'config/project/webmeeting'
 
 const ProjectInfo = () => {
   const { name } = useParams()
+  const { sendPageView } = useGoogleAnalytics()
 
   useEffect(() => {
     backToTop()
+    sendPageView()
   }, [])
 
   const getProjectDataByName = (key) => {
