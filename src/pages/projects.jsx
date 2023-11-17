@@ -9,12 +9,16 @@ import {
 } from 'components'
 
 import { backToTop } from 'utils/generic'
+import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
 import alien from 'utils/JSON/alienInRocket.json'
 
 function Projects() {
+  const { sendPageView } = useGoogleAnalytics()
+
   useEffect(() => {
     backToTop()
+    sendPageView()
   }, [])
 
   return (

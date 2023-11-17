@@ -11,10 +11,14 @@ import {
 } from 'components'
 
 import { backToTop } from 'utils/generic'
+import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
 function Home() {
+  const { sendPageView } = useGoogleAnalytics()
+
   useEffect(() => {
     backToTop()
+    sendPageView()
   }, [])
 
   return (

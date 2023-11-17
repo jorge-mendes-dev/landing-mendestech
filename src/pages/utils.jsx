@@ -12,14 +12,17 @@ import {
 
 import { backToTop } from 'utils/generic'
 import { useNotifications } from 'hooks/useNotifications'
+import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
 import jorge from 'assets/images/profile.svg'
 
 function Utils() {
   const { verifyAndRegister, sendNotification } = useNotifications()
+  const { sendPageView } = useGoogleAnalytics()
 
   useEffect(() => {
     backToTop()
+    sendPageView()
     verifyAndRegister()
     sendNotification('Jorge Mendes', 'Welcome to my website', jorge)
   }, [])
