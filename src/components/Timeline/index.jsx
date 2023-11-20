@@ -60,9 +60,9 @@ const Timeline = () => {
                 }}
                 icon={<Icon />}
               >
-                <div className="bg-white rounded shadow p-6">
+                <div className="bg-white rounded shadow p-8">
                   <h3
-                    className={`w-full my-2 text-1xl font-bold leading-tight text-primary vertical-timeline-element-title`}
+                    className={`w-full my-2 text-1xl font-bold leading-tight vertical-timeline-element-title`}
                   >
                     {item.institution}
                   </h3>
