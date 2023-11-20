@@ -11,17 +11,18 @@ export const TimelineWrapper = styled(VerticalTimeline)`
   }
 
   .vertical-timeline-element-date {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
     font-weight: bold;
   }
 
   .vertical-timeline-element-title {
     color: ${({ theme }) => theme.colors.primary};
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   .vertical-timeline-element-subtitle {
-    color: ${({ theme }) => theme.colors.bluehighlight};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   p {
