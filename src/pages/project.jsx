@@ -19,6 +19,19 @@ import aprova from 'config/project/aprova'
 import provu from 'config/project/provu'
 import webmeeting from 'config/project/webmeeting'
 
+/*
+let path = window.location.href.split("/").pop()
+let info = {}
+
+import(`config/project/${path}.json`)
+ .then((data) => {
+   info = data
+ })
+ .catch((error) => {
+   console.error(`Error loading JSON file: ${error}`)
+ })
+*/
+
 const ProjectInfo = () => {
   const { name } = useParams()
   const { sendPageView } = useGoogleAnalytics()
