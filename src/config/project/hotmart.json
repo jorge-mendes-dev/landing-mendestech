@@ -55,16 +55,19 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Front-End Developer, I am responsible for developing and maintaining internal privacy applications that are critical for safeguarding sensitive data and ensuring compliance with privacy regulations. My role involves creating new features, resolving bugs, and working with a specific technology stack, including ReactJS, TypeScript, and Styled-Components.",
-      "I am actively involved in the design and implementation of new features within our internal privacy applications. These features are essential for enhancing the functionality and security of the applications, and I collaborate with cross-functional teams to gather requirements and ensure that the solutions meet business needs.",
-      "My role includes identifying and addressing issues and bugs within the applications. This involves debugging code, tracing issues to their source, and providing timely fixes to maintain the integrity and performance of the applications.",
-      "I leverage the power of ReactJS, a popular front-end library, to build responsive and dynamic user interfaces for our internal privacy applications. This includes creating reusable components, managing state, and ensuring a smooth user experience.",
-      "I use TypeScript to enhance the robustness of our codebase. By adding static typing and advanced features, I improve code quality, catch errors early in the development process, and make the codebase more maintainable",
-      "Styled-Components are a part of my toolkit for creating visually appealing and maintainable user interfaces. I use this CSS-in-JS library to manage styling in a component-based approach, ensuring consistency and modularity in our applications.",
-      "I focus on ensuring that our applications work seamlessly across various web browsers, including handling any browser-specific quirks and providing responsive design for different screen sizes and devices.",
-      "I collaborate with UX/UI designers to implement designs and interactions that enhance the user experience. This includes optimizing performance and accessibility to ensure that the applications are user-friendly and compliant with accessibility standards.",
-      "I maintain high coding standards and adhere to best practices in front-end development, including code reviews and ensuring that the codebase is well-documented and easy to understand for other team members.",
-      "Given the nature of our applications, I am vigilant about security and privacy concerns. I work to implement the necessary security measures and ensure that our applications comply with internal and external privacy regulations."
+      "As a Front-End Developer, I was responsible for developing and maintaining internal privacy applications that were critical for safeguarding sensitive data and ensuring compliance with privacy regulations. My role involved creating new features, resolving bugs, and working with a specific technology technical stack, including ReactJS, TypeScript, and Styled-Components. Jest and react-testing-library.",
+      "I was actively involved in the design and implementation of new features within our internal privacy applications. These features are essential for enhancing the functionality and security of the applications, and I collaborated with cross-functional teams to gather requirements and ensure that the solutions served business needs.",
+      "Sometimes the requirements were performance, other times, i18n specifications or graphic display for legal process, something really specific and interesting of working. ",
+      "My role included identifying and addressing issues and bugs within the applications. This involved debugging code, tracing issues to their source, and providing timely fixes to maintain the integrity and performance of the applications front-end side.",
+      "I leveraged the power of ReactJS, a popular front-end library, to build responsive and dynamic user interfaces for our internal privacy applications. This includes creating reusable components with styled-components, managing state with context api, and ensuring a smooth user experience using css animations.",
+      "I used TypeScript to enhance the organization of our codebase. By adding static typing and advanced features, I improved code quality for catch errors early in the development process, and make the codebase more maintainable. ",
+      "For documentation we used Spotify backstage. Styled-Components were a part of my toolkit for creating visually appealing and maintainable user interfaces. I used this CSS-in-JS library to manage styling in a component-based approach, ensuring consistency and modularity in our applications.",
+      "My focus was ensuring that our applications worked seamlessly across various web browsers, including handling any browser-specific quirks and providing responsive design for different screen sizes and devices.",
+      "I worked on optimizing performance and accessibility to ensure that the applications are user-friendly and compliant with accessibility standards, not forgot the security using form sanitization and blocking scripts executions.",
+      "I maintained the high coding standards and used to best practices in front-end development known to me.",
+      "I acted on code reviews and ensured that the codebase is well-documented and easy to understand for other team members.",
+      "Created tests using Jest, and react testing library, for ensure the applications and components were builded avoiding any side effects or bugs.",
+      "Given the nature of our applications, I was vigilant about security and privacy concerns. I worked to implement the necessary security measures and ensure that our applications comply with internal and external privacy regulations of the company."
     ]
   }
 }

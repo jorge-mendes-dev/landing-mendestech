@@ -56,15 +56,15 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Front-End Developer, my primary responsibility is to refactor an existing AngularJS application into a new React application while implementing modern front-end development practices and tools. This involves the integration of Redux Saga for state management, the creation of a design system using Styled Components, and the implementation of component validation with Formik and Yup, with comprehensive testing using Jest.",
-      "I am tasked with transforming an outdated AngularJS application into a modern React application. This involves migrating existing components and functionality to the React framework.",
-      "My role hinges on my proficiency in React, allowing me to create dynamic and responsive user interfaces, ensuring a smooth user experience while adhering to current industry best practices.",
-      "To effectively manage the application's state and handle asynchronous operations, I incorporate Redux Saga. This middleware helps in orchestrating complex data flows and side effects, ensuring data consistency and reliability.",
-      "I am responsible for establishing a design system to maintain visual consistency throughout the application. This design system includes reusable UI components built with Styled Components, enhancing code maintainability and consistency in design.",
-      "I employ Formik and Yup to implement robust form validation for user input, making sure data submitted by users is accurate and adheres to predefined standards. This enhances data quality and user experience.",
-      "Quality assurance is a fundamental aspect of my role. I conduct comprehensive testing using Jest, ensuring that the refactored application is free of defects and behaves as expected. This includes unit testing, integration testing, and snapshot testing.",
-      "I focus on creating responsive designs, ensuring that the application looks and functions well on a variety of devices and screen sizes.",
-      "Part of the refactoring process involves optimizing code for performance and maintainability. I review and refactor the codebase to improve readability and efficiency."
+      "As a Front-End Developer, my primary responsibility was to refactor an existing AngularJS application into a new React application while implementing modern front-end development practices and tools. This involved the integration of Redux Saga for state management, the creation of a design system using Styled Components, and the implementation of component validation with Formik and Yup, with comprehensive testing using Jest and react testing library.",
+      "I was tasked with transforming an outdated AngularJS application into a modern React application. This involved migrating existing components and functionality to the React framework.",
+      "My role hinged on my proficiency in React, allowing me to create dynamic and responsive user interfaces, ensuring a smooth user experience while adhering to current industry best practices.",
+      "To effectively manage the application's state and handle asynchronous operations, I incorporate Redux Saga. This middleware helped in orchestrating complex data flows and side effects, ensuring data consistency and reliability.",
+      "I was responsible for establishing a design system to maintain visual consistency throughout the application. This designed system included reusable UI components built with Styled Components, enhancing code maintainability and consistency in design.",
+      "I used Formik and Yup to implement robust form validation for user data input, making sure data submitted by users was accurate and adheres to predefined standards. This ensured data quality and user experience.",
+      "Quality assurance was a fundamental aspect of my role. I conducted comprehensive testing using Jest, and react testing library ensuring that the refactored application was free of defects and behaves as expected. This included unit testing, integration testing, and snapshot testing.",
+      "I focused on creating responsive designs, ensuring that the application looked and functions well on a variety of devices and screen sizes.",
+      "Part of the refactoring process involved optimizing code for performance and maintainability. I reviewed and refactor the codebase to improve readability and efficiency."
     ]
   }
 }

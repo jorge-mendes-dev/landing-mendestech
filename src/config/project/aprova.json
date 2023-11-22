@@ -54,13 +54,14 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Mobile Developer using React Native, my primary responsibility is to enhance and maintain two applications by leveraging modern technologies and integrations. These applications serve as vital tools for our users and depend on React Native, Redux Toolkit, back-end APIs, and WhatsApp integration for their functionality.",
-      "I play a pivotal role in improving and expanding the features and functionalities of the two mobile applications. This involves understanding user requirements, collaborating with stakeholders, and translating these needs into practical solutions.",
-      "My work heavily relies on React Native, a popular framework for building cross-platform mobile applications. I leverage this technology to create user interfaces that are both visually appealing and performant across Android and iOS platforms.",
-      "To manage application state efficiently, I employ Redux Toolkit. This state management library helps in centralizing and synchronizing application data, ensuring a seamless user experience and making it easier to maintain complex application states.",
-      "The applications I work on rely on data from a back-end API. I am responsible for seamlessly integrating with this API to retrieve and display relevant information, ensuring data consistency and real-time updates.",
-      "One of the key features I implement is integrating WhatsApp into the applications. This allows users to interact with the applications and share content through WhatsApp, enhancing user engagement and communication.",
-      "I maintain clear and comprehensive documentation for the codebase, making it easier for other team members to understand, extend, and maintain the applications over time."
+      "When I was acting as Mobile Developer using React Native, my primary responsibility is to enhance and maintain two applications by leveraging modern technologies and integrations. These applications was vital tools for our users and depend on React Native, Redux Toolkit, back-end APIs, and WhatsApp Chatbot integration for their functionality.",
+      "I played a pivotal role in improving and expanding the features and functionalities of the two mobile applications. This involved understanding user requirements, collaborating with other developers, and builded  these needs into practical solutions.",
+      "My work heavily relied on React Native, a popular framework for build cross-platform mobile applications. I leveraged this technology to create user interfaces that are both visually appealing across Android and iOS platforms.",
+      "To manage application state efficiently, I employed Redux Toolkit. This state management library helped in centralizing and synchronizing application data, ensuring a seamless user experience and making it easier to maintain complex application states.",
+      "The applications I worked on relyed on data from a back-end API. I was responsible for integrating with this API to retrieve and display relevant information, ensuring data consistency and real-time updates.",
+      "One of the key features I implemented was integrating WhatsApp into the applications. This allowed users to interact with the applications and share content through WhatsApp, enhancing user engagement and communication.",
+      "I maintained clear and comprehensive documentation for the codebase, making it easier for other team members to understand, extend, and maintain the applications over time.",
+      "And acted as support on a NodeJS chat bot that fowarded documents for users and get user preferences for real estate suggestion integrated with WhatsApp using Twilio API."
     ]
   }
 }
