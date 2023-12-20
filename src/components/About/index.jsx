@@ -12,7 +12,7 @@ import config from 'config'
 
 const About = ({ layout, ...props }) => {
   const { about } = config
-  const { title, paragraphs, primaryAction } = about
+  const { title, paragraphs, primaryAction, list } = about
 
   return (
     <section
@@ -78,6 +78,13 @@ const About = ({ layout, ...props }) => {
                 {description}
               </p>
             ))}
+            <div className="text-gray-600 dark:text-gray pl-4 font-light subpixel-antialiased tracking-light align-baseline leading-relaxed">
+              <ul className="list-disc">
+                {list.map((item) => (
+                  <li key={random()}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       )}

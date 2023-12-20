@@ -45,7 +45,6 @@ Stack and resources used on this structure creation.
 - `yarn lint` - use prettier to verify files on your app.
 - `yarn format` - use prettier to format files on your app.
 
-
 ## 💾 SET Husky hoooks
 
 - `yarn husky install`
