@@ -69,7 +69,7 @@ const About = ({ layout, ...props }) => {
             <PlayerAnimation animation={astronalt} size={'16vw'} />
           </div>
 
-          <div className="font-general-regular w-full sm:w-3/4 text-left p-6 shadow rounded">
+          <div className="font-general-regular bg-white w-full sm:w-3/4 text-left p-6 shadow rounded">
             {paragraphs.map((description) => (
               <p
                 key={random()}
