@@ -31,7 +31,13 @@ const ClientsList = ({ ...props }) => {
           {data.map((client) => {
             const Brand = Brands[client.img]
             return (
-              <ImageCard title={client.title} image={Brand} key={random()} />
+              <ImageCard
+                title={client.title}
+                image={Brand}
+                key={random()}
+                width={'auto'}
+                height={'auto'}
+              />
             )
           })}
         </div>

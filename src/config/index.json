@@ -42,7 +42,7 @@
   "about": {
     "title": "About Me",
     "paragraphs": [
-      "Senior Software Engineer with nearly 10 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.",
+      "Senior Software Engineer with 8 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.",
       "Today i am focused in learning new techniques and skills. One of my most notable skills is my ability to translate client needs into an efficient technology solution. I am an excellent communicator and know how to listen and understand.",
       "I am also highly efficient in working as part of a team. I understand the importance of collaboration in achieving common goals and work well with other developers and team members. I am able to contribute positively to team dynamics, bringing creative ideas and solutions to the technical challenges the team faces."
     ],
@@ -224,63 +224,139 @@
       }
     ]
   },
-  "skillTitle": "My Skills",
-  "hardSkills": [
-    {
-      "name": "nodejs",
-      "level": 3
-    },
-    {
-      "name": "JS",
-      "level": 5
-    },
-    {
-      "name": "react",
-      "level": 5
-    },
-    {
-      "name": "redux",
-      "level": 5
-    },
-    {
-      "name": "graphql",
-      "level": 4
-    }
-  ],
-  "softSkills": [
-    {
-      "name": "respect",
-      "level": 5
-    },
-    {
-      "name": "passion",
-      "level": 5
-    },
-    {
-      "name": "sociable",
-      "level": 4
-    },
-    {
-      "name": "hard worker",
-      "level": 5
-    },
-    {
-      "name": "smart worker",
-      "level": 5
-    }
-  ],
+  "skills": {
+    "title": "My Skills",
+    "data": [
+      {
+        "title": "AngularJS",
+        "img": "angular"
+      },
+      {
+        "title": "AWS",
+        "img": "aws"
+      },
+      {
+        "title": "Bootstrap",
+        "img": "bootstrap"
+      },
+      {
+        "title": "canva",
+        "img": "canva"
+      },
+      {
+        "title": "css",
+        "img": "css"
+      },
+      {
+        "title": "Docker",
+        "img": "docker"
+      },
+      {
+        "title": "Figma",
+        "img": "figma"
+      },
+      {
+        "title": "Firebase",
+        "img": "firebase"
+      },
+      {
+        "title": "Gimp",
+        "img": "gimp"
+      },
+      {
+        "title": "Git",
+        "img": "git"
+      },
+      {
+        "title": "Graphql",
+        "img": "graphql"
+      },
+      {
+        "title": "html",
+        "img": "html"
+      },
+      {
+        "title": "Javascript",
+        "img": "javascript"
+      },
+      {
+        "title": "Markdown",
+        "img": "markdown"
+      },
+      {
+        "title": "Material UI",
+        "img": "materialui"
+      },
+      {
+        "title": "MS Office",
+        "img": "microsoftoffice"
+      },
+      {
+        "title": "MongoDB",
+        "img": "mongoDB"
+      },
+      {
+        "title": "Mysql",
+        "img": "mysql"
+      },
+      {
+        "title": "NextJS",
+        "img": "nextJS"
+      },
+      {
+        "title": "Photoshop",
+        "img": "photoshop"
+      },
+      {
+        "title": "php",
+        "img": "php"
+      },
+      {
+        "title": "postgreSQL",
+        "img": "postgresql"
+      },
+      {
+        "title": "react",
+        "img": "react"
+      },
+      {
+        "title": "Strapi",
+        "img": "strapi"
+      },
+      {
+        "title": "Tailwind",
+        "img": "tailwind"
+      },
+      {
+        "title": "Typescript",
+        "img": "typescript"
+      },
+      {
+        "title": "Vitejs",
+        "img": "vitejs"
+      },
+      {
+        "title": "Vue",
+        "img": "vue"
+      },
+      {
+        "title": "Wordpress",
+        "img": "wordpress"
+      }
+    ]
+  },
   "utilities": {
-    "title": "Utilidades WhatsApp"
+    "title": "WhatsApp Utils"
   },
   "clients": {
-    "title": "Companies that trust me",
+    "title": "Companies that trust's me",
     "data": [
       {
         "title": "FATEC SÃO ROQUE",
         "img": "fatec"
       },
       {
-        "title": "SÃO PAULO STATE DEPARTMENT OF EDUCATION",
+        "title": "SÃO PAULO - STATE DEPARTMENT OF EDUCATION",
         "img": "gov"
       },
       {
