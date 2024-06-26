@@ -3,10 +3,9 @@ import media from 'styled-media-query'
 import Icons from 'config/Icons'
 
 export const SkillsWrapper = styled.div`
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
+  ${media.lessThan('large')`
+    display: none;
+  `};
 `
 
 export const SkillTitle = styled.h6`

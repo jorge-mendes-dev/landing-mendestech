@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { LazyShow, Navbar, NotFound, Footer } from 'components'
+import { LazyShow, Navbar, NotFound } from 'components'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
 function Page404() {
@@ -23,7 +23,6 @@ function Page404() {
       <LazyShow>
         <>
           <NotFound title={'PAGE NOT FOUND'} />
-          <Footer />
         </>
       </LazyShow>
     </div>

@@ -3,6 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import config from 'config'
 
+import * as S from './styled'
+
 const Header = () => {
   const { mainHero } = config
   const { title, subtitle, description, primaryAction, secondaryAction } =
@@ -16,9 +18,13 @@ const Header = () => {
       <div className="sm:text-center lg:text-left">
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline dark:text-white">{title}</span>{' '}
-          <span className={`block text-primary xl:inline`}>{subtitle}</span>
+          <S.StyledTitle>
+            <h2>
+              <span className={`block text-primary xl:inline`}>{subtitle}</span>
+            </h2>
+          </S.StyledTitle>
         </h1>
-        <p className="mt-3 text-base text-gray-500 dark:text-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+        <p className="mt-3 font-base leading-2 text-gray-800 dark:text-gray sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
           {description}
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import path from 'path'
+import tailwindcss from 'tailwindcss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -48,6 +49,11 @@ export default defineConfig({
       cacheLocation: 'node_modules/.vite-plugin-image-optimizer-cache'
     })
   ],
+  css: {
+    postcss: {
+      plugins: [tailwindcss()]
+    }
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src/'),

@@ -7,7 +7,8 @@ import {
   LazyShow,
   ClientsList,
   Counter,
-  Timeline
+  Timeline,
+  SkillsList
 } from 'components'
 
 import { backToTop } from 'utils/generic'
@@ -36,6 +37,9 @@ function AboutMe() {
       </div>
       <LazyShow>
         <About layout={'About'} />
+      </LazyShow>
+      <LazyShow>
+        <SkillsList />
       </LazyShow>
       <LazyShow>
         <Counter />
