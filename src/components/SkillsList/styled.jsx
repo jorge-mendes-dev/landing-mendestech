@@ -2,11 +2,7 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 import Icons from 'config/Icons'
 
-export const SkillsWrapper = styled.div`
-  ${media.lessThan('large')`
-    display: none;
-  `};
-`
+export const SkillsWrapper = styled.div``
 
 export const SkillTitle = styled.h6`
   text-transform: capitalize;

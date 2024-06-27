@@ -36,7 +36,7 @@
       }
     ],
     "ObjectivesHeading": "Objective",
-    "ObjectivesDetails": "I've had been contracted as a front-end developer to refactor of old AngularJS application to new react application with redux saga, and component libary",
+    "ObjectivesDetails": "I've had been contracted as a front-end developer to refactor of old Angular application to new react application with redux saga, and component libary",
     "Technologies": [
       {
         "title": "Tools & Technologies",
@@ -44,7 +44,7 @@
           "React.js",
           "Redux Saga",
           "axios",
-          "AngularJS",
+          "Angular",
           "Yup",
           "jest",
           "i18n",
@@ -56,8 +56,8 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Front-End Developer, my primary responsibility was to refactor an existing AngularJS application into a new React application while implementing modern front-end development practices and tools. This involved the integration of Redux Saga for state management, the creation of a design system using Styled Components, and the implementation of component validation with Formik and Yup, with comprehensive testing using Jest and react testing library.",
-      "I was tasked with transforming an outdated AngularJS application into a modern React application. This involved migrating existing components and functionality to the React framework.",
+      "As a Front-End Developer, my primary responsibility was to refactor an existing Angular application into a new React application while implementing modern front-end development practices and tools. This involved the integration of Redux Saga for state management, the creation of a design system using Styled Components, and the implementation of component validation with Formik and Yup, with comprehensive testing using Jest and react testing library.",
+      "I was tasked with transforming an outdated Angular application into a modern React application. This involved migrating existing components and functionality to the React framework.",
       "My role hinged on my proficiency in React, allowing me to create dynamic and responsive user interfaces, ensuring a smooth user experience while adhering to current industry best practices.",
       "To effectively manage the application's state and handle asynchronous operations, I incorporate Redux Saga. This middleware helped in orchestrating complex data flows and side effects, ensuring data consistency and reliability.",
       "I was responsible for establishing a design system to maintain visual consistency throughout the application. This designed system included reusable UI components built with Styled Components, enhancing code maintainability and consistency in design.",

@@ -34,9 +34,9 @@ const ProjectsList = ({ layout, customTitle, except, ...props }) => {
 
   return (
     <div className="container mx-auto" {...props}>
-      <section className="py-5 sm:py-10 sm:mt-10">
+      <section className="py-5 sm:py-10">
         <h2
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
+          className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
         >
           {pagesTitle.split(' ').map((word, index) => (
             <span
@@ -65,7 +65,7 @@ const ProjectsList = ({ layout, customTitle, except, ...props }) => {
         </div>
         {layout === 'compact' && (
           <div className={`flex flex-col items-center justify-center`}>
-            <div className="rounded-xl shadow mt-2">
+            <div className="rounded-xl shadow">
               <Link
                 rel="noreferrer"
                 aria-label={primaryAction.text}

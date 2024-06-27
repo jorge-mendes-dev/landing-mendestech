@@ -11,7 +11,7 @@ const SkillsList = ({ ...props }) => {
   const { title, data } = skills
 
   return (
-    <S.SkillsWrapper {...props} className="container mx-auto">
+    <S.SkillsWrapper {...props} className="hidden lg:block container mx-auto">
       <h6
         className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
       >
