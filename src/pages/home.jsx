@@ -7,7 +7,8 @@ import {
   Navbar,
   LazyShow,
   MainHeroImage,
-  ProjectsList
+  ProjectsList,
+  SkillsList
 } from 'components'
 
 import { backToTop } from 'utils/generic'
@@ -38,6 +39,9 @@ function Home() {
       </div>
       <LazyShow>
         <About layout={'Home'} />
+      </LazyShow>
+      <LazyShow>
+        <SkillsList />
       </LazyShow>
       <LazyShow>
         <ProjectsList layout={'compact'} except={'none'} />
