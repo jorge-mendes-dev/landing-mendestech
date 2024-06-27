@@ -39,7 +39,7 @@ const Feedbacks = () => {
             <SwiperSlide key={i}>
               <div
                 className={`
-                rounded-t rounded-b-none shadow bg-slate-50 dark:bg-zinc-800
+                rounded-xl-t rounded-xl-b-none shadow bg-slate-50 dark:bg-zinc-800
                 duration-500 bg-bg_light_primary mx-8 p-6 h-full flex items-center gap-6
                 md:flex-row flex-col
                 ${activeIndex !== i && 'scale-75 blur-sm dark:bg-zinc-900'}`}

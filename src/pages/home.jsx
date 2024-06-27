@@ -24,7 +24,7 @@ function Home() {
 
   return (
     <div
-      className={`bg-background dark:bg-black grid gap-y-16 overflow-hidden`}
+      className={`bg-background dark:bg-black transition-all duration-500 grid gap-y-16 overflow-hidden`}
     >
       <div className={`relative bg-background dark:bg-black`}>
         <div className="max-w-7xl mx-auto">
