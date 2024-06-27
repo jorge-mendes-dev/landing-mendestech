@@ -37,7 +37,7 @@ const Timeline = () => {
           {description}
         </p>
 
-        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-gradient-to-r from-primary to-blue-800 rounded shadow p-8">
+        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-gradient-to-r from-primary to-blue-800 rounded-xl shadow p-8">
           {journey.map((item) => {
             const Icon = Icons[item.icon]
             return (
@@ -60,19 +60,19 @@ const Timeline = () => {
                 }}
                 icon={<Icon />}
               >
-                <div className="bg-white rounded shadow p-8">
+                <div className="bg-white border border-ternary-light rounded-xl shadow p-8 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <h3
-                    className={`w-full my-2 text-1xl font-bold leading-tight vertical-timeline-element-title`}
+                    className={`w-full my-2 text-1xl font-bold text-primary leading-tight`}
                   >
                     {item.institution}
                   </h3>
-                  <h4 className="vertical-timeline-element-subtitle mt-1">
+                  <h4 className="text-secondary leading-9 font-semibold mt-1">
                     {item.position}
                   </h4>
-                  <p className="max-w-2xl text-light text-gray-100 lg:mx-auto">
+                  <p className="max-w-2xl font-thin text-gray-100 lg:mx-auto">
                     {item.description}
                   </p>
-                  <p className="mt-1 max-w-xl text-light text-gray-100 lg:mx-auto">
+                  <p className="mt-1 max-w-xl font-light text-gray-100 lg:mx-auto">
                     {item.location}
                   </p>
                 </div>

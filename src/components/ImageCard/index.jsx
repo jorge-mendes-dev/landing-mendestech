@@ -6,7 +6,7 @@ const ImageCard = ({ title, image, width, height }) => {
     <>
       <img
         src={image}
-        className="w-64 bg-white dark:bg-zinc-800 border-ternary-light dark:border-ternary-dark shadow rounded p-2 mb-8 hover:shadow-xl cursor-pointer"
+        className="w-64 bg-white dark:bg-zinc-800 border-ternary-light dark:border-ternary-dark shadow rounded-xl p-2 mb-8 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer"
         alt={title}
         width={width}
         height={height}

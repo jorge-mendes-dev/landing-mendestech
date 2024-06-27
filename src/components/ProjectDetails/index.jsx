@@ -16,7 +16,7 @@ const ProjectDetails = ({ data, ...props }) => {
   return (
     <S.Wrapper
       {...props}
-      className="container mx-auto bg-white dark:bg-zinc-800 rounded sm:no-border shadow"
+      className="container mx-auto bg-white dark:bg-zinc-800 rounded-xl sm:no-border shadow"
     >
       <div className="p-6">
         <LazyShow>
@@ -46,7 +46,7 @@ const ProjectDetails = ({ data, ...props }) => {
               <LazyShow>
                 <img
                   src={Projects[project.img]}
-                  className="rounded cursor-pointer shadow sm:shadow-none"
+                  className="rounded-xl cursor-pointer shadow sm:shadow-none"
                   alt={project.title}
                   key={random()}
                 />

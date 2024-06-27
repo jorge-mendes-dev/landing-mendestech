@@ -37,23 +37,23 @@ const About = ({ layout, ...props }) => {
 
       {layout === 'Home' ? (
         <div className={`container max-w-5xl mx-auto m-8`}>
-          <div className={`flex flex-wrap p-8`}>
+          <div className={`flex flex-wrap p-8 rounded-xl shadow mb-6`}>
             {paragraphs.slice(0, 3).map((description) => (
               <p
                 key={random()}
-                className={`mb-6 text-gray-600 dark:text-gray subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
+                className={`mb-6 text-gray-800 dark:text-gray subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
               >
                 {description}
               </p>
             ))}
           </div>
           <div className={`flex flex-col items-center justify-center`}>
-            <div className="rounded shadow mb-2">
+            <div className="rounded-xl shadow mb-2">
               <Link
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
               </Link>
@@ -69,7 +69,7 @@ const About = ({ layout, ...props }) => {
             <PlayerAnimation animation={astronalt} size={'16vw'} />
           </div>
 
-          <div className="font-general-regular bg-white w-full sm:w-3/4 text-left p-6 shadow rounded">
+          <div className="font-general-regular bg-white w-full sm:w-3/4 text-left p-6 shadow rounded-xl">
             {paragraphs.map((description) => (
               <p
                 key={random()}

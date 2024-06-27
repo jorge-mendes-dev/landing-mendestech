@@ -34,9 +34,9 @@ const OpenLink = () => {
         </p>
 
         <div className="w-full">
-          <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div className="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
             {link ? (
-              <div className="bg-green-200 rounded p-8 mt-4 flex flex-wrap flex-col flex-row">
+              <div className="bg-green-200 rounded-xl p-8 mt-4 flex flex-wrap flex-col flex-row">
                 <p className="text-gray-400 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">
                   caso a conversa não abra automaticamente click abaixo:
                 </p>
@@ -58,7 +58,7 @@ const OpenLink = () => {
                   Telefone
                 </label>
                 <input
-                  className="mb-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="mb-2 shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="phone"
                   name="phone"
                   type="text"
@@ -70,7 +70,7 @@ const OpenLink = () => {
                 />
                 <div className="flex items-center justify-end">
                   <button
-                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
                     type="submit"
                   >
                     Conversar
@@ -82,7 +82,7 @@ const OpenLink = () => {
             <div className="flex items-center justify-end">
               {link && (
                 <button
-                  className="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
                   type="button"
                   onClick={() => setDefault()}
                 >

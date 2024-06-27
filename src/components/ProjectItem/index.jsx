@@ -9,10 +9,10 @@ const ProjectItem = ({ title, href, category, image, type }) => {
   const Component = (
     <div
       onClick={() => backToTop()}
-      className="hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-white dark:bg-zinc-800 rounded p-8 shadow"
+      className="hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer mb-10 sm:mb-0 bg-white dark:bg-zinc-800 rounded-xl p-8 shadow"
     >
       <div className={`flex flex-col items-center justify-center`}>
-        <img src={image} className="rounded-t-xl border-none" alt={title} />
+        <img src={image} className="rounded-xl-t-xl border-none" alt={title} />
       </div>
       <div className="text-center px-4 py-8">
         <p className="font-general-medium font-bold text-lg md:text-xl text-ternary-dark dark:text-blue-800 mb-2">

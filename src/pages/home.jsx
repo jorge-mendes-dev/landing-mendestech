@@ -7,7 +7,8 @@ import {
   Navbar,
   LazyShow,
   MainHeroImage,
-  ProjectsList
+  ProjectsList,
+  SkillsList
 } from 'components'
 
 import { backToTop } from 'utils/generic'
@@ -23,7 +24,7 @@ function Home() {
 
   return (
     <div
-      className={`bg-background dark:bg-black grid gap-y-16 overflow-hidden`}
+      className={`bg-background dark:bg-black transition-all duration-500 grid gap-y-16 overflow-hidden`}
     >
       <div className={`relative bg-background dark:bg-black`}>
         <div className="max-w-7xl mx-auto">
@@ -38,6 +39,9 @@ function Home() {
       </div>
       <LazyShow>
         <About layout={'Home'} />
+      </LazyShow>
+      <LazyShow>
+        <SkillsList />
       </LazyShow>
       <LazyShow>
         <ProjectsList layout={'compact'} except={'none'} />

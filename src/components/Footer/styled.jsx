@@ -20,13 +20,13 @@ export const FooterWrapper = styled.footer`
   align-items: center;
 
   width: 100%;
-  min-height: 25vh;
+  min-height: 28vh;
   position: relative;
 `
 
 export const PlayerFooter = styled(Player)`
   max-width: 100vw;
-  max-height: 25vh;
+  max-height: 28vh;
   z-index: 1;
   pointer-events: none;
   position: absolute;

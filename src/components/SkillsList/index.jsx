@@ -37,10 +37,10 @@ const SkillsList = ({ ...props }) => {
         >
           {data.map((skill) => (
             <div
-              className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded group relative hover:scale-[1.15] cursor-pointer"
+              className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-xl group relative hover:scale-[1.15] cursor-pointer"
               key={random()}
             >
-              <div className="h-full w-full rounded border border-ternary-light bg-white shadow shadow-gray-50 group-hover:border-primary transition-all duration-500">
+              <div className="h-full w-full rounded-xl border border-ternary-light bg-white shadow shadow-gray-50 group-hover:shadow-xl group-hover:border-primary transition-all duration-300">
                 <div className="flex -translate-y-[1px] justify-center">
                   <div className="w-3/4">
                     <div className="h-[1px] w-full bg-gradient-to-r from-transparent bg-primary to-transparent" />
@@ -53,7 +53,7 @@ const SkillsList = ({ ...props }) => {
                       src={Techs[skill.img]}
                       width={40}
                       height={40}
-                      className="h-full w-auto rounded"
+                      className="h-full w-auto rounded-xl"
                     />
                   </div>
                   <p className="text-primary text-sm sm:text-lg">

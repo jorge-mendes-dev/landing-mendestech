@@ -52,12 +52,12 @@ const CreateQRCode = () => {
         </p>
 
         <div className="w-full">
-          <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div className="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
             {link ? (
               <div className="p-8 mt-4 flex flex-wrap flex-col sm:flex-col items-center justify-between">
                 <div
                   style={{ height: '250px', width: '250px' }}
-                  className="rounded border p-4 mb-4 bg-white rounded"
+                  className="rounded-xl border p-4 mb-4 bg-white rounded-xl"
                 >
                   <QRCode
                     id="QRCode"
@@ -71,7 +71,7 @@ const CreateQRCode = () => {
                 </div>
                 <div>
                   <button
-                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
                     type="button"
                     onClick={() => download()}
                   >
@@ -88,7 +88,7 @@ const CreateQRCode = () => {
                   Link
                 </label>
                 <input
-                  className="mb-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="mb-2 shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="url"
                   name="url"
                   type="text"
@@ -100,7 +100,7 @@ const CreateQRCode = () => {
                 />
                 <div className="flex items-center justify-end">
                   <button
-                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
                     type="submit"
                   >
                     Gerar QR Code
@@ -112,7 +112,7 @@ const CreateQRCode = () => {
             <div className="flex items-center justify-end">
               {link && (
                 <button
-                  className="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  className="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
                   type="button"
                   onClick={() => setDefault()}
                 >

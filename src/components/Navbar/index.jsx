@@ -41,7 +41,7 @@ const Navbar = () => {
                 </LinkRouter>
                 <div className="-mr-2 flex items-center md:hidden">
                   <Popover.Button
-                    className={`bg-background dark:bg-black rounded p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
+                    className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
                     <span className="sr-only">Open Menu</span>
                     <Menu className="h-6 w-6" aria-hidden="true" />
@@ -107,7 +107,7 @@ const Navbar = () => {
             className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
             <div
-              className={`rounded-lg shadow-md bg-background dark:bg-black ring-1 ring-black ring-opacity-5 overflow-hidden`}
+              className={`rounded-xl-lg shadow-md bg-background dark:bg-black ring-1 ring-black ring-opacity-5 overflow-hidden`}
             >
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
@@ -115,7 +115,7 @@ const Navbar = () => {
                 </div>
                 <div className="-mr-2">
                   <Popover.Button
-                    className={`bg-background dark:bg-black rounded p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
+                    className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
                     <span className="sr-only">Close menu</span>
                     <CloseOutline className="h-6 w-6" aria-hidden="true" />
@@ -133,7 +133,7 @@ const Navbar = () => {
                         duration={1000}
                         key={random()}
                         to={href}
-                        className="block px-3 py-2 rounded text-base font-medium text-gray-700 dark:text-blue-800 hover:text-gray-900 hover:bg-gray-50"
+                        className="block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-blue-800 hover:text-gray-900 hover:bg-gray-50"
                       >
                         {name}
                       </Link>
@@ -142,7 +142,7 @@ const Navbar = () => {
                         key={random()}
                         to={href}
                         aria-label={name}
-                        className={`block px-3 py-2 rounded text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50`}
+                        className={`block px-3 py-2 rounded-xl text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50`}
                         rel="noreferrer"
                       >
                         {name}
