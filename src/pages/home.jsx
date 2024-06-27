@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import {
   Header,
   Footer,
-  About,
+  HomeAbout,
   Navbar,
   LazyShow,
   MainHeroImage,
@@ -38,7 +38,7 @@ function Home() {
         <MainHeroImage />
       </div>
       <LazyShow>
-        <About layout={'Home'} />
+        <HomeAbout />
       </LazyShow>
       <LazyShow>
         <SkillsList />

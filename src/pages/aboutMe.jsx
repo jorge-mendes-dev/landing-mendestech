@@ -36,7 +36,7 @@ function AboutMe() {
         </div>
       </div>
       <LazyShow>
-        <About layout={'About'} />
+        <About />
       </LazyShow>
       <LazyShow>
         <SkillsList />
