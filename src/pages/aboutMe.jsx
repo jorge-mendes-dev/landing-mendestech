@@ -37,7 +37,7 @@ function AboutMe() {
         </div>
       </div>
       <LazyShow>
-        <HeaderSub title={'About Me'} image={'code-image'} />
+        <HeaderSub title={'About Me'} />
       </LazyShow>
       <LazyShow>
         <About />

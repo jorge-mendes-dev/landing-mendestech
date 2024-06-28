@@ -29,8 +29,7 @@ const HeaderSub = ({ title = 'HeaderSub', description = '', ...props }) => {
 
 HeaderSub.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string.isRequired
+  description: PropTypes.string
 }
 
 export default HeaderSub
