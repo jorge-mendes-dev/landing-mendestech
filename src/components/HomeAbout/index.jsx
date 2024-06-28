@@ -17,7 +17,7 @@ const HomeAbout = ({ ...props }) => {
     <S.Wrapper
       id="about"
       {...props}
-      className="mb-12 rounded-xl shadow bg-gradient-to-r from-primary to-blue-800 dark:bg-zinc-800 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
+      className="mb-12 rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 dark:bg-zinc-800 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
     >
       <div className="w-full h-64 lg:w-1/2 lg:h-auto">
         <div className="h-full w-full object-cover">
@@ -53,7 +53,7 @@ const HomeAbout = ({ ...props }) => {
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-400 md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
               </Link>
