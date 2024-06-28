@@ -3,7 +3,7 @@ import media from 'styled-media-query'
 import { Player } from '@lottiefiles/react-lottie-player'
 
 export const FooterWrapper = styled.footer`
-  opacity: 0.8;
+  // opacity: 0.8;
   background-color: ${({ theme }) => theme.colors.black};
   border-top: 1px solid ${({ theme }) => theme.colors.primary};
   background-image: linear-gradient(

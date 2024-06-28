@@ -59,7 +59,7 @@ const SkillsList = ({ ...props }) => {
                       className="h-full w-auto rounded-xl"
                     />
                   </div>
-                  <p className="text-primary text-sm sm:text-lg">
+                  <p className="text-primary text-xs sm:text-lg">
                     {skill.title}
                   </p>
                 </div>
