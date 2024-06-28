@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 import { backToTop } from 'utils/generic'
 
-const ProjectItem = ({ title, href, category, image, type }) => {
+const ProjectItem = ({ title, href = '#', category, image = '', type }) => {
   const Component = (
     <div
       onClick={() => backToTop()}
@@ -46,11 +46,6 @@ ProjectItem.propTypes = {
   type: PropTypes.string.isRequired,
   image: PropTypes.string,
   href: PropTypes.string
-}
-
-ProjectItem.defaultProps = {
-  image: '',
-  href: '#'
 }
 
 export default ProjectItem

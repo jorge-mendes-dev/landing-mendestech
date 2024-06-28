@@ -1,6 +1,7 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 import { random } from 'utils/generic'
+import { Divider } from 'components'
 import Techs from 'config/Techs'
 
 import config from 'config'
@@ -24,6 +25,8 @@ const SkillsList = ({ ...props }) => {
           </span>
         ))}
       </h6>
+
+      <Divider />
 
       <div className="w-full my-12 -translate-y-[1px]">
         <Marquee

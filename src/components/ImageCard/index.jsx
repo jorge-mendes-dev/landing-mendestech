@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ImageCard = ({ title, image, width, height }) => {
+const ImageCard = ({ title, image = '', width, height }) => {
   return (
     <>
       <img
@@ -18,10 +18,6 @@ const ImageCard = ({ title, image, width, height }) => {
 ImageCard.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string
-}
-
-ImageCard.defaultProps = {
-  image: ''
 }
 
 export default ImageCard

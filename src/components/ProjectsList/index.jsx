@@ -7,7 +7,12 @@ import { Link } from 'react-router-dom'
 import { ProjectItem, Divider } from 'components'
 import config from 'config'
 
-const ProjectsList = ({ layout, customTitle, except, ...props }) => {
+const ProjectsList = ({
+  layout = '',
+  customTitle = '',
+  except = 'none',
+  ...props
+}) => {
   const { projects } = config
   const { title, project, primaryAction } = projects
 
@@ -86,12 +91,6 @@ ProjectsList.propTypes = {
   layout: PropTypes.string,
   customTitle: PropTypes.string,
   except: PropTypes.string
-}
-
-ProjectsList.defaultProps = {
-  layout: '',
-  customTitle: '',
-  except: 'none'
 }
 
 export default ProjectsList

@@ -414,5 +414,8 @@
   "footer": {
     "title": "React and love.",
     "description": "Jorge Mendes"
+  },
+  "header_images": {
+    "code": "https://jorgemendes.com.br/code.jpg"
   }
 }

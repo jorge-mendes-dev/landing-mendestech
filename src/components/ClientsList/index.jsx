@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { random } from 'utils/generic'
-import { ImageCard } from 'components'
+import { ImageCard, Divider } from 'components'
 import Brands from 'config/Brands'
 
 import config from 'config'
@@ -27,6 +27,7 @@ const ClientsList = ({ ...props }) => {
             </span>
           ))}
         </h6>
+        <Divider />
         <div className="grid grid-cols-2 sm:grid-cols-4 mt-10 p-8 sm:mt-14 gap-2">
           {data.map((client) => {
             const Brand = Brands[client.img]
