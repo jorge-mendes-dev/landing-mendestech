@@ -62,7 +62,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'code-image': "url('https://jorgemendes.com.br/code.jpg')"
+        'code-image': "url('public/code.jpg')"
       }
     }
   },
