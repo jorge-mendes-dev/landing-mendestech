@@ -119,7 +119,7 @@ const ProjectDetails = ({ data, ...props }) => {
 
               {ProjectInfo.Technologies[0].techs.map((tech) => (
                 <div className="mx-auto p-1" key={random()}>
-                  <span class="rounded-full font-light py-1 px-2.5 mr-2 border-none bg-blue-100 text-sm text-blue-800">
+                  <span className="rounded-full font-light py-1 px-2.5 mr-2 border-none bg-blue-100 text-sm text-blue-800">
                     {tech}
                   </span>
                 </div>

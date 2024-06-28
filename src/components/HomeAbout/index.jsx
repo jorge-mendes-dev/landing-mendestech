@@ -27,7 +27,7 @@ const HomeAbout = ({ ...props }) => {
       <div className="bg-white rounded-xl max-w-lg md:max-w-2xl md:z-10 md:shadow md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
         <div className="flex flex-col p-12 md:px-16">
           <h2
-            className={`w-full my-2 text-2xl lg:text-5xl font-bold leading-tight text-center`}
+            className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
           >
             {title.split(' ').map((word, index) => (
               <span
