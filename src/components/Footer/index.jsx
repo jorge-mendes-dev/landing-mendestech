@@ -1,24 +1,23 @@
 import React from 'react'
 
-import * as S from './styled'
 import SocialLinks from 'components/SocialLinks'
-import space from 'utils/JSON/rocketlaunch.json'
-
 import config from 'config'
 
 const Footer = () => {
   const { footer } = config
   return (
-    <S.FooterWrapper className="shadow">
-      <S.PlayerFooter src={space} loop autoplay />
-      <S.Container>
-        <SocialLinks />
-        <S.Text>{footer.title}</S.Text>
-        <S.Text>
-          {footer.description} - {new Date().getFullYear()}
-        </S.Text>
-      </S.Container>
-    </S.FooterWrapper>
+    <footer className="bg-white">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        <div className="flex justify-center space-x-6 md:order-2">
+          <SocialLinks />
+        </div>
+        <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-center text-xs leading-5 text-gray-500">
+            {footer.description} | {footer.title} - {new Date().getFullYear()}.
+          </p>
+        </div>
+      </div>
+    </footer>
   )
 }
 

@@ -6,33 +6,27 @@ import { random } from 'utils/generic'
 
 import config from 'config'
 
-import * as S from './styled'
-
 const SocialLinks = ({ className, size = 'auto', ...props }) => {
   const { socialMedia } = config
-
   return (
-    <S.SocialLinksWrapper className={className} size={size} {...props}>
-      <S.SocialLinksList>
-        {socialMedia.map((link) => {
-          const Icon = Icons[link.label]
-          return (
-            <S.SocialLinksItem key={random()}>
-              <S.SocialLinksLink
-                href={link.url}
-                title={link.label}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <S.IconWrapper>
-                  <Icon />
-                </S.IconWrapper>
-              </S.SocialLinksLink>
-            </S.SocialLinksItem>
-          )
-        })}
-      </S.SocialLinksList>
-    </S.SocialLinksWrapper>
+    <>
+      {socialMedia.map((link) => {
+        const Icon = Icons[link.label]
+        return (
+          <a
+            key={random()}
+            href={link.url}
+            className="text-gray-400 hover:text-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            {...props}
+          >
+            <span className="sr-only">{link.label}</span>
+            <Icon className="h-6 w-6" aria-hidden="true" />
+          </a>
+        )
+      })}
+    </>
   )
 }
 
