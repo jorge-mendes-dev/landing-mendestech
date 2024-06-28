@@ -9,7 +9,7 @@ const HeaderSub = ({ title = '', description = '', ...props }) => {
   return (
     <S.Wrapper {...props} className="w-full">
       <div
-        className={`w-full h-[520px] bg-code-image bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center bg-black bg-opacity-50`}
+        className={`w-full h-[420px] bg-code-image bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center bg-black bg-opacity-50`}
       >
         <h1 className="text-white text-center xl:text-5xl text-4xl font-semibold p-2 rounded-sm">
           {title}
