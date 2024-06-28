@@ -12,12 +12,10 @@ import {
   HeaderSub
 } from 'components'
 
-import config from 'config'
 import { backToTop } from 'utils/generic'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
 function AboutMe() {
-  const { header_images } = config
   const { sendPageView } = useGoogleAnalytics()
 
   useEffect(() => {
@@ -39,7 +37,7 @@ function AboutMe() {
         </div>
       </div>
       <LazyShow>
-        <HeaderSub title={'About Me'} url={header_images.code} />
+        <HeaderSub title={'About Me'} image={'code-image'} />
       </LazyShow>
       <LazyShow>
         <About />

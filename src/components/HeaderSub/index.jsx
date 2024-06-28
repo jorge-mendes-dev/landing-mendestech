@@ -5,16 +5,11 @@ import { Divider } from 'components'
 
 import * as S from './styled'
 
-const HeaderSub = ({
-  title = 'HeaderSub',
-  description = '',
-  url,
-  ...props
-}) => {
+const HeaderSub = ({ title = 'HeaderSub', description = '', ...props }) => {
   return (
     <S.Wrapper {...props} className="w-full">
       <div
-        className={`w-full h-[520px] bg-[url('https://jorgemendes.com.br/code.jpg')] bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center bg-black bg-opacity-50`}
+        className={`w-full h-[520px] bg-code-image bg-cover bg-no-repeat bg-center flex flex-col justify-center items-center bg-black bg-opacity-50`}
       >
         <div>
           <h1 className="text-white text-center xl:text-5xl text-4xl font-semibold p-2 rounded-sm">
@@ -35,7 +30,7 @@ const HeaderSub = ({
 HeaderSub.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  url: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired
 }
 
 export default HeaderSub
