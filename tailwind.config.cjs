@@ -55,7 +55,14 @@ module.exports = {
           '75%': {
             transform: 'rotate(30deg)'
           }
+        },
+        slide: {
+          '0%': { 'background-position': '0 0' },
+          '100%': { 'background-position': '100% 0' }
         }
+      },
+      backgroundImage: {
+        'code-image': "url('public/code.jpg')"
       }
     }
   },

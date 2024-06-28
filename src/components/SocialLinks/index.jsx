@@ -8,7 +8,7 @@ import config from 'config'
 
 import * as S from './styled'
 
-const SocialLinks = ({ className, size, ...props }) => {
+const SocialLinks = ({ className, size = 'auto', ...props }) => {
   const { socialMedia } = config
 
   return (
@@ -39,11 +39,6 @@ const SocialLinks = ({ className, size, ...props }) => {
 SocialLinks.propTypes = {
   className: PropTypes.string,
   size: PropTypes.oneOf(['small', 'auto'])
-}
-
-SocialLinks.defaultProps = {
-  className: '',
-  size: 'auto'
 }
 
 export default SocialLinks

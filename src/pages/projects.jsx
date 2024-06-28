@@ -5,7 +5,8 @@ import {
   ProjectsList,
   Navbar,
   LazyShow,
-  PlayerAnimation
+  PlayerAnimation,
+  HeaderSub
 } from 'components'
 
 import { backToTop } from 'utils/generic'
@@ -23,7 +24,7 @@ function Projects() {
 
   return (
     <div
-      className={`bg-background transition-all duration-500 dark:bg-black grid gap-y-16 overflow-hidden`}
+      className={`bg-background transition-all duration-500 dark:bg-black grid overflow-hidden`}
     >
       <div className={`relative bg-background dark:bg-black`}>
         <div className="max-w-7xl mx-auto">
@@ -34,6 +35,9 @@ function Projects() {
           </div>
         </div>
       </div>
+      <LazyShow>
+        <HeaderSub title={'Projects Portfolio'} />
+      </LazyShow>
       <LazyShow>
         <ProjectsList except={'none'} />
       </LazyShow>

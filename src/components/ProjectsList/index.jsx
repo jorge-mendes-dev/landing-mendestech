@@ -7,7 +7,12 @@ import { Link } from 'react-router-dom'
 import { ProjectItem, Divider } from 'components'
 import config from 'config'
 
-const ProjectsList = ({ layout, customTitle, except, ...props }) => {
+const ProjectsList = ({
+  layout = '',
+  customTitle = '',
+  except = 'none',
+  ...props
+}) => {
   const { projects } = config
   const { title, project, primaryAction } = projects
 
@@ -35,19 +40,23 @@ const ProjectsList = ({ layout, customTitle, except, ...props }) => {
   return (
     <div className="container mx-auto" {...props}>
       <section className="py-5 sm:py-10">
-        <h2
-          className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
-        >
-          {pagesTitle.split(' ').map((word, index) => (
-            <span
-              key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+        {layout === 'compact' && (
+          <>
+            <h2
+              className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
             >
-              {word}{' '}
-            </span>
-          ))}
-        </h2>
-        <Divider />
+              {pagesTitle.split(' ').map((word, index) => (
+                <span
+                  key={index}
+                  className={index % 2 ? 'text-primary' : 'text-border'}
+                >
+                  {word}{' '}
+                </span>
+              ))}
+            </h2>
+            <Divider />
+          </>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 lg:grid-cols-3 sm:gap-10 p-8">
           {item.map((project) => {
             const Image = Projects[project.img]
@@ -70,7 +79,7 @@ const ProjectsList = ({ layout, customTitle, except, ...props }) => {
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-400 md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
               </Link>
@@ -86,12 +95,6 @@ ProjectsList.propTypes = {
   layout: PropTypes.string,
   customTitle: PropTypes.string,
   except: PropTypes.string
-}
-
-ProjectsList.defaultProps = {
-  layout: '',
-  customTitle: '',
-  except: 'none'
 }
 
 export default ProjectsList

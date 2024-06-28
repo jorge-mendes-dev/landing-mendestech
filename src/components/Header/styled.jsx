@@ -2,14 +2,6 @@ import styled, { keyframes } from 'styled-components'
 import media from 'styled-media-query'
 import { Player } from '@lottiefiles/react-lottie-player'
 
-export const HeadeWrrapper = styled.header`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.highlight};
-  min-height: 100vh;
-`
-
 export const HeaderTitle = styled.h1`
   font-size: ${({ theme }) => theme.spacings.xxlarge};
   color: ${({ theme }) => theme.colors.white};
@@ -36,15 +28,6 @@ export const PlayerHeader = styled(Player)`
   height: 80vh;
 `
 
-const pulse = keyframes`
- 0% {
-    box-shadow: 0 0 0 0px #fff1;
-  }
-  100% {
-    box-shadow: 0 0 0 20px #fff0;
-  }
-`
-
 export const StyledTitle = styled.div`
   @keyframes typing {
     from {
@@ -60,6 +43,10 @@ export const StyledTitle = styled.div`
 
   width: 500px;
 
+  ${media.lessThan('large')`
+    width: auto
+  `}
+
   border-right: 2px solid;
   white-space: nowrap;
   animation:
@@ -68,16 +55,12 @@ export const StyledTitle = styled.div`
   overflow: hidden;
 
   @media screen and (max-width: 1440px) {
-    width: 477px;
-
     h2 {
       font-size: 3.75rem !important;
     }
   }
 
   @media screen and (max-width: 768px) {
-    width: 350px;
-
     h2 {
       font-size: 2.5rem !important;
     }

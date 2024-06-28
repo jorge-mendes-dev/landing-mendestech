@@ -17,7 +17,7 @@ const HomeAbout = ({ ...props }) => {
     <S.Wrapper
       id="about"
       {...props}
-      className="mb-12 rounded-xl shadow bg-gradient-to-r from-primary to-blue-800 dark:bg-zinc-800 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
+      className="mb-12 rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 dark:bg-zinc-800 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
     >
       <div className="w-full h-64 lg:w-1/2 lg:h-auto">
         <div className="h-full w-full object-cover">
@@ -27,7 +27,7 @@ const HomeAbout = ({ ...props }) => {
       <div className="bg-white rounded-xl max-w-lg md:max-w-2xl md:z-10 md:shadow md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
         <div className="flex flex-col p-12 md:px-16">
           <h2
-            className={`w-full my-2 text-2xl lg:text-5xl font-bold leading-tight text-center`}
+            className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
           >
             {title.split(' ').map((word, index) => (
               <span
@@ -53,7 +53,7 @@ const HomeAbout = ({ ...props }) => {
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10`}
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-400 md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
               </Link>

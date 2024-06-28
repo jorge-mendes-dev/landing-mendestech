@@ -1,6 +1,7 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 import { random } from 'utils/generic'
+import { Divider } from 'components'
 import Techs from 'config/Techs'
 
 import config from 'config'
@@ -25,7 +26,9 @@ const SkillsList = ({ ...props }) => {
         ))}
       </h6>
 
-      <div className="w-full my-12 -translate-y-[1px]">
+      <Divider />
+
+      <div className="w-full my-6 md:my-12 -translate-y-[1px]">
         <Marquee
           gradient={false}
           speed={80}
@@ -37,7 +40,7 @@ const SkillsList = ({ ...props }) => {
         >
           {data.map((skill) => (
             <div
-              className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-xl group relative hover:scale-[1.15] cursor-pointer"
+              className="w-24 md:w-32 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-xl group relative hover:scale-[1.15] cursor-pointer"
               key={random()}
             >
               <div className="h-full w-full rounded-xl border border-ternary-light bg-white shadow shadow-gray-50 group-hover:shadow-xl group-hover:border-primary transition-all duration-300">

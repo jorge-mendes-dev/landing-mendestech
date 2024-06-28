@@ -33,7 +33,7 @@ const Header = () => {
               rel="noreferrer"
               aria-label={primaryAction.text}
               to={primaryAction.href}
-              className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl text-background bg-primary hover:text-offwhite md:py-4 md:text-lg md:px-10"
+              className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-400 md:py-4 md:text-lg md:px-10"
             >
               {primaryAction.text}
             </Link>
@@ -44,7 +44,7 @@ const Header = () => {
               rel="noreferrer"
               aria-label={secondaryAction.text}
               to={secondaryAction.href}
-              className={`w-full flex items-center justify-center px-8 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-xl hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:py-4 md:text-lg md:px-10`}
+              className={`w-full flex items-center justify-center px-8 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-md hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 md:py-4 md:text-lg md:px-10`}
             >
               {secondaryAction.text}
             </Link>

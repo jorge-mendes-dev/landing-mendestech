@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom'
 
 import { backToTop } from 'utils/generic'
 
-const ProjectItem = ({ title, href, category, image, type }) => {
+const ProjectItem = ({ title, href = '#', category, image = '', type }) => {
   const Component = (
     <div
       onClick={() => backToTop()}
-      className="hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer mb-10 sm:mb-0 bg-white dark:bg-zinc-800 rounded-xl p-8 shadow"
+      className="hover:bg-blue-50 hover:shadow-xl transition-all duration-300 hover:scale-110 cursor-pointer mb-10 sm:mb-0 bg-white dark:bg-zinc-800 rounded-xl p-8 shadow"
     >
       <div className={`flex flex-col items-center justify-center`}>
         <img src={image} className="rounded-xl-t-xl border-none" alt={title} />
@@ -46,11 +46,6 @@ ProjectItem.propTypes = {
   type: PropTypes.string.isRequired,
   image: PropTypes.string,
   href: PropTypes.string
-}
-
-ProjectItem.defaultProps = {
-  image: '',
-  href: '#'
 }
 
 export default ProjectItem

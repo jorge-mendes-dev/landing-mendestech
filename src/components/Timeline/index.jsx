@@ -21,7 +21,7 @@ const Timeline = () => {
     <section className={`bg-background dark:bg-black py-8`} id="timeline">
       <div className={`container mx-auto px-2 pt-4 pb-12`}>
         <h4
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
+          className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
         >
           {title.split(' ').map((word, index) => (
             <span
@@ -37,7 +37,7 @@ const Timeline = () => {
           {description}
         </p>
 
-        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line bg-gradient-to-r from-primary to-blue-800 rounded-xl shadow p-8">
+        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 transition-all duration-300 p-0.5">
           {journey.map((item) => {
             const Icon = Icons[item.icon]
             return (
