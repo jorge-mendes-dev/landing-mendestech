@@ -3,43 +3,70 @@ import React from 'react'
 import { random } from 'utils/generic'
 import { PlayerAnimation } from 'components'
 
+import meteor from 'utils/JSON/rocket.json'
 import astronalt from 'utils/JSON/astronalt.json'
+import rocketlaunch from 'utils/JSON/rocketlaunch.json'
 
 import config from 'config'
 
 const About = ({ ...props }) => {
-  const { about } = config
-  const { paragraphs, list } = about
+  const { about, company } = config
+  const { subtitle, paragraphs, list } = about
 
   return (
-    <section
-      className={`bg-background dark:bg-zinc-800 container mx-auto mt-12 mb-12`}
-      id="about"
-      {...props}
-    >
-      <div className="block sm:flex sm:gap-10 justify-center`">
-        <div className="w-full sm:w-1/4 mb-7 sm:mb-0">
-          <PlayerAnimation animation={astronalt} size={'16vw'} />
-        </div>
-        <div className="font-general-regular bg-white w-full sm:w-3/4 text-left p-6 shadow rounded-xl">
-          {paragraphs.map((description) => (
-            <p
-              key={random()}
-              className={`text-gray-600 dark:text-gray mb-6 font-light subpixel-antialiased tracking-light align-baseline leading-relaxed`}
-            >
-              {description}
-            </p>
-          ))}
-          <div className="text-gray-600 dark:text-gray pl-4 font-light subpixel-antialiased tracking-light align-baseline leading-relaxed">
-            <ul className="list-disc">
+    <div className="bg-background" {...props}>
+      <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
+          <div>
+            <div className="border-b border-gray-200 pb-10">
+              <h2 className="font-medium text-gray-500">{company.name}</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                {subtitle}
+              </p>
+            </div>
+
+            <dl className="mt-10 space-y-10">
+              {paragraphs.map((paragraph) => (
+                <div key={random()}>
+                  <dd className="mt-3 text-sm text-gray-500">{paragraph}</dd>
+                </div>
+              ))}
+            </dl>
+            <ul className="mt-10 text-sm text-gray-500 list-disc">
               {list.map((item) => (
                 <li key={random()}>{item}</li>
               ))}
             </ul>
           </div>
+
+          <div>
+            <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900">
+              <PlayerAnimation
+                animation={rocketlaunch}
+                size={''}
+                className="h-full w-full object-cover object-center"
+              />
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8">
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900">
+                <PlayerAnimation
+                  animation={meteor}
+                  size={''}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900">
+                <PlayerAnimation
+                  animation={astronalt}
+                  size={''}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
