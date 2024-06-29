@@ -43,7 +43,7 @@ const SkillsList = ({ ...props }) => {
               className="w-24 md:w-32 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-xl group relative hover:scale-[1.15] cursor-pointer"
               key={random()}
             >
-              <div className="h-full w-full rounded-xl border border-ternary-light bg-white shadow shadow-gray-50 group-hover:shadow-xl group-hover:bg-blue-50 transition-all duration-300">
+              <div className="h-full w-full rounded-xl border border-ternary-light bg-zinc-50 shadow shadow-gray-50 group-hover:shadow-xl group-hover:bg-blue-50 transition-all duration-300">
                 <div className="flex -translate-y-[1px] justify-center">
                   <div className="w-3/4">
                     <div className="h-[1px] w-full bg-gradient-to-r from-transparent bg-primary to-transparent" />
@@ -54,12 +54,12 @@ const SkillsList = ({ ...props }) => {
                     <img
                       alt={skill.title}
                       src={Techs[skill.img]}
-                      width={30}
-                      height={30}
+                      width={25}
+                      height={25}
                       className="h-full w-auto rounded-xl"
                     />
                   </div>
-                  <p className="text-primary text-xs sm:text-lg">
+                  <p className="text-primary font-semibold text-xs sm:text-lg">
                     {skill.title}
                   </p>
                 </div>

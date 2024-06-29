@@ -3,7 +3,7 @@ import React from 'react'
 import { random } from 'utils/generic'
 import { PlayerAnimation } from 'components'
 
-import meteor from 'utils/JSON/rocket.json'
+import jorge from 'assets/images/jorge_profile.jpeg'
 import astronalt from 'utils/JSON/astronalt.json'
 import rocketlaunch from 'utils/JSON/rocketlaunch.json'
 
@@ -32,7 +32,7 @@ const About = ({ ...props }) => {
                 </div>
               ))}
             </dl>
-            <ul className="mt-10 text-sm text-gray-500 list-disc">
+            <ul className="mt-10 text-sm text-gray-500">
               {list.map((item) => (
                 <li key={random()}>{item}</li>
               ))}
@@ -40,22 +40,22 @@ const About = ({ ...props }) => {
           </div>
 
           <div>
-            <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900">
-              <PlayerAnimation
-                animation={rocketlaunch}
-                size={''}
+            <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
+              <img
+                src={jorge}
+                title={company.name}
                 className="h-full w-full object-cover object-center"
               />
             </div>
             <div className="mt-4 grid grid-cols-2 gap-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8">
-              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900">
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
                 <PlayerAnimation
-                  animation={meteor}
+                  animation={rocketlaunch}
                   size={''}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900">
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg border bg-gray-100">
                 <PlayerAnimation
                   animation={astronalt}
                   size={''}

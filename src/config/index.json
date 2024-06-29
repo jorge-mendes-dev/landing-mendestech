@@ -41,7 +41,7 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Discover My Journey in front-end",
+    "subtitle": "Discover My Journey",
     "paragraphs": [
       "Senior Software Engineer with 8 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.",
       "Today i am focused in learning new techniques and skills. One of my most notable skills is my ability to translate client needs into an efficient technology solution. I am an excellent communicator and know how to listen and understand.",
@@ -70,7 +70,7 @@
     "project": [
       {
         "title": "Escala Plantões",
-        "category": "Angular, ReactJS, Laravel, Mysql, AWS",
+        "technology": ["Angular", "ReactJS", "Jest", "Laravel", "Mysql", "AWS"],
         "img": "plantoes",
         "link": "/project/plantoes",
         "type": "",
@@ -78,7 +78,7 @@
       },
       {
         "title": "Hotmart internal applications",
-        "category": "ReactJS, styled-components, Vue",
+        "technology": ["ReactJS", "styled-components", "Vue", "Jest"],
         "img": "hotmart",
         "link": "/project/hotmart",
         "type": "",
@@ -86,7 +86,7 @@
       },
       {
         "title": "Aprova Fácil - mobile",
-        "category": "Mobile, React Native, nodeJS",
+        "technology": ["Mobile", "React Native", "nodeJS"],
         "img": "aprova",
         "link": "/project/aprova",
         "type": "",
@@ -94,7 +94,7 @@
       },
       {
         "title": "Provu",
-        "category": "Front-end, ReactJS, Redux",
+        "technology": ["Front-end", "ReactJS", "Redux", "Angular", "Jest"],
         "img": "provu",
         "link": "/project/provu",
         "type": "",
@@ -102,7 +102,14 @@
       },
       {
         "title": "WebMeeeting",
-        "category": "ReactJS, PHP, Mysql, mongoDb",
+        "technology": [
+          "ReactJS",
+          "PHP",
+          "Mysql",
+          "mongoDb",
+          "AWS",
+          "Socket IO"
+        ],
         "img": "webmeeting",
         "link": "/project/webmeeting",
         "type": "",
@@ -350,7 +357,7 @@
     "title": "WhatsApp Utils"
   },
   "clients": {
-    "title": "Companies that trust's me",
+    "title": "Companies that trust's my work",
     "data": [
       {
         "title": "FATEC SÃO ROQUE",
