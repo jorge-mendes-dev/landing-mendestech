@@ -16,7 +16,7 @@ const ProjectDetails = ({ data, ...props }) => {
   return (
     <S.Wrapper
       {...props}
-      className="container mx-auto bg-white dark:bg-zinc-800 rounded-xl sm:no-border shadow"
+      className="container mx-auto bg-zinc-50 dark:bg-zinc-800 rounded-xl sm:no-border shadow"
     >
       <div className="p-6">
         <LazyShow>
@@ -118,8 +118,8 @@ const ProjectDetails = ({ data, ...props }) => {
               </h4>
 
               {ProjectInfo.Technologies[0].techs.map((tech) => (
-                <div className="mx-auto p-1" key={random()}>
-                  <span className="rounded-full font-light py-1 px-2.5 mr-2 border-none bg-blue-100 text-sm text-blue-800">
+                <div className="inline-block p-1" key={random()}>
+                  <span className="rounded-full py-1 px-2.5 mr-2 border-none text-sm font-semibold text-indigo-900 bg-indigo-200">
                     {tech}
                   </span>
                 </div>

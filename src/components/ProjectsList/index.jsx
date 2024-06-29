@@ -63,7 +63,7 @@ const ProjectsList = ({
             return (
               <ProjectItem
                 title={project.title}
-                category={project.category}
+                technology={project.technology}
                 image={Image}
                 href={project.link}
                 key={random()}

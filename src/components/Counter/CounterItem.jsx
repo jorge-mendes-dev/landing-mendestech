@@ -11,7 +11,7 @@ const CounterItem = ({ title, measurement, reference, level }) => {
       <h2 className="text-6xl font-semibold text-center text-white dark:text-secondary-light mb-2">
         <span id={`${reference}`} /> {measurement}
       </h2>
-      <span className="font-light block text-md text-center text-offwhite dark:text-ternary-light">
+      <span className="font-normal block text-md text-center text-gray-100 dark:text-ternary-light">
         {title}
       </span>
     </div>
