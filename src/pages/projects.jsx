@@ -9,7 +9,7 @@ import {
   HeaderSub
 } from 'components'
 
-import code from 'assets/images/code.jpg'
+import notebook from 'assets/images/notebook.jpg'
 
 import { backToTop } from 'utils/generic'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
@@ -41,7 +41,7 @@ function Projects() {
         <HeaderSub
           title={'Projects'}
           description={'Portfolio'}
-          background={code}
+          background={notebook}
         />
       </LazyShow>
       <LazyShow>

@@ -17,7 +17,7 @@ const HomeAbout = ({ ...props }) => {
     <S.Wrapper
       id="about"
       {...props}
-      className="mb-12 rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 dark:bg-zinc-800 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
+      className="mb-12 p-2 rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 dark:bg-zinc-800 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
     >
       <div className="w-full h-64 lg:w-1/2 lg:h-auto">
         <div className="h-full w-full object-cover">
@@ -61,6 +61,8 @@ const HomeAbout = ({ ...props }) => {
           </div>
         </div>
       </div>
+
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
     </S.Wrapper>
   )
 }

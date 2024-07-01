@@ -1,11 +1,10 @@
 import React from 'react'
 
 import { random } from 'utils/generic'
-import { PlayerAnimation } from 'components'
 
+import git from 'assets/images/git.jpg'
+import notebook from 'assets/images/notebook.jpg'
 import jorge from 'assets/images/jorge_profile.jpeg'
-import astronalt from 'utils/JSON/astronalt.json'
-import rocketlaunch from 'utils/JSON/rocketlaunch.json'
 
 import config from 'config'
 
@@ -49,16 +48,16 @@ const About = ({ ...props }) => {
             </div>
             <div className="mt-4 grid grid-cols-2 gap-4 sm:mt-6 sm:gap-6 lg:mt-8 lg:gap-8">
               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
-                <PlayerAnimation
-                  animation={rocketlaunch}
-                  size={''}
+                <img
+                  src={notebook}
+                  title={company.name}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg border bg-gray-100">
-                <PlayerAnimation
-                  animation={astronalt}
-                  size={''}
+                <img
+                  src={git}
+                  title={company.name}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
