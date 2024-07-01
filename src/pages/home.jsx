@@ -37,7 +37,9 @@ function Home() {
         </div>
         <MainHeroImage />
       </div>
-      <LazyShow></LazyShow>
+      <LazyShow>
+        <HomeAbout />
+      </LazyShow>
       <LazyShow>
         <SkillsList />
       </LazyShow>
