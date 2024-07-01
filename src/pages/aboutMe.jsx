@@ -12,6 +12,8 @@ import {
   HeaderSub
 } from 'components'
 
+import code from 'assets/images/code.jpg'
+
 import { backToTop } from 'utils/generic'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 
@@ -37,7 +39,7 @@ function AboutMe() {
         </div>
       </div>
       <LazyShow>
-        <HeaderSub title={'About Me'} />
+        <HeaderSub title={'About Me'} background={code} />
       </LazyShow>
       <LazyShow>
         <About />
