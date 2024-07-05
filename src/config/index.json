@@ -86,7 +86,7 @@
       },
       {
         "title": "Aprova Fácil - mobile",
-        "technology": ["Mobile", "React Native", "nodeJS"],
+        "technology": ["Mobile", "React Native", "nodeJS", "WhatsApp"],
         "img": "aprova",
         "link": "/project/aprova",
         "type": "",

@@ -7,7 +7,10 @@ import tailwindcss from 'tailwindcss'
 // https://vitejs.dev/config/
 export default defineConfig({
   test: {
-    // ...
+    environment: 'jsdom',
+    setupFiles: ['./tests/setup.cjs'],
+    testMatch: ['./tests/**/*.test.jsx'],
+    globals: true
   },
   plugins: [
     react(),
