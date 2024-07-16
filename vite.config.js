@@ -9,7 +9,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     setupFiles: ['./tests/setup.cjs'],
-    testMatch: ['./tests/**/*.test.jsx'],
+    testMatch: ['./src/**/**/*.test.jsx'],
     globals: true
   },
   plugins: [
