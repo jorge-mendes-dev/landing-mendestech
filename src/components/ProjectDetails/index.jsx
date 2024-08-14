@@ -1,8 +1,8 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 
-import { random } from 'utils/generic'
 import Projects from 'config/Projects'
+import { random } from 'utils/generic'
 
 import { LazyShow, PlayerAnimation } from 'components'
 
@@ -20,7 +20,7 @@ const ProjectDetails = ({ data, ...props }) => {
     >
       <div className="p-6">
         <LazyShow>
-          <h1 className="my-2 border-l-4 pl-2 border-primary font-sans font-bold text-left text-6xl sm:text-4xl text-secondary-dark dark:text-white mt-12 sm:mt-20 mb-7">
+          <h1 className="my-2 border-l-4 pl-2 border-primary font-sans font-bold text-left text-5xl sm:text-4xl text-secondary-dark dark:text-white mt-12 sm:mt-20 mb-7">
             {ProjectHeader.title}
           </h1>
           <div className="flex">
