@@ -23,6 +23,10 @@
     "ClientHeading": "About",
     "CompanyInfo": [
       {
+        "title": "Contractor",
+        "details": "Escala App"
+      },
+      {
         "title": "Client",
         "details": "Escala App - Hospital Israelita Albert Einstein"
       },
@@ -47,7 +51,7 @@
           "React.js",
           "Angular",
           "Bootstrap",
-          "Materialize",
+          "Material UI",
           "Micro-Frontend",
           "PHP",
           "Laravel",

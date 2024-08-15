@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import React, { useEffect, useState } from 'react'
 
-import Projects from 'config/Projects'
-import { random } from 'utils/generic'
-import { Link } from 'react-router-dom'
-import { ProjectItem, Divider } from 'components'
+import { Divider, ProjectItem } from 'components'
 import config from 'config'
+import Projects from 'config/Projects'
+import { Link } from 'react-router-dom'
+import { random } from 'utils/generic'
 
 const ProjectsList = ({
   layout = '',
@@ -68,6 +68,7 @@ const ProjectsList = ({
                 href={project.link}
                 key={random()}
                 type={project.type}
+                company={project.company}
               />
             )
           })}
