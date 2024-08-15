@@ -2,7 +2,8 @@
   "ProjectHeader": {
     "title": "WebMeeeting",
     "publishDate": "Sep 01, 2017",
-    "tags": "Back-end / Front-end"
+    "tags": "Back-end / Front-end",
+    "company": "Atitude"
   },
   "ProjectImages": [
     {
@@ -23,6 +24,10 @@
     "ClientHeading": "About",
     "CompanyInfo": [
       {
+        "title": "Contractor",
+        "details": "Atitude"
+      },
+      {
         "title": "Client",
         "details": "Atitude WebMeeeting"
       },
@@ -32,7 +37,7 @@
       },
       {
         "title": "Website",
-        "details": "https://wmdirect.com.br/"
+        "details": "https://www.linkedin.com/company/atitude-m-dia-digital/?originalSubdomain=br"
       }
     ],
     "ObjectivesHeading": "Objective",

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { random } from 'utils/generic'
-import Icons from 'config/Icons'
 import { Divider } from 'components'
+import Icons from 'config/Icons'
+import { random } from 'utils/generic'
 
 import config from 'config'
 
@@ -75,6 +75,10 @@ const Timeline = () => {
                   <p className="mt-1 max-w-xl font-light text-gray-100 lg:mx-auto">
                     {item.location}
                   </p>
+                  <span></span>
+                  <a href={item.url} target="_blank">
+                    Website
+                  </a>
                 </div>
               </S.TimelineElement>
             )

@@ -2,7 +2,8 @@
   "ProjectHeader": {
     "title": "Hotmart",
     "publishDate": "Sep 01, 2021",
-    "tags": "Front-end"
+    "tags": "Front-end",
+    "company": "HOTMART"
   },
   "ProjectImages": [
     {
@@ -22,6 +23,10 @@
   "ProjectInfo": {
     "ClientHeading": "About",
     "CompanyInfo": [
+      {
+        "title": "Contractor",
+        "details": "Hotmart"
+      },
       {
         "title": "Client",
         "details": "Hotmart Company"

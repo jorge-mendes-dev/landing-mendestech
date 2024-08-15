@@ -2,7 +2,8 @@
   "ProjectHeader": {
     "title": "Provu",
     "publishDate": "Sep 01, 2019",
-    "tags": "Front-end"
+    "tags": "Front-end",
+    "company": "FDTE"
   },
   "ProjectImages": [
     {
@@ -22,6 +23,10 @@
   "ProjectInfo": {
     "ClientHeading": "About",
     "CompanyInfo": [
+      {
+        "title": "Contractor",
+        "details": "FDTE"
+      },
       {
         "title": "Client",
         "details": "Provu - CNPJ: 20.265.259/0001-71"
