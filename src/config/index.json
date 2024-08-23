@@ -36,7 +36,7 @@
     },
     "secondaryAction": {
       "text": "Resume",
-      "href": "/Jorge_mendes_curriculum_vitae.pdf"
+      "href": "/Jorge_Mendes_resume.pdf"
     }
   },
   "about": {
@@ -49,7 +49,7 @@
     ],
     "list": [
       "Experience maintaining legacy web applications,",
-      "Experience in architecting and building and documenting web applications,",
+      "Experience in architecture and building and documenting web applications,",
       "Experience with modern frontend technologies such as React, Typescript, and CSS frameworks as styled-components, Tailwind CSS, MaterialUI,",
       "Aptitude to quickly learn new languages and technologies,",
       "Strong ownership and growth mindset,",
@@ -430,7 +430,7 @@
     {
       "reference": "repositories",
       "title": "Repositories on GitHub",
-      "level": 48,
+      "level": 54,
       "measure": ""
     }
   ],

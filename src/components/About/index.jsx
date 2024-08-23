@@ -3,8 +3,8 @@ import React from 'react'
 import { random } from 'utils/generic'
 
 import git from 'assets/images/git.jpg'
+import jorge from 'assets/images/jorge_mendes.png'
 import notebook from 'assets/images/notebook.jpg'
-import jorge from 'assets/images/jorge_profile.jpeg'
 
 import config from 'config'
 
