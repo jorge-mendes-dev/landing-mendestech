@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { IntroduceMe } from 'components'
 import { random } from 'utils/generic'
 
 import git from 'assets/images/git.jpg'
@@ -10,7 +11,7 @@ import config from 'config'
 
 const About = ({ ...props }) => {
   const { about, company } = config
-  const { subtitle, paragraphs, list } = about
+  const { subtitle, paragraphs, list, video } = about
 
   return (
     <div className="bg-background" {...props}>
@@ -64,6 +65,7 @@ const About = ({ ...props }) => {
             </div>
           </div>
         </div>
+        <IntroduceMe videoId={video.id} title={video.title} />
       </div>
     </div>
   )

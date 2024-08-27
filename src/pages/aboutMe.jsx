@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react'
 
 import {
-  Footer,
   About,
-  Navbar,
-  LazyShow,
   ClientsList,
   Counter,
-  Timeline,
+  Footer,
+  HeaderSub,
+  LazyShow,
+  Navbar,
   SkillsList,
-  HeaderSub
+  Timeline
 } from 'components'
 
 import code from 'assets/images/code.jpg'
 
-import { backToTop } from 'utils/generic'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
+import { backToTop } from 'utils/generic'
 
 function AboutMe() {
   const { sendPageView } = useGoogleAnalytics()
