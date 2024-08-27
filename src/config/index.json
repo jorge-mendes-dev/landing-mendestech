@@ -59,6 +59,10 @@
     "primaryAction": {
       "text": "See More",
       "href": "about"
+    },
+    "video": {
+      "title": "Introduce myself",
+      "id": "bIbk0YGOE5A"
     }
   },
   "projects": {
