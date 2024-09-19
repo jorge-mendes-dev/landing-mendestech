@@ -48,7 +48,9 @@ const ProjectsList = ({
               {pagesTitle.split(' ').map((word, index) => (
                 <span
                   key={index}
-                  className={index % 2 ? 'text-primary' : 'text-border'}
+                  className={
+                    index % 2 ? 'text-primary' : 'text-border dark:text-white'
+                  }
                 >
                   {word}{' '}
                 </span>

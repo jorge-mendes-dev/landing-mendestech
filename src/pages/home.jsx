@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react'
 
 import {
-  Header,
   Footer,
+  Header,
   HomeAbout,
-  Navbar,
   LazyShow,
   MainHeroImage,
+  Navbar,
   ProjectsList,
   SkillsList
 } from 'components'
 
-import { backToTop } from 'utils/generic'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
+import { backToTop } from 'utils/generic'
 
 function Home() {
   const { sendPageView } = useGoogleAnalytics()
@@ -26,10 +26,10 @@ function Home() {
     <div
       className={`bg-background dark:bg-black transition-all duration-500 grid gap-y-16 overflow-hidden`}
     >
-      <div className={`relative bg-background dark:bg-black`}>
+      <div className={`relative bg-background dark:bg-zinc-900`}>
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-background dark:bg-black sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            className={`relative z-10 pb-8 bg-background dark:bg-zinc-900 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
           >
             <Navbar />
             <Header />

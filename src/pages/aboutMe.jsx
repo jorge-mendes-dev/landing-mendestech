@@ -29,10 +29,12 @@ function AboutMe() {
     <div
       className={`bg-background transition-all duration-500 dark:bg-black grid overflow-hidden`}
     >
-      <div className={`relative bg-background dark:bg-black`}>
+      <div
+        className={`relative bg-background transition-all duration-500 dark:bg-zinc-900`}
+      >
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-background dark:bg-black lg:max-w-2xl lg:w-full`}
+            className={`relative z-10 pb-8 bg-background dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
           >
             <Navbar />
           </div>

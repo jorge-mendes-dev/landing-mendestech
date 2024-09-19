@@ -1,8 +1,8 @@
+import { Divider } from 'components'
+import Techs from 'config/Techs'
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 import { random } from 'utils/generic'
-import { Divider } from 'components'
-import Techs from 'config/Techs'
 
 import config from 'config'
 import * as S from './styled'
@@ -19,7 +19,9 @@ const SkillsList = ({ ...props }) => {
         {title.split(' ').map((word, index) => (
           <span
             key={index}
-            className={index % 2 ? 'text-primary' : 'text-border'}
+            className={
+              index % 2 ? 'text-primary' : 'text-border dark:text-white'
+            }
           >
             {word}{' '}
           </span>
@@ -43,7 +45,7 @@ const SkillsList = ({ ...props }) => {
               className="w-24 md:w-32 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-xl group relative hover:scale-[1.15] cursor-pointer"
               key={random()}
             >
-              <div className="h-full w-full rounded-xl border border-ternary-light bg-zinc-50 shadow shadow-gray-50 group-hover:shadow-xl group-hover:bg-blue-50 transition-all duration-300">
+              <div className="h-full w-full rounded-xl border dark:border-ternary-dark border-ternary-light bg-zinc-50 dark:bg-zinc-900 shadow shadow-gray-50 group-hover:shadow-xl group-hover:bg-blue-50 transition-all duration-300">
                 <div className="flex -translate-y-[1px] justify-center">
                   <div className="w-3/4">
                     <div className="h-[1px] w-full bg-gradient-to-r from-transparent bg-primary to-transparent" />

@@ -1,5 +1,5 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 
 import { useCountUp } from 'react-countup'
 
@@ -8,10 +8,10 @@ const CounterItem = ({ title, measurement, reference, level }) => {
 
   return (
     <div className="mb-20 sm:mb-0">
-      <h2 className="text-6xl font-semibold text-center text-white dark:text-secondary-light mb-2">
+      <h2 className="text-6xl font-semibold text-center text-white mb-2">
         <span id={`${reference}`} /> {measurement}
       </h2>
-      <span className="font-normal block text-md text-center text-gray-100 dark:text-ternary-light">
+      <span className="font-normal block text-md text-center text-gray-100 dark:text-gray-100">
         {title}
       </span>
     </div>

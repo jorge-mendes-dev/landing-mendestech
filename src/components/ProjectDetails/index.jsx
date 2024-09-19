@@ -16,7 +16,7 @@ const ProjectDetails = ({ data, ...props }) => {
   return (
     <S.Wrapper
       {...props}
-      className="container mx-auto bg-zinc-50 dark:bg-zinc-800 rounded-xl sm:no-border shadow"
+      className="container mx-auto bg-zinc-50 dark:bg-zinc-900 rounded-xl sm:no-border shadow"
     >
       <div className="p-6">
         <LazyShow>
@@ -25,14 +25,14 @@ const ProjectDetails = ({ data, ...props }) => {
           </h1>
           <div className="flex">
             <div className="flex items-center mr-10">
-              <S.CustomClock className="text-primary text-xs text-ternary-dark dark:text-white" />
-              <span className="font-general-regular text-gray-500 ml-2 leading-none text-secondary-dark dark:text-white">
+              <S.CustomClock className="text-primary text-xs text-ternary-dark dark:text-primary" />
+              <span className="font-general-regular text-gray-500 ml-2 leading-none text-secondary-dark dark:text-gray-200">
                 {ProjectHeader.publishDate}
               </span>
             </div>
             <div className="flex items-center">
-              <S.CustomTag className="text-primary text-xs text-ternary-dark dark:text-white" />
-              <span className="font-general-regular text-gray-500 ml-2 leading-none text-secondary-dark dark:text-white">
+              <S.CustomTag className="text-primary text-xs text-ternary-dark dark:text-primary" />
+              <span className="font-general-regular text-gray-500 ml-2 leading-none text-secondary-dark dark:text-gray-200">
                 {ProjectHeader.tags}
               </span>
             </div>
@@ -54,7 +54,7 @@ const ProjectDetails = ({ data, ...props }) => {
             </div>
           )
         })}
-        <small className="font-semibold dark:text-white">{disclaimer}</small>
+        <small className="font-semibold dark:text-primary">{disclaimer}</small>
       </div>
       <div className="block sm:flex gap-0 sm:gap-10 mt-14">
         <div className="w-full sm:w-1/3 text-left">
@@ -68,7 +68,7 @@ const ProjectDetails = ({ data, ...props }) => {
                 {ProjectInfo.CompanyInfo.map((info) => {
                   return (
                     <li
-                      className="font-general-regular text-ternary-dark dark:text-white"
+                      className="font-general-regular text-ternary-dark dark:text-gray-200"
                       key={random()}
                     >
                       <span className="font-medium">{info.title}: </span>
@@ -104,7 +104,7 @@ const ProjectDetails = ({ data, ...props }) => {
               <h4 className="text-secondary text-2xl font-semibold text-ternary-dark dark:text-white mb-2">
                 {ProjectInfo.ObjectivesHeading}
               </h4>
-              <p className="font-general-regular leading-9 text-secondary-dark dark:text-white">
+              <p className="font-general-regular leading-9 text-secondary-dark dark:text-gray-200">
                 {ProjectInfo.ObjectivesDetails}
               </p>
             </div>
@@ -119,7 +119,7 @@ const ProjectDetails = ({ data, ...props }) => {
 
               {ProjectInfo.Technologies[0].techs.map((tech) => (
                 <div className="inline-block p-1" key={random()}>
-                  <span className="rounded-full py-1 px-2.5 mr-2 border-none text-sm font-semibold text-indigo-900 bg-indigo-200">
+                  <span className="rounded-full py-1 px-2.5 mr-2 border-none text-sm font-semibold text-indigo-900 bg-indigo-200 dark:bg-indigo-900 dark:text-white">
                     {tech}
                   </span>
                 </div>
@@ -140,7 +140,7 @@ const ProjectDetails = ({ data, ...props }) => {
             {ProjectInfo.Details.map((detail) => (
               <p
                 key={random()}
-                className="font-light subpixel-antialiased tracking-light align-baseline leading-9 mb-2.5 text-gray-500 dark:text-white"
+                className="font-light subpixel-antialiased tracking-light align-baseline leading-9 mb-2.5 text-gray-500 dark:text-gray-200"
               >
                 {detail}
               </p>
