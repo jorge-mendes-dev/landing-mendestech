@@ -26,14 +26,16 @@ const Timeline = () => {
           {title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={
+                index % 2 ? 'text-primary' : 'text-border dark:text-white'
+              }
             >
               {word}{' '}
             </span>
           ))}
         </h4>
         <Divider />
-        <p className="mb-4 max-w-2xl text-center text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
+        <p className="mb-5 max-w-2xl text-center text-xl text-gray-500 dark:text-gray-200 lg:mx-auto">
           {description}
         </p>
 
@@ -44,7 +46,7 @@ const Timeline = () => {
               <S.TimelineElement
                 id="timeline"
                 key={random()}
-                className={`vertical-timeline-element--${item.icon.toLowerCase()}`}
+                className={`vertical-timeline-element--${item.icon.toLowerCase()} dark:text-gray-100`}
                 contentStyle={{
                   color: `${iconTheme.color}`,
                   boxShadow: 'none',
@@ -60,25 +62,30 @@ const Timeline = () => {
                 }}
                 icon={<Icon />}
               >
-                <div className="bg-white border border-ternary-light rounded-xl shadow p-8 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div className="bg-white dark:bg-zinc-900 dark:border-zinc-800 border border-ternary-light rounded-xl shadow p-8 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <h3
                     className={`w-full my-2 text-1xl font-bold text-primary leading-tight`}
                   >
                     {item.institution}
                   </h3>
-                  <h4 className="text-secondary leading-9 font-semibold mt-1">
+                  <h4 className="text-secondary dark:text-gray-300 leading-9 font-semibold mt-1">
                     {item.position}
                   </h4>
-                  <p className="max-w-2xl font-thin text-gray-100 lg:mx-auto">
+                  <p className="max-w-2xl leading-9 font-thin text-gray-100 dark:text-gray-200 lg:mx-auto">
                     {item.description}
                   </p>
-                  <p className="mt-1 max-w-xl font-light text-gray-100 lg:mx-auto">
-                    {item.location}
-                  </p>
-                  <span></span>
-                  <a href={item.url} target="_blank">
-                    Website
-                  </a>
+                  <div className="text-right">
+                    <p className="mt-1 leading-9 max-w-xl font-light text-gray-100 dark:text-gray-300 lg:mx-auto">
+                      {item.location}
+                    </p>
+                    <a
+                      className="mt-3 dark:text-blue-500"
+                      href={item.url}
+                      target="_blank"
+                    >
+                      Website
+                    </a>
+                  </div>
                 </div>
               </S.TimelineElement>
             )

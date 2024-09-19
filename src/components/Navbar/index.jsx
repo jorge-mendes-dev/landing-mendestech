@@ -1,10 +1,15 @@
 import React, { Fragment } from 'react'
 
-import { Popover, Transition } from '@headlessui/react'
+import {
+  Popover,
+  PopoverButton,
+  PopoverPanel,
+  Transition
+} from '@headlessui/react'
 import { Menu } from '@styled-icons/entypo/Menu'
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
-import { Link } from 'react-scroll'
 import { Link as LinkRouter } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import { random } from 'utils/generic'
 
 import logo from 'assets/images/logo.png'
@@ -18,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       <svg
-        className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background dark:text-black transform translate-x-1/2`}
+        className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background dark:text-zinc-900 transform translate-x-1/2`}
         fill="currentColor"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
@@ -40,12 +45,12 @@ const Navbar = () => {
                   <img alt={name} className="h-16 w-auto sm:h-16" src={logo} />
                 </LinkRouter>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button
+                  <PopoverButton
                     className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
                     <span className="sr-only">Open Menu</span>
                     <Menu className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
+                  </PopoverButton>
                 </div>
               </div>
             </div>
@@ -60,7 +65,7 @@ const Navbar = () => {
                       duration={1000}
                       key={random()}
                       to={href}
-                      className="font-medium text-gray-500 dark:text-gray hover:text-gray-900"
+                      className="font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900"
                     >
                       {name}
                     </Link>
@@ -69,7 +74,7 @@ const Navbar = () => {
                       key={random()}
                       to={href}
                       aria-label={name}
-                      className={`font-medium text-gray-500 dark:text-gray hover:text-gray-900`}
+                      className={`font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900`}
                       rel="noreferrer"
                     >
                       {name}
@@ -102,7 +107,7 @@ const Navbar = () => {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <Popover.Panel
+          <PopoverPanel
             focus
             className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
@@ -114,12 +119,12 @@ const Navbar = () => {
                   <img className="h-8 w-auto" src={logo} alt={name} />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button
+                  <PopoverButton
                     className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
                     <span className="sr-only">Close menu</span>
                     <CloseOutline className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
+                  </PopoverButton>
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1" id="top">
@@ -152,7 +157,7 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
-          </Popover.Panel>
+          </PopoverPanel>
         </Transition>
       </Popover>
     </>

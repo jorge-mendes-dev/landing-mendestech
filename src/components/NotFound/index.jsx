@@ -1,5 +1,5 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 
 import { Divider } from 'components'
 import figure404 from 'utils/JSON/figure404.json'
@@ -19,7 +19,9 @@ const NotFound = ({ title, ...props }) => (
         {title.split(' ').map((word, index) => (
           <span
             key={index}
-            className={index % 2 ? 'text-primary' : 'text-border'}
+            className={
+              index % 2 ? 'text-primary' : 'text-border dark:text-white'
+            }
           >
             {word}{' '}
           </span>

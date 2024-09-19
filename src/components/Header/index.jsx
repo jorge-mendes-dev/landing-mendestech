@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
 import config from 'config'
+import { Link } from 'react-router-dom'
 
 import * as S from './styled'
 
@@ -24,7 +24,7 @@ const Header = () => {
             </h2>
           </S.StyledTitle>
         </h1>
-        <p className="mt-3 max-w-2xl mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-500">
+        <p className="mt-3 max-w-2xl mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-zinc-200">
           {description}
         </p>
         <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

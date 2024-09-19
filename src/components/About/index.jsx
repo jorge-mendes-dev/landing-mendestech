@@ -14,13 +14,15 @@ const About = ({ ...props }) => {
   const { subtitle, paragraphs, list, video } = about
 
   return (
-    <div className="bg-background" {...props}>
+    <div className="bg-background dark:bg-black" {...props}>
       <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
           <div>
-            <div className="border-b border-gray-200 pb-10">
-              <h2 className="font-medium text-gray-500">{company.name}</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <div className="border-b border-gray-200 dark:border-blue-700 pb-10">
+              <h2 className="font-medium text-gray-500 dark:text-blue-700">
+                {company.name}
+              </h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 {subtitle}
               </p>
             </div>
@@ -28,11 +30,13 @@ const About = ({ ...props }) => {
             <dl className="mt-10 space-y-10">
               {paragraphs.map((paragraph) => (
                 <div key={random()}>
-                  <dd className="mt-3 text-sm text-gray-500">{paragraph}</dd>
+                  <dd className="mt-3 text-sm text-gray-500 dark:text-gray-100">
+                    {paragraph}
+                  </dd>
                 </div>
               ))}
             </dl>
-            <ul className="mt-10 text-sm text-gray-500">
+            <ul className="mt-10 text-sm text-gray-500 dark:text-gray-100">
               {list.map((item) => (
                 <li key={random()}>{item}</li>
               ))}
@@ -55,7 +59,7 @@ const About = ({ ...props }) => {
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg border bg-gray-100">
+              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
                 <img
                   src={git}
                   title={company.name}

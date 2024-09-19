@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { random } from 'utils/generic'
-import { ImageCard, Divider } from 'components'
+import { Divider, ImageCard } from 'components'
 import Brands from 'config/Brands'
+import { random } from 'utils/generic'
 
 import config from 'config'
 
@@ -21,14 +21,16 @@ const ClientsList = ({ ...props }) => {
           {title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={
+                index % 2 ? 'text-primary' : 'text-border dark:text-white'
+              }
             >
               {word}{' '}
             </span>
           ))}
         </h6>
         <Divider />
-        <div className="grid grid-cols-2 sm:grid-cols-4 mt-10 p-8 sm:mt-14 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-4 mt-10 p-8 sm:mt-14 gap-2 dark:bg-zinc-800">
           {data.map((client) => {
             const Brand = Brands[client.img]
             return (

@@ -21,7 +21,7 @@ const ProjectItem = ({
       <div className="relative flex justify-center">
         <button
           type="button"
-          className="inline-flex items-center gap-x-1.5 rounded-full bg-indigo-200 px-3 py-1.5 text-sm font-semibold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+          className="inline-flex items-center gap-x-1.5 rounded-full bg-indigo-200 dark:bg-indigo-900 dark:text-white px-3 py-1.5 text-sm font-semibold text-indigo-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-900 hover:bg-gray-50"
         >
           {company}
         </button>
@@ -32,7 +32,7 @@ const ProjectItem = ({
   const Component = (
     <div
       onClick={() => backToTop()}
-      className="hover:bg-blue-50 hover:shadow-xl transition-all duration-300 group hover:scale-110 cursor-pointer mb-10 sm:mb-0 bg-zinc-50 dark:bg-zinc-800 rounded-xl p-8 shadow"
+      className="hover:bg-blue-50 hover:shadow-xl transition-all duration-300 group hover:scale-110 cursor-pointer mb-10 sm:mb-0 bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-800 rounded-xl p-8 shadow"
     >
       <div className={`flex flex-col items-center justify-center`}>
         <img src={image} className="rounded-xl-t-xl border-none" alt={title} />
@@ -47,7 +47,7 @@ const ProjectItem = ({
 
         {technology.map((tech) => (
           <div className="p-1 inline-block " key={random()}>
-            <span className="rounded-full py-1 px-2.5 mr-2 border-none text-sm font-semibold text-indigo-900 bg-indigo-200">
+            <span className="rounded-full py-1 px-2.5 mr-2 border-none text-sm font-semibold text-indigo-900 bg-indigo-200 dark:bg-indigo-900 dark:text-white">
               {tech}
             </span>
           </div>

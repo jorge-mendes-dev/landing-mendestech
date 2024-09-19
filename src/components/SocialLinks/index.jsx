@@ -1,7 +1,7 @@
 import React from 'react'
 
-import PropTypes from 'prop-types'
 import Icons from 'config/Icons'
+import PropTypes from 'prop-types'
 import { random } from 'utils/generic'
 
 import config from 'config'
@@ -16,7 +16,7 @@ const SocialLinks = ({ className, size = 'auto', ...props }) => {
           <a
             key={random()}
             href={link.url}
-            className="text-gray-400 hover:text-primary"
+            className="text-gray-400 dark:text-white hover:text-primary"
             target="_blank"
             rel="noopener noreferrer"
             {...props}

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import CounterItem from './CounterItem'
 import { random } from 'utils/generic'
+import CounterItem from './CounterItem'
 
 import config from 'config'
 
@@ -9,7 +9,7 @@ const Counter = () => {
   const { metrics } = config
 
   return (
-    <div className="bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 transition-all duration-300 p-0.5 dark:bg-ternary-dark shadow">
+    <div className="bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 transition-all duration-300 p-0.5 dark:bg-zinc-900 shadow">
       <div className="font-general-medium container mx-auto py-20 block sm:flex sm:justify-between items-center">
         {metrics.map(({ title, reference, measure, level }) => (
           <CounterItem

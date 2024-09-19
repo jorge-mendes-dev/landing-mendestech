@@ -45,19 +45,19 @@ const IntroduceMe = ({ videoId, autoPlay, title, ...props }) => {
   }, [videoHeight, handleChangeVideoWidth])
 
   return (
-    <div className="bg-background mt-6" {...props}>
+    <div className="bg-background dark:bg-black mt-6" {...props}>
       <div className="relative mb-6">
         <div aria-hidden="true" className="absolute inset-0 flex items-center">
-          <div className="w-full border-t border-gray-300" />
+          <div className="w-full border-t border-gray-300 dark:border-blue-700" />
         </div>
         <div className="relative flex justify-center">
-          <span className="bg-white px-3 text-base font-semibold leading-6 text-gray-900">
+          <span className="bg-white dark:bg-black px-3 text-base font-semibold leading-6 text-gray-900 dark:text-white">
             {title}
           </span>
         </div>
       </div>
 
-      <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg border">
+      <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg object-cover object-center">
         <iframe
           className="object-cover object-center"
           ref={iframeRef}
