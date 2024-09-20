@@ -44,7 +44,7 @@ const Navbar = () => {
                   <span className="sr-only">{name}</span>
                   <img alt={name} className="h-16 w-auto sm:h-16" src={logo} />
                 </LinkRouter>
-                <div className="-mr-2 flex items-center md:hidden">
+                <div className="mr-2 flex items-center md:hidden">
                   <PopoverButton
                     className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
@@ -54,6 +54,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
+
             <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
               {navigation.map(({ name, type, href }) => (
                 <Fragment key={random()}>
@@ -87,7 +88,7 @@ const Navbar = () => {
                   key={random()}
                   to={url}
                   aria-label={label}
-                  className={`font-medium text-primary hover:text-secondary`}
+                  className={`font-medium text-primary hover:text-secondary dark:hover:text-offwhite`}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -96,20 +97,13 @@ const Navbar = () => {
               ))}
             </div>
 
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center sm:ml-2">
               <button
                 onClick={() => document.body.classList.toggle('dark')}
                 className="block h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <svg
-                  className="fill-violet-700 block dark:hidden"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                </svg>
-                <svg
-                  className="fill-yellow-500 hidden dark:block"
+                  className="fill-primary block dark:hidden"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -118,6 +112,13 @@ const Navbar = () => {
                     fillRule="evenodd"
                     clipRule="evenodd"
                   ></path>
+                </svg>
+                <svg
+                  className="fill-yellow-500 hidden dark:block"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                 </svg>
               </button>
             </div>
@@ -146,7 +147,7 @@ const Navbar = () => {
                 </div>
                 <div className="-mr-2">
                   <PopoverButton
-                    className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
+                    className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-200 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                   >
                     <span className="sr-only">Close menu</span>
                     <CloseOutline className="h-6 w-6" aria-hidden="true" />
@@ -173,7 +174,7 @@ const Navbar = () => {
                         key={random()}
                         to={href}
                         aria-label={name}
-                        className={`block px-3 py-2 rounded-xl text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50`}
+                        className={`block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 hover:bg-gray-50 `}
                         rel="noreferrer"
                       >
                         {name}
