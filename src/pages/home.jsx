@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 
 import {
+  Feedbacks,
   Footer,
   Header,
   HomeAbout,
@@ -42,6 +43,9 @@ function Home() {
       </LazyShow>
       <LazyShow>
         <SkillsList />
+      </LazyShow>
+      <LazyShow>
+        <Feedbacks />
       </LazyShow>
       <LazyShow>
         <ProjectsList layout={'compact'} except={'none'} />

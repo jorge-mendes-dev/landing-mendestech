@@ -17,7 +17,7 @@ const HomeAbout = ({ ...props }) => {
     <S.Wrapper
       id="about"
       {...props}
-      className="mb-12 p-2 rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 dark:bg-zinc-900 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
+      className="mb-16 p-2 rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 dark:bg-zinc-900 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl"
     >
       <div className="w-full h-64 lg:w-1/2 lg:h-auto">
         <div className="h-full w-full object-cover">

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { Divider } from 'components'
 
@@ -39,13 +39,14 @@ const Feedbacks = () => {
             <SwiperSlide key={i}>
               <div
                 className={`
-                rounded-xl-t rounded-xl-b-none shadow bg-slate-50 dark:bg-zinc-800
+                rounded-2xl bg-zinc-50 shadow-lg ring-1 ring-gray-900/5
+               dark:bg-zinc-900 dark:border-zinc-800
                 duration-500 bg-bg_light_primary mx-8 p-6 h-full flex items-center gap-6
                 md:flex-row flex-col
                 ${activeIndex !== i && 'scale-75 blur-sm dark:bg-zinc-900'}`}
               >
-                <div>
-                  <p className="sm:text-base text-sm leading-relaxed sm:mb-2 md:mb-4 text-gray-700 dark:text-gray-300">
+                <div className="justify-between">
+                  <p className="sm:text-base sm:mb-2 md:mb-4 text-lg leading-8 text-gray-900 dark:text-gray-100">
                     {content.review}
                   </p>
                   <h6 className="text-sm font-medium text-primary mt-1">
