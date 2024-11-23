@@ -8,9 +8,21 @@ import tailwindcss from 'tailwindcss'
 export default defineConfig({
   test: {
     environment: 'jsdom',
-    setupFiles: ['./tests/setup.cjs'],
+    setupFiles: ['./tests.cjs'],
     testMatch: ['./src/**/**/*.test.jsx'],
-    globals: true
+    globals: true,
+    deps: {
+      optimizer: {
+        web: {
+          include: ['vitest-canvas-mock']
+        }
+      }
+    },
+    environmentOptions: {
+      jsdom: {
+        resources: 'usable'
+      }
+    }
   },
   plugins: [
     react(),
