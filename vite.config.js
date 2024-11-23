@@ -22,6 +22,9 @@ export default defineConfig({
       jsdom: {
         resources: 'usable'
       }
+    },
+    coverage: {
+      provider: 'v8'
     }
   },
   plugins: [
