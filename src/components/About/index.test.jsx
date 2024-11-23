@@ -1,13 +1,18 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import About from '/src/components/About/index.jsx'
 
 describe('About', () => {
-  it('renders header on About Me', () => {
+  it('renders header on About Me', async () => {
     render(<About />)
-    const title = screen.getByText(/Jorge Mendes/i)
+
+    const title = await waitFor(() => screen.getByText(/Jorge Mendes/i))
     expect(title).toBeInTheDocument()
-    const headline = screen.getByText(/Discover My Journey/i)
+
+    const headline = await waitFor(() =>
+      screen.getByText(/Discover My Journey/i)
+    )
     expect(headline).toBeInTheDocument()
+
     screen.debug()
   })
 })
