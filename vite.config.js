@@ -81,9 +81,5 @@ export default defineConfig({
       utils: path.resolve(__dirname, './src/utils'),
       routes: path.resolve(__dirname, './src/routes')
     }
-  },
-  optimizeDeps: {
-    include: ['esm-dep > cjs-dep'],
-    force: true
   }
 })

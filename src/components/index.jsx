@@ -1,6 +1,5 @@
 export { default as About } from './About'
 export { default as ClientsList } from './ClientsList'
-export { default as Content } from './Content'
 export { default as Counter } from './Counter'
 export { default as CreateQRCode } from './CreateQRCode'
 export { default as Divider } from './Divider'
