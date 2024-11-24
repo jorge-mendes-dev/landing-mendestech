@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
+import PropTypes from 'prop-types'
 
-const IntroduceMe = ({ videoId, autoPlay, title, ...props }) => {
+const IntroduceMe = ({ videoId, autoPlay = false, title, ...props }) => {
   const videoURL = `https://www.youtube.com/embed/${videoId}${
     autoPlay ? '?autoplay=1' : ''
   }`
@@ -71,6 +72,12 @@ const IntroduceMe = ({ videoId, autoPlay, title, ...props }) => {
       </div>
     </div>
   )
+}
+
+IntroduceMe.propTypes = {
+  title: PropTypes.string.isRequired,
+  videoId: PropTypes.string.isRequired,
+  autoPlay: PropTypes.bool
 }
 
 export default IntroduceMe
