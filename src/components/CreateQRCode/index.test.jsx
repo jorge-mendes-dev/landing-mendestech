@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, act } from '@testing-library/react'
 import { expect, it } from 'vitest'
 import CreateQRCode from '/src/components/CreateQRCode/index.jsx'
 
@@ -12,14 +12,39 @@ describe('CreateQRCode', () => {
     ).toBeInTheDocument()
   })
 
-  it('Should render CreateQRCode with value', () => {
+  it('Should render CreateQRCode with value', async () => {
     render(<CreateQRCode />)
 
     const urlInput = screen.getByPlaceholderText('www.jorgemendes.com.br')
     fireEvent.change(urlInput, { target: { value: 'www.google.com' } })
     expect(urlInput.value).toBe('www.google.com')
 
-    screen.getByRole('button', { name: 'Gerar QR Code' }).click()
+    await act(async () => {
+      const generateButton = screen.getByRole('button', {
+        name: /Gerar QR Code/i
+      })
+      fireEvent.click(generateButton)
+    })
+  })
+
+  it('Should clear CreateQRCode value', async () => {
+    render(<CreateQRCode />)
+
+    const urlInput = screen.getByPlaceholderText('www.jorgemendes.com.br')
+    fireEvent.change(urlInput, { target: { value: 'www.google.com' } })
+    expect(urlInput.value).toBe('www.google.com')
+
+    await act(async () => {
+      const generateButton = screen.getByRole('button', {
+        name: /Gerar QR Code/i
+      })
+      fireEvent.click(generateButton)
+    })
+
+    await act(async () => {
+      const clearButton = screen.getByRole('button', { name: /Limpar/i })
+      fireEvent.click(clearButton)
+    })
   })
 
   it('renders correctly CreateQRCode', () => {
