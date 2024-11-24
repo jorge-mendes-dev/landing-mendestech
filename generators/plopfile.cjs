@@ -25,6 +25,11 @@ module.exports = (plop) => {
         path: "../src/{{lowerCase type}}/{{pascalCase name}}/styled.jsx",
         templateFile: "templates/styled.jsx.hbs",
       },
+      {
+        type: "add",
+        path: "../src/{{lowerCase type}}/{{pascalCase name}}/index.test.jsx",
+        templateFile: "templates/index.test.jsx.hbs",
+      },
     ],
   });
 };

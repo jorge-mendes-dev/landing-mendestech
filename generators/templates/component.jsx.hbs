@@ -3,7 +3,10 @@ import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
-const {{pascalCase name}} = ({ title, ...props }) => {
+const {{pascalCase name}} = ({
+  title = '{{pascalCase name}}',
+  ...props
+   }) => {
   return (
     <S.Wrapper {...props}>
       <h1>{title}</h1>
@@ -11,7 +14,8 @@ const {{pascalCase name}} = ({ title, ...props }) => {
   )
 }
 
-{{pascalCase name}}.propTypes = { title: PropTypes.string }
-{{pascalCase name}}.defaultProps = { title: '{{pascalCase name}}' }
+{{pascalCase name}}.propTypes = {
+  title: PropTypes.string
+}
 
 export default {{pascalCase name}}

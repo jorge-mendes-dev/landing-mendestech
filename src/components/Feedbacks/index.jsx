@@ -30,9 +30,10 @@ const Feedbacks = () => {
           data-aos="fade-up"
           loop={true}
           spaceBetween={40}
-          slidesPerView={1.7}
+          slidesPerView={1}
           onSlideChange={(e) => setActiveIndex(e.realIndex)}
           modules={[Pagination]}
+          slidesPerGroup={1}
           className="md:h-96 h-[40rem] max-w-3xl"
         >
           {feedbacks.map((content, i) => (
