@@ -40,7 +40,7 @@ const Feedbacks = () => {
             <SwiperSlide key={i}>
               <div
                 className={`
-                rounded-2xl bg-zinc-50 shadow-lg ring-1 ring-gray-900/5
+                rounded-2xl bg-indigo-200 shadow-lg ring-1 ring-gray-900/5
                dark:bg-zinc-900 dark:border-zinc-800
                 duration-500 bg-bg_light_primary mx-8 p-6 h-full flex items-center gap-6
                 md:flex-row flex-col
