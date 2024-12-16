@@ -1,7 +1,7 @@
 const cssnano = require('cssnano')
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer')
-const ENV = import.meta.env.VITE_NODE_ENV
+const ENV = process.env.NODE_ENV
 
 const plugins =
   ENV === 'production'
