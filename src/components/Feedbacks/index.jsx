@@ -33,6 +33,7 @@ const Feedbacks = () => {
           slidesPerView={1.7}
           onSlideChange={(e) => setActiveIndex(e.realIndex)}
           modules={[Pagination]}
+          slidesPerGroup={1}
           className="md:h-96 h-[40rem] max-w-3xl"
         >
           {feedbacks.map((content, i) => (

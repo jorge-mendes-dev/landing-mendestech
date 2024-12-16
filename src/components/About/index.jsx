@@ -47,7 +47,7 @@ const About = ({ ...props }) => {
             <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
               <img
                 src={jorge}
-                title={company.name}
+                alt={company.name}
                 className="h-full w-full object-cover object-center"
               />
             </div>
@@ -55,14 +55,14 @@ const About = ({ ...props }) => {
               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
                 <img
                   src={notebook}
-                  title={company.name}
+                  alt={'notebook'}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
                 <img
                   src={git}
-                  title={company.name}
+                  alt={'git'}
                   className="h-full w-full object-cover object-center"
                 />
               </div>

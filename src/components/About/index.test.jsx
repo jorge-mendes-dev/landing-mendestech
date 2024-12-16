@@ -1,4 +1,5 @@
 import { render, screen, waitFor } from '@testing-library/react'
+import { expect, it } from 'vitest'
 import About from '/src/components/About/index.jsx'
 
 describe('About', () => {
@@ -12,7 +13,19 @@ describe('About', () => {
       screen.getByText(/Discover My Journey/i)
     )
     expect(headline).toBeInTheDocument()
+    // screen.debug()
+  })
 
-    screen.debug()
+  it('should render the image', () => {
+    render(<About />)
+
+    const image = screen.getByAltText(/Jorge Mendes/i)
+    expect(image).toBeInTheDocument()
+    expect(image).toHaveAttribute('src', '/src/assets/images/jorge_mendes.png')
+  })
+
+  it('renders correctly About Me', () => {
+    const result = render()
+    expect(result).toMatchSnapshot()
   })
 })

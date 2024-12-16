@@ -1,0 +1,14 @@
+import { render, screen } from '@testing-library/react'
+import { expect, it } from 'vitest'
+import {{pascalCase name}} from '/src/components/{{pascalCase name}}/index.jsx'
+
+describe('{{pascalCase name}}', () => {
+  it('Should render {{pascalCase name}}', () => {
+    render(<{{pascalCase name}} />)
+  })
+
+  it('renders correctly {{pascalCase name}}', () => {
+    const result = render()
+    expect(result).toMatchSnapshot()
+  })
+})

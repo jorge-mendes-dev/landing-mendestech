@@ -22,13 +22,11 @@ const OpenLink = () => {
   return (
     <div className={`container max-w-5xl mx-auto`}>
       <div className="p-2">
-        <h3
-          className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-green-500`}
-        >
+        <h3 className={`text-3xl font-bold leading-none mb-6 text-green-500`}>
           Chame um número altomaticamente
         </h3>
         <p
-          className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
+          className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed`}
         >
           Chame qualquer número no WhatsApp sem precisar cadastra-lo na agenda.
         </p>
@@ -36,7 +34,7 @@ const OpenLink = () => {
         <div className="w-full">
           <div className="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
             {link ? (
-              <div className="bg-green-200 rounded-xl p-8 mt-4 flex flex-wrap flex-col flex-row">
+              <div className="bg-green-200 rounded-xl p-8 mt-4 flex flex-wrap flex-col">
                 <p className="text-gray-400 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">
                   caso a conversa não abra automaticamente click abaixo:
                 </p>
