@@ -3,8 +3,6 @@ import React from 'react'
 import config from 'config'
 import { Link } from 'react-router-dom'
 
-import * as S from './styled'
-
 const Header = () => {
   const { mainHero } = config
   const { title, subtitle, description, primaryAction, secondaryAction } =
