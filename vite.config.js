@@ -1,7 +1,7 @@
 import {
-  defineConfig,
-  defaultClientConditions,
-  defaultServerConditions
+  defineConfig
+  // defaultClientConditions,
+  // defaultServerConditions
 } from 'vite'
 import react from '@vitejs/plugin-react'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
@@ -76,9 +76,9 @@ export default defineConfig({
       plugins: [tailwindcss()]
     }
   },
-  json: {
-    stringify: false
-  },
+  // json: {
+  //   stringify: false
+  // },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src/'),
@@ -90,12 +90,12 @@ export default defineConfig({
       assets: path.resolve(__dirname, './src/assets'),
       utils: path.resolve(__dirname, './src/utils'),
       routes: path.resolve(__dirname, './src/routes')
-    },
-    conditions: ['custom', ...defaultClientConditions]
-  },
-  ssr: {
-    resolve: {
-      conditions: ['custom', ...defaultServerConditions]
     }
+    // conditions: ['custom', ...defaultClientConditions]
   }
+  // ssr: {
+  //   resolve: {
+  //     conditions: ['custom', ...defaultServerConditions]
+  //   }
+  // }
 })
