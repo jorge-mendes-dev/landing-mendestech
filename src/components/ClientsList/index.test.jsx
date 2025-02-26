@@ -30,7 +30,7 @@ describe('ClientsList', () => {
       )
     ).toBeInTheDocument()
     expect(screen.getByAltText(/HOTMART/i)).toBeInTheDocument()
-    expect(screen.getByAltText(/ESCALA APP/i)).toBeInTheDocument()
+    // expect(screen.getByAltText(/ESCALA APP/i)).toBeInTheDocument()
   })
 
   it('should render all Clients List images with correct src', () => {

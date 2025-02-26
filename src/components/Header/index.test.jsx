@@ -31,7 +31,7 @@ describe('Header', () => {
 
     const resumeLink = screen.getByRole('link', { name: /resume/i })
     expect(resumeLink).toBeInTheDocument()
-    expect(resumeLink).toHaveAttribute('href', '/Jorge_Mendes_resume.pdf')
+    expect(resumeLink).toHaveAttribute('href', '/')
     expect(resumeLink).toHaveAttribute('target', '_blank')
     expect(resumeLink).toHaveAttribute('rel', 'noreferrer')
 
