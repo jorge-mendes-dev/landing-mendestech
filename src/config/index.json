@@ -36,7 +36,7 @@
     },
     "secondaryAction": {
       "text": "Resume",
-      "href": "#"
+      "href": "/Jorge_Mendes_resume.pdf"
     }
   },
   "about": {
@@ -72,6 +72,15 @@
       "href": "/projects"
     },
     "project": [
+       {
+        "title": "Escala Plantões",
+        "technology": ["Angular", "ReactJS", "Jest", "Laravel", "Mysql", "AWS"],
+        "img": "plantoes",
+        "link": "/project/plantoes",
+        "type": "",
+        "slug": "plantoes",
+        "company": "Escala App"
+      },
       {
         "title": "Hotmart internal applications",
         "technology": ["ReactJS", "styled-components", "Vue", "Jest"],
@@ -178,6 +187,15 @@
     "title": "Professional experience",
     "description": "Here are the places I've worked during my career.",
     "journey": [
+        {
+        "period": "2022 - NOW",
+        "institution": "Escala APP",
+        "position": "Senior Web Developer Full Stack",
+        "description": "In my current position at Escala, I act as a senior FullStack developer, a company that makes schedules in an easy way. The project that I work on is used for managing the Hospital Israelita Albert Einstein (ICU) intensive care unit. The project was so good that it became a Saas platform that other clients of many industries.",
+        "location": "São Paulo, Brazil",
+        "icon": "Work",
+        "url": "https://escala.app/produtos/escala-plantoes"
+      },
       {
         "period": "2021 - 2022",
         "institution": "Hotmart",
@@ -415,6 +433,10 @@
       {
         "title": "HOTMART",
         "img": "hotmart"
+      },
+      {
+        "title": "ESCALA APP",
+        "img": "escala"
       }
     ]
   },
