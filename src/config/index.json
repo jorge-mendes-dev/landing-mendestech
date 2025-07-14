@@ -72,7 +72,7 @@
       "href": "/projects"
     },
     "project": [
-       {
+      {
         "title": "Escala Plantões",
         "technology": ["Angular", "ReactJS", "Jest", "Laravel", "Mysql", "AWS"],
         "img": "plantoes",
@@ -187,7 +187,7 @@
     "title": "Professional experience",
     "description": "Here are the places I've worked during my career.",
     "journey": [
-        {
+      {
         "period": "2022 - NOW",
         "institution": "Escala APP",
         "position": "Senior Web Developer Full Stack",

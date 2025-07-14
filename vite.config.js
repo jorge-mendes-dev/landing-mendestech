@@ -92,10 +92,19 @@ export default defineConfig({
       routes: path.resolve(__dirname, './src/routes')
     }
     // conditions: ['custom', ...defaultClientConditions]
-  }
+  },
   // ssr: {
   //   resolve: {
   //     conditions: ['custom', ...defaultServerConditions]
   //   }
   // }
+  optimizeDeps: {
+    disabled: true
+  },
+  build: {
+    minify: false,
+    rollupOptions: {
+      treeshake: false
+    }
+  }
 })
