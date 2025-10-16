@@ -8,6 +8,7 @@ const AboutMe = lazy(() => import('pages/aboutMe'))
 const Projects = lazy(() => import('pages/projects'))
 const Project = lazy(() => import('pages/project'))
 const Utils = lazy(() => import('pages/utils'))
+const Resume = lazy(() => import('pages/resume'))
 
 const PageRoutes = () => (
   <BrowserRouter>
@@ -18,6 +19,7 @@ const PageRoutes = () => (
         <Route exact path="projects" element={<Projects />} />
         <Route exact path="utils" element={<Utils />} />
         <Route exact path="project/:name" element={<Project />} />
+        <Route exact path="resume" element={<Resume />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </Suspense>

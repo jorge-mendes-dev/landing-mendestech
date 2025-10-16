@@ -19,8 +19,14 @@
       "name": "Projects",
       "type": "external",
       "href": "/projects"
+    },
+    {
+      "name": "Resume",
+      "type": "external",
+      "href": "/resume"
     }
   ],
+  "resume": "Jorge_Mendes_resume.pdf",
   "callToAction": {
     "text": "About Me",
     "href": "about"
@@ -36,7 +42,7 @@
     },
     "secondaryAction": {
       "text": "Resume",
-      "href": "/Jorge_Mendes_resume.pdf"
+      "href": "resume"
     }
   },
   "about": {

@@ -34,41 +34,23 @@ export default defineConfig({
   plugins: [
     react(),
     ViteImageOptimizer({
-      test: /\.(png|jpe?g|gif|webp|avif)$/,
-      exclude: /node_modules/,
-      include: ['src/images'],
-      logStats: true,
-      svg: {
-        multipass: true,
-        plugins: [
-          {
-            name: 'preset-default',
-            params: {
-              overrides: {
-                cleanupNumericValues: false,
-                removeViewBox: false
-              },
-              cleanupIDs: {
-                minify: false,
-                remove: false
-              },
-              convertPathData: false
-            }
-          },
-          'sortAttrs',
-          {
-            name: 'addAttributesToSVGElement',
-            params: {
-              attributes: [{ xmlns: 'https://www.w3.org/2000/svg' }]
-            }
-          }
-        ]
+      // options for image optimization
+      mozjpeg: {
+        quality: 75
       },
-      jpeg: {
-        quality: 100
+      optipng: {
+        optimizationLevel: 5
       },
-      cache: true,
-      cacheLocation: 'node_modules/.vite-plugin-image-optimizer-cache'
+      pngquant: {
+        quality: [0.65, 0.9],
+        speed: 4
+      },
+      gifsicle: {
+        optimizationLevel: 3
+      },
+      webp: {
+        quality: 75
+      }
     })
   ],
   css: {
@@ -92,19 +74,10 @@ export default defineConfig({
       routes: path.resolve(__dirname, './src/routes')
     }
     // conditions: ['custom', ...defaultClientConditions]
-  },
+  }
   // ssr: {
   //   resolve: {
   //     conditions: ['custom', ...defaultServerConditions]
   //   }
   // }
-  optimizeDeps: {
-    disabled: true
-  },
-  build: {
-    minify: false,
-    rollupOptions: {
-      treeshake: false
-    }
-  }
 })

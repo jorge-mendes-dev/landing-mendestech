@@ -11,6 +11,7 @@ import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import { Link as LinkRouter } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import { random } from 'utils/generic'
+import { useTheme } from 'hooks/useTheme'
 
 import logo from 'assets/images/logo.png'
 
@@ -19,6 +20,7 @@ import config from 'config'
 const Navbar = () => {
   const { navigation, company, socialMedia } = config
   const { name, url } = company
+  const { toggleDarkMode } = useTheme()
 
   return (
     <>
@@ -99,7 +101,10 @@ const Navbar = () => {
 
             <div className="flex justify-center items-center sm:ml-2">
               <button
-                onClick={() => document.body.classList.toggle('dark')}
+                onClick={() => {
+                  document.body.classList.toggle('dark')
+                  toggleDarkMode()
+                }}
                 className="block h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <svg
