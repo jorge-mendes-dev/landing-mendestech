@@ -1,14 +1,15 @@
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 
 export function useGoogleAnalytics() {
   const sendPageView = () => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    ReactGA.send({ hitType: 'pageview', page: window.location.pathname + window.location.search })
   }
 
   const sendEvent = (categoryRegister, actionRegister) => {
-    ReactGA.event({
-      category: `${categoryRegister}`,
-      action: `${actionRegister}`
+    ReactGA.send({
+      hitType: 'event',
+      eventCategory: `${categoryRegister}`,
+      eventAction: `${actionRegister}`
     })
   }
 
