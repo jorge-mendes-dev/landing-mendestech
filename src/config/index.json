@@ -4,6 +4,15 @@
     "logo": "logo.png",
     "url": "/"
   },
+  "seo": {
+    "title": "Jorge Mendes - Senior Developer",
+    "description": "Experienced web developer with a talent for efficient solutions, building responsive applications with beautiful layouts. 8 years of experience with JavaScript, React, Redux, TypeScript.",
+    "image": "jorge_mendes.png",
+    "lang": "en",
+    "author": "@jorge-mendes-dev",
+    "siteUrl": "https://jorgemendes.com.br",
+    "type": "website"
+  },
   "navigation": [
     {
       "name": "Home",
