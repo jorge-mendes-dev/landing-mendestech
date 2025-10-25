@@ -4,7 +4,6 @@ import {
   defaultServerConditions
 } from 'vite'
 import react from '@vitejs/plugin-react'
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import path from 'path'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
@@ -41,8 +40,8 @@ export default defineConfig({
     }
   },
   plugins: [
-    react(),
-    ViteImageOptimizer({
+    react()
+    /*  ViteImageOptimizer({
       test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
       exclude: undefined,
       include: undefined,
@@ -81,7 +80,7 @@ export default defineConfig({
       avif: {
         lossless: true
       }
-    })
+    }) */
   ],
   css: {
     devSourcemap: true,
