@@ -120,7 +120,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          ui: ['@heroicons/react', 'lucide-react'],
+          ui: ['@heroicons/react'],
           utils: ['lodash', 'date-fns']
         }
       }

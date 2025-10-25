@@ -8,7 +8,8 @@ import {
   LazyShow,
   Navbar,
   ProjectsList,
-  SkillsList
+  SkillsList,
+  MainHeroImage
 } from 'components'
 
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
@@ -35,6 +36,7 @@ function Home() {
             <Header />
           </div>
         </div>
+        <MainHeroImage />
       </div>
       <LazyShow>
         <HomeAbout />
