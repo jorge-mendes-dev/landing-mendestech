@@ -1,4 +1,3 @@
-import React from 'react'
 import { Whatsapp } from '@styled-icons/bootstrap/Whatsapp'
 
 import config from 'config'

@@ -1,5 +1,4 @@
-import React from 'react'
-
+import { memo } from 'react'
 import { Divider } from 'components'
 import Icons from 'config/Icons'
 import { random } from 'utils/generic'
@@ -103,4 +102,4 @@ const Timeline = () => {
   )
 }
 
-export default Timeline
+export default memo(Timeline)

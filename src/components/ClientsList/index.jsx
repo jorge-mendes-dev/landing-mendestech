@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Divider, ImageCard } from 'components'
 import Brands from 'config/Brands'
 import { random } from 'utils/generic'

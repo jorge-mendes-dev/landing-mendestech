@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import React from 'react'
 
 import Projects from 'config/Projects'
 import { random } from 'utils/generic'

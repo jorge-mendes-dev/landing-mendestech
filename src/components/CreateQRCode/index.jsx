@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import QRCode from 'react-qr-code'
 
 const CreateQRCode = () => {
@@ -40,13 +40,11 @@ const CreateQRCode = () => {
   return (
     <div className={`container max-w-5xl mx-auto`}>
       <div className="p-2">
-        <h3
-          className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-green-500`}
-        >
+        <h3 className={`text-3xl font-bold leading-none mb-6 text-green-500`}>
           Gere QR Codes com links
         </h3>
         <p
-          className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
+          className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline`}
         >
           Gere QR Codes baseado em qualquer link.
         </p>
@@ -57,7 +55,7 @@ const CreateQRCode = () => {
               <div className="p-8 mt-4 flex flex-wrap flex-col sm:flex-col items-center justify-between">
                 <div
                   style={{ height: '250px', width: '250px' }}
-                  className="rounded-xl border p-4 mb-4 bg-white rounded-xl"
+                  className="border p-4 mb-4 bg-white rounded-xl"
                 >
                   <QRCode
                     id="QRCode"

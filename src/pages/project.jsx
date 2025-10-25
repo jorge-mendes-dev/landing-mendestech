@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect, memo } from 'react'
 
 import { useParams } from 'react-router-dom'
 
@@ -85,4 +85,4 @@ const ProjectInfo = () => {
   )
 }
 
-export default ProjectInfo
+export default memo(ProjectInfo)

@@ -1,15 +1,24 @@
 import {
-  defineConfig
-  // defaultClientConditions,
-  // defaultServerConditions
+  defineConfig,
+  defaultClientConditions,
+  defaultServerConditions
 } from 'vite'
 import react from '@vitejs/plugin-react'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import path from 'path'
 import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    port: 5173,
+    open: true,
+    cors: true,
+    hmr: {
+      overlay: true
+    }
+  },
   test: {
     environment: 'jsdom',
     setupFiles: ['./tests.cjs'],
@@ -34,50 +43,87 @@ export default defineConfig({
   plugins: [
     react(),
     ViteImageOptimizer({
-      // options for image optimization
-      mozjpeg: {
-        quality: 75
+      test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
+      exclude: undefined,
+      include: undefined,
+      includePublic: true,
+      logStats: true,
+      ansiColors: true,
+      svg: {
+        multipass: true,
+        plugins: [
+          {
+            name: 'preset-default',
+            params: {
+              overrides: {
+                cleanupNumericValues: false
+              }
+            }
+          }
+        ]
       },
-      optipng: {
-        optimizationLevel: 5
+      png: {
+        quality: [0.8, 0.9]
       },
-      pngquant: {
-        quality: [0.65, 0.9],
-        speed: 4
+      jpeg: {
+        quality: 80
       },
-      gifsicle: {
-        optimizationLevel: 3
+      jpg: {
+        quality: 80
       },
+      tiff: {
+        quality: 80
+      },
+      gif: {},
       webp: {
-        quality: 75
+        lossless: true
+      },
+      avif: {
+        lossless: true
       }
     })
   ],
   css: {
+    devSourcemap: true,
     postcss: {
-      plugins: [tailwindcss()]
+      plugins: [tailwindcss(), autoprefixer()]
     }
   },
-  // json: {
-  //   stringify: false
-  // },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src/'),
-      components: `${path.resolve(__dirname, './src/components/')}`,
-      public: `${path.resolve(__dirname, './public/')}`,
+      '@': path.resolve(__dirname, './src'),
+      components: path.resolve(__dirname, './src/components'),
+      public: path.resolve(__dirname, './public'),
       pages: path.resolve(__dirname, './src/pages'),
       config: path.resolve(__dirname, './src/config'),
       hooks: path.resolve(__dirname, './src/hooks'),
       assets: path.resolve(__dirname, './src/assets'),
       utils: path.resolve(__dirname, './src/utils'),
       routes: path.resolve(__dirname, './src/routes')
+    },
+    conditions: ['custom', ...defaultClientConditions]
+  },
+  ssr: {
+    resolve: {
+      conditions: ['custom', ...defaultServerConditions]
     }
-    // conditions: ['custom', ...defaultClientConditions]
+  },
+  define: {
+    __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
+    __BUILD_TIME__: JSON.stringify(new Date().toISOString())
+  },
+  build: {
+    target: 'esnext',
+    minify: 'terser',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          ui: ['@heroicons/react', 'lucide-react'],
+          utils: ['lodash', 'date-fns']
+        }
+      }
+    }
   }
-  // ssr: {
-  //   resolve: {
-  //     conditions: ['custom', ...defaultServerConditions]
-  //   }
-  // }
 })

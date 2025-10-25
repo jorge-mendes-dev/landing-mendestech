@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import React from 'react'
 
 import { Divider } from 'components'
 import figure404 from 'utils/JSON/figure404.json'

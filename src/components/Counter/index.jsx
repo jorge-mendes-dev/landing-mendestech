@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { random } from 'utils/generic'
 import CounterItem from './CounterItem'
 

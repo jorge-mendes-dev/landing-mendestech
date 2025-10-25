@@ -1,5 +1,4 @@
 import config from 'config'
-import React from 'react'
 
 import jorge from 'assets/images/profile.svg'
 

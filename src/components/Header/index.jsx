@@ -1,5 +1,3 @@
-import React from 'react'
-
 import config from 'config'
 import { Link } from 'react-router-dom'
 
@@ -16,9 +14,7 @@ const Header = () => {
       <div className="sm:text-center lg:text-left">
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline dark:text-white">{title}</span>{' '}
-          <h2>
-            <span className={`block text-primary xl:inline`}>{subtitle}</span>
-          </h2>
+          <span className={`block text-primary xl:inline`}>{subtitle}</span>
         </h1>
         <p className="mt-3 max-w-2xl mb-6 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl dark:text-zinc-200">
           {description}

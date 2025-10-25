@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from 'react'
+import { useEffect, Suspense } from 'react'
 import {
   LazyShow,
   Navbar,

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { Divider, ProjectItem } from 'components'
 import config from 'config'

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { LazyShow, Navbar, NotFound } from 'components'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 

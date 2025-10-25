@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const TalkLink = () => {
   const [phone, setPhone] = useState('')
@@ -22,13 +22,11 @@ const TalkLink = () => {
   return (
     <div className={`container max-w-5xl mx-auto`}>
       <div className="p-2">
-        <h3
-          className={`text-3xl text-gray-800 font-bold leading-none mb-6 text-green-500`}
-        >
+        <h3 className={`text-3xl font-bold leading-none mb-6 text-green-500`}>
           Link de conversa em um clique
         </h3>
         <p
-          className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline leading-relaxed`}
+          className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline`}
         >
           Utilize links rápidos que abrem uma conversa no WhatsApp de maneira
           automática.

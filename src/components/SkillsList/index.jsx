@@ -1,6 +1,6 @@
+import { memo } from 'react'
 import { Divider } from 'components'
 import Techs from 'config/Techs'
-import React from 'react'
 import Marquee from 'react-fast-marquee'
 import { random } from 'utils/generic'
 
@@ -74,4 +74,4 @@ const SkillsList = ({ ...props }) => {
   )
 }
 
-export default SkillsList
+export default memo(SkillsList)

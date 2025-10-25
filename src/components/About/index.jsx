@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { IntroduceMe } from 'components'
 import { random } from 'utils/generic'
 

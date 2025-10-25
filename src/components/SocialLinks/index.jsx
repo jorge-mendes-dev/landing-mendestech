@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Icons from 'config/Icons'
 import PropTypes from 'prop-types'
 import { random } from 'utils/generic'

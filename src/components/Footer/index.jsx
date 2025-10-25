@@ -1,5 +1,3 @@
-import React from 'react'
-
 import SocialLinks from 'components/SocialLinks'
 import config from 'config'
 
@@ -13,7 +11,7 @@ const Footer = () => {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500 dark:text-white">
-            {new Date().getFullYear()} {footer.description} | {footer.title}
+            {new Date().getFullYear()} - {footer.description} | {footer.title}
           </p>
         </div>
       </div>

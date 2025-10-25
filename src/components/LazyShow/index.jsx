@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { motion, useAnimation } from 'framer-motion'
 
@@ -22,7 +22,7 @@ function useOnScreen(ref = null, rootMargin = '0px') {
     return () => {
       observer.unobserve(currentRef)
     }
-  }, [ref, rootMargin]) // Empty array ensures that effect is only run on mount and unmount
+  }, [ref, rootMargin])
 
   return isIntersecting
 }
