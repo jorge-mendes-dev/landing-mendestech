@@ -65,7 +65,8 @@
     "lint": "prettier --check .",
     "format": "prettier --write .",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "install-deps": "npm install --legacy-peer-deps"
   },
   "config": {
     "commitizen": {
