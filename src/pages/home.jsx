@@ -6,7 +6,6 @@ import {
   Header,
   HomeAbout,
   LazyShow,
-  MainHeroImage,
   Navbar,
   ProjectsList,
   SkillsList
@@ -36,7 +35,6 @@ function Home() {
             <Header />
           </div>
         </div>
-        <MainHeroImage />
       </div>
       <LazyShow>
         <HomeAbout />

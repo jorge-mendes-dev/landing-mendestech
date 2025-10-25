@@ -23,7 +23,7 @@
     {
       "name": "Resume",
       "type": "external",
-      "href": "/resume"
+      "href": "#"
     }
   ],
   "resume": "Jorge_Mendes_resume.pdf",
@@ -42,7 +42,7 @@
     },
     "secondaryAction": {
       "text": "Resume",
-      "href": "resume"
+      "href": "#"
     }
   },
   "about": {
@@ -141,7 +141,7 @@
   "socialMedia": [
     {
       "label": "Linkedin",
-      "url": "https://www.linkedin.com/in/jorge-mendes-dev/"
+      "url": ""
     },
     {
       "label": "Github",
