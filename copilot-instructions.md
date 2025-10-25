@@ -68,15 +68,3 @@ Copilot should prioritize **clean, readable, and maintainable code**, with **str
 - Use environment variables (`process.env`) for secrets or API keys.
 
 ---
-
-## 🧠 Copilot Behavior Rules
-
-```yaml
-alwaysApply: true
-rules:
-  - name: no-comments-rule
-    description: Remove all comments in generated code
-    actions:
-      - remove inline (//) and block (/* */) comments
-      - output only executable code
-```
