@@ -47,10 +47,10 @@ const Feedbacks = () => {
                 ${activeIndex !== i && 'scale-75 blur-sm dark:bg-zinc-900'}`}
               >
                 <div className="justify-between">
-                  <p className="sm:text-base sm:mb-2 md:mb-4 text-lg leading-8 text-gray-900 dark:text-gray-100">
+                  <p className="text-base sm:text-lg md:mb-4 mb-2 leading-relaxed text-gray-900 dark:text-gray-100">
                     {content.review}
                   </p>
-                  <h6 className="text-sm font-medium text-primary mt-1">
+                  <h6 className="text-base font-semibold text-primary mt-2">
                     {String(content.name)}
                   </h6>
                 </div>

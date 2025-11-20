@@ -25,12 +25,12 @@ function Home() {
 
   return (
     <div
-      className={`bg-background dark:bg-black transition-all duration-500 grid gap-y-16 overflow-hidden`}
+      className={`bg-white dark:bg-black transition-all duration-500 grid gap-y-20 md:gap-y-24 overflow-hidden`}
     >
-      <div className={`relative bg-background dark:bg-zinc-900`}>
+      <div className={`relative bg-white dark:bg-zinc-900`}>
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-background dark:bg-zinc-900 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
+            className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
           >
             <Navbar />
             <Header />

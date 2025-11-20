@@ -2,7 +2,7 @@ import { IntroduceMe } from 'components'
 import { random } from 'utils/generic'
 
 import git from 'assets/images/git.jpg'
-import jorge from 'assets/images/jorge_mendes.png'
+import jorge from 'assets/images/perfil.jpeg'
 import notebook from 'assets/images/notebook.jpg'
 
 import config from 'config'
@@ -12,31 +12,34 @@ const About = ({ ...props }) => {
   const { subtitle, paragraphs, list, video } = about
 
   return (
-    <div className="bg-background dark:bg-black" {...props}>
+    <div className="bg-white dark:bg-black" {...props}>
       <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
           <div>
             <div className="border-b border-gray-200 dark:border-blue-700 pb-10">
-              <h2 className="font-medium text-gray-500 dark:text-blue-700">
+              <h2 className="text-base font-semibold text-primary dark:text-primary-light uppercase tracking-wide">
                 {company.name}
               </h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              <p className="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {subtitle}
               </p>
             </div>
 
-            <dl className="mt-10 space-y-10">
+            <dl className="mt-10 space-y-8">
               {paragraphs.map((paragraph) => (
                 <div key={random()}>
-                  <dd className="mt-3 text-sm text-gray-500 dark:text-gray-100">
+                  <dd className="mt-3 text-base md:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                     {paragraph}
                   </dd>
                 </div>
               ))}
             </dl>
-            <ul className="mt-10 text-sm text-gray-500 dark:text-gray-100">
+            <ul className="mt-10 space-y-3 text-base md:text-lg text-gray-700 dark:text-gray-300">
               {list.map((item) => (
-                <li key={random()}>{item}</li>
+                <li key={random()} className="flex items-start">
+                  <span className="mr-3 text-primary">•</span>
+                  <span>{item}</span>
+                </li>
               ))}
             </ul>
           </div>

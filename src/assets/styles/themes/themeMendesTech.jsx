@@ -18,23 +18,34 @@ export default {
     darker: ' rgba(0, 0, 0, 0.75)'
   },
   font: {
-    family: {},
+    family: {
+      sans: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      heading: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+    },
     sizes: {
-      xs: '0.75rem',
-      sm: '0.875rem',
-      base: '1rem',
-      lg: '1.125rem',
-      xl: '1.25rem'
+      xs: '0.75rem', // 12px - captions only
+      sm: '0.875rem', // 14px - small text
+      base: '1rem', // 16px - body text (minimum readable)
+      lg: '1.125rem', // 18px - large body
+      xl: '1.25rem', // 20px - subheadings
+      '2xl': '1.5rem', // 24px - h4
+      '3xl': '1.875rem', // 30px - h3
+      '4xl': '2.25rem', // 36px - h2
+      '5xl': '3rem', // 48px - h1
+      '6xl': '3.75rem' // 60px - display
     },
     weight: {
       light: 300,
       normal: 400, // base
+      medium: 500,
+      semibold: 600,
       bold: 700
     },
     height: {
-      medium: 1.4, // base
-      heading: 1.2,
-      large: 1.78
+      tight: 1.2, // headings
+      medium: 1.5, // body text
+      relaxed: 1.6, // large body text
+      loose: 1.7 // paragraphs
     }
   },
   spacings: {

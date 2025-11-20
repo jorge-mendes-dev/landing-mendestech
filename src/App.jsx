@@ -10,7 +10,7 @@ function App() {
     <ThemeProvider theme={themeMendesTech}>
       <GlobalStyle />
       <AnimatePresence>
-        <div className="bg-secondary-light dark:bg-primary-dark transition duration-300">
+        <div className="bg-white dark:bg-black transition duration-300">
           <PageRoutes />
         </div>
       </AnimatePresence>

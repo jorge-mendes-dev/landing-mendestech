@@ -43,13 +43,13 @@ const ProjectsList = ({
         {layout === 'compact' && (
           <>
             <h2
-              className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
+              className={`w-full my-4 text-3xl md:text-4xl font-bold leading-tight text-center`}
             >
               {pagesTitle.split(' ').map((word, index) => (
                 <span
                   key={index}
                   className={
-                    index % 2 ? 'text-primary' : 'text-border dark:text-white'
+                    index % 2 ? 'text-primary' : 'text-gray-900 dark:text-white'
                   }
                 >
                   {word}{' '}
@@ -59,7 +59,7 @@ const ProjectsList = ({
             <Divider />
           </>
         )}
-        <div className="grid grid-cols-1 sm:grid-cols-2 mt-10 lg:grid-cols-3 sm:gap-10 p-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-12 lg:grid-cols-3 gap-8 md:gap-10 p-4 md:p-8">
           {item.map((project) => {
             const Image = Projects[project.img]
             return (
@@ -82,7 +82,7 @@ const ProjectsList = ({
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-blue-400 md:py-4 md:text-lg md:px-10`}
+                className={`w-full flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-semibold rounded-xl text-white bg-primary hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-colors duration-200 md:py-4 md:text-lg md:px-10`}
               >
                 {primaryAction.text}
               </Link>

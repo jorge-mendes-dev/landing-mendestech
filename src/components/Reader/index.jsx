@@ -34,43 +34,43 @@ const NavbarZoom = ({
   memoSelected
 }) => {
   return (
-    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-30 flex-col gap-2 bg-white/90 dark:bg-zinc-800/90 rounded-full shadow px-2 py-3 opacity-90 backdrop-blur-md transition-all duration-300 hover:opacity-100 hidden md:flex">
+    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-30 flex-col gap-2 bg-white/95 dark:bg-zinc-900/95 rounded-full shadow-card px-2 py-3 opacity-90 backdrop-blur-md transition-all duration-300 hover:opacity-100 hover:shadow-card-hover hidden md:flex border border-gray-200/50 dark:border-gray-700/50">
       <button
         onClick={handleFullscreen}
-        className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 dark:hover:text-indigo-100 transition-colors hover:shadow"
+        className="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         title={isFullscreen ? 'Exit FullScreen' : 'FullScreen'}
         type="button"
       >
         {isFullscreen ? (
-          <ArrowsPointingInIcon className="w-5 h-5 text-zinc-700 dark:text-white dark:hover:text-indigo-100 " />
+          <ArrowsPointingInIcon className="w-5 h-5 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors" />
         ) : (
-          <ArrowsPointingOutIcon className="w-5 h-5 text-zinc-700 dark:text-white dark:hover:text-indigo-100 " />
+          <ArrowsPointingOutIcon className="w-5 h-5 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors" />
         )}
       </button>
       <button
         onClick={handleZoomIn}
-        className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+        className="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         title="Improve zoom"
         type="button"
       >
-        <MagnifyingGlassPlusIcon className="w-5 h-5 text-zinc-700 dark:text-white dark:hover:text-indigo-100 " />
+        <MagnifyingGlassPlusIcon className="w-5 h-5 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors" />
       </button>
 
       <button
         onClick={handleZoomReset}
-        className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+        className="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         title="Reset zoom"
         type="button"
       >
-        <ArrowPathIcon className="w-5 h-5 text-zinc-700 dark:text-white dark:hover:text-indigo-100 " />
+        <ArrowPathIcon className="w-5 h-5 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors" />
       </button>
       <button
         onClick={handleZoomOut}
-        className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+        className="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         title="Remove zoom"
         type="button"
       >
-        <MagnifyingGlassMinusIcon className="w-5 h-5 text-zinc-700 dark:text-white dark:hover:text-indigo-100 " />
+        <MagnifyingGlassMinusIcon className="w-5 h-5 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors" />
       </button>
       <button
         onClick={() => {
@@ -82,13 +82,13 @@ const NavbarZoom = ({
           link.click()
           document.body.removeChild(link)
         }}
-        className="p-2 rounded-full hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+        className="p-2 rounded-full hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         title="Download PDF"
         type="button"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5 text-zinc-700 dark:text-white"
+          className="w-5 h-5 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -123,14 +123,14 @@ const DocumentPreview = ({
           <Skeleton />
         </div>
       }
-      className="bg-gray-100 shadow-sm"
+      className="bg-white dark:bg-zinc-900 shadow-sm"
     >
       {typeof numPages === 'number' &&
         numPages > 0 &&
         Array.from({ length: numPages }, (_el, index) => (
           <Page
             key={`page_${index + 1}`}
-            className="mb-4 last:mb-0 bg-gray-100 dark:bg-zinc-900"
+            className="mb-4 last:mb-0 bg-white dark:bg-zinc-900"
             pageNumber={index + 1}
             width={
               containerWidth
@@ -147,7 +147,7 @@ const LayoutContainer = ({ children, isFullscreen, setContainerRef }) => {
   return (
     <div
       className={
-        `relative mx-auto max-w-3xl animate-fade-in rounded-lg border-zinc-900 shadow bg-gray-200 dark:bg-black` +
+        `relative mx-auto max-w-3xl animate-fade-in rounded-2xl border border-gray-200 dark:border-gray-800 shadow-card bg-white dark:bg-black` +
         (isFullscreen ? ' overflow-y-auto' : '')
       }
       ref={setContainerRef}

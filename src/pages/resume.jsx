@@ -19,11 +19,11 @@ function Resume() {
   }, [])
 
   return (
-    <div className={`relative bg-background dark:bg-black`}>
-      <div className={`relative bg-background dark:bg-zinc-900`}>
+    <div className={`relative bg-white dark:bg-black`}>
+      <div className={`relative bg-white dark:bg-zinc-900`}>
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-background dark:bg-zinc-900 lg:max-w-2xl lg:w-full lg:px-8 lg:py-10`}
+            className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full lg:px-8 lg:py-10`}
           >
             <Navbar />
           </div>
@@ -37,7 +37,7 @@ function Resume() {
         />
       </LazyShow>
       <LazyShow>
-        <main className="min-h-screen bg-gray-200 py-10 dark:bg-zinc-800 scroll-smooth p-6 lg:p-10">
+        <main className="min-h-screen bg-gray-50 dark:bg-zinc-900 py-10 scroll-smooth p-6 lg:p-10">
           <Suspense fallback={<Skeleton />}>
             <Reader selected={config.resume} />
           </Suspense>

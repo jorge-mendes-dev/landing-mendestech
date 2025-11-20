@@ -68,7 +68,7 @@ const Navbar = () => {
                       duration={1000}
                       key={random()}
                       to={href}
-                      className="font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900"
+                      className="font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors duration-200"
                     >
                       {name}
                     </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
                       key={random()}
                       to={href}
                       aria-label={name}
-                      className={`font-medium text-gray-500 dark:text-gray-200 hover:text-gray-900`}
+                      className={`font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors duration-200`}
                       rel="noreferrer"
                     >
                       {name}
@@ -90,7 +90,7 @@ const Navbar = () => {
                   key={random()}
                   to={url}
                   aria-label={label}
-                  className={`font-medium text-primary hover:text-secondary dark:hover:text-offwhite`}
+                  className={`font-medium text-base text-primary hover:text-primary-light dark:hover:text-primary-light transition-colors duration-200`}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -170,7 +170,7 @@ const Navbar = () => {
                         duration={1000}
                         key={random()}
                         to={href}
-                        className="block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-blue-800 hover:text-gray-900 hover:bg-gray-50"
+                        className="block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200"
                       >
                         {name}
                       </Link>
@@ -179,7 +179,7 @@ const Navbar = () => {
                         key={random()}
                         to={href}
                         aria-label={name}
-                        className={`block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-gray-200 hover:text-gray-900 hover:bg-gray-50 `}
+                        className={`block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200`}
                         rel="noreferrer"
                       >
                         {name}

@@ -3,23 +3,110 @@
 @import 'tailwindcss/utilities';
 
 :root {
-  --color-primary: #87d1eb;
+  --color-primary: #0691c1;
+  --color-primary-light: #0ea5d9;
+  --color-primary-dark: #0284a8;
   --color-secondary: #001c43;
-  --color-tertiaty: #99a0a3;
+  --color-tertiary: #99a0a3;
+  
+  /* Light mode colors */
+  --color-background: #ffffff;
+  --color-surface: #f8f9fa;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #4a5568;
+  --color-text-tertiary: #718096;
+  --color-border: #e2e8f0;
 }
 
+.dark {
+  --color-background: #0a0a0a;
+  --color-surface: #181818;
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #a0aec0;
+  --color-text-tertiary: #718096;
+  --color-border: #2d3748;
+}
+
+/* Base typography improvements */
+html {
+  font-size: 16px; /* Base font size for better readability */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1rem; /* 16px minimum for body text */
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Improved link styles */
 a {
   cursor: pointer;
+  color: var(--color-primary);
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 a:hover {
   @apply border-b-2;
+  color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
 }
 
+.dark a:hover {
+  color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+/* Content typography */
 .content p {
   @apply my-6;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+}
+
+.dark .content p {
+  color: var(--color-text-primary);
 }
 
 .content ul {
   @apply my-6;
+  padding-left: 1.5rem;
+}
+
+.content ul li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Heading improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+/* Better focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
 }

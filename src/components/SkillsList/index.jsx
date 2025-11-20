@@ -14,13 +14,13 @@ const SkillsList = ({ ...props }) => {
   return (
     <S.SkillsWrapper {...props} className="hidden lg:block container mx-auto">
       <h6
-        className={`w-full my-2 text-4xl font-bold leading-tight text-center`}
+        className={`w-full my-4 text-3xl md:text-4xl font-bold leading-tight text-center`}
       >
         {title.split(' ').map((word, index) => (
           <span
             key={index}
             className={
-              index % 2 ? 'text-primary' : 'text-border dark:text-white'
+              index % 2 ? 'text-primary' : 'text-gray-900 dark:text-white'
             }
           >
             {word}{' '}
@@ -61,7 +61,7 @@ const SkillsList = ({ ...props }) => {
                       className="h-full w-auto rounded-xl"
                     />
                   </div>
-                  <p className="text-primary font-semibold text-xs sm:text-lg">
+                  <p className="text-primary font-semibold text-sm sm:text-base">
                     {skill.title}
                   </p>
                 </div>

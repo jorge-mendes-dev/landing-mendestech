@@ -40,13 +40,15 @@ const HeaderSub = ({ background, title = '', description = '', ...props }) => {
         />
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
           {title}
         </h2>
         {title && <Divider bgColor={'bg-white'} />}
-        <p className="text-2xl leading-8 font-semibold text-white">
-          {description}
-        </p>
+        {description && (
+          <p className="mt-6 text-xl md:text-2xl leading-relaxed font-medium text-white/90">
+            {description}
+          </p>
+        )}
       </div>
     </S.Wrapper>
   )
