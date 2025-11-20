@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import config from 'config'
 import { Link } from 'react-router-dom'
 
@@ -6,13 +7,53 @@ const Header = () => {
   const { title, subtitle, description, primaryAction, secondaryAction } =
     mainHero
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1
+      }
+    }
+  }
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: 'easeOut'
+      }
+    }
+  }
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: 'easeOut'
+      }
+    }
+  }
+
   return (
     <main
       className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
       id="header"
     >
-      <div className="sm:text-center lg:text-left">
-        <div className="relative inline-block">
+      <motion.div
+        className="sm:text-center lg:text-left"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.div className="relative inline-block" variants={titleVariants}>
           <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl dark:text-white relative z-10">
             <span className="block xl:inline bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
               {title}
@@ -21,14 +62,45 @@ const Header = () => {
               {subtitle}
             </span>
           </h1>
-          <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 rounded-lg blur-xl opacity-75 dark:opacity-50 -z-10"></div>
-        </div>
-        <p className="mt-6 max-w-2xl mb-8 font-normal text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+          <motion.div
+            className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 rounded-lg blur-xl opacity-75 dark:opacity-50 -z-10"
+            animate={{
+              opacity: [0.5, 0.75, 0.5],
+              scale: [1, 1.05, 1]
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: 'easeInOut'
+            }}
+          />
+        </motion.div>
+        <motion.p
+          className="mt-6 max-w-2xl mb-8 font-normal text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed"
+          variants={itemVariants}
+        >
           {description}
-        </p>
-        <div className="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start gap-4">
-          <div className="group relative">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary-light rounded-xl opacity-75 group-hover:opacity-100 blur transition duration-300"></div>
+        </motion.p>
+        <motion.div
+          className="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start gap-4"
+          variants={itemVariants}
+        >
+          <motion.div
+            className="group relative"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <motion.div
+              className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary-light rounded-xl opacity-75 group-hover:opacity-100 blur transition duration-300"
+              animate={{
+                opacity: [0.75, 1, 0.75]
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: 'easeInOut'
+              }}
+            />
             <Link
               rel="noreferrer"
               aria-label={primaryAction.text}
@@ -37,8 +109,12 @@ const Header = () => {
             >
               {primaryAction.text}
             </Link>
-          </div>
-          <div className="mt-3 sm:mt-0">
+          </motion.div>
+          <motion.div
+            className="mt-3 sm:mt-0"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             <Link
               target="_blank"
               rel="noreferrer"
@@ -48,9 +124,9 @@ const Header = () => {
             >
               {secondaryAction.text}
             </Link>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </main>
   )
 }

@@ -1,26 +1,13 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 export function useTheme() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
   useEffect(() => {
-    const userPreference = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches
-    const savedPreference = localStorage.getItem('theme')
-    const initialMode =
-      savedPreference === 'dark' || (!savedPreference && userPreference)
-
-    setIsDarkMode(initialMode)
-    document.body.classList.toggle('dark', initialMode)
+    // Always set dark mode as default
+    document.documentElement.classList.add('dark')
+    document.body.classList.add('dark')
+    localStorage.setItem('theme', 'dark')
   }, [])
 
-  const toggleDarkMode = () => {
-    const newMode = !isDarkMode
-    setIsDarkMode(newMode)
-    document.body.classList.toggle('dark', newMode)
-    localStorage.setItem('theme', newMode ? 'dark' : 'light')
-  }
-
-  return { isDarkMode, toggleDarkMode }
+  // No toggle function needed - dark mode is always on
+  return { isDarkMode: true }
 }

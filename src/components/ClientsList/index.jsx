@@ -29,7 +29,7 @@ const ClientsList = ({ ...props }) => {
         </h6>
         <Divider />
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-12 p-8 sm:mt-16 gap-6 md:gap-8">
-          {data.map((client) => {
+          {data.map((client, index) => {
             const Brand = Brands[client.img]
             return (
               <ImageCard
@@ -38,6 +38,7 @@ const ClientsList = ({ ...props }) => {
                 key={random()}
                 width={'auto'}
                 height={'auto'}
+                index={index}
               />
             )
           })}

@@ -6,11 +6,17 @@ import 'assets/styles/main.css'
 import PageRoutes from 'routes/routes'
 
 function App() {
+  // Ensure dark mode is always applied
+  if (typeof document !== 'undefined') {
+    document.documentElement.classList.add('dark')
+    document.body.classList.add('dark')
+  }
+
   return (
     <ThemeProvider theme={themeMendesTech}>
       <GlobalStyle />
       <AnimatePresence>
-        <div className="bg-white dark:bg-black transition duration-300">
+        <div className="dark:bg-black transition duration-300">
           <PageRoutes />
         </div>
       </AnimatePresence>

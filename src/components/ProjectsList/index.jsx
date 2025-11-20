@@ -60,7 +60,7 @@ const ProjectsList = ({
           </>
         )}
         <div className="grid grid-cols-1 sm:grid-cols-2 mt-12 lg:grid-cols-3 gap-8 md:gap-10 p-4 md:p-8 items-stretch">
-          {item.map((project) => {
+          {item.map((project, index) => {
             const Image = Projects[project.img]
             return (
               <div key={random()} className="flex">
@@ -71,6 +71,7 @@ const ProjectsList = ({
                   href={project.link}
                   type={project.type}
                   company={project.company}
+                  index={index}
                 />
               </div>
             )
