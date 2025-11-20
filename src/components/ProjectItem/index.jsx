@@ -28,9 +28,9 @@ const ProjectItem = ({
   const Component = (
     <div
       onClick={() => backToTop()}
-      className="group cursor-pointer mb-10 sm:mb-0 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
+      className="group cursor-pointer mb-10 sm:mb-0 h-full flex flex-col bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
     >
-      <div className={`flex flex-col items-center justify-center overflow-hidden rounded-xl mb-6`}>
+      <div className={`flex flex-col items-center justify-center overflow-hidden rounded-xl mb-6 flex-shrink-0`}>
         <img 
           src={image} 
           className="w-full h-48 object-cover rounded-xl group-hover:scale-105 transition-transform duration-300" 
@@ -40,12 +40,12 @@ const ProjectItem = ({
 
       {Separator}
 
-      <div className="text-center px-2 py-6">
-        <h3 className="font-bold text-xl md:text-2xl text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-primary mb-6">
+      <div className="text-center px-2 flex flex-col flex-grow">
+        <h3 className="font-bold text-xl md:text-2xl text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-primary mb-4 min-h-[3rem] flex items-center justify-center">
           {title}
         </h3>
 
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className="flex flex-wrap justify-center gap-2 mt-auto">
           {technology.map((tech) => (
             <span
               key={random()}

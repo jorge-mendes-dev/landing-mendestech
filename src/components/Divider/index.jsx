@@ -2,11 +2,15 @@ import PropTypes from 'prop-types'
 
 const Divider = ({ width = 'w-64', bgColor = 'bg-primary', ...props }) => {
   return (
-    <div className={`w-full mb-4`} {...props}>
-      <div
-        data-testid="divider"
-        className={`h-1 mx-auto ${bgColor} ${width} opacity-25 my-0 py-0 rounded-xl-t mb-10`}
-      ></div>
+    <div className={`w-full mb-6 flex items-center justify-center`} {...props}>
+      <div className="relative flex items-center justify-center w-full">
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full border-t border-gray-200 dark:border-gray-800"></div>
+        </div>
+        <div className="relative flex items-center">
+          <div className={`h-1.5 ${bgColor} ${width} rounded-full bg-gradient-to-r from-primary to-primary-light shadow-sm`}></div>
+        </div>
+      </div>
     </div>
   )
 }

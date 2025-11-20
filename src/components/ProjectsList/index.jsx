@@ -59,19 +59,20 @@ const ProjectsList = ({
             <Divider />
           </>
         )}
-        <div className="grid grid-cols-1 sm:grid-cols-2 mt-12 lg:grid-cols-3 gap-8 md:gap-10 p-4 md:p-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-12 lg:grid-cols-3 gap-8 md:gap-10 p-4 md:p-8 items-stretch">
           {item.map((project) => {
             const Image = Projects[project.img]
             return (
-              <ProjectItem
-                title={project.title}
-                technology={project.technology}
-                image={Image}
-                href={project.link}
-                key={random()}
-                type={project.type}
-                company={project.company}
-              />
+              <div key={random()} className="flex">
+                <ProjectItem
+                  title={project.title}
+                  technology={project.technology}
+                  image={Image}
+                  href={project.link}
+                  type={project.type}
+                  company={project.company}
+                />
+              </div>
             )
           })}
         </div>

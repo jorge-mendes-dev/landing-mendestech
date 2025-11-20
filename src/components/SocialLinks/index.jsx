@@ -14,13 +14,13 @@ const SocialLinks = ({ className, size = 'auto', ...props }) => {
           <a
             key={random()}
             href={link.url}
-            className="text-gray-400 dark:text-white hover:text-primary"
+            className="group relative p-2 rounded-full text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition-all duration-200 hover:bg-primary/10 dark:hover:bg-primary/20"
             target="_blank"
             rel="noopener noreferrer"
             {...props}
           >
             <span className="sr-only">{link.label}</span>
-            <Icon className="h-6 w-6" aria-hidden="true" />
+            <Icon className="h-6 w-6 transition-transform duration-200 group-hover:scale-110" aria-hidden="true" />
           </a>
         )
       })}
