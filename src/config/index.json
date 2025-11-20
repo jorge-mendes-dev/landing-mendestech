@@ -32,7 +32,7 @@
     {
       "name": "Resume",
       "type": "external",
-      "href": "#"
+      "href": "/resume"
     }
   ],
   "resume": "Jorge_Mendes_resume.pdf",
@@ -51,7 +51,7 @@
     },
     "secondaryAction": {
       "text": "Resume",
-      "href": "#"
+      "href": "/resume"
     }
   },
   "about": {
@@ -150,15 +150,11 @@
   "socialMedia": [
     {
       "label": "Linkedin",
-      "url": ""
+      "url": "https://www.linkedin.com/in/jorge-mendes-dev/"
     },
     {
       "label": "Github",
       "url": "https://github.com/jorge-mendes-dev"
-    },
-    {
-      "label": "Gmail",
-      "url": "mailto:jorge.mendesx@gmail.com"
     }
   ],
   "reviews": {
@@ -459,7 +455,7 @@
     {
       "reference": "experience",
       "title": "Years of experience",
-      "level": 8,
+      "level": 9,
       "measure": ""
     },
     {

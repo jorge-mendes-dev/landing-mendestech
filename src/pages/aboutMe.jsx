@@ -8,7 +8,8 @@ import {
   HeaderSub,
   LazyShow,
   Navbar,
-  SkillsList
+  SkillsList,
+  Timeline
 } from 'components'
 
 import code from 'assets/images/code.jpg'
@@ -53,6 +54,9 @@ function AboutMe() {
       </LazyShow>
       <LazyShow>
         <ClientsList />
+      </LazyShow>
+      <LazyShow>
+        <Timeline />
       </LazyShow>
       <LazyShow>
         <Footer />
