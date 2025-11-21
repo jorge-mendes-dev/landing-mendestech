@@ -3,7 +3,6 @@ import { useEffect } from 'react'
 import {
   About,
   ClientsList,
-  Counter,
   Footer,
   HeaderSub,
   LazyShow,
@@ -48,9 +47,6 @@ function AboutMe() {
       </LazyShow>
       <LazyShow>
         <SkillsList />
-      </LazyShow>
-      <LazyShow>
-        <Counter />
       </LazyShow>
       <LazyShow>
         <ClientsList />
