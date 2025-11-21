@@ -40,7 +40,7 @@ const HomeAbout = ({ ...props }) => {
     <motion.div
       id="about"
       {...props}
-      className="mb-16 p-2 rounded-3xl shadow-card-elevated bg-gradient-to-tr from-primary via-primary-600 to-primary-800 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl overflow-hidden"
+      className="mb-16 p-2 rounded-3xl shadow-card-elevated bg-gradient-to-tr from-primary/10 via-primary-600/10 to-primary-800/10 dark:from-zinc-900/80 dark:via-zinc-800/80 dark:to-zinc-900/80 backdrop-blur-md border border-primary/20 dark:border-primary/30 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl overflow-hidden"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
@@ -56,11 +56,13 @@ const HomeAbout = ({ ...props }) => {
         </div>
       </motion.div>
       <motion.div
-        className="relative bg-white/95 dark:bg-zinc-900/95 dark:border-zinc-800 backdrop-blur-sm rounded-2xl max-w-lg md:max-w-2xl md:z-10 md:shadow-card-elevated md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12 border border-white/20 dark:border-gray-800/50"
+        className="relative bg-white/90 dark:bg-zinc-900/90 dark:border-zinc-800 backdrop-blur-md rounded-2xl max-w-lg md:max-w-2xl md:z-10 md:shadow-card-elevated md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12 border border-white/30 dark:border-gray-800/50 group"
         variants={itemVariants}
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.3 }}
       >
+        {/* Glow effect on hover */}
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/0 to-primary-light/0 group-hover:from-primary/20 group-hover:to-primary-light/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
         <div className="flex flex-col p-8 md:p-12 lg:px-16">
           <motion.h2
             className={`w-full my-4 text-3xl md:text-4xl font-bold leading-tight text-center`}

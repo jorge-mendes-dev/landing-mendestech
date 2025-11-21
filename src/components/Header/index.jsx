@@ -44,7 +44,7 @@ const Header = () => {
 
   return (
     <main
-      className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+      className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 bg-transparent"
       id="header"
     >
       <motion.div
@@ -54,29 +54,17 @@ const Header = () => {
         animate="visible"
       >
         <motion.div className="relative inline-block" variants={titleVariants}>
-          <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl dark:text-white relative z-10">
-            <span className="block xl:inline bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
+          <h1 className="text-4xl tracking-tight font-bold sm:text-5xl md:text-6xl relative z-10">
+            <span className="block xl:inline text-white">
               {title}
             </span>{' '}
-            <span className={`block text-primary xl:inline bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent`}>
+            <span className={`block xl:inline text-primary`}>
               {subtitle}
             </span>
           </h1>
-          <motion.div
-            className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary-light/20 rounded-lg blur-xl opacity-75 dark:opacity-50 -z-10"
-            animate={{
-              opacity: [0.5, 0.75, 0.5],
-              scale: [1, 1.05, 1]
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: 'easeInOut'
-            }}
-          />
         </motion.div>
         <motion.p
-          className="mt-6 max-w-2xl mb-8 font-normal text-base md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 leading-relaxed"
+          className="mt-6 max-w-2xl mb-8 font-normal text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed"
           variants={itemVariants}
         >
           {description}

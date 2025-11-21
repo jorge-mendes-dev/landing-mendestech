@@ -22,20 +22,13 @@ const Navbar = () => {
 
   return (
     <>
-      <svg
-        className={`hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background dark:text-zinc-900 transform translate-x-1/2`}
-        fill="currentColor"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <polygon points="50,0 100,0 50,100 0,100" />
-      </svg>
-
       <Popover>
         <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+          {/* Transparent navbar background */}
+          <div className="absolute inset-0 -mx-4 sm:-mx-6 lg:-mx-8 backdrop-blur-sm bg-transparent"></div>
+          
           <nav
-            className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+            className="relative flex items-center justify-between sm:h-10 lg:justify-start z-10"
             aria-label="Global"
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -55,7 +48,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+            <div className="hidden md:flex md:ml-10 md:pr-4 md:space-x-2 items-center">
               {navigation.map(({ name, type, href }) => (
                 <Fragment key={random()}>
                   {type === 'internal' ? (
@@ -66,19 +59,21 @@ const Navbar = () => {
                       duration={1000}
                       key={random()}
                       to={href}
-                      className="font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors duration-200"
+                      className="group relative font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-all duration-300 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20"
                     >
                       {name}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
                     </Link>
                   ) : (
                     <LinkRouter
                       key={random()}
                       to={href}
                       aria-label={name}
-                      className={`font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors duration-200`}
+                      className={`group relative font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-all duration-300 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20`}
                       rel="noreferrer"
                     >
                       {name}
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
                     </LinkRouter>
                   )}
                 </Fragment>
@@ -113,7 +108,7 @@ const Navbar = () => {
             className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           >
             <div
-              className={`rounded-xl-lg shadow-md bg-background dark:bg-black ring-1 ring-black ring-opacity-5 overflow-hidden`}
+              className={`rounded-xl-lg shadow-xl backdrop-blur-xl bg-white/95 dark:bg-black/95 ring-1 ring-gray-200/50 dark:ring-gray-800/50 overflow-hidden border border-gray-200/50 dark:border-gray-800/50`}
             >
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
