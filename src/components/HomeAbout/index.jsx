@@ -40,7 +40,7 @@ const HomeAbout = ({ ...props }) => {
     <motion.div
       id="about"
       {...props}
-      className="mb-16 p-2 rounded-3xl shadow-card-elevated bg-gradient-to-tr from-primary/10 via-primary-600/10 to-primary-800/10 dark:from-zinc-900/80 dark:via-zinc-800/80 dark:to-zinc-900/80 backdrop-blur-md border border-primary/20 dark:border-primary/30 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl overflow-hidden"
+      className="mb-16 p-2 rounded-3xl shadow-card-elevated bg-gradient-to-tr from-primary/10 via-primary-600/10 to-primary-800/10 dark:from-zinc-900/80 dark:via-zinc-800/80 dark:to-zinc-900/80 backdrop-blur-md border border-primary/20 dark:border-primary/30 relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl overflow-hidden min-h-[600px] lg:min-h-[500px]"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
@@ -48,7 +48,7 @@ const HomeAbout = ({ ...props }) => {
     >
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-20"></div>
       <motion.div
-        className="w-full h-64 lg:w-1/2 lg:h-auto"
+        className="w-full h-80 md:h-96 lg:w-1/2 lg:h-auto lg:min-h-[600px]"
         variants={itemVariants}
       >
         <div className="h-full w-full object-cover">

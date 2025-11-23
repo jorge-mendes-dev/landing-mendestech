@@ -20,7 +20,10 @@ const SocialLinks = ({ className, size = 'auto', ...props }) => {
             {...props}
           >
             <span className="sr-only">{link.label}</span>
-            <Icon className="h-6 w-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" aria-hidden="true" />
+            <Icon
+              className="h-6 w-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3"
+              aria-hidden="true"
+            />
             {/* Glow effect on hover */}
             <div className="absolute inset-0 rounded-full bg-primary/0 group-hover:bg-primary/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
           </a>

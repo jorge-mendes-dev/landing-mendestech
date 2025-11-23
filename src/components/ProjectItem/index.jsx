@@ -72,7 +72,7 @@ const ProjectItem = ({
     >
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:via-primary/10 group-hover:to-primary/5 transition-all duration-500 rounded-2xl"></div>
-      
+
       {/* Glow effect */}
       <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/0 to-primary-light/0 group-hover:from-primary/20 group-hover:to-primary-light/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
       <motion.div
@@ -80,10 +80,10 @@ const ProjectItem = ({
         variants={imageVariants}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 rounded-xl z-10"></div>
-        <img 
-          src={image} 
-          className="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500" 
-          alt={title} 
+        <img
+          src={image}
+          className="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
+          alt={title}
         />
         <div className="absolute inset-0 border-2 border-primary/0 group-hover:border-primary/30 rounded-xl transition-all duration-300 z-10"></div>
       </motion.div>
@@ -131,13 +131,13 @@ const ProjectItem = ({
   )
 
   return (
-    <div>
+    <div className="w-full">
       {type === 'external' ? (
-        <a href={href} target="_blank">
+        <a href={href} target="_blank" className="block w-full h-full">
           {Component}
         </a>
       ) : (
-        <Link to={href} aria-label={title}>
+        <Link to={href} aria-label={title} className="block w-full h-full">
           {Component}
         </Link>
       )}

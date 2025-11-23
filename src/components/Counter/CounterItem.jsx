@@ -44,7 +44,10 @@ const CounterItem = ({ title, measurement, reference, level, index = 0 }) => {
         transition={{ duration: 0.3 }}
       >
         <h2 className="text-5xl md:text-6xl font-bold text-center text-white mb-3 relative z-10 drop-shadow-lg">
-          <span id={`${reference}`} className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent" />
+          <span
+            id={`${reference}`}
+            className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent"
+          />
           <span className="text-white">{measurement}</span>
         </h2>
         <motion.div

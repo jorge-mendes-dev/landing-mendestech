@@ -72,7 +72,7 @@ const ProjectsList = ({
           {item.map((project, index) => {
             const Image = Projects[project.img]
             return (
-              <div key={random()} className="flex">
+              <div key={random()} className="flex w-full">
                 <ProjectItem
                   title={project.title}
                   technology={project.technology}
@@ -87,14 +87,14 @@ const ProjectsList = ({
           })}
         </div>
         {layout === 'compact' && (
-          <motion.div 
+          <motion.div
             className={`flex flex-col items-center justify-center mt-8`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <motion.div 
+            <motion.div
               className="rounded-xl shadow-lg group relative"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

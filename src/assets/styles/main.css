@@ -8,7 +8,7 @@
   --color-primary-dark: #0284a8;
   --color-secondary: #001c43;
   --color-tertiary: #99a0a3;
-  
+
   /* Light mode colors */
   --color-background: #ffffff;
   --color-surface: #f8f9fa;
@@ -39,14 +39,18 @@ body {
   line-height: 1.6;
   color: var(--color-text-primary);
   background-color: var(--color-background);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Improved link styles */
 a {
   cursor: pointer;
   color: var(--color-primary);
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 a:hover {
@@ -85,7 +89,12 @@ a:hover {
 }
 
 /* Heading improvements */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-text-primary);
@@ -163,7 +172,8 @@ html {
 
 /* Modern blob animation */
 @keyframes blob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
   33% {
@@ -201,7 +211,8 @@ html {
 
 /* Gradient text animation */
 @keyframes gradient-shift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -218,7 +229,9 @@ html {
 .fade-in-up {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .fade-in-up.visible {
@@ -234,7 +247,9 @@ html {
 }
 
 /* Smooth transitions for interactive elements */
-button, a, [role="button"] {
+button,
+a,
+[role='button'] {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

@@ -1,7 +1,13 @@
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
 
-const ImageCard = ({ title, image = '', width = 'auto', height = 'auto', index = 0 }) => {
+const ImageCard = ({
+  title,
+  image = '',
+  width = 'auto',
+  height = 'auto',
+  index = 0
+}) => {
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.8, y: 30 },
     visible: {

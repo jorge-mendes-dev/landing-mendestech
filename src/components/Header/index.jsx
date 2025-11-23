@@ -55,12 +55,8 @@ const Header = () => {
       >
         <motion.div className="relative inline-block" variants={titleVariants}>
           <h1 className="text-4xl tracking-tight font-bold sm:text-5xl md:text-6xl relative z-10">
-            <span className="block xl:inline text-white">
-              {title}
-            </span>{' '}
-            <span className={`block xl:inline text-primary`}>
-              {subtitle}
-            </span>
+            <span className="block text-white">{title}</span>
+            <span className={`block text-primary`}>{subtitle}</span>
           </h1>
         </motion.div>
         <motion.p
