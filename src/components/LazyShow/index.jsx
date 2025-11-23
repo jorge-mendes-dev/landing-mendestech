@@ -20,7 +20,9 @@ function useOnScreen(ref = null, rootMargin = '0px') {
       observer.observe(currentRef)
     }
     return () => {
-      observer.unobserve(currentRef)
+      if (currentRef) {
+        observer.unobserve(currentRef)
+      }
     }
   }, [ref, rootMargin])
 

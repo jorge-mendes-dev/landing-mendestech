@@ -4,6 +4,7 @@ import themeMendesTech from 'assets/styles/themes/themeMendesTech'
 import GlobalStyle from 'assets/styles/globalStyles'
 import 'assets/styles/main.css'
 import PageRoutes from 'routes/routes'
+import ErrorBoundary from 'components/ErrorBoundary'
 
 function App() {
   // Ensure dark mode is always applied
@@ -13,14 +14,14 @@ function App() {
   }
 
   return (
-    <ThemeProvider theme={themeMendesTech}>
-      <GlobalStyle />
-      <AnimatePresence>
+    <ErrorBoundary>
+      <ThemeProvider theme={themeMendesTech}>
+        <GlobalStyle />
         <div className="dark:bg-black transition duration-300">
           <PageRoutes />
         </div>
-      </AnimatePresence>
-    </ThemeProvider>
+      </ThemeProvider>
+    </ErrorBoundary>
   )
 }
 

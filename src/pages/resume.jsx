@@ -16,14 +16,16 @@ function Resume() {
 
   useEffect(() => {
     sendPageView()
-  }, [])
+  }, [sendPageView])
 
   return (
-    <div className={`relative bg-white dark:bg-black`}>
+    <div
+      className={`bg-white transition-all duration-500 dark:bg-black grid overflow-hidden`}
+    >
       <div className={`relative bg-white dark:bg-zinc-900`}>
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full lg:px-8 lg:py-10`}
+            className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
           >
             <Navbar />
           </div>

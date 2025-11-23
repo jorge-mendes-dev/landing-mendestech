@@ -22,7 +22,7 @@ function Projects() {
   useEffect(() => {
     backToTop()
     sendPageView()
-  }, [])
+  }, [sendPageView])
 
   return (
     <div

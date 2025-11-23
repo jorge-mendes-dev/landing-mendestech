@@ -23,7 +23,7 @@ function Home() {
   useEffect(() => {
     backToTop()
     sendPageView()
-  }, [])
+  }, [sendPageView])
 
   return (
     <div

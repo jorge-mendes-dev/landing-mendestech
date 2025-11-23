@@ -15,34 +15,34 @@ const Skeleton = ({ ...props }) => {
         </div>
       </header>
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="animate-pulse space-y-4">
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-2/3"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-1/2"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-3/4"></div>
+        <div className="space-y-4">
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-2/3 animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-1/2 animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-3/4 animate-shimmer bg-[length:200%_100%]"></div>
         </div>
 
-        <div className="animate-pulse space-y-4 mt-12">
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-2/3"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-1/2"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-3/4"></div>
+        <div className="space-y-4 mt-12">
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-2/3 animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-1/2 animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-3/4 animate-shimmer bg-[length:200%_100%]"></div>
         </div>
 
-        <div className="animate-pulse space-y-4 mt-12">
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-2/3"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-1/2"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded"></div>
-          <div className="h-4 bg-gray-300 dark:bg-zinc-900 rounded w-3/4"></div>
+        <div className="space-y-4 mt-12">
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-2/3 animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-1/2 animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded animate-shimmer bg-[length:200%_100%]"></div>
+          <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-3/4 animate-shimmer bg-[length:200%_100%]"></div>
         </div>
       </div>
     </S.Wrapper>

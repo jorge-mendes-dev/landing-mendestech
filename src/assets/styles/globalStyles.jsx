@@ -24,4 +24,35 @@ export default createGlobalStyle`
     outline: 0;
     padding: 0;
   }
+
+  /* Respect user's reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Enhanced focus visible styles for keyboard navigation */
+  *:focus-visible {
+    outline: 2px solid #0691c1;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Remove default focus outline but keep for keyboard navigation */
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Specific focus styles for buttons and links */
+  button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid #0691c1;
+    outline-offset: 2px;
+  }
 `
