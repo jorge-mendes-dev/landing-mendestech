@@ -110,7 +110,12 @@ module.exports = {
       animation: {
         vote: 'vote 1s ease-in-out',
         shimmer: 'shimmer 2s linear infinite',
-        blob: 'blob 7s infinite'
+        blob: 'blob 7s infinite',
+        float: 'float 3s ease-in-out infinite',
+        'spin-slow': 'spin 8s linear infinite',
+        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'fade-in-up-delayed': 'fadeInUp 1s ease-out 0.3s forwards',
+        progress: 'progress 2.5s ease-in-out forwards'
       },
       keyframes: {
         vote: {
@@ -144,6 +149,32 @@ module.exports = {
           },
           '100%': {
             transform: 'translate(0px, 0px) scale(1)'
+          }
+        },
+        float: {
+          '0%, 100%': {
+            transform: 'translateY(0px)'
+          },
+          '50%': {
+            transform: 'translateY(-20px)'
+          }
+        },
+        fadeInUp: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        progress: {
+          '0%': {
+            width: '0%'
+          },
+          '100%': {
+            width: '100%'
           }
         }
       },
