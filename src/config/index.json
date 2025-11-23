@@ -13,6 +13,11 @@
     "siteUrl": "https://jorgemendes.com.br",
     "type": "website"
   },
+  "notifications": {
+    "title": "👋 Welcome to Jorge Mendes!",
+    "icon": "/logo.svg",
+    "message": "Explore my portfolio, projects, and skills. Let's build something amazing together!"
+  },
   "navigation": [
     {
       "name": "Home",

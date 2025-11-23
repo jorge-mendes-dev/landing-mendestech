@@ -10,7 +10,8 @@ import {
   ProjectsList,
   SkillsList,
   MainHeroImage,
-  ScrollToTop
+  ScrollToTop,
+  WelcomeNotification
 } from 'components'
 
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
@@ -28,6 +29,9 @@ function Home() {
     <div
       className={`bg-white dark:bg-black transition-all duration-500 grid gap-y-20 md:gap-y-24 overflow-hidden relative`}
     >
+      {/* Welcome notification for first-time visitors */}
+      <WelcomeNotification />
+
       {/* Animated gradient background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 dark:from-primary/10 dark:via-transparent dark:to-primary/5 animate-pulse"></div>
