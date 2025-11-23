@@ -94,7 +94,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({
   children,
   text = 'Loading...',
   backgroundColor = 'bg-white',
-  textColor = 'text-[var(--bdai-hero)]',
+  textColor = 'text-primary',
   textSize = 'text-2xl',
   fontWeight = 'font-semibold',
   animation = 'bounce-in',
