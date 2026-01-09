@@ -6,7 +6,8 @@ import {
   LazyShow,
   Navbar,
   PlayerAnimation,
-  ProjectsList
+  ProjectsList,
+  Seo
 } from 'components'
 
 import notebook from 'assets/images/notebook.jpg'
@@ -25,35 +26,51 @@ function Projects() {
   }, [sendPageView])
 
   return (
-    <div
-      className={`bg-white transition-all duration-500 dark:bg-black grid overflow-hidden`}
-    >
-      <div className={`relative bg-white dark:bg-zinc-900`}>
-        <div className="max-w-7xl mx-auto">
-          <div
-            className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
-          >
-            <Navbar />
+    <>
+      <Seo
+        title="Projects Portfolio"
+        description="Explore my portfolio of web development projects including Escala Plantões, Hotmart, ProVu, Aprova, and WebMeeting. Built with React, Angular, TypeScript, and modern web technologies."
+        url="https://jorgemendes.com.br/projects"
+        keywords={[
+          'Web Development Projects',
+          'React Projects',
+          'Portfolio',
+          'Angular Projects',
+          'TypeScript Applications',
+          'Full Stack Projects',
+          'Web Applications'
+        ]}
+      />
+      <div
+        className={`bg-white transition-all duration-500 dark:bg-black grid overflow-hidden`}
+      >
+        <div className={`relative bg-white dark:bg-zinc-900`}>
+          <div className="max-w-7xl mx-auto">
+            <div
+              className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
+            >
+              <Navbar />
+            </div>
           </div>
         </div>
+        <LazyShow>
+          <HeaderSub
+            title={'Projects'}
+            description={'Portfolio'}
+            background={notebook}
+          />
+        </LazyShow>
+        <LazyShow>
+          <ProjectsList except={'none'} />
+        </LazyShow>
+        <LazyShow>
+          <PlayerAnimation animation={alien} />
+        </LazyShow>
+        <LazyShow>
+          <Footer />
+        </LazyShow>
       </div>
-      <LazyShow>
-        <HeaderSub
-          title={'Projects'}
-          description={'Portfolio'}
-          background={notebook}
-        />
-      </LazyShow>
-      <LazyShow>
-        <ProjectsList except={'none'} />
-      </LazyShow>
-      <LazyShow>
-        <PlayerAnimation animation={alien} />
-      </LazyShow>
-      <LazyShow>
-        <Footer />
-      </LazyShow>
-    </div>
+    </>
   )
 }
 

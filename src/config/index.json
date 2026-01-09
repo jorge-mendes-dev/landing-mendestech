@@ -11,7 +11,21 @@
     "lang": "en",
     "author": "@jorge-mendes-dev",
     "siteUrl": "https://jorgemendes.com.br",
-    "type": "website"
+    "type": "website",
+    "keywords": [
+      "Jorge Mendes",
+      "Senior Developer",
+      "Full Stack Developer",
+      "React Developer",
+      "JavaScript Expert",
+      "TypeScript",
+      "Web Development",
+      "Frontend Developer",
+      "Software Engineer",
+      "React Redux",
+      "Portfolio",
+      "Brazil Developer"
+    ]
   },
   "notifications": {
     "title": "👋 Welcome to Jorge Mendes!",
