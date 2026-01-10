@@ -41,7 +41,7 @@
       }
     ],
     "ObjectivesHeading": "Objective",
-    "ObjectivesDetails": "I've had been contracted as a full stack developer to create new products and improving the others.",
+    "ObjectivesDetails": "I joined the WebMeeeting project as a full stack developer, where I helped launch new products and level up existing ones. My focus was on building real-time features and admin tools that made a real difference for users and the business.",
     "Technologies": [
       {
         "title": "Tools & Technologies",
@@ -65,14 +65,11 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Front-End Developer, I was responsible for creating a new web application that involves a variety of modern technologies and features. This project is a multi-faceted endeavor, encompassing the development of real-time web player functionality using WebSockets, and an admin dashboard and message chat.",
-      "I used ReactJS as the primary front-end library to create a modern and responsive user interface.",
-      "To manage complex application state and asynchronous operations, I employed Redux Saga. This middleware helped in orchestrating data flow and handling real-time events.",
-      "I utilized MaterialUI as a component library to expedite the development process. MaterialUI offers pre-built, responsive UI components and styling, ensuring a consistent and visually appealing user experience.",
-      "One of the core features of the web application was a real-time web player that provided live or dynamic content using WebSockets. I implemented WebSocket communication to ensure real-time updates and data synchronization between the server and clients.",
-      "In addition to the real-time player, I developed an admin dashboard using Laravel for the back end and React for the front end. This dashboard provided administrative control and reporting capabilities.",
-      "I focus was on creating a responsive feature to ensure that the application was accessible and functional on various devices and screen sizes.",
-      "I implemented security measures and user authentication to protect sensitive data and ensure that only authorized users can access the admin dashboard and Web player. Using a JWT API."
+      "At WebMeeeting, I was at the heart of building a modern web app packed with real-time features. I designed and shipped a live web player using WebSockets, making sure users could interact and get updates instantly.",
+      "I built a clean, responsive UI with ReactJS and MaterialUI, so the app looked great and worked smoothly on any device. I used Redux Saga to handle complex state and real-time data flows, keeping everything fast and reliable.",
+      "One of my favorite challenges was creating an admin dashboard with Laravel and React, giving the team powerful tools for managing users, content, and reports—all in one place.",
+      "Security was always a top priority. I implemented robust authentication and authorization with JWT, making sure only the right people had access to sensitive features.",
+      "Throughout the project, I focused on performance, usability, and maintainability, always aiming to deliver features that truly helped the business and its users."
     ]
   }
 }

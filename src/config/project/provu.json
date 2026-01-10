@@ -41,7 +41,7 @@
       }
     ],
     "ObjectivesHeading": "Objective",
-    "ObjectivesDetails": "I've had been contracted as a front-end developer to refactor of old Angular application to new react application with redux saga, and component libary",
+    "ObjectivesDetails": "I joined the Provu team as a front-end developer, where I led the transformation of a legacy Angular app into a modern, high-performance React platform. My mission was to deliver a seamless user experience and set a new standard for code quality and maintainability.",
     "Technologies": [
       {
         "title": "Tools & Technologies",
@@ -61,15 +61,11 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Front-End Developer, my primary responsibility was to refactor an existing Angular application into a new React application while implementing modern front-end development practices and tools. This involved the integration of Redux Saga for state management, the creation of a design system using Styled Components, and the implementation of component validation with Formik and Yup, with comprehensive testing using Jest and react testing library.",
-      "I was tasked with transforming an outdated Angular application into a modern React application. This involved migrating existing components and functionality to the React framework.",
-      "My role hinged on my proficiency in React, allowing me to create dynamic and responsive user interfaces, ensuring a smooth user experience while adhering to current industry best practices.",
-      "To effectively manage the application's state and handle asynchronous operations, I incorporate Redux Saga. This middleware helped in orchestrating complex data flows and side effects, ensuring data consistency and reliability.",
-      "I was responsible for establishing a design system to maintain visual consistency throughout the application. This designed system included reusable UI components built with Styled Components, enhancing code maintainability and consistency in design.",
-      "I used Formik and Yup to implement robust form validation for user data input, making sure data submitted by users was accurate and adheres to predefined standards. This ensured data quality and user experience.",
-      "Quality assurance was a fundamental aspect of my role. I conducted comprehensive testing using Jest, and react testing library ensuring that the refactored application was free of defects and behaves as expected. This included unit testing, integration testing, and snapshot testing.",
-      "I focused on creating responsive designs, ensuring that the application looked and functions well on a variety of devices and screen sizes.",
-      "Part of the refactoring process involved optimizing code for performance and maintainability. I reviewed and refactor the codebase to improve readability and efficiency."
+      "At Provu, I took on the challenge of refactoring a large, outdated Angular application into a sleek, modern React app. I was responsible for every step of the migration, from planning and architecture to hands-on coding and testing.",
+      "I built a robust design system with Styled Components, making the UI consistent, reusable, and easy to maintain. Using Redux Saga, I managed complex state and asynchronous flows, ensuring the app was fast and reliable.",
+      "I implemented strong form validation with Formik and Yup, so users could trust their data was always accurate and secure. Responsive design was a priority—I made sure the app looked and worked great on any device.",
+      "Testing was a cornerstone of my process. I wrote comprehensive unit, integration, and snapshot tests with Jest and React Testing Library, catching bugs early and keeping the codebase rock-solid.",
+      "Throughout the project, I focused on performance, maintainability, and a great user experience. Refactoring wasn’t just about new tech—it was about making the product better for everyone who used it."
     ]
   }
 }

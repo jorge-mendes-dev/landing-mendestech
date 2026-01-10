@@ -18,6 +18,7 @@ import hotmart from 'config/project/hotmart'
 import plantoes from 'config/project/plantoes'
 import provu from 'config/project/provu'
 import webmeeting from 'config/project/webmeeting'
+import read_it from 'config/project/read_it'
 
 /*
 let path = window.location.href.split("/").pop()
@@ -53,8 +54,10 @@ const ProjectInfo = () => {
         return provu
       case 'webmeeting':
         return webmeeting
+      case 'read_it':
+        return read_it
       default:
-        return plantoes
+        return null
     }
   }
 

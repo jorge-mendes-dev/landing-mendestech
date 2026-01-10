@@ -40,7 +40,7 @@
       }
     ],
     "ObjectivesHeading": "Objective",
-    "ObjectivesDetails": "I've had been contracted as a senior developer to work on the product",
+    "ObjectivesDetails": "I joined the Escala Plantões team as a senior developer, where I helped modernize and expand a mission-critical platform used by major hospitals. My goal was to deliver features that made scheduling and management easier for everyone involved.",
     "Technologies": [
       {
         "title": "Tools & Technologies",
@@ -62,16 +62,11 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Full Stack Developer, I play a role in maintaining and enhancing an 8-year-old software system. My responsibilities encompass a wide range of technical tasks, ensuring the system's continued functionality and adaptability to evolving business needs.",
-      "I am responsible for maintaining and improving an aging software system to ensure it remains current and relevant. This involves analyzing the existing codebase, identifying areas that need improvement, and planning for necessary upgrades.",
-      "One of my key responsibilities is to develop, and implement new features for the system. This involves creating technical specifications, and writing code to meet the task specifications.",
-      "I regularly troubleshoot and fix bugs in the system, whether they are related to functionality, performance, or security. I work closely with the team to identify and resolve these issues efficiently.",
-      "I make technical decisions related to architecture, tools, and frameworks. This includes choosing the most suitable technologies for feature development and guiding the team in their implementation.",
-      "I am responsible for code reviews, and ensuring that the team's work aligns with the project's code quality. I provide guidance and mentorship to junior developers, fostering their growth and development.",
-      "I make technical decisions related to architecture, tools, and frameworks. This includes choosing the most suitable technologies for feature development and guiding the team in their implementation.",
-      "Effective communication is a critical aspect of my role. I collaborate with various stakeholders, such as product managers, designers, and other departments, to understand their needs and provide technical insights. I also ensure that the team is well-informed and aligned with project objectives.",
-      "I maintain clear and comprehensive documentation for the system and its components, making it easier for team members to understand and work with the codebase.",
-      "As technology is continually evolving, I am committed to staying up-to-date with the latest industry trends, tools, and best practices. I encourage my team members to do the same."
+      "At Escala Plantões, I was deeply involved in maintaining and evolving a large-scale scheduling system trusted by top hospitals. I dove into a legacy codebase, finding ways to improve performance, reliability, and user experience.",
+      "I worked on everything from bug fixes to major new features, always with an eye on making the platform more intuitive and powerful for users. Collaborating with product managers, designers, and other developers, I helped turn complex requirements into practical, user-friendly solutions.",
+      "I made key decisions about architecture and technology, choosing the right tools to keep the system modern and maintainable. Mentoring junior developers and leading code reviews was a big part of my role—I wanted to help the whole team grow and deliver great work.",
+      "Communication was essential. I kept everyone in the loop, making sure stakeholders understood technical trade-offs and the team stayed aligned on goals.",
+      "I also focused on documentation and best practices, so future developers could easily pick up where we left off. Staying up-to-date with new tech and encouraging the team to do the same was always a priority."
     ]
   }
 }

@@ -77,7 +77,7 @@
     "title": "About Me",
     "subtitle": "Discover My Journey",
     "paragraphs": [
-      "Senior Software Engineer with 8 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.",
+      "Senior Software Engineer with 10 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.",
       "Today i am focused in learning new techniques and skills. One of my most notable skills is my ability to translate client needs into an efficient technology solution. I am an excellent communicator and know how to listen and understand.",
       "I am also highly efficient in working as part of a team. I understand the importance of collaboration in achieving common goals and work well with other developers and team members. I am able to contribute positively to team dynamics, bringing creative ideas and solutions to the technical challenges the team faces."
     ],
@@ -106,6 +106,15 @@
       "href": "/projects"
     },
     "project": [
+      {
+        "title": "Read it for me",
+        "technology": ["ReactJS", "NodeJS", "Express", "MongoDB", "CSS"],
+        "img": "readit",
+        "link": "/project/read_it",
+        "type": "",
+        "slug": "read_it",
+        "company": "Personal Project"
+      },
       {
         "title": "Escala Plantões",
         "technology": ["Angular", "ReactJS", "Jest", "Laravel", "Mysql", "AWS"],
@@ -181,35 +190,35 @@
     "feedbacks": [
       {
         "name": "",
-        "review": "Consistently delivers high-quality code, demonstrating a deep understanding of React. Tackles complex challenges with a structured and efficient approach, always keeping performance in mind."
+        "review": "Jorge always delivers top-notch code and really knows his way around React. He handles tough challenges with a calm, structured approach and always keeps performance in mind."
       },
       {
         "name": "",
-        "review": "His ability to quickly identify and solve technical bottlenecks has been a game-changer for our projects. Whether refactoring legacy code or introducing new features, his solutions are both elegant and practical."
+        "review": "He’s amazing at spotting and fixing technical bottlenecks. Whether he’s refactoring old code or building something new, his solutions are both smart and practical."
       },
       {
         "name": "",
-        "review": "Strong attention to detail ensures code is clean, modular, and easy to maintain. Always follows best practices, which greatly improves code readability and long-term project health"
+        "review": "Jorge pays close attention to detail, so his code is always clean, modular, and easy to maintain. He follows best practices, which makes everything easier to read and work with in the long run."
       },
       {
         "name": "",
-        "review": "A pleasure to work with in collaborative settings, offering constructive suggestions during code reviews and always willing to help others with blockers. His communication skills foster a positive and productive working environment."
+        "review": "It’s a pleasure working with him. He gives helpful feedback during code reviews and is always willing to help out when someone’s stuck. His communication makes the team stronger and more positive."
       },
       {
         "name": "",
-        "review": "Works seamlessly in both remote and in-person environments, making team coordination smooth and effective. Proactively engages with designers, product managers, and fellow engineers to align efforts and deliver the best solutions."
+        "review": "Jorge works well both remotely and in person, making teamwork smooth and effective. He’s proactive about collaborating with designers, product managers, and other engineers to make sure everyone’s on the same page."
       },
       {
         "name": "",
-        "review": "Consistently delivers high-quality code, demonstrating a deep understanding of React. Tackles complex challenges with a structured and efficient approach, always keeping performance in mind."
+        "review": "He consistently delivers high-quality code and has a deep understanding of React. He tackles complex problems with a clear, efficient approach and always thinks about performance."
       },
       {
         "name": "",
-        "review": "Strong attention to detail ensures code is clean, modular, and easy to maintain. Always follows best practices, which greatly improves code readability and long-term project health"
+        "review": "His attention to detail is impressive—his code is always tidy, modular, and easy to maintain. He sticks to best practices, which really helps with readability and long-term health of the project."
       },
       {
         "name": "",
-        "review": "Highly reliable and approachable, making him the go-to person for solving both technical and organizational challenges. His collaborative attitude inspires others to improve"
+        "review": "Jorge is super reliable and approachable. He’s the go-to person for solving both technical and organizational challenges, and his collaborative attitude inspires everyone around him."
       }
     ]
   },
@@ -474,7 +483,7 @@
     {
       "reference": "experience",
       "title": "Years of experience",
-      "level": 9,
+      "level": 10,
       "measure": ""
     },
     {

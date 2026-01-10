@@ -41,7 +41,7 @@
       }
     ],
     "ObjectivesHeading": "Objective",
-    "ObjectivesDetails": "I've had been contracted as a front-end developer and worked in internal solutions",
+    "ObjectivesDetails": "At Hotmart, I joined the team as a front-end developer, where I helped build and maintain internal privacy applications that were essential for the company. My focus was always on delivering clean, reliable code and creating features that made a real impact for both users and the business.",
     "Technologies": [
       {
         "title": "Tools & Technologies",
@@ -60,19 +60,15 @@
     ],
     "Heading": "Challenge",
     "Details": [
-      "As a Front-End Developer, I was responsible for developing and maintaining internal privacy applications that were critical for safeguarding sensitive data and ensuring compliance with privacy regulations. My role involved creating new features, resolving bugs, and working with a specific technology technical stack, including ReactJS, TypeScript, and Styled-Components. Jest and react-testing-library.",
-      "I was actively involved in the design and implementation of new features within our internal privacy applications. These features are essential for enhancing the functionality and security of the applications, and I collaborated with cross-functional teams to gather requirements and ensure that the solutions served business needs.",
-      "Sometimes the requirements were performance, other times, i18n specifications or graphic display for legal process, something really specific and interesting of working. ",
-      "My role included identifying and addressing issues and bugs within the applications. This involved debugging code, tracing issues to their source, and providing timely fixes to maintain the integrity and performance of the applications front-end side.",
-      "I leveraged the power of ReactJS, a popular front-end library, to build responsive and dynamic user interfaces for our internal privacy applications. This includes creating reusable components with styled-components, managing state with context api, and ensuring a smooth user experience using css animations.",
-      "I used TypeScript to enhance the organization of our codebase. By adding static typing and advanced features, I improved code quality for catch errors early in the development process, and make the codebase more maintainable. ",
-      "For documentation we used Spotify backstage. Styled-Components were a part of my toolkit for creating visually appealing and maintainable user interfaces. I used this CSS-in-JS library to manage styling in a component-based approach, ensuring consistency and modularity in our applications.",
-      "My focus was ensuring that our applications worked seamlessly across various web browsers, including handling any browser-specific quirks and providing responsive design for different screen sizes and devices.",
-      "I worked on optimizing performance and accessibility to ensure that the applications are user-friendly and compliant with accessibility standards, not forgot the security using form sanitization and blocking scripts executions.",
-      "I maintained the high coding standards and used to best practices in front-end development known to me.",
-      "I acted on code reviews and ensured that the codebase is well-documented and easy to understand for other team members.",
-      "Created tests using Jest, and react testing library, for ensure the applications and components were builded avoiding any side effects or bugs.",
-      "Given the nature of our applications, I was vigilant about security and privacy concerns. I worked to implement the necessary security measures and ensure that our applications comply with internal and external privacy regulations of the company."
+      "At Hotmart, I was hands-on in developing and maintaining privacy-focused internal apps that protected sensitive data and kept the company compliant with regulations. I loved the challenge of building new features and solving bugs that really mattered to the business.",
+      "I worked closely with cross-functional teams to turn business needs into practical, secure solutions. Whether it was improving performance, adding internationalization, or creating custom visualizations for legal processes, I always aimed to deliver features that made a difference.",
+      "Debugging and troubleshooting were a big part of my day-to-day. I took pride in quickly finding and fixing issues, making sure our apps stayed fast and reliable for everyone.",
+      "I built responsive, dynamic UIs with ReactJS and styled-components, focusing on reusability and a smooth user experience. TypeScript helped me keep the codebase organized and bug-free, while context API made state management a breeze.",
+      "I also made sure our apps looked great and worked well on every browser and device, handling all the little quirks that come with cross-browser development.",
+      "Performance and accessibility were always top of mind. I optimized code, ensured accessibility standards were met, and kept security tight with form sanitization and script blocking.",
+      "I was active in code reviews, sharing knowledge and keeping our standards high. I wrote thorough documentation so the team could move quickly and confidently.",
+      "Testing was a must—using Jest and React Testing Library, I made sure our components and features were solid before they shipped.",
+      "Security and privacy were non-negotiable. I worked to implement strong protections and made sure our apps met all internal and external requirements."
     ]
   }
 }

@@ -25,6 +25,12 @@ import webmeeting from 'assets/images/projects/webmeeting2.svg'
 import webmeetingDirect from 'assets/images/projects/webmeeting-direct.png'
 import webmeetingRealtime from 'assets/images/projects/webmeeting-realtime.png'
 
+//read_it
+import read01 from 'assets/images/projects/read_01.png'
+import read02 from 'assets/images/projects/read_02.png'
+import read03 from 'assets/images/projects/read_03.png'
+import readit from 'assets/images/projects/read_01.png'
+
 const Projects = {
   provu,
   aprova,
@@ -41,7 +47,11 @@ const Projects = {
   provuScreen,
   provuSimulator,
   webmeetingDirect,
-  webmeetingRealtime
+  webmeetingRealtime,
+  read01,
+  read02,
+  read03,
+  readit
 }
 
 export default Projects

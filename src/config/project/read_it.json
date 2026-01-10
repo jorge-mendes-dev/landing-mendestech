@@ -1,0 +1,71 @@
+{
+  "ProjectHeader": {
+    "title": "Read It For Me",
+    "publishDate": "January 09, 2026",
+    "tags": "Browser Extension / Accessibility / Front-end"
+  },
+  "ProjectImages": [
+    {
+      "title": "Read It For Me - Popup UI",
+      "img": "read01"
+    },
+    {
+      "title": "Read It For Me - Floating Player",
+      "img": "read02"
+    },
+    {
+      "title": "Read It For Me - Settings",
+      "img": "read03"
+    }
+  ],
+  "disclaimer": "images used are from the product website - © All rights reserved",
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Projects",
+        "details": "Personal Project"
+      },
+      {
+        "title": "Client",
+        "details": "Open Source / Public Users"
+      },
+      {
+        "title": "Services",
+        "details": "Frontend Development, Accessibility, Chrome Extension"
+      },
+      {
+        "title": "Website",
+        "details": "https://read-it-for-me.netlify.app"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "Developed a browser extension to provide natural text-to-speech functionality with smart language detection, premium voice selection, and accessibility features for users across Chrome, Edge, and Firefox.",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "TypeScript",
+          "React 18",
+          "Vite",
+          "Tailwind CSS 3",
+          "Chrome Extension Manifest V3",
+          "Web Speech API",
+          "Custom i18n (7 languages)",
+          "Jest (for testing)"
+        ]
+      }
+    ],
+    "Heading": "Challenge",
+    "Details": [
+      "Designed and implemented a cross-browser extension architecture supporting Chrome, Edge, and Firefox, with persistent settings and seamless user experience.",
+      "Built a React-based popup UI with collapsible settings, dark mode, and real-time voice preview, ensuring accessibility and keyboard navigation.",
+      "Engineered a robust content script for smart text selection, language detection, and integration with the Web Speech API for high-quality TTS.",
+      "Developed a floating player UI for playback controls, supporting drag, pause/resume, and keyboard shortcuts without interfering with page content.",
+      "Implemented a custom internationalization system supporting 7 languages, with dynamic locale switching and message management.",
+      "Ensured accessibility with ARIA attributes, semantic HTML, and screen reader support, following WCAG 2.1 AA guidelines.",
+      "Optimized performance with code splitting, efficient storage usage, and minimal content script footprint.",
+      "Maintained high code quality with TypeScript strict mode, modular components, and comprehensive error handling."
+    ]
+  }
+}
