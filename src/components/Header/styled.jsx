@@ -7,7 +7,9 @@ export const HeaderTitle = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   font-weight: ${({ theme }) => theme.font.weight.bold};
   letter-spacing: 0.04em;
-  text-shadow: 0 4px 32px rgba(0,0,0,0.25), 0 1.5px 0 #0691c1;
+  text-shadow:
+    0 4px 32px rgba(0, 0, 0, 0.25),
+    0 1.5px 0 #0691c1;
   text-transform: uppercase;
   text-align: center;
   position: absolute;

@@ -11,7 +11,8 @@ const Footer = () => {
         </div>
         <div className="order-1 md:order-1">
           <p className="text-center text-sm md:text-base leading-6 text-gray-500 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} {footer.title} &mdash; {footer.description}
+            &copy; {new Date().getFullYear()} {footer.title} &mdash;{' '}
+            {footer.description}
           </p>
         </div>
       </div>

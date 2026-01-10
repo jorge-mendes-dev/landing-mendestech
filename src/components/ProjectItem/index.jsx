@@ -40,7 +40,9 @@ const ProjectItem = ({
   const Separator = (
     <div className="my-3 flex flex-col items-center">
       <div className="w-10 h-0.5 bg-gray-200 dark:bg-gray-700 rounded-full mb-2" />
-      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase">{company}</span>
+      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase">
+        {company}
+      </span>
     </div>
   )
 

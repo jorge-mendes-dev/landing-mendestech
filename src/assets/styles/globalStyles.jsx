@@ -1,6 +1,4 @@
-
 import { createGlobalStyle, keyframes, css } from 'styled-components'
-
 
 export const DegradeAnimation = keyframes`
   0% { background-position: 0% 50%; }
