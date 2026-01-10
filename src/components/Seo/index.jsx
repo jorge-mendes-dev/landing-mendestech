@@ -78,9 +78,7 @@ function Seo({
   }, [structuredData, siteUrl, ogImage, description])
 
   return (
-    <head>
-      <html lang={lang} />
-
+    <>
       {/* Primary Meta Tags */}
       <title>{title}</title>
       <meta name="title" content={title} />
@@ -131,7 +129,7 @@ function Seo({
 
       {/* Structured Data (JSON-LD) */}
       <script type="application/ld+json">{jsonLd}</script>
-    </head>
+    </>
   )
 }
 
