@@ -38,66 +38,42 @@ const ProjectItem = ({
   }
 
   const Separator = (
-    <motion.div
-      className="relative my-4"
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.3, delay: 0.2 }}
-    >
-      <div aria-hidden="true" className="absolute inset-0 flex items-center">
-        <div className="w-full border-t border-gray-200 dark:border-gray-700" />
-      </div>
-      <div className="relative flex justify-center">
-        <motion.span
-          className="inline-flex items-center gap-x-1.5 rounded-full bg-primary/10 dark:bg-primary/20 px-4 py-1.5 text-sm font-semibold text-primary dark:text-primary-light"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.2 }}
-        >
-          {company}
-        </motion.span>
-      </div>
-    </motion.div>
+    <div className="my-3 flex flex-col items-center">
+      <div className="w-10 h-0.5 bg-gray-200 dark:bg-gray-700 rounded-full mb-2" />
+      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase">{company}</span>
+    </div>
   )
 
   const Component = (
     <motion.div
       onClick={() => backToTop()}
-      className="group cursor-pointer mb-10 sm:mb-0 h-full flex flex-col bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm border border-gray-200/50 dark:border-zinc-800/50 rounded-2xl p-6 shadow-card hover:shadow-card-elevated transition-all duration-300 relative overflow-hidden"
+      className="group cursor-pointer mb-10 sm:mb-0 h-full flex flex-col bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
-      whileHover={{ y: -8, transition: { duration: 0.3 } }}
+      whileHover={{ y: -6, transition: { duration: 0.3 } }}
     >
-      {/* Gradient overlay on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:via-primary/10 group-hover:to-primary/5 transition-all duration-500 rounded-2xl"></div>
-
-      {/* Glow effect */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/0 to-primary-light/0 group-hover:from-primary/20 group-hover:to-primary-light/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
       <motion.div
-        className={`relative flex flex-col items-center justify-center overflow-hidden rounded-xl mb-6 flex-shrink-0 group/image`}
+        className="relative flex flex-col items-center justify-center overflow-hidden rounded-xl mb-6 flex-shrink-0"
         variants={imageVariants}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 rounded-xl z-10"></div>
         <img
           src={image}
-          className="w-full h-48 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-44 object-cover rounded-xl transition-transform duration-400"
           alt={title}
         />
-        <div className="absolute inset-0 border-2 border-primary/0 group-hover:border-primary/30 rounded-xl transition-all duration-300 z-10"></div>
       </motion.div>
 
       {Separator}
 
       <div className="text-center px-2 flex flex-col flex-grow relative z-10">
         <motion.h3
-          className="font-bold text-xl md:text-2xl text-gray-900 dark:text-white transition-colors duration-300 group-hover:text-primary mb-4 min-h-[3rem] flex items-center justify-center relative"
-          whileHover={{ scale: 1.05 }}
+          className="font-semibold text-lg md:text-xl text-gray-900 dark:text-white mb-3 min-h-[2.5rem] flex items-center justify-center"
+          whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.2 }}
         >
           {title}
-          <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-1/2 transition-all duration-300"></span>
         </motion.h3>
 
         <motion.div
@@ -110,7 +86,7 @@ const ProjectItem = ({
           {technology.map((tech, techIndex) => (
             <motion.span
               key={random()}
-              className="inline-flex items-center rounded-full px-3 py-1.5 text-sm font-semibold text-primary bg-primary/10 dark:bg-primary/20 dark:text-primary-light border border-primary/20 dark:border-primary/30"
+              className="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium text-primary bg-primary/5 border border-primary/10"
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -120,7 +96,7 @@ const ProjectItem = ({
                 type: 'spring',
                 stiffness: 200
               }}
-              whileHover={{ scale: 1.1, y: -2 }}
+              whileHover={{ scale: 1.08, y: -1 }}
             >
               {tech}
             </motion.span>

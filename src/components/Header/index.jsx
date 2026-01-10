@@ -60,51 +60,45 @@ const Header = () => {
           </h1>
         </motion.div>
         <motion.p
-          className="mt-6 max-w-2xl mb-8 font-normal text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed"
+          className="mt-8 max-w-2xl mb-10 font-normal text-lg md:text-xl lg:text-2xl text-gray-200 leading-relaxed drop-shadow-lg"
           variants={itemVariants}
         >
           {description}
         </motion.p>
         <motion.div
-          className="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start gap-4"
+          className="mt-10 sm:mt-12 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4"
           variants={itemVariants}
         >
           <motion.div
-            className="group relative"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            className="group relative shadow-xl"
+            whileHover={{ scale: 1.06 }}
+            whileTap={{ scale: 0.97 }}
           >
             <motion.div
-              className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary-light rounded-xl opacity-75 group-hover:opacity-100 blur transition duration-300"
-              animate={{
-                opacity: [0.75, 1, 0.75]
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: 'easeInOut'
-              }}
+              className="absolute -inset-1 bg-gradient-to-r from-primary to-cyan-400 rounded-2xl opacity-80 group-hover:opacity-100 blur-md transition duration-300"
+              animate={{ opacity: [0.8, 1, 0.8] }}
+              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             />
             <Link
               rel="noreferrer"
               aria-label={primaryAction.text}
               to={primaryAction.href}
-              className="relative w-full flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-semibold rounded-xl text-white bg-primary hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 md:py-4 md:text-lg md:px-10"
+              className="relative w-full flex items-center justify-center px-10 py-4 border-none text-lg font-semibold rounded-2xl text-white bg-gradient-to-r from-primary to-cyan-400 shadow-lg hover:from-cyan-400 hover:to-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200"
             >
               {primaryAction.text}
             </Link>
           </motion.div>
           <motion.div
-            className="mt-3 sm:mt-0"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            className="mt-4 sm:mt-0 shadow"
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
           >
             <Link
               target="_blank"
               rel="noreferrer"
               aria-label={secondaryAction.text}
               to={secondaryAction.href}
-              className={`w-full flex items-center justify-center px-8 py-3.5 text-base font-semibold text-center text-gray-900 dark:text-gray-100 border-2 border-gray-300 dark:border-gray-600 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-primary/50 dark:hover:border-primary/50 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-all duration-200 md:py-4 md:text-lg md:px-10`}
+              className="w-full flex items-center justify-center px-10 py-4 text-lg font-semibold text-center text-gray-900 dark:text-gray-100 border-2 border-gray-300 dark:border-gray-600 rounded-2xl bg-white/80 dark:bg-gray-900/60 hover:bg-gray-50 dark:hover:bg-gray-800 hover:border-primary/60 dark:hover:border-primary/60 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200"
             >
               {secondaryAction.text}
             </Link>
