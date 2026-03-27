@@ -124,6 +124,26 @@
         "company": "Personal Project"
       },
       {
+        "title": "Private Learning Hub",
+        "technology": [
+          "AI integration",
+          "Next.js 15 (App Router)",
+          "React 19",
+          "Tailwind CSS 3",
+          "Framer Motion",
+          "Vercel AI SDK (Groq Llama 3.1)",
+          "Supabase Storage",
+          "Jest & React Testing Library",
+          "Heroicons v2",
+          "PDF.js (react-pdf)"
+        ],
+        "img": "private_learning_hub_player",
+        "link": "/project/private_learning_hub",
+        "type": "",
+        "slug": "private_learning_hub",
+        "company": "Personal Project"
+      },
+      {
         "title": "Read it for me",
         "technology": [
           "TypeScript",

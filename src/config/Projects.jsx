@@ -38,6 +38,11 @@ import fernanda_souza_about from 'assets/images/projects/fernanda_souza_about.pn
 import fernanda_souza_header from 'assets/images/projects/fernanda_souza_header.png'
 import fernanda_souza_social from 'assets/images/projects/fernanda_souza_social.png'
 
+// private learning hub
+import private_learning_hub_chat from 'assets/images/projects/private_learning_hub_chat.png'
+import private_learning_hub_player from 'assets/images/projects/private_learning_hub_player.png'
+import private_learning_hub_reader from 'assets/images/projects/private_learning_hub_reader.png'
+
 const Projects = {
   provu,
   aprova,
@@ -61,7 +66,10 @@ const Projects = {
   readit,
   fernanda_souza_header,
   fernanda_souza_about,
-  fernanda_souza_social
+  fernanda_souza_social,
+  private_learning_hub_player,
+  private_learning_hub_reader,
+  private_learning_hub_chat
 }
 
 export default Projects

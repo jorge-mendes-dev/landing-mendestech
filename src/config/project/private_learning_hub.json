@@ -1,0 +1,74 @@
+{
+  "ProjectHeader": {
+    "title": "Private Learning Hub with AI-Powered PDF Interaction",
+    "publishDate": "March 27, 2026",
+    "tags": "Web App / Education / AI / PDF",
+    "company": "Personal Project"
+  },
+  "ProjectImages": [
+    {
+      "title": "Video Lesson Player",
+      "img": "private_learning_hub_player"
+    },
+    {
+      "title": "PDF Reader with AI Chat",
+      "img": "private_learning_hub_reader"
+    },
+    {
+      "title": "RAG Chat Interface",
+      "img": "private_learning_hub_chat"
+    }
+  ],
+  "disclaimer": "Images are from the product interface - © All rights reserved",
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Project",
+        "details": "Educational Web Application"
+      },
+      {
+        "title": "Client",
+        "details": "Private Education platform."
+      },
+      {
+        "title": "Services",
+        "details": "Fullstack Development, UI/UX, AI Integration, PDF Processing"
+      },
+      {
+        "title": "Website",
+        "details": "privatelearninghub"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "Build a modern, responsive, and accessible web platform for private education, enabling users to read, search, and interact with PDF content, listen to audio lessons, and chat with an AI assistant for contextual learning.",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "Next.js 15 (App Router)",
+          "React 19",
+          "Tailwind CSS 3",
+          "Framer Motion",
+          "AI integration",
+          "Vercel AI SDK (Groq Llama 3.1)",
+          "Supabase Storage",
+          "Jest & React Testing Library",
+          "Heroicons v2",
+          "PDF.js (react-pdf)"
+        ]
+      }
+    ],
+    "Heading": "Challenges",
+    "Details": [
+      "Implementing server-side PDF text extraction and context-aware AI chat using RAG (Retrieval Augmented Generation).",
+      "Managing secure, expiring signed URLs for private PDF and audio content via Supabase.",
+      "Designing a responsive sidebar navigation with stateful collapse and mobile support.",
+      "Integrating a custom audio player for lessons, with Supabase-hosted MP3s.",
+      "Ensuring accessibility, dark mode, and smooth animations throughout the UI.",
+      "Optimizing for performance and bundle size, including externalizing heavy PDF parsing.",
+      "Maintaining a modular, scalable codebase with clear separation of concerns and reusable hooks.",
+      "Implementing robust testing with Jest and snapshot UI regression."
+    ]
+  }
+}

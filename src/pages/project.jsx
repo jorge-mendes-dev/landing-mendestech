@@ -17,6 +17,7 @@ import aprova from 'config/project/aprova'
 import fernanda_souza from 'config/project/fernanda_souza'
 import hotmart from 'config/project/hotmart'
 import plantoes from 'config/project/plantoes'
+import private_learning_hub from 'config/project/private_learning_hub'
 import provu from 'config/project/provu'
 import read_it from 'config/project/read_it'
 import webmeeting from 'config/project/webmeeting'
@@ -45,6 +46,8 @@ const ProjectInfo = () => {
 
   const getProjectDataByName = (key) => {
     switch (key) {
+      case 'private_learning_hub':
+        return private_learning_hub
       case 'fernanda_souza':
         return fernanda_souza
       case 'plantoes':
