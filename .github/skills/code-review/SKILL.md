@@ -39,6 +39,9 @@ Automate code review for all modified files, highlighting best practices, streng
 **What could be improved:**
 - Add unit tests for edge cases
 - Use async/await instead of .then()
+
+** Summary:**
+Overall analysis with a table of strengths and weaknesses, and a final recommendation for approval or changes needed.
 ```
 
 ## Best Practices Checklist
