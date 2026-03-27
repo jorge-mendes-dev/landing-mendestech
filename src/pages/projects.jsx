@@ -5,7 +5,6 @@ import {
   HeaderSub,
   LazyShow,
   Navbar,
-  PlayerAnimation,
   ProjectsList,
   Seo
 } from 'components'
@@ -14,8 +13,6 @@ import notebook from 'assets/images/notebook.jpg'
 
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 import { backToTop } from 'utils/generic'
-
-import alien from 'utils/JSON/alienInRocket.json'
 
 function Projects() {
   const { sendPageView } = useGoogleAnalytics()
@@ -62,9 +59,6 @@ function Projects() {
         </LazyShow>
         <LazyShow>
           <ProjectsList except={'none'} />
-        </LazyShow>
-        <LazyShow>
-          <PlayerAnimation animation={alien} />
         </LazyShow>
         <LazyShow>
           <Footer />

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 import { Player } from '@lottiefiles/react-lottie-player'
 import { Divider } from 'components'
-import figure404 from 'utils/JSON/figure404.json'
+import alien from 'utils/JSON/alien.json'
 
 const NotFound = ({ title, ...props }) => (
   <section
@@ -28,7 +28,7 @@ const NotFound = ({ title, ...props }) => (
 
       <Divider />
       <div className={`flex items-center justify-center flex-wrap p-8 `}>
-        <Player src={figure404} loop autoplay />
+        <Player src={alien} loop autoplay />
       </div>
     </div>
   </section>

@@ -4,9 +4,7 @@ import Projects from 'config/Projects'
 import { random } from 'utils/generic'
 
 import { Clock, Tag } from '@styled-icons/bootstrap'
-import { LazyShow, PlayerAnimation } from 'components'
-
-import alien from 'utils/JSON/alien.json'
+import { LazyShow } from 'components'
 
 const ProjectDetails = ({ data, ...props }) => {
   const { ProjectHeader, disclaimer, ProjectImages, ProjectInfo } = data
@@ -126,9 +124,6 @@ const ProjectDetails = ({ data, ...props }) => {
                 ))}
               </div>
             </div>
-          </LazyShow>
-          <LazyShow>
-            <PlayerAnimation animation={alien} size={'15vw'} />
           </LazyShow>
         </div>
 
