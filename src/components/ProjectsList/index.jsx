@@ -36,9 +36,6 @@ const ProjectsList = ({
 
   useEffect(() => {
     let filtered = [...project]
-    if (layout === 'compact') {
-      filtered = filtered.slice(0, 3)
-    }
     if (except !== 'none') {
       filtered = filtered.filter((proj) => proj.slug !== except)
     }
@@ -49,6 +46,9 @@ const ProjectsList = ({
       filtered = filtered.filter((proj) =>
         (proj.technology || []).includes(selectedTech)
       )
+    }
+    if (layout === 'compact') {
+      filtered = filtered.slice(0, 3)
     }
     setItem(filtered)
     if (customTitle !== '') {
@@ -96,49 +96,51 @@ const ProjectsList = ({
             </p>
           </div>
         )}
-        {/* Category Filters */}
-        <div className="flex flex-wrap gap-4 mb-8 items-center justify-center">
-          <div>
-            <label
-              htmlFor="company-select"
-              className="mr-2 font-medium text-gray-700 dark:text-gray-200"
-            >
-              Company:
-            </label>
-            <select
-              id="company-select"
-              className="rounded-lg border border-gray-300 dark:border-zinc-700 px-3 py-2 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-              value={selectedCompany}
-              onChange={(e) => setSelectedCompany(e.target.value)}
-            >
-              {companies.map((company) => (
-                <option key={company} value={company}>
-                  {company}
-                </option>
-              ))}
-            </select>
+        {/* Category Filters (hide in compact mode) */}
+        {layout !== 'compact' && (
+          <div className="flex flex-wrap gap-4 mb-8 items-center justify-center">
+            <div>
+              <label
+                htmlFor="company-select"
+                className="mr-2 font-medium text-gray-700 dark:text-gray-200"
+              >
+                Company:
+              </label>
+              <select
+                id="company-select"
+                className="rounded-lg border border-gray-300 dark:border-zinc-700 px-3 py-2 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                value={selectedCompany}
+                onChange={(e) => setSelectedCompany(e.target.value)}
+              >
+                {companies.map((company) => (
+                  <option key={company} value={company}>
+                    {company}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label
+                htmlFor="tech-select"
+                className="mr-2 font-medium text-gray-700 dark:text-gray-200"
+              >
+                Technology:
+              </label>
+              <select
+                id="tech-select"
+                className="rounded-lg border border-gray-300 dark:border-zinc-700 px-3 py-2 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                value={selectedTech}
+                onChange={(e) => setSelectedTech(e.target.value)}
+              >
+                {technologies.map((tech) => (
+                  <option key={tech} value={tech}>
+                    {tech}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
-          <div>
-            <label
-              htmlFor="tech-select"
-              className="mr-2 font-medium text-gray-700 dark:text-gray-200"
-            >
-              Technology:
-            </label>
-            <select
-              id="tech-select"
-              className="rounded-lg border border-gray-300 dark:border-zinc-700 px-3 py-2 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-              value={selectedTech}
-              onChange={(e) => setSelectedTech(e.target.value)}
-            >
-              {technologies.map((tech) => (
-                <option key={tech} value={tech}>
-                  {tech}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
+        )}
 
         {/* Company Title if filtered by company */}
         {selectedCompany !== 'All' && (

@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react'
+import { memo, useEffect, useState } from 'react'
 
 import { useParams } from 'react-router-dom'
 
@@ -13,27 +13,7 @@ import {
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 import { backToTop } from 'utils/generic'
 
-import aprova from 'config/project/aprova'
-import fernanda_souza from 'config/project/fernanda_souza'
-import hotmart from 'config/project/hotmart'
-import plantoes from 'config/project/plantoes'
-import private_learning_hub from 'config/project/private_learning_hub'
-import provu from 'config/project/provu'
-import read_it from 'config/project/read_it'
-import webmeeting from 'config/project/webmeeting'
-
-/*
-let path = window.location.href.split("/").pop()
-let info = {}
-
-import(`config/project/${path}.json`)
- .then((data) => {
-   info = data
- })
- .catch((error) => {
-   console.error(`Error loading JSON file: ${error}`)
- })
-*/
+import { useProjectDataByName } from 'hooks/useProjectDataByName'
 
 const ProjectInfo = () => {
   const { name } = useParams()
@@ -44,28 +24,20 @@ const ProjectInfo = () => {
     sendPageView()
   }, [])
 
-  const getProjectDataByName = (key) => {
-    switch (key) {
-      case 'private_learning_hub':
-        return private_learning_hub
-      case 'fernanda_souza':
-        return fernanda_souza
-      case 'plantoes':
-        return plantoes
-      case 'hotmart':
-        return hotmart
-      case 'aprova':
-        return aprova
-      case 'provu':
-        return provu
-      case 'webmeeting':
-        return webmeeting
-      case 'read_it':
-        return read_it
-      default:
-        return null
+  const getProjectDataByName = useProjectDataByName()
+  const [projectData, setProjectData] = useState(null)
+
+  useEffect(() => {
+    let isMounted = true
+    if (name) {
+      getProjectDataByName(name).then((data) => {
+        if (isMounted) setProjectData(data)
+      })
     }
-  }
+    return () => {
+      isMounted = false
+    }
+  }, [name, getProjectDataByName])
 
   return (
     <div
@@ -81,7 +53,13 @@ const ProjectInfo = () => {
         </div>
       </div>
       <LazyShow>
-        <ProjectDetails data={getProjectDataByName(name)} />
+        {projectData ? (
+          <ProjectDetails data={projectData} />
+        ) : (
+          <div className="min-h-[200px] flex items-center justify-center text-lg text-gray-500 dark:text-gray-400">
+            Loading project details...
+          </div>
+        )}
       </LazyShow>
 
       <LazyShow>
