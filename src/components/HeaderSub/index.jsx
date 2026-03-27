@@ -2,11 +2,9 @@ import PropTypes from 'prop-types'
 
 import { Divider } from 'components'
 
-import * as S from './styled'
-
 const HeaderSub = ({ background, title = '', description = '', ...props }) => {
   return (
-    <S.Wrapper
+    <div
       {...props}
       className="relative isolate overflow-hidden bg-gray-900 dark:bg-zinc-900 px-6 py-24 sm:py-32 lg:px-8"
     >
@@ -50,7 +48,7 @@ const HeaderSub = ({ background, title = '', description = '', ...props }) => {
           </p>
         )}
       </div>
-    </S.Wrapper>
+    </div>
   )
 }
 

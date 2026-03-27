@@ -1,18 +1,16 @@
-import { memo } from 'react'
 import { Divider } from 'components'
 import Techs from 'config/Techs'
+import { memo } from 'react'
 import Marquee from 'react-fast-marquee'
 import { random } from 'utils/generic'
 
 import config from 'config'
-import * as S from './styled'
-
 const SkillsList = ({ ...props }) => {
   const { skills } = config
   const { title, data } = skills
 
   return (
-    <S.SkillsWrapper {...props} className="hidden lg:block container mx-auto">
+    <div {...props} className="hidden lg:block container mx-auto">
       <h6
         className={`w-full my-4 text-3xl md:text-4xl font-bold leading-tight text-center`}
       >
@@ -70,7 +68,7 @@ const SkillsList = ({ ...props }) => {
           ))}
         </Marquee>
       </div>
-    </S.SkillsWrapper>
+    </div>
   )
 }
 

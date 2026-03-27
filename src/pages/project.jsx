@@ -1,4 +1,4 @@
-import { useEffect, memo } from 'react'
+import { memo, useEffect } from 'react'
 
 import { useParams } from 'react-router-dom'
 
@@ -14,11 +14,12 @@ import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 import { backToTop } from 'utils/generic'
 
 import aprova from 'config/project/aprova'
+import fernanda_souza from 'config/project/fernanda_souza'
 import hotmart from 'config/project/hotmart'
 import plantoes from 'config/project/plantoes'
 import provu from 'config/project/provu'
-import webmeeting from 'config/project/webmeeting'
 import read_it from 'config/project/read_it'
+import webmeeting from 'config/project/webmeeting'
 
 /*
 let path = window.location.href.split("/").pop()
@@ -44,6 +45,8 @@ const ProjectInfo = () => {
 
   const getProjectDataByName = (key) => {
     switch (key) {
+      case 'fernanda_souza':
+        return fernanda_souza
       case 'plantoes':
         return plantoes
       case 'hotmart':

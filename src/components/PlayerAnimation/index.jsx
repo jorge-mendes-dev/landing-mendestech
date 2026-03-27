@@ -1,10 +1,16 @@
 import PropTypes from 'prop-types'
 
-import * as S from './styled'
+import { Player } from '@lottiefiles/react-lottie-player'
 
 const PlayerAnimation = ({ animation, size = '20vw', ...props }) => {
   return (
-    <S.PlayerAnimation size={size} src={animation} loop autoplay {...props} />
+    <Player
+      style={{ width: size, height: size }}
+      src={animation}
+      loop
+      autoplay
+      {...props}
+    />
   )
 }
 

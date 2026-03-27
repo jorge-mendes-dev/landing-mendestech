@@ -1,8 +1,6 @@
-import * as S from './styled'
-
 const Skeleton = ({ ...props }) => {
   return (
-    <S.Wrapper className="min-h-screen bg-white dark:bg-black" {...props}>
+    <div className="min-h-screen bg-white dark:bg-black" {...props}>
       <header className="bg-gray-300 dark:bg-black py-6">
         <div className="max-w-4xl mx-auto px-4">
           <div className="animate-pulse flex items-center space-x-4">
@@ -45,7 +43,7 @@ const Skeleton = ({ ...props }) => {
           <div className="h-4 bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-zinc-900 dark:via-zinc-800 dark:to-zinc-900 rounded w-3/4 animate-shimmer bg-[length:200%_100%]"></div>
         </div>
       </div>
-    </S.Wrapper>
+    </div>
   )
 }
 

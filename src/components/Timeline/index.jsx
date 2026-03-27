@@ -1,11 +1,15 @@
-import { memo } from 'react'
 import { Divider } from 'components'
 import Icons from 'config/Icons'
+import { memo } from 'react'
 import { random } from 'utils/generic'
 
 import config from 'config'
 
-import * as S from './styled'
+import {
+  VerticalTimeline,
+  VerticalTimelineElement
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
 const Timeline = () => {
   const { journeyInfo } = config
@@ -38,16 +42,16 @@ const Timeline = () => {
           {description}
         </p>
 
-        <S.TimelineWrapper className="mt-4 vertical-timeline.vertical-timeline-custom-line rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 transition-all duration-300 p-0.5">
+        <VerticalTimeline className="mt-4 vertical-timeline vertical-timeline-custom-line rounded-xl shadow bg-gradient-to-tr from-blue-500 via-blue-700 to-blue-900 transition-all duration-300 p-0.5">
           {journey.map((item) => {
             const Icon = Icons[item.icon]
             return (
-              <S.TimelineElement
+              <VerticalTimelineElement
                 id="timeline"
                 key={random()}
                 className={`vertical-timeline-element--${item.icon.toLowerCase()} dark:text-gray-100`}
                 contentStyle={{
-                  color: `${iconTheme.color}`,
+                  color: iconTheme.color,
                   boxShadow: 'none',
                   background: 'transparent'
                 }}
@@ -56,20 +60,18 @@ const Timeline = () => {
                 }}
                 date={item.period}
                 iconStyle={{
-                  background: `${iconTheme.background}`,
-                  color: `${iconTheme.color}`
+                  background: iconTheme.background,
+                  color: iconTheme.color
                 }}
                 icon={<Icon />}
               >
                 <div className="group relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-card hover:shadow-card-hover p-6 md:p-8 transition-all duration-300 hover:-translate-y-1">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/10 to-primary-light/10 rounded-2xl opacity-0 group-hover:opacity-100 blur transition duration-300"></div>
                   <div className="relative">
-                    <h3
-                      className={`w-full my-2 text-xl md:text-2xl font-bold text-primary leading-tight`}
-                    >
+                    <h3 className="w-full my-2 text-xl md:text-2xl font-bold text-primary leading-tight uppercase">
                       {item.institution}
                     </h3>
-                    <h4 className="text-gray-900 dark:text-gray-300 leading-relaxed font-semibold mt-2 text-lg">
+                    <h4 className="vertical-timeline-element-subtitle text-primary font-semibold mt-2 text-lg">
                       {item.position}
                     </h4>
                     <p className="max-w-2xl leading-relaxed font-normal text-gray-700 dark:text-gray-300 mt-4 text-base">
@@ -90,17 +92,17 @@ const Timeline = () => {
                     </div>
                   </div>
                 </div>
-              </S.TimelineElement>
+              </VerticalTimelineElement>
             )
           })}
-          <S.TimelineElement
+          <VerticalTimelineElement
             iconStyle={{
               background: iconTheme.background,
               color: iconTheme.color
             }}
             icon={<Icons.Computer />}
           />
-        </S.TimelineWrapper>
+        </VerticalTimeline>
       </div>
     </section>
   )

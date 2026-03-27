@@ -1,35 +1,42 @@
 import defaultImg from 'assets/images/defaultImg.svg'
 
 // plantoes
-import plantoes from 'assets/images/projects/plantoes.svg'
-import schedules from 'assets/images/projects/plantoes-schedule.png'
 import admin from 'assets/images/projects/plantoes-admin.png'
+import schedules from 'assets/images/projects/plantoes-schedule.png'
+import plantoes from 'assets/images/projects/plantoes.svg'
 
 // hotmart
-import hotmart from 'assets/images/projects/hotmart.svg'
 import pagesCreator from 'assets/images/projects/hotmart-pages-creator.png'
 import payments from 'assets/images/projects/hotmart-payments.png'
+import hotmart from 'assets/images/projects/hotmart.svg'
 
 // aprova
-import aprova from 'assets/images/projects/aprova.svg'
 import appClient from 'assets/images/projects/aprova-app-client.png'
 import appManager from 'assets/images/projects/aprova-app-corretor.png'
+import aprova from 'assets/images/projects/aprova.svg'
 
 // provu
-import provu from 'assets/images/projects/provu.svg'
 import provuScreen from 'assets/images/projects/provu-screen.png'
 import provuSimulator from 'assets/images/projects/provu-simulator.png'
+import provu from 'assets/images/projects/provu.svg'
 
 //webmeeting
-import webmeeting from 'assets/images/projects/webmeeting2.svg'
 import webmeetingDirect from 'assets/images/projects/webmeeting-direct.png'
 import webmeetingRealtime from 'assets/images/projects/webmeeting-realtime.png'
+import webmeeting from 'assets/images/projects/webmeeting2.svg'
 
 //read_it
-import read01 from 'assets/images/projects/read_01.png'
+import {
+  default as read01,
+  default as readit
+} from 'assets/images/projects/read_01.png'
 import read02 from 'assets/images/projects/read_02.png'
 import read03 from 'assets/images/projects/read_03.png'
-import readit from 'assets/images/projects/read_01.png'
+
+// fernanda souza
+import fernanda_souza_about from 'assets/images/projects/fernanda_souza_about.png'
+import fernanda_souza_header from 'assets/images/projects/fernanda_souza_header.png'
+import fernanda_souza_social from 'assets/images/projects/fernanda_souza_social.png'
 
 const Projects = {
   provu,
@@ -51,7 +58,10 @@ const Projects = {
   read01,
   read02,
   read03,
-  readit
+  readit,
+  fernanda_souza_header,
+  fernanda_souza_about,
+  fernanda_souza_social
 }
 
 export default Projects

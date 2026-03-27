@@ -108,6 +108,22 @@
     },
     "project": [
       {
+        "title": "Fernanda Souza - Personal Portfolio",
+        "technology": [
+          "Next.js 16 (App Router)",
+          "React 19",
+          "Tailwind CSS 4",
+          "Framer Motion",
+          "Advanced SEO (OG, Sitemap, Schema)",
+          "WhatsApp & TikTok, Instagram Integration"
+        ],
+        "img": "fernanda_souza_header",
+        "link": "/project/fernanda_souza",
+        "type": "",
+        "slug": "fernanda_souza",
+        "company": "Personal Project"
+      },
+      {
         "title": "Read it for me",
         "technology": [
           "TypeScript",

@@ -3,17 +3,16 @@ import PropTypes from 'prop-types'
 import Projects from 'config/Projects'
 import { random } from 'utils/generic'
 
+import { Clock, Tag } from '@styled-icons/bootstrap'
 import { LazyShow, PlayerAnimation } from 'components'
 
 import alien from 'utils/JSON/alien.json'
-
-import * as S from './styled'
 
 const ProjectDetails = ({ data, ...props }) => {
   const { ProjectHeader, disclaimer, ProjectImages, ProjectInfo } = data
 
   return (
-    <S.Wrapper
+    <div
       {...props}
       className="container mx-auto bg-white dark:bg-zinc-900 rounded-2xl sm:no-border shadow-card"
     >
@@ -24,14 +23,14 @@ const ProjectDetails = ({ data, ...props }) => {
           </h1>
           <div className="flex">
             <div className="flex items-center mr-10">
-              <S.CustomClock className="text-primary text-xs text-ternary-dark dark:text-primary" />
-              <span className="font-general-regular text-base text-gray-700 ml-2 leading-normal text-secondary-dark dark:text-gray-300">
+              <Clock className="text-primary text-xs text-ternary-dark dark:text-primary w-4" />
+              <span className="font-general-regular text-base text-gray-700 ml-2 leading-normal dark:text-gray-300">
                 {ProjectHeader.publishDate}
               </span>
             </div>
             <div className="flex items-center">
-              <S.CustomTag className="text-primary text-xs text-ternary-dark dark:text-primary" />
-              <span className="font-general-regular text-base text-gray-700 ml-2 leading-normal text-secondary-dark dark:text-gray-300">
+              <Tag className="text-primary text-xs text-ternary-dark dark:text-primary w-4" />
+              <span className="font-general-regular text-base text-gray-700 ml-2 leading-normal dark:text-gray-300">
                 {ProjectHeader.tags}
               </span>
             </div>
@@ -150,7 +149,7 @@ const ProjectDetails = ({ data, ...props }) => {
           </LazyShow>
         </div>
       </div>
-    </S.Wrapper>
+    </div>
   )
 }
 

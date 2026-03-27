@@ -1,0 +1,71 @@
+{
+  "ProjectHeader": {
+    "title": "Fernanda Pinheiros Nutrition Website",
+    "publishDate": "March 27, 2026",
+    "tags": "Website / Nutrition / Front-end",
+    "company": "Freelance Project"
+  },
+  "ProjectImages": [
+    {
+      "title": "Homepage - Hero Section",
+      "img": "fernanda_souza_header"
+    },
+    {
+      "title": "About Section",
+      "img": "fernanda_souza_about"
+    },
+    {
+      "title": "Social Media Section",
+      "img": "fernanda_souza_social"
+    }
+  ],
+  "disclaimer": "images used are from the product website - © All rights reserved",
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Project",
+        "details": "Professional Website"
+      },
+      {
+        "title": "Client",
+        "details": "Fernanda Souza Pinheiros"
+      },
+      {
+        "title": "Services",
+        "details": "Frontend Development, UI/UX, SEO, Landing Page"
+      },
+      {
+        "title": "Website",
+        "details": "https://nutrifernandasouza.com.br"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "Develop a modern, responsive, and accessible institutional website for nutritionist Fernanda Souza, showcasing services, credentials, and client testimonials, with a focus on conversion and user experience.",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "Next.js 16 (App Router)",
+          "React 19",
+          "Tailwind CSS 4",
+          "Framer Motion",
+          "Advanced SEO (OG, Sitemap, Schema)",
+          "WhatsApp & TikTok, Instagram Integration"
+        ]
+      }
+    ],
+    "Heading": "Challenges",
+    "Details": [
+      "Manage the project hosting and deployment on Netlify, ensuring optimal performance and uptime.",
+      "Buying the Domain in Registro BR and configuring DNS settings for seamless website access.",
+      "Centralized all content and configuration in a single file for easy updates and maintenance.",
+      "Implemented smooth animations with Framer Motion and progressive section loading.",
+      "Developed reusable and responsive components, optimized for both mobile and desktop.",
+      "Integrated WhatsApp contact buttons and dynamic Instagram feed.",
+      "Ensured accessibility, semantic HTML, and performance, following best SEO and WCAG practices.",
+      "Customized the visual theme with Tailwind CSS and brand identity (primary pink).",
+      "Modular structure for easy expansion of new sections and content."
+    ]
+  }
+}

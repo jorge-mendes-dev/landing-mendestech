@@ -4,14 +4,12 @@ import { random } from 'utils/generic'
 
 import config from 'config'
 
-import * as S from './styled'
-
 const ClientsList = ({ ...props }) => {
   const { clients } = config
   const { title, data } = clients
 
   return (
-    <S.Wrapper {...props} className="container mx-auto">
+    <div {...props} className="container mx-auto">
       <div className="mt-10 sm:mt-20">
         <h6
           className={`w-full my-4 text-3xl md:text-4xl font-bold leading-tight text-center`}
@@ -44,7 +42,7 @@ const ClientsList = ({ ...props }) => {
           })}
         </div>
       </div>
-    </S.Wrapper>
+    </div>
   )
 }
 

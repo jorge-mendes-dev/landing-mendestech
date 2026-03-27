@@ -1,13 +1,11 @@
-import { motion } from 'framer-motion'
 import { Divider, PlayerAnimation } from 'components'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { random } from 'utils/generic'
 
 import astronalt_no_bg from 'utils/JSON/astronalt_no_bg.json'
 
 import config from 'config'
-
-import * as S from './styled'
 
 const HomeAbout = ({ ...props }) => {
   const { about } = config

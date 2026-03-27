@@ -1,11 +1,8 @@
-import { ThemeProvider } from 'styled-components'
-import themeMendesTech from 'assets/styles/themes/themeMendesTech'
-import GlobalStyle from 'assets/styles/globalStyles'
-import 'assets/styles/main.css'
-import PageRoutes from 'routes/routes'
-import ErrorBoundary from 'components/ErrorBoundary'
-import { SplashTemplate, SplashScreen } from 'components'
 import logo from 'assets/images/logo.png'
+import 'assets/styles/main.css'
+import { SplashScreen, SplashTemplate } from 'components'
+import ErrorBoundary from 'components/ErrorBoundary'
+import PageRoutes from 'routes/routes'
 
 const Splash = () => {
   return (
@@ -94,10 +91,7 @@ function App() {
 
   return (
     <ErrorBoundary>
-      <ThemeProvider theme={themeMendesTech}>
-        <GlobalStyle />
-        <Splash />
-      </ThemeProvider>
+      <Splash />
     </ErrorBoundary>
   )
 }
