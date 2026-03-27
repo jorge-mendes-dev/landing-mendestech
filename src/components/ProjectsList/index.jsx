@@ -1,10 +1,11 @@
+import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
 
 import { Divider, ProjectItem } from 'components'
 import config from 'config'
 import Projects from 'config/Projects'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { random } from 'utils/generic'
 
@@ -19,24 +20,41 @@ const ProjectsList = ({
 
   const [item, setItem] = useState(project)
   const [pagesTitle, setPagesTitle] = useState(title)
+  const [selectedCompany, setSelectedCompany] = useState('All')
+  const [selectedTech, setSelectedTech] = useState('All')
+
+  // Get unique companies and technologies
+  const companies = React.useMemo(() => {
+    const all = project.map((p) => p.company || 'Unknown')
+    return ['All', ...Array.from(new Set(all))]
+  }, [project])
+
+  const technologies = React.useMemo(() => {
+    const all = project.flatMap((p) => p.technology || [])
+    return ['All', ...Array.from(new Set(all))]
+  }, [project])
 
   useEffect(() => {
-    bootstrap()
-  }, [layout, except])
-
-  const bootstrap = () => {
+    let filtered = [...project]
     if (layout === 'compact') {
-      setItem(project.slice(0, 3))
+      filtered = filtered.slice(0, 3)
     }
-
     if (except !== 'none') {
-      setItem(project.filter((proj) => proj.slug !== except))
+      filtered = filtered.filter((proj) => proj.slug !== except)
     }
-
+    if (selectedCompany && selectedCompany !== 'All') {
+      filtered = filtered.filter((proj) => proj.company === selectedCompany)
+    }
+    if (selectedTech && selectedTech !== 'All') {
+      filtered = filtered.filter((proj) =>
+        (proj.technology || []).includes(selectedTech)
+      )
+    }
+    setItem(filtered)
     if (customTitle !== '') {
       setPagesTitle(customTitle)
     }
-  }
+  }, [layout, except, customTitle, selectedCompany, selectedTech, project])
 
   return (
     <div className="container mx-auto" {...props}>
@@ -67,6 +85,66 @@ const ProjectsList = ({
             </motion.h2>
             <Divider />
           </>
+        )}
+
+        {/* Section Intro */}
+        {config.projectsSectionNote && (
+          <div className="max-w-2xl mx-auto mb-8 text-center">
+            <p className="text-base md:text-lg text-gray-700 dark:text-gray-200">
+              <span className="font-semibold text-primary">Note:</span>{' '}
+              {config.projectsSectionNote}
+            </p>
+          </div>
+        )}
+        {/* Category Filters */}
+        <div className="flex flex-wrap gap-4 mb-8 items-center justify-center">
+          <div>
+            <label
+              htmlFor="company-select"
+              className="mr-2 font-medium text-gray-700 dark:text-gray-200"
+            >
+              Company:
+            </label>
+            <select
+              id="company-select"
+              className="rounded-lg border border-gray-300 dark:border-zinc-700 px-3 py-2 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+              value={selectedCompany}
+              onChange={(e) => setSelectedCompany(e.target.value)}
+            >
+              {companies.map((company) => (
+                <option key={company} value={company}>
+                  {company}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label
+              htmlFor="tech-select"
+              className="mr-2 font-medium text-gray-700 dark:text-gray-200"
+            >
+              Technology:
+            </label>
+            <select
+              id="tech-select"
+              className="rounded-lg border border-gray-300 dark:border-zinc-700 px-3 py-2 bg-white dark:bg-zinc-900 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+              value={selectedTech}
+              onChange={(e) => setSelectedTech(e.target.value)}
+            >
+              {technologies.map((tech) => (
+                <option key={tech} value={tech}>
+                  {tech}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/* Company Title if filtered by company */}
+        {selectedCompany !== 'All' && (
+          <h3 className="text-2xl font-bold mb-6 text-primary/90 dark:text-primary/80 border-b border-primary/20 pb-2 text-center">
+            {selectedCompany}
+          </h3>
         )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 p-4 md:p-10 items-stretch">
           {item.map((project, index) => {

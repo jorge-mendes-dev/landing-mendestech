@@ -55,6 +55,7 @@
     }
   ],
   "resume": "Jorge_Mendes_resume.pdf",
+  "projectsSectionNote": "The projects below are grouped by the company where I worked. My resume lists companies, and these projects were delivered as part of my roles at each employer.",
   "callToAction": {
     "text": "About Me",
     "href": "about"
@@ -108,7 +109,16 @@
     "project": [
       {
         "title": "Read it for me",
-        "technology": ["ReactJS", "NodeJS", "Express", "MongoDB", "CSS"],
+        "technology": [
+          "TypeScript",
+          "React 18",
+          "Vite",
+          "Tailwind CSS 3",
+          "Chrome Extension Manifest V3",
+          "Web Speech API",
+          "Custom i18n (7 languages)",
+          "Jest (for testing)"
+        ],
         "img": "readit",
         "link": "/project/read_it",
         "type": "",
@@ -117,7 +127,20 @@
       },
       {
         "title": "Escala Plantões",
-        "technology": ["Angular", "ReactJS", "Jest", "Laravel", "Mysql", "AWS"],
+        "technology": [
+          "HTML 5",
+          "CSS 3",
+          "JavaScript",
+          "React.js",
+          "Angular",
+          "Bootstrap",
+          "Material UI",
+          "Micro-Frontend",
+          "PHP",
+          "Laravel",
+          "Mysql",
+          "AWS"
+        ],
         "img": "plantoes",
         "link": "/project/plantoes",
         "type": "",
@@ -126,7 +149,17 @@
       },
       {
         "title": "Hotmart internal applications",
-        "technology": ["ReactJS", "styled-components", "Vue", "Jest"],
+        "technology": [
+          "React.js",
+          "Typescript",
+          "Context API",
+          "Web Components",
+          "Design System",
+          "Jest",
+          "React testing library",
+          "styled-components",
+          "i18n"
+        ],
         "img": "hotmart",
         "link": "/project/hotmart",
         "type": "",
@@ -135,7 +168,16 @@
       },
       {
         "title": "Aprova Fácil - mobile",
-        "technology": ["Mobile", "React Native", "nodeJS", "WhatsApp"],
+        "technology": [
+          "React.js",
+          "React Native",
+          "Redux Toolkit",
+          "axios",
+          "Android",
+          "Ios",
+          "whatsApp Integration",
+          "i18n"
+        ],
         "img": "aprova",
         "link": "/project/aprova",
         "type": "",
@@ -144,7 +186,18 @@
       },
       {
         "title": "Provu",
-        "technology": ["Front-end", "ReactJS", "Redux", "Angular", "Jest"],
+        "technology": [
+          "React.js",
+          "Redux Saga",
+          "axios",
+          "Angular",
+          "Yup",
+          "jest",
+          "i18n",
+          "formik",
+          "styled-components",
+          "storybook"
+        ],
         "img": "provu",
         "link": "/project/provu",
         "type": "",
@@ -154,12 +207,20 @@
       {
         "title": "WebMeeeting",
         "technology": [
-          "ReactJS",
+          "React.js",
+          "Redux Saga",
+          "axios",
           "PHP",
+          "Laravel",
+          "jest",
+          "i18n",
+          "Materialize",
+          "styled-components",
+          "webRTC",
+          "Realtime",
+          "Socket",
           "Mysql",
-          "mongoDb",
-          "AWS",
-          "Socket IO"
+          "MongoDB"
         ],
         "img": "webmeeting",
         "link": "/project/webmeeting",
