@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 
 const ImageCard = ({
   title,
@@ -36,13 +36,13 @@ const ImageCard = ({
         transition={{ duration: 0.3 }}
       />
       <motion.div
-        className="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-4 md:p-6 shadow-card hover:shadow-card-hover"
+        className="relative bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-2xl p-4 md:p-6 shadow-card hover:shadow-card-hover"
         whileHover={{ y: -8, scale: 1.02 }}
         transition={{ duration: 0.3 }}
       >
         <motion.img
           src={image}
-          className="w-full h-auto object-contain filter grayscale group-hover:grayscale-0"
+          className="w-full h-auto rounded-lg object-contain filter grayscale group-hover:grayscale-0"
           alt={title}
           width={width}
           height={height}

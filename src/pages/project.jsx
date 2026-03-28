@@ -7,7 +7,8 @@ import {
   LazyShow,
   Navbar,
   ProjectDetails,
-  ProjectsList
+  ProjectsList,
+  ScrollToTop
 } from 'components'
 
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
@@ -43,10 +44,10 @@ const ProjectInfo = () => {
     <div
       className={`transition-all duration-500 bg-background dark:bg-black grid gap-y-16 overflow-hidden`}
     >
-      <div className={`relative bg-background dark:bg-zinc-900`}>
+      <div className={`relative bg-background dark:bg-background-dark`}>
         <div className="max-w-7xl mx-auto">
           <div
-            className={`relative z-10 pb-8 bg-background dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
+            className={`relative z-10 pb-8 bg-background dark:bg-background-dark lg:max-w-2xl lg:w-full`}
           >
             <Navbar />
           </div>
@@ -68,6 +69,7 @@ const ProjectInfo = () => {
       <LazyShow>
         <Footer />
       </LazyShow>
+      <ScrollToTop />
     </div>
   )
 }

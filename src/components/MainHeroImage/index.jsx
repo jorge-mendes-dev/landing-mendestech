@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
 import config from 'config'
+import { motion } from 'framer-motion'
 
 import jorge from 'assets/images/home.png'
 
@@ -57,7 +57,7 @@ const MainHeroImage = () => {
         }}
       />
       <motion.div
-        className="relative h-64 w-full sm:h-80 md:h-96 lg:h-full lg:min-h-[600px] rounded-2xl overflow-hidden border border-gray-200/50 dark:border-gray-800/50 shadow-card lg:rounded-l-2xl lg:rounded-r-none group"
+        className="relative h-64 w-full sm:h-80 md:h-96 lg:h-full lg:min-h-[600px] rounded-2xl overflow-hidden border border-border/50 dark:border-border-dark/50 shadow-card lg:rounded-l-2xl lg:rounded-r-none group"
         variants={imageVariants}
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.3 }}

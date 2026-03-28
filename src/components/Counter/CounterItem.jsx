@@ -1,8 +1,7 @@
+import { motion, useInView } from 'framer-motion'
 import PropTypes from 'prop-types'
-import { motion } from 'framer-motion'
-import { useCountUp } from 'react-countup'
-import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { useCountUp } from 'react-countup'
 
 const CounterItem = ({ title, measurement, reference, level, index = 0 }) => {
   const ref = useRef(null)
@@ -43,12 +42,14 @@ const CounterItem = ({ title, measurement, reference, level, index = 0 }) => {
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
       >
-        <h2 className="text-5xl md:text-6xl font-bold text-center text-white mb-3 relative z-10 drop-shadow-lg">
+        <h2 className="text-5xl md:text-6xl font-bold text-center text-text-primary dark:text-text-primary-dark mb-3 relative z-10 drop-shadow-lg">
           <span
             id={`${reference}`}
-            className="bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent"
+            className="bg-gradient-to-r from-text-primary to-text-secondary bg-clip-text text-transparent dark:from-text-primary-dark dark:to-text-secondary-dark"
           />
-          <span className="text-white">{measurement}</span>
+          <span className="text-text-secondary dark:text-text-secondary-dark">
+            {measurement}
+          </span>
         </h2>
         <motion.div
           className="absolute -inset-2 bg-white/10 rounded-lg blur-xl"
@@ -58,7 +59,7 @@ const CounterItem = ({ title, measurement, reference, level, index = 0 }) => {
         />
       </motion.div>
       <motion.span
-        className="font-medium block text-base md:text-lg text-center text-white/90 dark:text-gray-100"
+        className="font-medium block text-base md:text-lg text-center text-text-secondary dark:text-text-secondary-dark"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.4, delay: 0.3 + index * 0.2 }}

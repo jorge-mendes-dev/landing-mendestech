@@ -183,7 +183,7 @@ const ProjectsList = ({
                 rel="noreferrer"
                 aria-label={primaryAction.text}
                 to={primaryAction.href}
-                className="relative w-full flex items-center justify-center px-8 py-3 border border-primary/20 text-base font-semibold rounded-xl text-primary bg-white hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200 md:py-4 md:text-lg md:px-10"
+                className="relative w-full flex items-center justify-center px-10 py-4 border-none text-lg font-semibold rounded-2xl text-white bg-gradient-to-r from-primary to-primary-light shadow-lg hover:from-primary-light hover:to-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 transition-all duration-200"
               >
                 {primaryAction.text}
               </Link>

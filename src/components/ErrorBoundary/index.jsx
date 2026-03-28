@@ -1,5 +1,5 @@
-import React from 'react'
 import { motion } from 'framer-motion'
+import React from 'react'
 
 /**
  * ErrorBoundary component to catch and handle errors gracefully
@@ -35,7 +35,7 @@ class ErrorBoundary extends React.Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-white dark:bg-black flex items-center justify-center px-4">
+        <div className="min-h-screen bg-background dark:bg-background-dark flex items-center justify-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ class ErrorBoundary extends React.Component {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4"
+              className="text-4xl md:text-5xl font-bold text-text-primary dark:text-text-primary-dark mb-4"
             >
               Oops! Something went wrong
             </motion.h1>
@@ -66,7 +66,7 @@ class ErrorBoundary extends React.Component {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="text-lg text-gray-600 dark:text-gray-400 mb-8"
+              className="text-lg text-text-secondary dark:text-text-secondary-dark mb-8"
             >
               We apologize for the inconvenience. An unexpected error occurred.
             </motion.p>
@@ -76,9 +76,9 @@ class ErrorBoundary extends React.Component {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="mb-8 text-left bg-gray-100 dark:bg-zinc-900 rounded-xl p-6"
+                className="mb-8 text-left bg-surface dark:bg-surface-dark rounded-xl p-6"
               >
-                <summary className="cursor-pointer font-semibold text-gray-900 dark:text-white mb-2">
+                <summary className="cursor-pointer font-semibold text-text-primary dark:text-text-primary-dark mb-2">
                   Error Details (Development Only)
                 </summary>
                 <pre className="text-xs text-red-600 dark:text-red-400 overflow-auto whitespace-pre-wrap break-words">
@@ -107,7 +107,7 @@ class ErrorBoundary extends React.Component {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => window.location.reload()}
-                className="px-8 py-3.5 border-2 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
+                className="px-8 py-3.5 border-2 border-border dark:border-border-dark text-text-primary dark:text-text-primary-dark rounded-xl font-semibold hover:bg-surface dark:hover:bg-surface-dark transition-all duration-200"
               >
                 Reload Page
               </motion.button>

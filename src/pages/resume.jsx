@@ -1,16 +1,16 @@
-import { useEffect, Suspense } from 'react'
+import code from 'assets/images/code.jpg'
 import {
+  Footer,
+  HeaderSub,
   LazyShow,
   Navbar,
   Reader,
-  Skeleton,
-  Footer,
-  HeaderSub,
-  Seo
+  Seo,
+  Skeleton
 } from 'components'
-import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
-import code from 'assets/images/code.jpg'
 import config from 'config'
+import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
+import { Suspense, useEffect } from 'react'
 
 function Resume() {
   const { sendPageView } = useGoogleAnalytics()
@@ -37,10 +37,12 @@ function Resume() {
       <div
         className={`bg-white transition-all duration-500 dark:bg-black grid overflow-hidden`}
       >
-        <div className={`relative bg-white dark:bg-zinc-900`}>
+        <div
+          className={`relative bg-white transition-all duration-500 dark:bg-background-dark`}
+        >
           <div className="max-w-7xl mx-auto">
             <div
-              className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
+              className={`relative z-10 pb-8 bg-white dark:bg-background-dark lg:max-w-2xl lg:w-full`}
             >
               <Navbar />
             </div>
@@ -54,7 +56,7 @@ function Resume() {
           />
         </LazyShow>
         <LazyShow>
-          <main className="min-h-screen bg-gray-50 dark:bg-zinc-900 py-10 scroll-smooth p-6 lg:p-10">
+          <main className="min-h-screen bg-white dark:bg-background-dark py-10 scroll-smooth p-6 lg:p-10 transition-all duration-500">
             <Suspense fallback={<Skeleton />}>
               <Reader selected={config.resume} />
             </Suspense>

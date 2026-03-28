@@ -43,7 +43,7 @@ const SkillsList = ({ ...props }) => {
               className="w-24 md:w-32 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-400 m-3 sm:m-6 rounded-2xl group relative hover:scale-105 cursor-pointer"
               key={random()}
             >
-              <div className="h-full w-full rounded-2xl border border-gray-100 dark:border-zinc-800 bg-white/90 dark:bg-zinc-900/90 shadow-sm group-hover:shadow-md transition-all duration-300 relative overflow-hidden">
+              <div className="h-full w-full rounded-2xl border border-gray-100 dark:bg-background-dark bg-white/90 dark:bg-zinc-900/90 shadow-sm group-hover:shadow-md transition-all duration-300 relative overflow-hidden">
                 <div className="flex justify-center">
                   <div className="w-3/4">
                     <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-primary to-transparent opacity-30" />

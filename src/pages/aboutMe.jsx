@@ -7,9 +7,10 @@ import {
   HeaderSub,
   LazyShow,
   Navbar,
+  ScrollToTop,
+  Seo,
   SkillsList,
-  Timeline,
-  Seo
+  Timeline
 } from 'components'
 
 import code from 'assets/images/code.jpg'
@@ -47,11 +48,11 @@ function AboutMe() {
         className={`bg-white transition-all duration-500 dark:bg-black grid overflow-hidden`}
       >
         <div
-          className={`relative bg-white transition-all duration-500 dark:bg-zinc-900`}
+          className={`relative bg-white transition-all duration-500 dark:bg-background-dark`}
         >
           <div className="max-w-7xl mx-auto">
             <div
-              className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
+              className={`relative z-10 pb-8 bg-white dark:bg-background-dark lg:max-w-2xl lg:w-full`}
             >
               <Navbar />
             </div>
@@ -75,6 +76,7 @@ function AboutMe() {
         <LazyShow>
           <Footer />
         </LazyShow>
+        <ScrollToTop />
       </div>
     </>
   )

@@ -22,27 +22,27 @@ const TalkLink = () => {
   return (
     <div className={`container max-w-5xl mx-auto`}>
       <div className="p-2">
-        <h3 className={`text-3xl font-bold leading-none mb-6 text-green-500`}>
+        <h3 className={`text-3xl font-bold leading-none mb-6 text-primary`}>
           Link de conversa em um clique
         </h3>
         <p
-          className={`mb-6 text-gray-600 subpixel-antialiased font-light tracking-light leading-9 align-baseline`}
+          className={`mb-6 text-text-secondary subpixel-antialiased font-light tracking-light leading-9 align-baseline`}
         >
           Utilize links rápidos que abrem uma conversa no WhatsApp de maneira
           automática.
         </p>
 
         <div className="w-full">
-          <div className="bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
+          <div className="bg-surface dark:bg-surface-dark shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
             {link ? (
-              <div className="bg-green-200 rounded-xl p-8 mt-4 flex flex-wrap flex-col sm:flex-row md:items-center md:justify-between">
-                <p className="text-gray-400 subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">
+              <div className="bg-primary/10 rounded-xl p-8 mt-4 flex flex-wrap flex-col sm:flex-row md:items-center md:justify-between">
+                <p className="text-text-secondary subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">
                   {link}
                 </p>
                 <div className="mt-4 flex items-center justify-between">
                   <button
                     onClick={() => copyData(link)}
-                    className="bg-green-100 hover:bg-green-700 hover:text-white text-green-500 font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+                    className="bg-primary/20 hover:bg-primary hover:text-white text-primary font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
                     type="button"
                   >
                     Copiar
@@ -52,13 +52,13 @@ const TalkLink = () => {
             ) : (
               <form onSubmit={handleSubmit} className="">
                 <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
+                  className="block text-text-primary dark:text-text-primary-dark text-sm font-bold mb-2"
                   htmlFor="phone"
                 >
                   Telefone
                 </label>
                 <input
-                  className="mb-2 shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="mb-2 shadow appearance-none border rounded-xl w-full py-2 px-3 text-text-primary dark:text-text-primary-dark border-border dark:border-border-dark leading-tight focus:outline-none focus:shadow-outline"
                   id="phone"
                   name="phone"
                   type="text"
@@ -70,7 +70,7 @@ const TalkLink = () => {
                 />
                 <div className="flex items-center justify-end">
                   <button
-                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+                    className="bg-primary hover:bg-primary-light text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
                     type="submit"
                   >
                     Criar Link

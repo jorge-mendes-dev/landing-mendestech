@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 const IntroduceMe = ({ videoId, autoPlay = false, title, ...props }) => {
   const videoURL = `https://www.youtube.com/embed/${videoId}${
@@ -46,13 +46,13 @@ const IntroduceMe = ({ videoId, autoPlay = false, title, ...props }) => {
   }, [videoHeight, handleChangeVideoWidth])
 
   return (
-    <div className="bg-background dark:bg-black mt-6" {...props}>
+    <div className="bg-background dark:bg-background-dark mt-6" {...props}>
       <div className="relative mb-6">
         <div aria-hidden="true" className="absolute inset-0 flex items-center">
-          <div className="w-full border-t border-gray-300 dark:border-blue-700" />
+          <div className="w-full border-t border-border dark:border-primary" />
         </div>
         <div className="relative flex justify-center">
-          <span className="bg-white dark:bg-black px-3 text-base font-semibold leading-6 text-gray-900 dark:text-white">
+          <span className="bg-surface dark:bg-surface-dark px-3 text-base font-semibold leading-6 text-text-primary dark:text-text-primary-dark">
             {title}
           </span>
         </div>

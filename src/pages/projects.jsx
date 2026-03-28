@@ -6,6 +6,7 @@ import {
   LazyShow,
   Navbar,
   ProjectsList,
+  ScrollToTop,
   Seo
 } from 'components'
 
@@ -39,12 +40,12 @@ function Projects() {
         ]}
       />
       <div
-        className={`bg-white transition-all duration-500 dark:bg-black grid overflow-hidden`}
+        className={`bg-white transition-all duration-500 dark:bg-background-dark grid overflow-hidden`}
       >
-        <div className={`relative bg-white dark:bg-zinc-900`}>
+        <div className={`relative bg-white dark:bg-background-dark`}>
           <div className="max-w-7xl mx-auto">
             <div
-              className={`relative z-10 pb-8 bg-white dark:bg-zinc-900 lg:max-w-2xl lg:w-full`}
+              className={`relative z-10 pb-8 bg-white dark:bg-background-dark lg:max-w-2xl lg:w-full`}
             >
               <Navbar />
             </div>
@@ -63,6 +64,7 @@ function Projects() {
         <LazyShow>
           <Footer />
         </LazyShow>
+        <ScrollToTop />
       </div>
     </>
   )

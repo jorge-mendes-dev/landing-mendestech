@@ -14,7 +14,7 @@ const SocialLinks = ({ className, size = 'auto', ...props }) => {
           <a
             key={random()}
             href={link.url}
-            className="group relative p-3 rounded-full text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary-light transition-all duration-300 hover:bg-primary/10 dark:hover:bg-primary/20 backdrop-blur-sm border border-transparent hover:border-primary/20 dark:hover:border-primary/30"
+            className="group relative p-3 rounded-full text-text-secondary dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary-light transition-all duration-300 hover:bg-primary/10 dark:hover:bg-primary/20 backdrop-blur-sm border border-transparent hover:border-primary/20 dark:hover:border-primary/30"
             target="_blank"
             rel="noopener noreferrer"
             {...props}

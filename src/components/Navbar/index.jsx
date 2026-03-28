@@ -45,7 +45,7 @@ const Navbar = () => {
                     </LinkRouter>
                     <div className="mr-2 flex items-center md:hidden">
                       <PopoverButton
-                        className={`bg-background dark:bg-black rounded-xl p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-300 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
+                        className={`bg-background dark:bg-background-dark rounded-xl p-2 inline-flex items-center justify-center text-text-secondary dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary-light hover:bg-surface focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary`}
                       >
                         <span className="sr-only">Open Menu</span>
                         <Menu className="h-6 w-6" aria-hidden="true" />
@@ -65,7 +65,7 @@ const Navbar = () => {
                           duration={1000}
                           key={random()}
                           to={href}
-                          className="group relative font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-all duration-300 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer"
+                          className="group relative font-medium text-base text-text-secondary dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary-light transition-all duration-300 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 cursor-pointer"
                         >
                           {name}
                           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
@@ -75,7 +75,7 @@ const Navbar = () => {
                           key={random()}
                           to={href}
                           aria-label={name}
-                          className={`group relative font-medium text-base text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-all duration-300 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20`}
+                          className={`group relative font-medium text-base text-text-secondary dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary-light transition-all duration-300 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20`}
                           rel="noreferrer"
                         >
                           {name}
@@ -114,7 +114,7 @@ const Navbar = () => {
                 className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
               >
                 <div
-                  className={`rounded-xl-lg shadow-xl backdrop-blur-xl bg-white/95 dark:bg-black/95 ring-1 ring-gray-200/50 dark:ring-gray-800/50 overflow-hidden border border-gray-200/50 dark:border-gray-800/50`}
+                  className={`rounded-xl-lg shadow-xl backdrop-blur-xl bg-surface/95 dark:bg-surface-dark/95 ring-1 ring-border/50 dark:ring-border-dark/50 overflow-hidden border border-border/50 dark:border-border-dark/50`}
                 >
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
@@ -141,7 +141,7 @@ const Navbar = () => {
                             key={random()}
                             to={href}
                             onClick={() => close()}
-                            className="block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200 cursor-pointer"
+                            className="block px-3 py-2 rounded-xl text-base font-medium text-text-secondary dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary-light hover:bg-surface dark:hover:bg-surface-dark transition-colors duration-200 cursor-pointer"
                           >
                             {name}
                           </Link>
@@ -151,7 +151,7 @@ const Navbar = () => {
                             to={href}
                             aria-label={name}
                             onClick={() => close()}
-                            className={`block px-3 py-2 rounded-xl text-base font-medium text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors duration-200`}
+                            className={`block px-3 py-2 rounded-xl text-base font-medium text-text-secondary dark:text-text-secondary-dark hover:text-primary dark:hover:text-primary-light hover:bg-surface dark:hover:bg-surface-dark transition-colors duration-200`}
                             rel="noreferrer"
                           >
                             {name}

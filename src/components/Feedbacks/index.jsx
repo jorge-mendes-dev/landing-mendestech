@@ -40,13 +40,13 @@ const Feedbacks = () => {
             <SwiperSlide key={i}>
               <div
                 className={`
-                rounded-2xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md shadow-xl ring-1 ring-gray-200/50 dark:ring-gray-800/50
+                rounded-2xl bg-surface/90 dark:bg-surface-dark/90 backdrop-blur-md shadow-card ring-1 ring-border/50 dark:ring-border-dark/50
                 duration-500 mx-8 p-6 h-full flex items-center gap-6
-                md:flex-row flex-col border border-gray-200/50 dark:border-zinc-800/50
+                md:flex-row flex-col border border-border/50 dark:border-border-dark/50
                 ${activeIndex !== i && 'scale-75 blur-sm opacity-50'}`}
               >
                 <div className="justify-between">
-                  <p className="text-base sm:text-lg md:mb-4 mb-2 leading-relaxed text-gray-900 dark:text-gray-100">
+                  <p className="text-base sm:text-lg md:mb-4 mb-2 leading-relaxed text-text-primary dark:text-text-primary-dark">
                     {content.review}
                   </p>
                   <h6 className="text-base font-semibold text-primary mt-2">

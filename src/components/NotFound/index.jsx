@@ -6,7 +6,7 @@ import alien from 'utils/JSON/alien.json'
 
 const NotFound = ({ title, ...props }) => (
   <section
-    className={`bg-background dark:bg-black py-8`}
+    className={`bg-background dark:bg-background-dark py-8`}
     id="notFound"
     {...props}
   >
@@ -18,7 +18,9 @@ const NotFound = ({ title, ...props }) => (
           <span
             key={index}
             className={
-              index % 2 ? 'text-primary' : 'text-border dark:text-white'
+              index % 2
+                ? 'text-primary'
+                : 'text-text-primary dark:text-text-primary-dark'
             }
           >
             {word}{' '}

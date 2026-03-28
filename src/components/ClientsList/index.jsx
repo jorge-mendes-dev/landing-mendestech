@@ -18,7 +18,9 @@ const ClientsList = ({ ...props }) => {
             <span
               key={index}
               className={
-                index % 2 ? 'text-primary' : 'text-gray-900 dark:text-white'
+                index % 2
+                  ? 'text-primary'
+                  : 'text-text-primary dark:text-text-primary-dark'
               }
             >
               {word}{' '}
@@ -26,7 +28,7 @@ const ClientsList = ({ ...props }) => {
           ))}
         </h6>
         <Divider />
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-12 p-8 sm:mt-16 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-12 p-8 sm:mt-16 gap-6 md:gap-8 mb-6">
           {data.map((client, index) => {
             const Brand = Brands[client.img]
             return (

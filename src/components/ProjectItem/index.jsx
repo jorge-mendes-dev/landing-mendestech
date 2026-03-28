@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 import { backToTop, random } from 'utils/generic'
@@ -39,8 +39,8 @@ const ProjectItem = ({
 
   const Separator = (
     <div className="my-3 flex flex-col items-center">
-      <div className="w-10 h-0.5 bg-gray-200 dark:bg-gray-700 rounded-full mb-2" />
-      <span className="text-xs font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase">
+      <div className="w-10 h-0.5 bg-border dark:bg-border-dark rounded-full mb-2" />
+      <span className="text-xs font-medium text-text-secondary dark:text-text-secondary-dark tracking-wide uppercase">
         {company}
       </span>
     </div>
@@ -49,7 +49,7 @@ const ProjectItem = ({
   const Component = (
     <motion.div
       onClick={() => backToTop()}
-      className="group cursor-pointer mb-10 sm:mb-0 h-full flex flex-col bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden"
+      className="group cursor-pointer mb-10 sm:mb-0 h-full flex flex-col bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-2xl p-7 shadow-md hover:shadow-lg transition-all duration-300 relative overflow-hidden"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
@@ -71,7 +71,7 @@ const ProjectItem = ({
 
       <div className="text-center px-2 flex flex-col flex-grow relative z-10">
         <motion.h3
-          className="font-semibold text-lg md:text-xl text-gray-900 dark:text-white mb-3 min-h-[2.5rem] flex items-center justify-center"
+          className="font-semibold text-lg md:text-xl text-text-primary dark:text-text-primary-dark mb-3 min-h-[2.5rem] flex items-center justify-center"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.2 }}
         >
