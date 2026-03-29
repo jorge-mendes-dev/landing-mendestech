@@ -1,5 +1,5 @@
-import config from 'config/index.json'
 import { useMemo } from 'react'
+import { useConfigStore } from 'store/configStore'
 
 /**
  * Enhanced SEO component with dynamic meta tags, structured data, and social media optimization
@@ -32,7 +32,7 @@ function Seo({
   keywords: pageKeywords,
   structuredData
 }: SeoProps = {}) {
-  const { seo } = config
+  const { seo } = useConfigStore()
   const {
     title: defaultTitle,
     description: defaultDescription,

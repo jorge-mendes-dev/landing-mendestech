@@ -59,4 +59,4 @@ describe('ClientsList', () => {
     const result = render()
     expect(result).toMatchSnapshot()
   })
-})
+}) // NOTE: Client data now comes from Zustand store (see configStore.ts)

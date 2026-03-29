@@ -1,8 +1,8 @@
 import SocialLinks from 'components/SocialLinks'
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 const Footer: React.FC = () => {
-  const { footer } = config
+  const { footer } = useConfigStore()
   return (
     <footer className="relative bg-background dark:bg-background-dark border-t border-border dark:border-border-dark">
       <div className="mx-auto max-w-7xl px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6 lg:px-8">

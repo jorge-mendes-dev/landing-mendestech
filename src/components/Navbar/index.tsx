@@ -13,14 +13,14 @@ import { random } from 'utils/generic'
 
 import logo from 'assets/images/logo.png'
 
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 interface NavbarProps {
   // Future props can be added here
 }
 
 const Navbar: React.FC<NavbarProps> = (props) => {
-  const { navigation, company, socialMedia } = config
+  const { navigation, company, socialMedia } = useConfigStore()
   const { name, url } = company
 
   return (

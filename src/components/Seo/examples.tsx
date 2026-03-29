@@ -6,7 +6,7 @@
  * for optimal search engine optimization across your website.
  */
 
-import { Seo } from 'components/Seo/index'
+import Seo from 'components/Seo/index'
 
 // ============================================================
 // EXAMPLE 1: Homepage / Default Usage
@@ -152,7 +152,7 @@ function PortfolioWork() {
 function DefaultPage() {
   return (
     <>
-      {/* Will use all default values from config/index.json */}
+      {/* Will use all default values from Zustand configStore */}
       <Seo />
       {/* Page content */}
     </>

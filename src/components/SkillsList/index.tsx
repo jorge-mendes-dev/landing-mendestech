@@ -3,7 +3,7 @@ import Techs from 'config/Techs'
 import { memo } from 'react'
 import Marquee from 'react-fast-marquee'
 
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 interface SkillsListProps {
   // Add any props if needed
@@ -15,7 +15,7 @@ interface Skill {
 }
 
 const SkillsList = ({ ...props }: SkillsListProps) => {
-  const { skills } = config
+  const { skills } = useConfigStore()
   const { title, data } = skills
 
   return (

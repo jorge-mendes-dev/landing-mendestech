@@ -1,9 +1,9 @@
-import config from 'config/index.json'
 import { easeOut, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useConfigStore } from 'store/configStore'
 
 const Header: React.FC = () => {
-  const { mainHero } = config
+  const { mainHero } = useConfigStore()
   const { title, subtitle, description, primaryAction, secondaryAction } =
     mainHero
 

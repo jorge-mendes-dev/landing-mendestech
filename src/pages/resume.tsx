@@ -7,12 +7,13 @@ import {
   Seo,
   Skeleton
 } from 'components/index'
-import config from 'config/index.json'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 import { Suspense, useEffect } from 'react'
+import { useConfigStore } from 'store/configStore'
 
 const Resume: React.FC = () => {
   const { sendPageView } = useGoogleAnalytics()
+  const { resume } = useConfigStore()
 
   useEffect(() => {
     sendPageView()
@@ -54,7 +55,7 @@ const Resume: React.FC = () => {
         />
         <main className="min-h-screen bg-white dark:bg-background-dark py-10 scroll-smooth p-6 lg:p-10 transition-all duration-500">
           <Suspense fallback={<Skeleton />}>
-            <Reader selected={config.resume} />
+            <Reader selected={resume} />
           </Suspense>
         </main>
 

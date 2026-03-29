@@ -5,13 +5,13 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { Divider } from 'components/index'
 
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 import 'swiper/css'
 import 'swiper/css/pagination'
 
 const Feedbacks: React.FC = () => {
-  const { reviews } = config
+  const { reviews } = useConfigStore()
   const { title, feedbacks } = reviews
   const [activeIndex, setActiveIndex] = useState<number>(0)
 

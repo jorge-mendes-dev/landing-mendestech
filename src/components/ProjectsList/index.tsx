@@ -3,10 +3,10 @@ import { motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
 
 import { Divider, ProjectItem } from 'components/index'
-import config from 'config/index.json'
 import Projects from 'config/Projects'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useConfigStore } from 'store/configStore'
 
 interface ProjectsListProps {
   layout?: 'compact' | 'full'
@@ -31,7 +31,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({
   except = 'none',
   ...props
 }) => {
-  const { projects } = config
+  const { projects, projectsSectionNote } = useConfigStore()
   const { title, project, primaryAction } = projects
 
   const [item, setItem] = useState<Project[]>(
@@ -108,11 +108,11 @@ const ProjectsList: React.FC<ProjectsListProps> = ({
         )}
 
         {/* Section Intro */}
-        {config.projectsSectionNote && (
+        {projectsSectionNote && (
           <div className="max-w-2xl mx-auto mb-8 text-center">
             <p className="text-base md:text-lg text-gray-700 dark:text-gray-200">
               <span className="font-semibold text-primary">Note:</span>{' '}
-              {config.projectsSectionNote}
+              {projectsSectionNote}
             </p>
           </div>
         )}

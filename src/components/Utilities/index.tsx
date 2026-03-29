@@ -1,7 +1,7 @@
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 const Utilities: React.FC = () => {
-  const { utilities } = config
+  const { utilities } = useConfigStore()
   const { title } = utilities
 
   return (

@@ -5,12 +5,12 @@ import git from 'assets/images/git.jpg'
 import notebook from 'assets/images/notebook.jpg'
 import jorge from 'assets/images/perfil.jpeg'
 
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 interface AboutProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const About: React.FC<AboutProps> = ({ ...props }) => {
-  const { about, company } = config
+  const { about, company } = useConfigStore()
   const { subtitle, paragraphs, list, video } = about
 
   return (

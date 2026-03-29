@@ -1,7 +1,7 @@
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 const HomeAbout: React.FC = () => {
-  const { about } = config
+  const { about } = useConfigStore()
   const { title, paragraphs, primaryAction } = about
 
   return (

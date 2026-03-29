@@ -1,10 +1,10 @@
-import config from 'config/index.json'
 import { easeInOut, easeOut, motion } from 'framer-motion'
+import { useConfigStore } from 'store/configStore'
 
 import jorge from 'assets/images/home.png'
 
 const MainHeroImage = () => {
-  const { mainHero } = config
+  const { mainHero } = useConfigStore()
   const { title } = mainHero
 
   const imageVariants = {

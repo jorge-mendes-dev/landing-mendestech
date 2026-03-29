@@ -25,7 +25,8 @@
       "hooks/*": ["./src/hooks/*"],
       "config/*": ["./src/config/*"],
       "types/*": ["./src/types/*"],
-      "pages/*": ["./src/pages/*"]
+      "pages/*": ["./src/pages/*"],
+      "store/*": ["./src/store/*"]
     }
   },
   "include": ["src"],

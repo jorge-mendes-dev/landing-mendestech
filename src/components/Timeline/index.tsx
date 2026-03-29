@@ -3,7 +3,7 @@ import Icons from 'config/Icons'
 import { memo } from 'react'
 import { random } from 'utils/generic'
 
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 import {
   VerticalTimeline,
@@ -12,7 +12,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css'
 
 const Timeline = () => {
-  const { journeyInfo } = config
+  const { journeyInfo } = useConfigStore()
   const { journey, title, description } = journeyInfo
 
   const iconTheme = {

@@ -1,7 +1,7 @@
 import Icons from 'config/Icons'
 import { random } from 'utils/generic'
 
-import config from 'config/index.json'
+import { useConfigStore } from 'store/configStore'
 
 interface SocialLinksProps {
   className?: string
@@ -18,7 +18,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({
   size = 'auto',
   ...props
 }) => {
-  const { socialMedia } = config
+  const { socialMedia } = useConfigStore()
   return (
     <>
       {socialMedia.map((link: SocialLink) => {
