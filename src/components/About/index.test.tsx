@@ -21,7 +21,9 @@ describe('About', () => {
 
     const image = screen.getByAltText(/Jorge Mendes/i)
     expect(image).toBeInTheDocument()
-    expect(image).toHaveAttribute('src', '/src/assets/images/jorge_mendes.png')
+    // The About component uses the imported `jorge` image, which resolves to a URL string
+    // We check that the src contains 'perfil.jpeg' (the imported file)
+    expect(image.getAttribute('src')).toContain('perfil.jpeg')
   })
 
   it('renders correctly About Me', () => {

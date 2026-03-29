@@ -1,0 +1,134 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HomeAbout > renders correctly HomeAbout 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="relative isolate overflow-hidden py-24 sm:py-32 bg-surface dark:bg-surface-dark rounded-3xl shadow-lg border border-border dark:border-border-dark mx-auto max-w-3xl transition-colors duration-500"
+      >
+        <div
+          class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent pointer-events-none"
+        />
+        <div
+          class="px-6 lg:px-12"
+        >
+          <div
+            class="mx-auto max-w-2xl text-center"
+          >
+            <h2
+              class="text-4xl sm:text-5xl font-extrabold tracking-tight text-text-primary dark:text-text-primary-dark mb-4 text-balance"
+            >
+              About Me
+            </h2>
+            <p
+              class="mx-auto mt-6 max-w-xl text-lg sm:text-xl text-text-secondary dark:text-text-secondary-dark text-pretty"
+            >
+              Senior Software Engineer with 10 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.
+            </p>
+            <div
+              class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+            >
+              <a
+                class="inline-flex items-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white shadow-md hover:bg-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 transition-colors duration-200"
+                href="about"
+              >
+                See More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="relative isolate overflow-hidden py-24 sm:py-32 bg-surface dark:bg-surface-dark rounded-3xl shadow-lg border border-border dark:border-border-dark mx-auto max-w-3xl transition-colors duration-500"
+    >
+      <div
+        class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent pointer-events-none"
+      />
+      <div
+        class="px-6 lg:px-12"
+      >
+        <div
+          class="mx-auto max-w-2xl text-center"
+        >
+          <h2
+            class="text-4xl sm:text-5xl font-extrabold tracking-tight text-text-primary dark:text-text-primary-dark mb-4 text-balance"
+          >
+            About Me
+          </h2>
+          <p
+            class="mx-auto mt-6 max-w-xl text-lg sm:text-xl text-text-secondary dark:text-text-secondary-dark text-pretty"
+          >
+            Senior Software Engineer with 10 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.
+          </p>
+          <div
+            class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <a
+              class="inline-flex items-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white shadow-md hover:bg-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 transition-colors duration-200"
+              href="about"
+            >
+              See More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

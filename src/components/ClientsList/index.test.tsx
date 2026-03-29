@@ -35,25 +35,23 @@ describe('ClientsList', () => {
 
   it('should render all Clients List images with correct src', () => {
     render(<ClientsList />)
-
-    expect(screen.getByAltText(/FATEC SÃO ROQUE/i)).toHaveAttribute(
-      'src',
-      '/src/assets/images/brands/fatec.svg'
+    // The image src is the imported SVG, which resolves to a URL string
+    expect(
+      screen.getByAltText(/FATEC SÃO ROQUE/i).getAttribute('src')
+    ).toContain('fatec.svg')
+    expect(
+      screen
+        .getByAltText(/SÃO PAULO - STATE DEPARTMENT OF EDUCATION/i)
+        .getAttribute('src')
+    ).toContain('gov.svg')
+    expect(screen.getByAltText(/NOVACIA/i).getAttribute('src')).toContain(
+      'novacia.svg'
     )
     expect(
-      screen.getByAltText(/SÃO PAULO - STATE DEPARTMENT OF EDUCATION/i)
-    ).toHaveAttribute('src', '/src/assets/images/brands/gov.svg')
-    expect(screen.getByAltText(/NOVACIA/i)).toHaveAttribute(
-      'src',
-      '/src/assets/images/brands/novacia.svg'
-    )
-    expect(screen.getByAltText(/ATITUDE DIGITAL MEDIA/i)).toHaveAttribute(
-      'src',
-      '/src/assets/images/brands/atitude.svg'
-    )
-    expect(screen.getByAltText(/HOTMART/i)).toHaveAttribute(
-      'src',
-      '/src/assets/images/brands/hotmart.svg'
+      screen.getByAltText(/ATITUDE DIGITAL MEDIA/i).getAttribute('src')
+    ).toContain('atitude.svg')
+    expect(screen.getByAltText(/HOTMART/i).getAttribute('src')).toContain(
+      'hotmart.svg'
     )
   })
 

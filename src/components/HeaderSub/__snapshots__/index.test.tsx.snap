@@ -1,0 +1,190 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeaderSub > renders correctly HeaderSub 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="relative isolate overflow-hidden bg-gray-900 dark:bg-background-dark px-6 py-24 sm:py-32 lg:px-8"
+      >
+        <img
+          alt="Testing HeaderSub"
+          class="absolute inset-0 -z-10 h-full w-full object-cover"
+          src="/src/assets/images/code.jpg"
+        />
+        <div
+          aria-hidden="true"
+          class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+        >
+          <div
+            class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"
+          />
+        </div>
+        <div
+          aria-hidden="true"
+          class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+        >
+          <div
+            class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"
+          />
+        </div>
+        <div
+          class="mx-auto max-w-2xl text-center"
+        >
+          <h2
+            class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-2"
+          >
+            Testing HeaderSub
+          </h2>
+          <div
+            class="w-full mb-6 flex items-center justify-center"
+            data-testid="divider"
+          >
+            <div
+              class="relative flex items-center justify-center w-full"
+            >
+              <div
+                class="absolute inset-0 flex items-center"
+              >
+                <div
+                  class="w-full border-t border-border/50 dark:border-border-dark/50"
+                />
+              </div>
+              <div
+                class="relative flex items-center"
+              >
+                <div
+                  class="h-1.5 bg-white w-64 rounded-full bg-gradient-to-r from-primary via-primary-light to-primary shadow-card relative overflow-hidden"
+                >
+                  <div
+                    class="absolute inset-0 bg-gradient-to-r from-transparent via-surface/30 to-transparent animate-shimmer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="relative isolate overflow-hidden bg-gray-900 dark:bg-background-dark px-6 py-24 sm:py-32 lg:px-8"
+    >
+      <img
+        alt="Testing HeaderSub"
+        class="absolute inset-0 -z-10 h-full w-full object-cover"
+        src="/src/assets/images/code.jpg"
+      />
+      <div
+        aria-hidden="true"
+        class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"
+        />
+      </div>
+      <div
+        aria-hidden="true"
+        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+      >
+        <div
+          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);"
+        />
+      </div>
+      <div
+        class="mx-auto max-w-2xl text-center"
+      >
+        <h2
+          class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-2"
+        >
+          Testing HeaderSub
+        </h2>
+        <div
+          class="w-full mb-6 flex items-center justify-center"
+          data-testid="divider"
+        >
+          <div
+            class="relative flex items-center justify-center w-full"
+          >
+            <div
+              class="absolute inset-0 flex items-center"
+            >
+              <div
+                class="w-full border-t border-border/50 dark:border-border-dark/50"
+              />
+            </div>
+            <div
+              class="relative flex items-center"
+            >
+              <div
+                class="h-1.5 bg-white w-64 rounded-full bg-gradient-to-r from-primary via-primary-light to-primary shadow-card relative overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-transparent via-surface/30 to-transparent animate-shimmer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

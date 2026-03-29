@@ -78,7 +78,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          ui: ['@heroicons/react', 'framer-motion', 'styled-icons'],
+          ui: ['@heroicons/react', 'framer-motion', 'react-icons'],
           utils: []
         }
       }

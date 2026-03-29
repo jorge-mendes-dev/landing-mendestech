@@ -7,10 +7,10 @@ describe('ImageCard', () => {
   it('Should render ImageCard', () => {
     render(<ImageCard title={'Testing ImageCard'} image={code} />)
 
-    expect(screen.getByAltText(/Testing ImageCard/i)).toHaveAttribute(
-      'src',
-      '/src/assets/images/code.jpg'
-    )
+    const img = screen.getByAltText(/Testing ImageCard/i)
+    expect(img).toBeInTheDocument()
+    // The image prop is the imported image, which resolves to a URL string
+    expect(img.getAttribute('src')).toContain('code.jpg')
   })
 
   it('renders correctly ImageCard', () => {
