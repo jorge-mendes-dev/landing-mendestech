@@ -1,0 +1,23 @@
+# llm.txt
+# SEO and LLM crawling guidance for Jorge Mendes
+# Site: https://jorgemendes.com.br
+# Author: Jorge Mendes
+# Description: Full Stack Senior Developer, building responsive applications with great layouts and excellent experience. 10+ years of experience with JavaScript, React, Redux, TypeScript. Passionate about leveraging AI-assisted coding to improve productivity and code quality.
+# Contact: jorgemsilva@gmail.com
+# LinkedIn: https://www.linkedin.com/in/jorge-mendes-dev/
+# Portfolio: https://jorgemendes.com.br
+# Keybase: https://keybase.io/jorgemsilva
+# Resume: /resume
+# Main keywords: Jorge Mendes, Senior Developer, Full Stack, React, JavaScript, TypeScript, Web Development, Portfolio, Brazil Developer, AI-assisted coding, AI developer, AI productivity, AI code assistance
+
+User-agent: *
+Allow: /
+
+# Disallow private or irrelevant paths
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemap and verification
+Sitemap: https://jorgemendes.com.br/sitemap.xml
+# Google site verification
+Google-site-verification: googlec6084d7e9b8663e3.html

@@ -6,7 +6,7 @@
   },
   "seo": {
     "title": "Jorge Mendes - Senior Developer",
-    "description": "Experienced web developer with a talent for efficient solutions, building responsive applications with beautiful layouts. 8 years of experience with JavaScript, React, Redux, TypeScript.",
+    "description": "Experienced web developer with a talent for efficient solutions, building responsive applications with beautiful layouts. 8+ years of experience with JavaScript, React, Redux, TypeScript. Passionate about leveraging AI-assisted coding to improve performance and deliver innovative solutions.",
     "image": "jorge_mendes.png",
     "lang": "en",
     "author": "@jorge-mendes-dev",
@@ -24,7 +24,11 @@
       "Software Engineer",
       "React Redux",
       "Portfolio",
-      "Brazil Developer"
+      "Brazil Developer",
+      "AI-assisted coding",
+      "AI developer",
+      "AI productivity",
+      "AI code assistance"
     ]
   },
   "notifications": {
@@ -63,7 +67,7 @@
   "mainHero": {
     "title": "Jorge Mendes",
     "subtitle": "Senior Developer",
-    "description": "Experienced web developer with a talent for efficient solutions, building responsive applications with beautiful layouts",
+    "description": "Experienced web developer passionate about leveraging AI-assisted coding to improve performance and deliver efficient, beautiful applications.",
     "img": "profile.svg",
     "primaryAction": {
       "text": "About Me",
@@ -78,9 +82,9 @@
     "title": "About Me",
     "subtitle": "Discover My Journey",
     "paragraphs": [
-      "Senior Software Engineer with 10 years of experience, developing scalable applications from scratch or helping growing existing projects, using mainly with JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely.",
-      "Today i am focused in learning new techniques and skills. One of my most notable skills is my ability to translate client needs into an efficient technology solution. I am an excellent communicator and know how to listen and understand.",
-      "I am also highly efficient in working as part of a team. I understand the importance of collaboration in achieving common goals and work well with other developers and team members. I am able to contribute positively to team dynamics, bringing creative ideas and solutions to the technical challenges the team faces."
+      "Senior Software Engineer with 10 years of experience, developing scalable applications from scratch or helping grow existing projects, using mainly JavaScript, React, Redux, TypeScript. I have worked on start-up companies with Agile methodologies both in person and remotely. I am passionate about using AI-assisted coding tools to boost productivity and code quality.",
+      "Today I am focused on learning new techniques and skills, especially in the field of AI-powered development. One of my most notable skills is my ability to translate client needs into efficient technology solutions, often leveraging AI assistance for rapid prototyping and delivery. I am an excellent communicator and know how to listen and understand.",
+      "I am also highly efficient in working as part of a team. I understand the importance of collaboration in achieving common goals and work well with other developers and team members. I am able to contribute positively to team dynamics, bringing creative ideas and solutions to the technical challenges the team faces, including the adoption of AI tools for better outcomes."
     ],
     "list": [
       "Experience maintaining legacy web applications,",
