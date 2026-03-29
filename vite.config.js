@@ -1,12 +1,13 @@
-import {
-  defineConfig,
-  defaultClientConditions,
-  defaultServerConditions
-} from 'vite'
 import react from '@vitejs/plugin-react'
+import autoprefixer from 'autoprefixer'
 import path from 'path'
 import tailwindcss from 'tailwindcss'
-import autoprefixer from 'autoprefixer'
+import {
+  defaultClientConditions,
+  defaultServerConditions,
+  defineConfig
+} from 'vite'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -39,49 +40,7 @@ export default defineConfig({
       provider: 'v8'
     }
   },
-  plugins: [
-    react()
-    /*  ViteImageOptimizer({
-      test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
-      exclude: undefined,
-      include: undefined,
-      includePublic: true,
-      logStats: true,
-      ansiColors: true,
-      svg: {
-        multipass: true,
-        plugins: [
-          {
-            name: 'preset-default',
-            params: {
-              overrides: {
-                cleanupNumericValues: false
-              }
-            }
-          }
-        ]
-      },
-      png: {
-        quality: [0.8, 0.9]
-      },
-      jpeg: {
-        quality: 80
-      },
-      jpg: {
-        quality: 80
-      },
-      tiff: {
-        quality: 80
-      },
-      gif: {},
-      webp: {
-        lossless: true
-      },
-      avif: {
-        lossless: true
-      }
-    }) */
-  ],
+  plugins: [react(), tsconfigPaths()],
   css: {
     devSourcemap: true,
     postcss: {

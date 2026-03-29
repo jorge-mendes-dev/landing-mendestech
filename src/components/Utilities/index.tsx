@@ -1,0 +1,34 @@
+import config from 'config/index.json'
+
+const Utilities: React.FC = () => {
+  const { utilities } = config
+  const { title } = utilities
+
+  return (
+    <section
+      className={`bg-background dark:bg-background-dark py-8`}
+      id="utilities"
+    >
+      <div className={`container max-w-5xl mx-auto m-8`}>
+        <h2
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center`}
+        >
+          {title.split(' ').map((word, index) => (
+            <span
+              key={index}
+              className={
+                index % 2
+                  ? 'text-primary'
+                  : 'text-text-primary dark:text-text-primary-dark'
+              }
+            >
+              {word}{' '}
+            </span>
+          ))}
+        </h2>
+      </div>
+    </section>
+  )
+}
+
+export default Utilities

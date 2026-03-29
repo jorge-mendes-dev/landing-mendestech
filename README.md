@@ -1,39 +1,123 @@
-## JORGE MENDES WEBSITE
+# Jorge Mendes Portfolio — Mendestech
 
-Project of mendes tecnology landing page using a react Vite and Tailwind css.
-
-This project was made thinking on fast and better productivity. So any change on the main structure repository can be pulled and apply to this child project.
+Modern, high-performance portfolio and landing page for Jorge Mendes, built with **React 19**, **TypeScript**, and **Vite**. Features a clean, accessible UI, rich animations, and a scalable architecture for rapid development.
 
 ## 💫 Deploy
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4649d379-760f-4e2e-a11d-df09216e019b/deploy-status)](https://app.netlify.com/sites/landing-mendestech/deploys)
 
-## <a href="https://jorgemendes.com.br/"> 🌐 &nbsp; Acess the website </a>
+## 🌐 [Access the Website](https://jorgemendes.com.br/)
 
 <p align="center">
   <a href="https://jorgemendes.com.br/">
-    <img src="https://raw.githubusercontent.com/Jorge-Bill/Jorge-Bill/master/assets/jorgeMendesWeb.png" />
+    <img src="https://raw.githubusercontent.com/Jorge-Bill/Jorge-Bill/master/assets/jorgeMendesWeb.png" alt="Jorge Mendes Portfolio Screenshot" />
   </a>
 </p>
 
-## 🚀 Project Structure
+---
 
-This project structure a web app with great organization, made to be the base template for other apps.
+## 🚀 Features
 
-Stack and resources used on this structure creation.
+- **React 19** + **TypeScript** + **Vite**
+- **TailwindCSS v3** + **styled-components v6**
+- **Framer Motion** for animations
+- **Headless UI** & **Heroicons** for accessible UI
+- **React Router DOM v7** for routing
+- **React PDF**, **React CountUp**, **React Fast Marquee** for rich content
+- **Vitest** + **Testing Library** for testing
+- **Commitlint**, **Husky**, **Lint-Staged**, **Prettier** for code quality
+- **Plop** for component scaffolding
+- **Strict TypeScript config**
+- **SEO optimized** with dynamic meta tags
+- **Dark mode** (always enabled)
 
-    .
-    ├── Vite + React
-    ├── prop-types
-    ├── Eslint + eslint-config-airbnb + prettier
-    ├── Plop component generator
-    ├── Styled-components
-    ├── Styled-icons
-    ├── Styled-media-query
-    ├── React-router-dom
-    ├── Jest
-    ├── Husky
-    ├── Commitizen
+---
+
+## 📁 Project Structure
+
+```
+src/
+  App.tsx
+  main.tsx
+  assets/
+    images/
+    styles/
+  components/
+    [Feature]/
+      index.tsx
+      index.test.tsx
+      styled.tsx
+  config/
+    index.json
+    Projects.tsx
+    Techs.tsx
+    Brands.tsx
+    Icons.tsx
+  hooks/
+  pages/
+    home.tsx
+    aboutMe.tsx
+    projects.tsx
+    project.tsx
+    resume.tsx
+    utils.tsx
+  routes/
+    routes.tsx
+  utils/
+    analytics.tsx
+    generic.tsx
+```
+
+---
+
+## 🛠 Scripts
+
+- `pnpm dev` — Start local dev server ([localhost:5173](http://localhost:5173))
+- `pnpm build` — Build for production
+- `pnpm test` — Run Vitest test suite
+- `pnpm lint` — Run ESLint
+- `pnpm format` — Run Prettier
+- `pnpm generate` — Generate new components with Plop
+- `pnpm commit` — Commit with Commitizen (Husky/Commitlint enforced)
+
+> Replace `pnpm` with `yarn` or `npm` if preferred.
+
+---
+
+## 🧪 Testing
+
+- **Vitest** + **@testing-library/react** for unit and integration tests
+- Run all tests: `pnpm test`
+- Coverage: `pnpm test --coverage`
+
+---
+
+## 🖥 Environment Variables
+
+Set these in your `.env` file:
+
+- `VITE_APP_TITLE` — Site title
+- `VITE_APP_DESCRIPTION` — Site description
+- `VITE_APP_LANG` — Language
+- `VITE_APP_IMAGE` — Default image
+- `VITE_APP_AUTHOR` — Author
+- `VITE_PUBLIC_URL` — Public URL
+
+---
+
+## 🧹 Code Quality & Tooling
+
+- **ESLint** (strict, TypeScript-aware)
+- **Prettier** (auto-formatting)
+- **Husky** + **Lint-Staged** (pre-commit hooks)
+- **Commitlint** (conventional commits)
+- **Plop** (component generator)
+
+---
+
+## 📄 License
+
+MIT
 
 ## 🛠 Scripts
 
@@ -63,215 +147,3 @@ If any of yours hook is not working, you can make them execute with:
 - `VITE_APP_IMAGE=''`
 - `VITE_APP_AUTHOR=''`
 - `VITE_PUBLIC_URL=''`
-
----
-
-```
-landing-mendestech,
-├─ .editorconfig,
-├─ .eslintignore,
-├─ .git,
-├─ .github,
-├─ .gitignore,
-├─ .husky,
-├─ .nvmrc,
-├─ .prettierignore,
-├─ .prettierrc,
-├─ .vscode,
-├─ CHANGELOG.md,
-├─ commitlint.config.cjs,
-├─ copilot-instructions.md,
-├─ generators,
-│  ├─ plopfile.cjs,
-│  └─ templates,
-├─ index.html,
-├─ LICENSE,
-├─ package.json,
-├─ postcss.config.cjs,
-├─ pre-commit,
-├─ prepare-commit-msg,
-├─ public,
-├─ README.md,
-├─ src,
-│  ├─ App.jsx,
-│  ├─ assets,
-│  │  ├─ images,
-│  │  │  ├─ .gitkeep,
-│  │  │  ├─ brands,
-│  │  │  │  ├─ atitude.svg,
-│  │  │  │  ├─ escala.svg,
-│  │  │  │  ├─ fatec.svg,
-│  │  │  │  ├─ fdte.svg,
-│  │  │  │  ├─ gov.svg,
-│  │  │  │  ├─ hotmart.svg,
-│  │  │  │  └─ novacia.svg,
-│  │  │  ├─ code.jpg,
-│  │  │  ├─ defaultImg.svg,
-│  │  │  ├─ favicon.ico,
-│  │  │  ├─ git.jpg,
-│  │  │  ├─ jorge.png,
-│  │  │  ├─ jorge_mendes.png,
-│  │  │  ├─ jorge_profile.jpeg,
-│  │  │  ├─ logo.png,
-│  │  │  ├─ logo.svg,
-│  │  │  ├─ notebook.jpg,
-│  │  │  ├─ profile.svg,
-│  │  │  ├─ projects,
-│  │  │  └─ techs,
-│  │  └─ styles,
-│  │     ├─ globalStyles.jsx,
-│  │     ├─ main.css,
-│  │     └─ themes,
-│  │        ├─ themeDefault.jsx,
-│  │        └─ themeMendesTech.jsx,
-│  ├─ components,
-│  │  ├─ About,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ ClientsList,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  ├─ styled.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ Counter,
-│  │  │  ├─ CounterItem.jsx,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  ├─ styled.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ CreateQRCode,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ Divider,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ Feedbacks,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ Footer,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  ├─ styled.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ Header,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  ├─ styled.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ HeaderSub,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  ├─ styled.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ HomeAbout,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  ├─ styled.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ ImageCard,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ index.jsx,
-│  │  ├─ IntroduceMe,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ LazyShow,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ MainHeroImage,
-│  │  │  ├─ index.jsx,
-│  │  │  ├─ index.test.jsx,
-│  │  │  └─ __snapshots__,
-│  │  │     └─ index.test.jsx.snap,
-│  │  ├─ Navbar,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  ├─ NotFound,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  ├─ OpenLink,
-│  │  │  └─ index.jsx,
-│  │  ├─ PlayerAnimation,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  ├─ ProjectDetails,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  ├─ ProjectItem,
-│  │  │  └─ index.jsx,
-│  │  ├─ ProjectsList,
-│  │  │  └─ index.jsx,
-│  │  ├─ Reader,
-│  │  │  └─ index.jsx,
-│  │  ├─ Seo,
-│  │  │  └─ index.jsx,
-│  │  ├─ Skeleton,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  ├─ SkillsList,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  ├─ SocialLinks,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  ├─ TalkLink,
-│  │  │  └─ index.jsx,
-│  │  ├─ Timeline,
-│  │  │  ├─ index.jsx,
-│  │  │  └─ styled.jsx,
-│  │  └─ Utilities,
-│  │     └─ index.jsx,
-│  ├─ config,
-│  │  ├─ Brands.jsx,
-│  │  ├─ constants.jsx,
-│  │  ├─ Icons.jsx,
-│  │  ├─ index.json,
-│  │  ├─ project,
-│  │  ├─ Projects.jsx,
-│  │  └─ Techs.jsx,
-│  ├─ hooks,
-│  │  ├─ useGoogleAnalytics.jsx,
-│  │  ├─ useNotifications.jsx,
-│  │  └─ useTheme.jsx,
-│  ├─ main.jsx,
-│  ├─ pages,
-│  │  ├─ 404.jsx,
-│  │  ├─ aboutMe.jsx,
-│  │  ├─ home.jsx,
-│  │  ├─ project.jsx,
-│  │  ├─ projects.jsx,
-│  │  ├─ resume.jsx,
-│  │  └─ utils.jsx,
-│  ├─ routes,
-│  │  └─ routes.jsx,
-│  └─ utils,
-│     ├─ analytics.jsx,
-│     ├─ generic.jsx,
-│     └─ JSON,
-├─ sw.jsx,
-├─ tailwind.config.cjs,
-├─ tailwind.config.js,
-├─ tests.cjs,
-└─ vite.config.js,
-
-```

@@ -1,0 +1,8 @@
+declare module 'react-scroll'
+declare module 'react-ga4'
+declare module 'react-qr-code'
+declare module 'react-countup'
+declare module 'react-fast-marquee'
+declare module '@heroicons/react/24/solid'
+declare module '@headlessui/react'
+declare module 'framer-motion'

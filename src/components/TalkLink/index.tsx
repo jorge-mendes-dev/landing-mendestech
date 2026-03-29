@@ -1,0 +1,103 @@
+import { useState } from 'react'
+
+interface TalkLinkProps {}
+
+const TalkLink: React.FC<TalkLinkProps> = ({ ...props }: TalkLinkProps) => {
+  const [phone, setPhone] = useState('')
+  const [link, setLink] = useState('')
+
+  const handlePhone = (event: React.ChangeEvent<HTMLInputElement>) =>
+    setPhone(event.target.value)
+  const generateLink = () => setLink(`https://wa.me/55${phone}`)
+  const copyData = (data: string) => navigator.clipboard.writeText(data)
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    generateLink()
+  }
+
+  const setDefault: () => void = () => {
+    setPhone('')
+    setLink('')
+    copyData('')
+  }
+
+  return (
+    <div className={`container max-w-5xl mx-auto`}>
+      <div className="p-2">
+        <h3 className={`text-3xl font-bold leading-none mb-6 text-primary`}>
+          Link de conversa em um clique
+        </h3>
+        <p
+          className={`mb-6 text-text-secondary subpixel-antialiased font-light tracking-light leading-9 align-baseline`}
+        >
+          Utilize links rápidos que abrem uma conversa no WhatsApp de maneira
+          automática.
+        </p>
+
+        <div className="w-full">
+          <div className="bg-surface dark:bg-surface-dark shadow-md rounded-xl px-8 pt-6 pb-8 mb-4">
+            {link ? (
+              <div className="bg-primary/10 rounded-xl p-8 mt-4 flex flex-wrap flex-col sm:flex-row md:items-center md:justify-between">
+                <p className="text-text-secondary subpixel-antialiased font-light tracking-light align-baseline leading-relaxed">
+                  {link}
+                </p>
+                <div className="mt-4 flex items-center justify-between">
+                  <button
+                    onClick={() => copyData(link)}
+                    className="bg-primary/20 hover:bg-primary hover:text-white text-primary font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+                    type="button"
+                  >
+                    Copiar
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="">
+                <label
+                  className="block text-text-primary dark:text-text-primary-dark text-sm font-bold mb-2"
+                  htmlFor="phone"
+                >
+                  Telefone
+                </label>
+                <input
+                  className="mb-2 shadow appearance-none border rounded-xl w-full py-2 px-3 text-text-primary dark:text-text-primary-dark border-border dark:border-border-dark leading-tight focus:outline-none focus:shadow-outline"
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  value={phone}
+                  onChange={handlePhone}
+                  disabled={link ? true : false}
+                  placeholder="Telefone"
+                  required
+                />
+                <div className="flex items-center justify-end">
+                  <button
+                    className="bg-primary hover:bg-primary-light text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+                    type="submit"
+                  >
+                    Criar Link
+                  </button>
+                </div>
+              </form>
+            )}
+
+            <div className="flex items-center justify-end">
+              {link && (
+                <button
+                  className="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+                  type="button"
+                  onClick={setDefault}
+                >
+                  Limpar link
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default TalkLink
