@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { useConfigStore } from 'store/configStore'
+import { useSeoStore } from 'store/seoStore'
 
 /**
  * Enhanced SEO component with dynamic meta tags, structured data, and social media optimization
@@ -32,7 +32,6 @@ function Seo({
   keywords: pageKeywords,
   structuredData
 }: SeoProps = {}) {
-  const { seo } = useConfigStore()
   const {
     title: defaultTitle,
     description: defaultDescription,
@@ -42,7 +41,7 @@ function Seo({
     siteUrl,
     type: defaultType,
     keywords: defaultKeywords
-  } = seo
+  } = useSeoStore()
 
   // Use page-specific values or fallback to defaults
   const title = pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle

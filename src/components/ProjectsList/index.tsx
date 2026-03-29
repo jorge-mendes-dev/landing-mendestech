@@ -6,7 +6,7 @@ import { Divider, ProjectItem } from 'components/index'
 import Projects from 'config/Projects'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useConfigStore } from 'store/configStore'
+import { useProjectsStore } from 'store/projectsStore'
 
 interface ProjectsListProps {
   layout?: 'compact' | 'full'
@@ -31,8 +31,8 @@ const ProjectsList: React.FC<ProjectsListProps> = ({
   except = 'none',
   ...props
 }) => {
-  const { projects, projectsSectionNote } = useConfigStore()
-  const { title, project, primaryAction } = projects
+  const { title, project, primaryAction, projectsSectionNote } =
+    useProjectsStore()
 
   const [item, setItem] = useState<Project[]>(
     project.map((p) => ({ ...p, type: p.type as ProjectType }))

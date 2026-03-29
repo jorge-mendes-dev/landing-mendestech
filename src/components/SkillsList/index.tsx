@@ -3,7 +3,7 @@ import Techs from 'config/Techs'
 import { memo } from 'react'
 import Marquee from 'react-fast-marquee'
 
-import { useConfigStore } from 'store/configStore'
+import { useSkillsStore } from 'store/skillsStore'
 
 interface SkillsListProps {
   // Add any props if needed
@@ -15,8 +15,7 @@ interface Skill {
 }
 
 const SkillsList = ({ ...props }: SkillsListProps) => {
-  const { skills } = useConfigStore()
-  const { title, data } = skills
+  const { title, data } = useSkillsStore()
 
   return (
     <div {...props} className="hidden lg:block container mx-auto">

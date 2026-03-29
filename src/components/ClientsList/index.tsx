@@ -2,13 +2,12 @@ import { Divider, ImageCard } from 'components/index'
 import Brands from 'config/Brands'
 import { random } from 'utils/generic'
 
-import { useConfigStore } from 'store/configStore'
+import { useClientsStore } from 'store/clientsStore'
 
 interface ClientsListProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const ClientsList: React.FC<ClientsListProps> = ({ ...props }) => {
-  const { clients } = useConfigStore()
-  const { title, data } = clients
+  const { title, data } = useClientsStore()
 
   return (
     <div {...props} className="container mx-auto">
