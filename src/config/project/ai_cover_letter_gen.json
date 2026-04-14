@@ -1,0 +1,71 @@
+{
+  "ProjectHeader": {
+    "title": "AI Cover Letter Generator",
+    "publishDate": "Apr 14, 2026",
+    "tags": "Web App",
+    "company": "Personal Project"
+  },
+  "ProjectImages": [
+    {
+      "title": "coverLetterGenerator",
+      "img": "coverLetterHome"
+    },
+    {
+      "title": "coverLetterGenerator",
+      "img": "coverLetterForm"
+    },
+    {
+      "title": "coverLetterGenerator",
+      "img": "coverLetterResult"
+    }
+  ],
+  "disclaimer": "",
+  "ProjectInfo": {
+    "ClientHeading": "About",
+    "CompanyInfo": [
+      {
+        "title": "Type",
+        "details": "Personal Project"
+      },
+      {
+        "title": "Product",
+        "details": "AI Cover Letter Generator — Web App"
+      },
+      {
+        "title": "Services",
+        "details": "Full-Stack Development (Next.js)"
+      },
+      {
+        "title": "Website",
+        "details": "https://cover-lettergen.netlify.app/"
+      }
+    ],
+    "ObjectivesHeading": "Objective",
+    "ObjectivesDetails": "Build a free, no-signup AI tool that generates tailored cover letters from a PDF résumé and any job description — delivering high-quality, personalised output in seconds with no placeholder text.",
+    "Technologies": [
+      {
+        "title": "Tools & Technologies",
+        "techs": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "Vercel AI SDK",
+          "Groq (llama-3.3-70b-versatile)",
+          "Zod",
+          "unpdf",
+          "React Query",
+          "PWA"
+        ]
+      }
+    ],
+    "Heading": "Challenge",
+    "Details": [
+      "The core challenge was building a seamless pipeline that takes a raw PDF résumé, extracts its text server-side, and feeds it together with a job description into a large language model — all within a single API request with no user account required.",
+      "PDF parsing on the server required careful handling: unpdf runs on the Node.js runtime (not Edge), and the extracted text must be sanitised and truncated to keep token costs low while preserving the most relevant career information.",
+      "Structured AI output was enforced using Zod schemas and the Vercel AI SDK's generateObject, eliminating hallucinated placeholders like '[Company Name]' that typically plague template-based tools.",
+      "The UI follows an ElevenLabs-inspired light design system — Cormorant Garamond display headings, Inter body text, and a soft neutral palette — implemented with precise design tokens rather than utility-class shortcuts.",
+      "Internationalisation, a service worker for offline support, PWA manifest, SEO structured data (JSON-LD), and a React error boundary were all layered in to deliver a production-grade, accessible experience."
+    ]
+  }
+}

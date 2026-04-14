@@ -43,6 +43,11 @@ import private_learning_hub_chat from 'assets/images/projects/private_learning_h
 import private_learning_hub_player from 'assets/images/projects/private_learning_hub_player.png'
 import private_learning_hub_reader from 'assets/images/projects/private_learning_hub_reader.png'
 
+// ai cover letter generator (replace with actual screenshots when available)
+import coverLetterForm from 'assets/images/projects/cover_letter_form.png'
+import coverLetterHome from 'assets/images/projects/cover_letter_home.png'
+import coverLetterResult from 'assets/images/projects/cover_letter_result.png'
+
 interface Projects {
   [key: string]: string
 }
@@ -73,7 +78,10 @@ const Projects: Projects = {
   fernanda_souza_social,
   private_learning_hub_player,
   private_learning_hub_reader,
-  private_learning_hub_chat
+  private_learning_hub_chat,
+  coverLetterHome,
+  coverLetterForm,
+  coverLetterResult
 }
 
 export default Projects

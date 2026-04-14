@@ -10,6 +10,24 @@ export const useProjectsStore = create<
     'The projects below are grouped by the company where I worked. My resume lists companies, and these projects were delivered as part of my roles at each employer.',
   project: [
     {
+      title: 'AI Cover Letter Generator',
+      technology: [
+        'Next.js 16',
+        'React 19',
+        'TypeScript',
+        'Tailwind CSS v4',
+        'Vercel AI SDK',
+        'Groq (llama-3.3-70b-versatile)',
+        'Zod',
+        'PWA'
+      ],
+      img: 'coverLetterHome',
+      link: '/project/ai_cover_letter_gen',
+      type: '',
+      slug: 'ai_cover_letter_gen',
+      company: 'Personal Project'
+    },
+    {
       title: 'Fernanda Souza - Personal Portfolio',
       technology: [
         'Next.js 16 (App Router)',

@@ -78,7 +78,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data, ...props }) => {
         <div className="w-full sm:w-1/3 text-left">
           {/* client details */}
           <div className="mb-7 p-6">
-            <h4 className="font-semibold text-secondary text-2xl dark:text-secondary-dark mb-2">
+            <h4 className="font-semibold text-secondary text-2xl dark:text-primary-dark mb-2">
               {ProjectInfo.ClientHeading}
             </h4>
             <ul className="leading-loose">
@@ -118,7 +118,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data, ...props }) => {
 
           {/*  objectives */}
           <div className="mb-7 p-6">
-            <h4 className="text-2xl font-semibold text-secondary-dark dark:text-secondary-dark mb-2">
+            <h4 className="text-2xl font-semibold text-secondary-dark dark:text-primary-dark mb-2">
               {ProjectInfo.ObjectivesHeading}
             </h4>
             <p className="font-general-regular text-base leading-relaxed text-text-secondary dark:text-text-secondary-dark">
@@ -128,7 +128,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ data, ...props }) => {
 
           {/*  technologies */}
           <div className="mb-7 p-6">
-            <h4 className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-dark mb-2">
+            <h4 className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-primary-dark mb-2">
               {ProjectInfo.Technologies[0].title}
             </h4>
 
