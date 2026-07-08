@@ -8,8 +8,7 @@ import {
   Navbar,
   ScrollToTop,
   Seo,
-  SkillsList,
-  Timeline
+  SkillsList
 } from 'components/index'
 
 import code from 'assets/images/code.jpg'
@@ -61,7 +60,7 @@ const AboutMe: React.FC = () => {
         <About />
         <SkillsList />
         <ClientsList />
-        <Timeline />
+        {/* <Timeline /> */}
         <Footer />
         <ScrollToTop />
       </div>

@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "ES2022",
-    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowJs": true,
     "checkJs": false,
     "jsx": "react-jsx",
@@ -17,18 +20,44 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "paths": {
-      "@/*": ["./src/*"],
-      "assets/*": ["./src/assets/*"],
-      "components/*": ["./src/components/*"],
-      "routes/*": ["./src/routes/*"],
-      "utils/*": ["./src/utils/*"],
-      "hooks/*": ["./src/hooks/*"],
-      "config/*": ["./src/config/*"],
-      "types/*": ["./src/types/*"],
-      "pages/*": ["./src/pages/*"],
-      "store/*": ["./src/store/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "assets/*": [
+        "./src/assets/*"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "routes/*": [
+        "./src/routes/*"
+      ],
+      "utils/*": [
+        "./src/utils/*"
+      ],
+      "hooks/*": [
+        "./src/hooks/*"
+      ],
+      "config/*": [
+        "./src/config/*"
+      ],
+      "types/*": [
+        "./src/types/*"
+      ],
+      "pages/*": [
+        "./src/pages/*"
+      ],
+      "store/*": [
+        "./src/store/*"
+      ]
     }
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "build"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ]
 }

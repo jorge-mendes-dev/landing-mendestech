@@ -3,7 +3,6 @@ import {
   Footer,
   HeaderSub,
   Navbar,
-  Reader,
   Seo,
   Skeleton
 } from 'components/index'
@@ -55,7 +54,7 @@ const Resume: React.FC = () => {
         />
         <main className="min-h-screen bg-white dark:bg-background-dark py-10 scroll-smooth p-6 lg:p-10 transition-all duration-500">
           <Suspense fallback={<Skeleton />}>
-            <Reader selected={resume} />
+           <p>Nothing here yet.</p>
           </Suspense>
         </main>
 
