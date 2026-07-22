@@ -1,11 +1,5 @@
 import code from 'assets/images/code.jpg'
-import {
-  Footer,
-  HeaderSub,
-  Navbar,
-  Seo,
-  Skeleton
-} from 'components/index'
+import { Footer, HeaderSub, Navbar, Seo, Skeleton } from 'components/index'
 import { useGoogleAnalytics } from 'hooks/useGoogleAnalytics'
 import { Suspense, useEffect } from 'react'
 import { useConfigStore } from 'store/configStore'
@@ -54,7 +48,9 @@ const Resume: React.FC = () => {
         />
         <main className="min-h-screen bg-white dark:bg-background-dark py-10 scroll-smooth p-6 lg:p-10 transition-all duration-500">
           <Suspense fallback={<Skeleton />}>
-           <p>Nothing here yet.</p>
+            <p className="text-4xl text-gray-700 dark:text-gray-300 text-center">
+              Nothing here yet.
+            </p>
           </Suspense>
         </main>
 

@@ -19,11 +19,7 @@ import React, { useEffect, useState, ReactNode } from 'react'
 
 type SplashVariant = 'branded' | 'minimal' | 'custom'
 type AnimationType =
-  | 'bounce-in'
-  | 'slide-up'
-  | 'fade-scale'
-  | 'rotate-in'
-  | 'none'
+  'bounce-in' | 'slide-up' | 'fade-scale' | 'rotate-in' | 'none'
 
 interface SplashScreenProps {
   /** Callback when splash completes */
